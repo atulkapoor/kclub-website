@@ -1,4 +1,10 @@
+"use client";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+
+
 export default function Home() {
+    useScrollAnimation(); // activate hook
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <section
