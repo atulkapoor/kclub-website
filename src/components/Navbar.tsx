@@ -26,8 +26,8 @@ export default function Navbar() {
         <Link href="/services" className="text-gray-600 hover:text-gray-900">
           Services
         </Link>
-        <Link href="/industries" className="text-gray-600 hover:text-gray-900">
-          Industries
+        <Link href="/tech" className="text-gray-600 hover:text-gray-900">
+        Tech & consulting
         </Link>
         <Link href="/resources" className="text-gray-600 hover:text-gray-900">
           Resources
@@ -81,10 +81,10 @@ export default function Navbar() {
               Services
             </Link>
             <Link
-              href="/industries"
+              href="/tech"
               className="text-gray-600 hover:text-gray-900"
             >
-              Industries
+              Tech & consulting
             </Link>
             <Link
               href="/resources"
