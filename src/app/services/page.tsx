@@ -1,44 +1,228 @@
-const services = [
+"use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+
+type Service = {
+  id: number;
+  subtitle: string;
+  title: string;
+  description: string;
+  imageAlt: string;
+};
+
+const services: Service[] = [
   {
-    title: "Workshops",
-    desc: "Hands-on sessions on technology, design, and career development.",
+    id: 1,
+    subtitle: "Smarter decisions, powered by intelligence.",
+    title: "AI Services",
+    description:
+      "Harness artificial intelligence and machine learning to automate processes, uncover insights, and drive smarter decision-making for your business.",
+    imageAlt: "AI Service Image",
   },
   {
-    title: "Mentorship",
-    desc: "One-on-one and group mentoring to guide you on your journey.",
+    id: 2,
+    subtitle: "Streamline. Simplify. Scale.",
+    title: "ODOO Services",
+    description:
+      "Implement and customize ODOO ERP to simplify complex operations—from CRM and accounting to HR, inventory, and beyond.",
+    imageAlt: "ODOO Service Image",
   },
   {
-    title: "Events & Networking",
-    desc: "Connect with peers and industry professionals through events.",
+    id: 3,
+    subtitle: "Fast. Scalable. Secure.",
+    title: "Cloud Services",
+    description:
+      "Leverage modern cloud infrastructure to optimize performance, scale efficiently, and strengthen your business security.",
+    imageAlt: "Cloud Service Image",
   },
-  {
-    title: "Project Collaboration",
-    desc: "Work on real-world projects and strengthen your portfolio.",
+    {
+    id: 4,
+    subtitle: "Fast. Scalable. Secure.",
+    title: "Cloud Services",
+    description:
+      "Leverage modern cloud infrastructure to optimize performance, scale efficiently, and strengthen your business security.",
+    imageAlt: "Cloud Service Image",
   },
 ];
 
 export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-      <section className="mx-auto max-w-7xl px-6 py-20">
-        <h1 className="text-4xl font-bold sm:text-5xl">Our Services</h1>
-        <p className="mt-6 max-w-2xl text-lg text-gray-600">
-          At KClub, we provide a range of opportunities to help our members grow, 
-          learn, and succeed.
+        <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20 text-center">
+      {/* Heading + Description */}
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+          Transforming Businesses with <br /> End-to-End Digital Services
+        </h2>
+        <p className="text-gray-600 mt-4">
+          At KClub, we deliver services that bridge innovation and impact. From
+          AI-powered automation to enterprise-grade app development, we help
+          businesses evolve faster, smarter, and stronger in the digital-first
+          world.
         </p>
+      </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((s) => (
-            <div
-              key={s.title}
-              className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition"
-            >
-              <h3 className="text-lg font-semibold">{s.title}</h3>
-              <p className="mt-2 text-sm text-gray-600">{s.desc}</p>
-            </div>
-          ))}
+      {/* Image Placeholder */}
+      <div className="mt-10">
+        <div className="w-full h-64 md:h-80 bg-gray-200 flex items-center justify-center rounded-md">
+          <p className="text-lg font-semibold text-gray-700">
+            Our Services Page
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
+
+    <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+      {/* Section Heading */}
+      <div className="text-center max-w-3xl mx-auto">
+        <p className="text-sm uppercase tracking-wide text-gray-500">
+          From Strategy to Deployment, We’ve Got You Covered
+        </p>
+        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">Our Key Services</h2>
+        <p className="text-gray-600 mt-4">
+          KClub’s service portfolio covers every stage of your digital
+          transformation. Whether you’re looking to harness AI for smarter
+          decisions, streamline workflows with ERP, or build cutting-edge
+          applications, we provide the expertise and execution to turn your
+          vision into reality.
+        </p>
+      </div>
+
+      {/* Dynamic Services */}
+      <div className="mt-16 space-y-20">
+        {services.map((service, index) => (
+          <div
+            key={service.id}
+            className="grid md:grid-cols-2 gap-10 items-center"
+          >
+            {/* Text Section */}
+            <div
+              className={`${
+                index % 2 === 1 ? "order-2 md:order-1" : "order-1"
+              }`}
+            >
+              <p className="text-sm font-semibold text-gray-500">
+                {service.subtitle}
+              </p>
+              <h3 className="text-2xl font-bold mt-2">{service.title}</h3>
+              <p className="text-gray-600 mt-4">{service.description}</p>
+              <div className="mt-6 flex gap-4">
+                <button className="border px-4 py-2 rounded-md hover:bg-gray-100">
+                  Know More
+                </button>
+                <button className="flex items-center gap-2 border px-4 py-2 rounded-md hover:bg-gray-100">
+                  Schedule a Demo <span>→</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Image Section */}
+            <div
+              className={`w-full h-56 bg-gray-200 flex items-center justify-center rounded-md ${
+                index % 2 === 1 ? "order-1 md:order-2" : "order-2"
+              }`}
+            >
+              <p className="text-gray-600">[{service.imageAlt}]</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+     <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+        {/* Section Heading */}
+      <div className="text-center max-w-3xl mx-auto">
+        <p className="text-sm uppercase tracking-wide text-gray-500">
+          From Strategy to Deployment, We’ve Got You Covered
+        </p>
+        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight mt-6">Our Key Services</h2>
+        <p className="text-gray-600 mt-4">
+          KClub’s service portfolio covers every stage of your digital
+          transformation. Whether you’re looking to harness AI for smarter
+          decisions, streamline workflows with ERP, or build cutting-edge
+          applications, we provide the expertise and execution to turn your
+          vision into reality.
+        </p>
+      </div>
+
+      {/* Carousel */}
+      <div className="mt-16">
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={30}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 4000 }}
+          loop={true}
+          className="w-full"
+        >
+          {services.map((service, index) => (
+            <SwiperSlide key={service.id}>
+              <div className="grid md:grid-cols-2 gap-10 items-center">
+                {/* Text Section */}
+                <div>
+                  <p className="text-sm font-semibold text-gray-500">
+                    {service.subtitle}
+                  </p>
+                  <h3 className="text-2xl font-bold mt-2">{service.title}</h3>
+                  <p className="text-gray-600 mt-4">{service.description}</p>
+                  <div className="mt-6 flex gap-4">
+                    <button className="border px-4 py-2 rounded-md hover:bg-gray-100">
+                      Know More
+                    </button>
+                    <button className="flex items-center gap-2 border px-4 py-2 rounded-md hover:bg-gray-100">
+                      Schedule a Demo <span>→</span>
+                    </button>
+                  </div>
+                </div>
+
+                {/* Image Section */}
+                <div className="w-full h-56 bg-gray-200 flex items-center justify-center rounded-md">
+                  <p className="text-gray-600">[{service.imageAlt}]</p>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
+
+      <section className="container bg-gray-800 text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-20 rounded-md">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        {/* Left Content */}
+        <div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+            Let’s Build the Future Together
+          </h2>
+          <p className="text-gray-300 mt-2 max-w-lg">
+            Explore how we’ve helped businesses across industries transform
+            through innovation and technology.
+          </p>
+        </div>
+
+        {/* Right Buttons */}
+        <div className="flex gap-4">
+          <a
+            href="#case-studies"
+            className="px-5 py-2 bg-black text-white rounded hover:bg-gray-700 transition"
+          >
+            See case studies
+          </a>
+          <a
+            href="#contact"
+            className="px-5 py-2 bg-black text-white rounded hover:bg-gray-700 transition"
+          >
+            Contact us
+          </a>
+        </div>
+      </div>
+    </section>
     </main>
   );
 }

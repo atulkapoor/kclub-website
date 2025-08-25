@@ -249,7 +249,7 @@ export default function AboutPage() {
 
     <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
       {/* Heading */}
-      <h1 className="text-center text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight">
+      <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
         Trusted by businesses worldwide
       </h1>
       <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
@@ -259,7 +259,7 @@ export default function AboutPage() {
       </p>
 
       {/* Stats Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         <div>
           <h3 className="text-2xl md:text-3xl font-bold">5yr+</h3>
           <p className="text-gray-600 mt-2 text-sm">
@@ -289,9 +289,9 @@ export default function AboutPage() {
 
      <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
         <div className="py-16">
-      <h2 className="text-3xl font-bold text-center mb-6">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-center">
         What our clients are saying
-      </h2>
+      </h1>
       <Swiper
         modules={[Navigation, Pagination]}
         navigation
@@ -323,9 +323,9 @@ export default function AboutPage() {
     <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <p className="uppercase tracking-wide text-gray-600">Our team</p>
-        <h2 className="text-3xl md:text-4xl font-bold mt-2">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
           Meet the Minds Behind KClub
-        </h2>
+        </h1>
         <p className="text-gray-600 mt-4">
           Our team is a blend of innovators, creators, and problem-solvers who
           share a passion for technology and impact. Together, we bring ideas to
@@ -370,7 +370,7 @@ export default function AboutPage() {
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         {/* Left Content */}
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
             Let’s Build the Future Together
           </h2>
           <p className="text-gray-300 mt-2 max-w-lg">
