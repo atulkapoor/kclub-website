@@ -51,6 +51,14 @@ const services: Service[] = [
 ];
 
 export default function ServicesPage() {
+    const logos = [
+    { src: "/relume-logo.png", alt: "Webflow" },
+    { src: "/webflow-logo.png", alt: "Relume" },
+    { src: "/relume-logo.png", alt: "Webflow" },
+    { src: "/webflow-logo.png", alt: "Relume" },
+    { src: "/relume-logo.png", alt: "Webflow" },
+    { src: "/webflow-logo.png", alt: "Relume" },
+  ];
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
         <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20 text-center">
@@ -222,6 +230,32 @@ export default function ServicesPage() {
           </a>
         </div>
       </div>
+    </section>
+
+       <section className="text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-20 rounded-md">
+     <div className="overflow-hidden whitespace-nowrap w-full bg-white">
+      <div className="flex animate-scroll">
+        {logos.map((logo, i) => (
+          <div
+            key={i}
+            className="flex items-center mx-8 shrink-0"
+          >
+            <img src={logo.src} alt={logo.alt} className="h-8 mr-2" />
+            {/* <span className="text-black font-medium">{logo.alt}</span> */}
+          </div>
+        ))}
+        {/* Duplicate for infinite scroll effect */}
+        {logos.map((logo, i) => (
+          <div
+            key={`dup-${i}`}
+            className="flex items-center mx-8 shrink-0"
+          >
+            <img src={logo.src} alt={logo.alt} className="h-8 mr-2" />
+            {/* <span className="text-black font-medium">{logo.alt}</span> */}
+          </div>
+        ))}
+      </div>
+    </div>
     </section>
     </main>
   );
