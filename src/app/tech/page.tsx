@@ -162,7 +162,7 @@ export default function TechConsultingPage() {
               Ready to Elevate Your Digital Strategy?
             </h2>
           <p className="text-gray-300 mt-2 max-w-lg">
-              Partner with KClub's experts to design, build, and implement technology solutions 
+              Partner with KClub&apos;s experts to design, build, and implement technology solutions 
               that accelerate growth and drive measurable impact.
           </p>
         </div>
