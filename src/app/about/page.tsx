@@ -167,7 +167,7 @@ export default function AboutPage() {
             Innovators in Technology, <br /> Empowering Your Digital Journey
           </h1>
           <p className="text-gray-700 mb-4">
-            We pride ourselves on crafting software that not only meets clients’ needs
+            We pride ourselves on crafting software that not only meets clients&apos; needs
             but blows away expectations, often redefining how organizations operate in
             the digital era.
           </p>
@@ -251,7 +251,7 @@ export default function AboutPage() {
           <p className="text-gray-700">
             To be a global leader in digital transformation, recognized for reshaping
             industries with game-changing tech innovation. We aspire to continuously push
-            the boundaries of what’s possible, transforming how organizations work,
+            the boundaries of what&apos;s possible, transforming how organizations work,
             connect, and succeed – ultimately building a smarter, more connected future.
           </p>
         </div>
@@ -382,10 +382,10 @@ export default function AboutPage() {
         {/* Left Content */}
         <div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-            Let’s Build the Future Together
+            Let&apos;s Build the Future Together
           </h2>
           <p className="text-gray-300 mt-2 max-w-lg">
-            Explore how we’ve helped businesses across industries transform
+            Explore how we&apos;ve helped businesses across industries transform
             through innovation and technology.
           </p>
         </div>

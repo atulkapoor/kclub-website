@@ -89,12 +89,12 @@ export default function ServicesPage() {
       {/* Section Heading */}
       <div className="text-center max-w-3xl mx-auto">
         <p className="text-sm uppercase tracking-wide text-gray-500">
-          From Strategy to Deployment, We’ve Got You Covered
+          From Strategy to Deployment, We&apos;ve Got You Covered
         </p>
         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">Our Key Services</h2>
         <p className="text-gray-600 mt-4">
-          KClub’s service portfolio covers every stage of your digital
-          transformation. Whether you’re looking to harness AI for smarter
+          KClub&apos;s service portfolio covers every stage of your digital
+          transformation. Whether you&apos;re looking to harness AI for smarter
           decisions, streamline workflows with ERP, or build cutting-edge
           applications, we provide the expertise and execution to turn your
           vision into reality.
@@ -146,12 +146,12 @@ export default function ServicesPage() {
         {/* Section Heading */}
       <div className="text-center max-w-3xl mx-auto">
         <p className="text-sm uppercase tracking-wide text-gray-500">
-          From Strategy to Deployment, We’ve Got You Covered
+          From Strategy to Deployment, We&apos;ve Got You Covered
         </p>
         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight mt-6">Our Key Services</h2>
         <p className="text-gray-600 mt-4">
-          KClub’s service portfolio covers every stage of your digital
-          transformation. Whether you’re looking to harness AI for smarter
+          KClub&apos;s service portfolio covers every stage of your digital
+          transformation. Whether you&apos;re looking to harness AI for smarter
           decisions, streamline workflows with ERP, or build cutting-edge
           applications, we provide the expertise and execution to turn your
           vision into reality.
@@ -206,10 +206,10 @@ export default function ServicesPage() {
         {/* Left Content */}
         <div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-            Let’s Build the Future Together
+            Let&apos;s Build the Future Together
           </h2>
           <p className="text-gray-300 mt-2 max-w-lg">
-            Explore how we’ve helped businesses across industries transform
+            Explore how we&apos;ve helped businesses across industries transform
             through innovation and technology.
           </p>
         </div>

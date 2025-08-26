@@ -142,7 +142,7 @@ export default function WareHouseManagment() {
                         </h2>
                         <p className="text-gray-300 mt-2 max-w-lg">
                             Discover the full range of solutions we offer and explore case studies that 
-                            showcase how we’ve helped businesses transform through technology
+                            showcase how we&apos;ve helped businesses transform through technology
                         </p>
                         </div>
 
