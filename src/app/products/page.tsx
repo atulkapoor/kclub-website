@@ -67,7 +67,7 @@ const products = [
     description:
       "A specialized platform that helps maritime agencies manage vessel schedules, cargo operations, and port logistics with ease and efficiency.",
     image: "/placeholder.png",
-    link: "/warehousemanagement"
+    link: "/maritime-agency-management"
   },
   {
     name: "PingKLUB",

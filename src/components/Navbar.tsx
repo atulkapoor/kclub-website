@@ -8,9 +8,9 @@ export default function Navbar() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 
+      className="fixed top-0 left-0 right-0 bg-white backdrop-blur-sm z-50 
                  flex justify-between items-center px-4 md:px-6 lg:px-36 py-4 
-                 border-b transition-all duration-300 ease-in-out"
+                 border-b shadow-b"
     >
       {/* Logo */}
       <div className="font-bold text-xl">Logo</div>
