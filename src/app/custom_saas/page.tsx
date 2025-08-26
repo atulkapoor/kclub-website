@@ -1,6 +1,28 @@
 import React from 'react'
 
 export default function Custom_Saas() { 
+    const features = [
+        {
+          title: "Full-Stack Development",
+          desc: "Expertise in front-end (React, Angular, etc.) and back-end (Node.js, Python, Java) development to create complete web applications.",
+        },
+        {
+          title: "Cloud Infrastructure",
+          desc: "Deployment on leading cloud platforms (AWS, Azure, Google Cloud) using services that auto-scale and load-balance for reliability.",
+        },
+        {
+          title: "Multi-Tenant Architecture",
+          desc: "Designing the app to securely serve multiple clients (tenants) with isolated data, essential for B2B SaaS offerings.",
+        },
+        {
+          title: "API & Integration Friendly",
+          desc: "Building robust REST/GraphQL APIs for easy integration with mobile apps or third-party services, extending your SaaS ecosystem.",
+        },
+        {
+          title: "DevOps & Continuous Delivery",
+          desc: "Automated testing, continuous integration, and deployment pipelines to release updates quickly and confidently.",
+        },
+      ];
     const services1 = [
         {
           title: "IT Assessment & Audit",
@@ -88,7 +110,80 @@ export default function Custom_Saas() {
           </div>
         ))}
       </div>
-      </section> 
+            </section> 
+            <section className="w-full bg-gray-50 py-16">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
+        {features.map((feature, index) => (
+          <div
+            key={index}
+            className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition"
+          >
+            {/* Image Placeholder */}
+            <div className="w-full h-32 bg-gray-200 flex items-center justify-center rounded-md mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-10 w-10 text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M3 7l9-4 9 4-9 4-9-4zm0 8l9 4 9-4m-9-4v8"
+                />
+              </svg>
+            </div>
+
+            {/* Title */}
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              {feature.title}
+            </h3>
+
+            {/* Description */}
+            <p className="text-gray-600 text-sm leading-relaxed">
+              {feature.desc}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section> 
+            <section className="container bg-gray-800 text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-20 rounded-md">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        {/* Left Content */}
+        <div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+Ready to Elevate Your Digital Strategy?          
+</h2>
+          <p className="text-gray-300 mt-2 max-w-lg">
+              Partner with KClub's experts to design, build, and implement technology solutions 
+              that accelerate growth and drive measurable impact.
+          </p>
+        </div>
+
+        {/* Right Buttons */}
+        <div className="flex gap-4">
+          <a
+            href="#case-studies"
+            className="px-5 py-2 bg-black text-white rounded hover:bg-gray-700 transition"
+          >
+            See case studies
+          </a>
+          <a
+            href="#contact"
+            className="px-5 py-2 bg-black text-white rounded hover:bg-gray-700 transition"
+          >
+            Contact us
+          </a>
+        </div>
+      </div>
+            </section> 
+
+
+ 
+    
+
             </main>
       );
     }; 

@@ -4,42 +4,31 @@ import Image from "next/image";
 import React from "react"; 
  
 
-export default function TechConsultingPage() {  
+export default function Oodo_Services() {  
   const services = [
     {
-      title: "IT Infrastructure Audit",
-      desc: "Detailed assessment of hardware, software, and cloud infrastructure with a focus on performance, cost-efficiency, and scalability.",
-    },
+      title: "Full ODOO Implementation",
+      desc:  "From requirement analysis to go-live, complete setup of ODOO’s CRM, Sales, Inventory, Accounting, HR, and other modules."},
     {
-      title: "Business Process Analysis",
-      desc: "Identification of manual or inefficient processes that can be improved with automation or better software solutions.",
-    },
+      title: "Customization & Development",
+      desc:  "Tailoring ODOO workflows, reports, and UI; building custom modules or apps to extend functionality where needed."},
     {
-      title: "Technology Stack Recommendations",
-      desc: "Suggestions for modernizing your stack (e.g., migrating to cloud, leveraging modern frameworks or platforms like OODC) to meet future demands.",
-    },
+      title: "Integration Services",
+      desc:  "Connecting ODOO with third-party systems (payment processors, eCommerce, logistics APIs, etc.) for seamless data flow."},
     {
-      title: "Security & Compliance Review",
-      desc: "Evaluating your cybersecurity measures and data compliance (GDPR, etc.) and providing mitigation strategies for any gaps.",
-    },
+      title: "Data Migration",
+      desc:  "Safe migration of data from legacy systems or older ODOO instances into your new ODOO environment, with verification."},
     {
-      title: "ROI-Focused Roadmaps",
-      desc: "Step-by-step digital transformation plans that justify investments with expected ROI, so stakeholders have a clear value proposition.",
-    },
+      title: "Training & Ongoing Support",
+      desc: "Comprehensive user training sessions, documentation, and dedicated support plans to ensure long-term success with ODOO."},
   ]; 
   const services1 = [
     {
-      title: "IT Assessment & Audit",
-      desc: "We conduct comprehensive audits of your existing systems, software, and processes. This involves reviewing infrastructure (servers, cloud usage, networking), application portfolios, data management, and security protocols. We then pinpoint pain points such as bottlenecks, outdated technologies, or security vulnerabilities. The result is an objective snapshot of 'where you are now' and recommendations on what needs attention.",
-    },
+      title: "Implementation & Customization",
+      desc:  "We start by understanding your requirements across departments — be it sales, inventory, finance, HR, or others — and then configure ODOO modules accordingly. Our developers can customize existing modules or even create new ones to address specialized needs, ensuring a perfect fit with your workflow. We integrate ODOO with your other software (e.g., e-commerce sites, payment gateways, legacy systems) for a unified ecosystem of data."},
     {
-      title: "Digital Transformation Roadmap",
-      desc: "Based on your business goals (be it scaling operations, improving customer experience, or cutting costs), we outline a strategic plan. This might include adopting new technologies like cloud services or AI, process automation, or system integrations. We prioritize initiatives by impact and feasibility, giving you a phased approach that delivers quick wins and long-term value. You’ll receive a clear roadmap with timelines and resource estimates to confidently move forward.",
-    },
-    {
-      title: "Process & Architecture Consulting",
-      desc: "Our experts can also help redesign business processes for greater efficiency and devise an system architecture. For example, if you’re considering moving to a microservices architecture or implementing DevOps practices, we guide you through the pros, cons, and implementation steps tailored to your organization. We ensure your technology choices align with your overall business strategy and that you’re set up to scale securely and reliably.",
-    },
+      title: "Migration & Support",
+      desc:  "Already using ODOO or another ERP? We provide smooth migration services to the latest ODOO version, transferring your data securely and with minimal downtime. Post-implementation, our team offers training to your staff and responsive support to troubleshoot issues or refine processes as your business evolves. We also optimize ODOO’s performance and can host it on cloud or on-premise infrastructure per your preference." }, 
   ]; 
   const logos = [
     { src: "/relume-logo.png", alt: "Webflow" },
@@ -63,7 +52,7 @@ export default function TechConsultingPage() {
           <span className="text-gray-600 text-sm">Img</span>
         </div>
         <h1 className="text-2xl font-semibold mt-4">
-          Tech Consulting & Assessments Page
+          Custom SaaS App Development Page 
         </h1>
       </header>
 
@@ -71,17 +60,10 @@ export default function TechConsultingPage() {
       <section className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
         <div>
           <h2 className="text-2xl font-bold mb-4">
-            Expert IT Consulting to <br /> Shape Your Digital Future
+          Simplify Complex Operations <br />  with Tailored ODOO ERP Solutions 
           </h2>
           <p className="text-gray-600 mb-6">
-            Technology can be a game-changer when it’s the right fit. Our
-            consulting team helps you assess your current IT systems, identify
-            gaps, and chart out a digital transformation strategy tailored to
-            your goals. From infrastructure assessments and cybersecurity audits
-            to cloud migration roadmaps and innovation workshops, we provide
-            actionable insights backed by proven frameworks. Our objective: Help
-            you adopt the right technologies, minimize risk, and maximize long
-            term ROI while staying future-ready.
+          As a leading open-source ERP platform, ODOO offers a full suite of applications covering CRM, accounting, HR, inventory, and more. We specialize in implementing and customizing ODOO to align with your workflows, ensuring that complex processes are simplified and integrated across departments. From initial setup to advanced module customization, our ODOO experts help you gain visibility, reduce redundancy, and create a unified operational system that scales as your business grows.
           </p>
           <button className="bg-black text-white px-5 py-2 rounded-md">
             Schedule a Demo
@@ -96,16 +78,10 @@ export default function TechConsultingPage() {
       <section className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
         <div>
           <h3 className="text-xl font-bold mb-4">
-            End-to-End Support: <br /> Integrations, Testing, and Deployment
+          Maximize the power of ODOO with  <br />solutions built around your business needs.
           </h3>
           <p className="text-gray-600">
-            Not sure where to begin on your digital transformation journey, or
-            looking to optimize your current IT setup? XClub’s Technology
-            Consulting & Assessments service provides you with clear, actionable
-            insights and a roadmap for innovation. Our seasoned consultants
-            combine industry best practices with deep technical knowledge to
-            evaluate your business’s technology landscape and identify
-            opportunities for improvement.
+          KClub offers end-to-end ODOO ERP services to help businesses streamline their operations using this powerful open-source platform. Our team of ODOO experts will tailor the system to fit your unique processes, ensuring you get the maximum benefit from ODOO’s extensive suite of business applications. From initial deployment to ongoing support, we handle the technical heavy lifting so you can focus on running your business.
           </p>
         </div>
         <div className="mx-auto w-72 h-48 bg-gray-300 rounded-md flex items-center justify-center">
@@ -158,9 +134,9 @@ export default function TechConsultingPage() {
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         {/* Left Content */}
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-Ready to Elevate Your Digital Strategy?          
-</h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+              Ready to Elevate Your Digital Strategy?
+            </h2>
           <p className="text-gray-300 mt-2 max-w-lg">
               Partner with KClub's experts to design, build, and implement technology solutions 
               that accelerate growth and drive measurable impact.

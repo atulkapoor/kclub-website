@@ -158,12 +158,12 @@ export default function TechConsultingPage() {
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         {/* Left Content */}
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-            Let’s Build the Future Together
-          </h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+              Ready to Elevate Your Digital Strategy?
+            </h2>
           <p className="text-gray-300 mt-2 max-w-lg">
-            Explore how we’ve helped businesses across industries transform
-            through innovation and technology.
+              Partner with KClub's experts to design, build, and implement technology solutions 
+              that accelerate growth and drive measurable impact.
           </p>
         </div>
 

@@ -27,13 +27,16 @@ export default function Navbar() {
           Services
         </Link>
         <Link href="/tech" className="text-gray-600 hover:text-gray-900">
-        Tech & consulting
+        Tech consult
         </Link>
         <Link href="/custom_saas" className="text-gray-600 hover:text-gray-900">
-        Custom SaaS App
+        Custom SaaS
         </Link>
         <Link href="/mobile_app" className="text-gray-600 hover:text-gray-900">
-          Mobile App & Dev 
+          Mobile App 
+        </Link>
+        <Link href="/oodo_services" className="text-gray-600 hover:text-gray-900">
+          OODO Services 
         </Link>
         <Link href="/careers" className="text-gray-600 hover:text-gray-900">
           Careers
