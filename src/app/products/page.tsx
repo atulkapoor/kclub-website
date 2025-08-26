@@ -206,7 +206,10 @@ export default function Products() {
               />
             </div>
             <div className="p-6">
-            <h3 className="text-lg font-bold text-blue-800 mb-2">{product.name}</h3>
+            <div className="mb-6">
+              <img src="/cklub-logo.png" alt="c-klogo" className="h-8 mx-auto" />
+            </div>
+            <h3 className="text-lg font-bold text-black-800 mb-2">{product.name}</h3>
             {/* <h4 className="font-semibold text-gray-800">{product.category}</h4> */}
             <p className="text-gray-600 text-sm mt-2">{product.description}</p>
 
@@ -252,7 +255,7 @@ export default function Products() {
         >
           {services.map((service, index) => (
             <SwiperSlide key={service.id}>
-              <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div className="grid md:grid-cols-2 gap-10 items-center p-16">
                 {/* Text Section */}
                 <div>
                   <p className="text-sm font-semibold text-gray-500">

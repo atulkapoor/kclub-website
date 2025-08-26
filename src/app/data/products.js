@@ -8,26 +8,39 @@ export const products = [
       "A smart warehouse management system optimizing inventory control, storage, and fulfillment for modern supply chains.",
     image: "/placeholder.png",
     link: "/products/warehouse-management",
-    features: [
-      {
-        title: "Real-Time Inventory Tracking",
-        description:
-          "Always know your stock levels across locations with live updates.",
-        image: "/placeholder.png",
-      },
-      {
-        title: "Order Picking Optimization",
-        description:
-          "AI-powered prioritization for faster, accurate order fulfillment.",
-        image: "/placeholder.png",
-      },
-      {
-        title: "Barcode & RFID Integration",
-        description:
-          "Quick scanning for accurate inventory updates and error reduction.",
-        image: "/placeholder.png",
-      },
-    ],
+        features : [
+        {
+            title: "Real-Time Inventory Tracking",
+            description:
+            "Always know your stock levels across locations with live updates.",
+            image: "/placeholder.png",
+        },
+        {
+            title: "Order Picking Optimization",
+            description:
+            "AI-powered prioritization for faster, accurate order fulfillment.",
+            image: "/placeholder.png",
+        },
+        {
+            title: "Barcode & RFID Integration",
+            description:
+            "Quick scanning for accurate inventory updates and error reduction.",
+            image: "/placeholder.png",
+        },
+        {
+            title: "Warehouse Analytics Dashboard",
+            description:
+            "Visualize orders, stock movement, and KPIs to drive continuous improvement.",
+            image: "/placeholder.png",
+        },
+        {
+            title: "Integration Ready",
+            description:
+            "Seamlessly connect with ERP, e-commerce, and shipping systems for end-to-end automation.",
+            image: "/placeholder.png",
+        },
+        ],
+
     hero: {
       title: "Intelligent Tools for the Modern Supply Chain",
       subtitle:
@@ -53,26 +66,39 @@ export const products = [
       "A specialized platform that helps maritime agencies manage vessel schedules, cargo operations, and port logistics with ease and efficiency.",
     image: "/placeholder.png",
     link: "/products/warehouse-management",
-    features: [
-      {
+    features : [
+    {
         title: "Real-Time Inventory Tracking",
         description:
-          "Always know your stock levels across locations with live updates.",
+        "Always know your stock levels across locations with live updates.",
         image: "/placeholder.png",
-      },
-      {
+    },
+    {
         title: "Order Picking Optimization",
         description:
-          "AI-powered prioritization for faster, accurate order fulfillment.",
+        "AI-powered prioritization for faster, accurate order fulfillment.",
         image: "/placeholder.png",
-      },
-      {
+    },
+    {
         title: "Barcode & RFID Integration",
         description:
-          "Quick scanning for accurate inventory updates and error reduction.",
+        "Quick scanning for accurate inventory updates and error reduction.",
         image: "/placeholder.png",
-      },
+    },
+    {
+        title: "Warehouse Analytics Dashboard",
+        description:
+        "Visualize orders, stock movement, and KPIs to drive continuous improvement.",
+        image: "/placeholder.png",
+    },
+    {
+        title: "Integration Ready",
+        description:
+        "Seamlessly connect with ERP, e-commerce, and shipping systems for end-to-end automation.",
+        image: "/placeholder.png",
+    },
     ],
+
     hero: {
       title: "Centralized Platform for Maritime Operations",
       subtitle:
@@ -99,25 +125,38 @@ export const products = [
     image: "/placeholder.png",
     link: "/products/warehouse-management",
     features: [
-      {
+    {
         title: "Real-Time Inventory Tracking",
         description:
-          "Always know your stock levels across locations with live updates.",
+        "Always know your stock levels across locations with live updates.",
         image: "/placeholder.png",
-      },
-      {
+    },
+    {
         title: "Order Picking Optimization",
         description:
-          "AI-powered prioritization for faster, accurate order fulfillment.",
+        "AI-powered prioritization for faster, accurate order fulfillment.",
         image: "/placeholder.png",
-      },
-      {
+    },
+    {
         title: "Barcode & RFID Integration",
         description:
-          "Quick scanning for accurate inventory updates and error reduction.",
+        "Quick scanning for accurate inventory updates and error reduction.",
         image: "/placeholder.png",
-      },
+    },
+    {
+        title: "Warehouse Analytics Dashboard",
+        description:
+        "Visualize orders, stock movement, and KPIs to drive continuous improvement.",
+        image: "/placeholder.png",
+    },
+    {
+        title: "Integration Ready",
+        description:
+        "Seamlessly connect with ERP, e-commerce, and shipping systems for end-to-end automation.",
+        image: "/placeholder.png",
+    },
     ],
+
     hero: {
       title: "Instant, Organized, and Secure Communication System",
       subtitle:
