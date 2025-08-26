@@ -145,7 +145,7 @@ export default function Products() {
           Smart, Scalable Products for <br /> Every Business Challenge
         </h2>
         <p className="mt-4 text-gray-600">
-          Our products are more than tools they’re catalysts for transformation. From logistics to healthcare, 
+          Our products are more than tools they&apos;re catalysts for transformation. From logistics to healthcare, 
           we design intelligent solutions that streamline processes and unlock growth.
         </p>
       </div>
@@ -225,7 +225,7 @@ export default function Products() {
       <div className="text-center max-w-3xl mx-auto">
         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight mt-6">Why Clients Choose KClub</h2>
         <p className="text-sm tracking-wide text-gray-500">
-          Because we don’t just build technology, we build transformation.
+          Because we don&apos;t just build technology, we build transformation.
         </p>
         {/* <p className="text-gray-600 mt-4">
           KClub’s service portfolio covers every stage of your digital
@@ -284,10 +284,10 @@ export default function Products() {
         {/* Left Content */}
         <div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-            Let’s Build the Future Together
+            Let&apos;s Build the Future Together
           </h2>
           <p className="text-gray-300 mt-2 max-w-lg">
-            Explore how we’ve helped businesses across industries transform
+            Explore how we&apos;ve helped businesses across industries transform
             through innovation and technology.
           </p>
         </div>
