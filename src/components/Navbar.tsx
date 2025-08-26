@@ -29,8 +29,11 @@ export default function Navbar() {
         <Link href="/tech" className="text-gray-600 hover:text-gray-900">
         Tech & consulting
         </Link>
-        <Link href="/resources" className="text-gray-600 hover:text-gray-900">
-          Resources
+        <Link href="/custom_saas" className="text-gray-600 hover:text-gray-900">
+        Custom SaaS App
+        </Link>
+        <Link href="/mobile_app" className="text-gray-600 hover:text-gray-900">
+          Mobile App & Dev 
         </Link>
         <Link href="/careers" className="text-gray-600 hover:text-gray-900">
           Careers
@@ -85,13 +88,10 @@ export default function Navbar() {
               className="text-gray-600 hover:text-gray-900"
             >
               Tech & consulting
-            </Link>
-            <Link
-              href="/resources"
-              className="text-gray-600 hover:text-gray-900"
-            >
-              Resources
-            </Link>
+            </Link> 
+            <Link href="/mobile_app" className="text-gray-600 hover:text-gray-900">
+          Mobile App & Dev 
+        </Link>
             <Link href="/careers" className="text-gray-600 hover:text-gray-900">
               Careers
             </Link>

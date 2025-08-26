@@ -63,7 +63,7 @@ export default function TechConsultingPage() {
           <span className="text-gray-600 text-sm">Img</span>
         </div>
         <h1 className="text-2xl font-semibold mt-4">
-          Tech Consulting & Assessments Page
+          Custom SaaS App Development Page 
         </h1>
       </header>
 
@@ -71,7 +71,7 @@ export default function TechConsultingPage() {
       <section className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
         <div>
           <h2 className="text-2xl font-bold mb-4">
-            Expert IT Consulting to <br /> Shape Your Digital Future
+            Scalable SAAS <br /> Applications Built for Growth
           </h2>
           <p className="text-gray-600 mb-6">
             Technology can be a game-changer when it’s the right fit. Our
@@ -159,11 +159,11 @@ export default function TechConsultingPage() {
         {/* Left Content */}
         <div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-              Ready to Elevate Your Digital Strategy?
-            </h2>
+            Let’s Build the Future Together
+          </h2>
           <p className="text-gray-300 mt-2 max-w-lg">
-              Partner with KClub's experts to design, build, and implement technology solutions 
-              that accelerate growth and drive measurable impact.
+            Explore how we’ve helped businesses across industries transform
+            through innovation and technology.
           </p>
         </div>
 
