@@ -1,5 +1,6 @@
 // app/products/page.tsx  (if using Next.js App Router)
 "use client";
+import { products } from "../data/products";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -52,80 +53,80 @@ const services: Service[] = [
   },
 ];
 
-const products = [
-  {
-    name: "CrateKLUB",
-    category: "Warehouse Management:",
-    description:
-      "A smart warehouse management system optimizing inventory control, storage, and fulfillment for modern supply chains.",
-    image: "/placeholder.png",
-    link: "/warehousemanagement"
-  },
-  {
-    name: "MarineKLUB",
-    category: "Maritime Agency Management:",
-    description:
-      "A specialized platform that helps maritime agencies manage vessel schedules, cargo operations, and port logistics with ease and efficiency.",
-    image: "/placeholder.png",
-    link: "/maritime-agency-management"
-  },
-  {
-    name: "PingKLUB",
-    category: "Communication Management:",
-    description:
-      "An integrated communication hub for organizations to manage internal messaging, alerts, and collaboration in one secure platform.",
-    image: "/placeholder.png",
-    link: "/warehousemanagement"
-  },
-  {
-    name: "TheraKLUB",
-    category: "Healthcare Management:",
-    description:
-      "A comprehensive healthcare management system for clinics and hospitals, covering patient records, appointments, telehealth, and billing.",
-    image: "/placeholder.png",
-    link: "/warehousemanagement"
-  },
-  {
-    name: "FinstaKLUB",
-    category: "Lending Management:",
-    description:
-      "An end-to-end digital lending platform for financial institutions to automate loan origination, KYC, underwriting, and disbursement.",
-    image: "/placeholder.png",
-    link: "/warehousemanagement"
-  },
-  {
-    name: "FreightKLUB",
-    category: "Transport Management:",
-    description:
-      "A logistics management solution for planning routes, tracking shipments, and optimizing fleet operations in real time.",
-    image: "/placeholder.png",
-    link: "/warehousemanagement"
-  },
-  {
-    name: "TheraKLUB",
-    category: "Healthcare Management:",
-    description:
-      "A comprehensive healthcare management system for clinics and hospitals, covering patient records, appointments, telehealth, and billing.",
-    image: "/placeholder.png",
-    link: "/warehousemanagement"
-  },
-  {
-    name: "FinstaKLUB",
-    category: "Lending Management:",
-    description:
-      "An end-to-end digital lending platform for financial institutions to automate loan origination, KYC, underwriting, and disbursement.",
-    image: "/placeholder.png",
-    link: "/warehousemanagement"
-  },
-  {
-    name: "FreightKLUB",
-    category: "Transport Management:",
-    description:
-      "A logistics management solution for planning routes, tracking shipments, and optimizing fleet operations in real time.",
-    image: "/placeholder.png",
-    link: "/warehousemanagement"
-  },
-];
+// const products = [
+//   {
+//     name: "CrateKLUB",
+//     category: "Warehouse Management:",
+//     description:
+//       "A smart warehouse management system optimizing inventory control, storage, and fulfillment for modern supply chains.",
+//     image: "/placeholder.png",
+//     link: "/warehousemanagement"
+//   },
+//   {
+//     name: "MarineKLUB",
+//     category: "Maritime Agency Management:",
+//     description:
+//       "A specialized platform that helps maritime agencies manage vessel schedules, cargo operations, and port logistics with ease and efficiency.",
+//     image: "/placeholder.png",
+//     link: "/maritime-agency-management"
+//   },
+//   {
+//     name: "PingKLUB",
+//     category: "Communication Management:",
+//     description:
+//       "An integrated communication hub for organizations to manage internal messaging, alerts, and collaboration in one secure platform.",
+//     image: "/placeholder.png",
+//     link: "/warehousemanagement"
+//   },
+//   {
+//     name: "TheraKLUB",
+//     category: "Healthcare Management:",
+//     description:
+//       "A comprehensive healthcare management system for clinics and hospitals, covering patient records, appointments, telehealth, and billing.",
+//     image: "/placeholder.png",
+//     link: "/warehousemanagement"
+//   },
+//   {
+//     name: "FinstaKLUB",
+//     category: "Lending Management:",
+//     description:
+//       "An end-to-end digital lending platform for financial institutions to automate loan origination, KYC, underwriting, and disbursement.",
+//     image: "/placeholder.png",
+//     link: "/warehousemanagement"
+//   },
+//   {
+//     name: "FreightKLUB",
+//     category: "Transport Management:",
+//     description:
+//       "A logistics management solution for planning routes, tracking shipments, and optimizing fleet operations in real time.",
+//     image: "/placeholder.png",
+//     link: "/warehousemanagement"
+//   },
+//   {
+//     name: "TheraKLUB",
+//     category: "Healthcare Management:",
+//     description:
+//       "A comprehensive healthcare management system for clinics and hospitals, covering patient records, appointments, telehealth, and billing.",
+//     image: "/placeholder.png",
+//     link: "/warehousemanagement"
+//   },
+//   {
+//     name: "FinstaKLUB",
+//     category: "Lending Management:",
+//     description:
+//       "An end-to-end digital lending platform for financial institutions to automate loan origination, KYC, underwriting, and disbursement.",
+//     image: "/placeholder.png",
+//     link: "/warehousemanagement"
+//   },
+//   {
+//     name: "FreightKLUB",
+//     category: "Transport Management:",
+//     description:
+//       "A logistics management solution for planning routes, tracking shipments, and optimizing fleet operations in real time.",
+//     image: "/placeholder.png",
+//     link: "/warehousemanagement"
+//   },
+// ];
 
 export default function Products() {
       const logos = [
@@ -192,10 +193,10 @@ export default function Products() {
         {products.map((product, index) => (
           <div
             key={index}
-            className="border rounded-lg shadow-sm hover:shadow-md transition p-6 flex flex-col items-center text-center"
+            className="border shadow-sm hover:shadow-md transition flex flex-col items-center text-center"
           >
             {/* Placeholder image */}
-            <div className="w-full h-40 bg-gray-200 flex items-center justify-center rounded mb-6">
+            <div className="w-full h-60 bg-gray-200 flex items-center justify-center rounded mb-6">
               <Image
                 src={product.image}
                 alt={product.name}
@@ -204,9 +205,9 @@ export default function Products() {
                 className="opacity-60"
               />
             </div>
-
+            <div className="p-6">
             <h3 className="text-lg font-bold text-blue-800 mb-2">{product.name}</h3>
-            <h4 className="font-semibold text-gray-800">{product.category}</h4>
+            {/* <h4 className="font-semibold text-gray-800">{product.category}</h4> */}
             <p className="text-gray-600 text-sm mt-2">{product.description}</p>
 
             <a
@@ -215,6 +216,7 @@ export default function Products() {
             >
               Know More →
             </a>
+            </div>
           </div>
         ))}
       </div>
