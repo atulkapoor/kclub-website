@@ -180,7 +180,7 @@ export default function Products() {
           Industry-Focused Software Solutions for <br /> Digital Transformation
         </h2>
         <p className="mt-4 text-gray-600">
-          KClub's KLUB Suite comprises powerful software products tailored to key industries and
+          KClub&apos;s KLUB Suite comprises powerful software products tailored to key industries and
           business needs. From logistics to healthcare, each product is designed to streamline
           operations, boost productivity, and drive innovation in its domain. Explore our product
           lineup:
