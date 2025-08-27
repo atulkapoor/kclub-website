@@ -1,4 +1,5 @@
 "use client";
+import { services } from "../data/services";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -15,42 +16,42 @@ type Service = {
   imageAlt: string;
 };
 
-const services: Service[] = [
-  {
-    id: 1,
-    subtitle: "Smarter decisions, powered by intelligence.",
-    title: "AI Services",
-    description:
-      "Harness artificial intelligence and machine learning to automate processes, uncover insights, and drive smarter decision-making for your business.",
-    imageAlt: "AI Service Image",
-  },
-  {
-    id: 2,
-    subtitle: "Streamline. Simplify. Scale.",
-    title: "ODOO Services",
-    description:
-      "Implement and customize ODOO ERP to simplify complex operations—from CRM and accounting to HR, inventory, and beyond.",
-    imageAlt: "ODOO Service Image",
-  },
-  {
-    id: 3,
-    subtitle: "Fast. Scalable. Secure.",
-    title: "Cloud Services",
-    description:
-      "Leverage modern cloud infrastructure to optimize performance, scale efficiently, and strengthen your business security.",
-    imageAlt: "Cloud Service Image",
-  },
-    {
-    id: 4,
-    subtitle: "Fast. Scalable. Secure.",
-    title: "Cloud Services",
-    description:
-      "Leverage modern cloud infrastructure to optimize performance, scale efficiently, and strengthen your business security.",
-    imageAlt: "Cloud Service Image",
-  },
-];
+// const services: Service[] = [
+//   {
+//     id: 1,
+//     subtitle: "Smarter decisions, powered by intelligence.",
+//     title: "AI Services",
+//     description:
+//       "Harness artificial intelligence and machine learning to automate processes, uncover insights, and drive smarter decision-making for your business.",
+//     imageAlt: "AI Service Image",
+//   },
+//   {
+//     id: 2,
+//     subtitle: "Streamline. Simplify. Scale.",
+//     title: "ODOO Services",
+//     description:
+//       "Implement and customize ODOO ERP to simplify complex operations—from CRM and accounting to HR, inventory, and beyond.",
+//     imageAlt: "ODOO Service Image",
+//   },
+//   {
+//     id: 3,
+//     subtitle: "Fast. Scalable. Secure.",
+//     title: "Cloud Services",
+//     description:
+//       "Leverage modern cloud infrastructure to optimize performance, scale efficiently, and strengthen your business security.",
+//     imageAlt: "Cloud Service Image",
+//   },
+//     {
+//     id: 4,
+//     subtitle: "Fast. Scalable. Secure.",
+//     title: "Cloud Services",
+//     description:
+//       "Leverage modern cloud infrastructure to optimize performance, scale efficiently, and strengthen your business security.",
+//     imageAlt: "Cloud Service Image",
+//   },
+// ];
 
-export default function ServicesPage() {
+export default function Services() {
     const logos = [
     { src: "/relume-logo.png", alt: "Webflow" },
     { src: "/webflow-logo.png", alt: "Relume" },
@@ -115,14 +116,17 @@ export default function ServicesPage() {
               }`}
             >
               <p className="text-sm font-semibold text-gray-500">
-                {service.subtitle}
+                {service.category}
               </p>
-              <h3 className="text-2xl font-bold mt-2">{service.title}</h3>
+              <h3 className="text-2xl font-bold mt-2">{service.name}</h3>
               <p className="text-gray-600 mt-4">{service.description}</p>
               <div className="mt-6 flex gap-4">
-                <button className="border px-4 py-2 rounded-md hover:bg-gray-100">
-                  Know More
-                </button>
+               <a
+                href={service.link}
+                className="border px-4 py-2 rounded-md hover:bg-gray-100 inline-block"
+              >
+                Know More
+              </a>
                 <button className="flex items-center gap-2 border px-4 py-2 rounded-md hover:bg-gray-100">
                   Schedule a Demo <span>→</span>
                 </button>
@@ -135,7 +139,7 @@ export default function ServicesPage() {
                 index % 2 === 1 ? "order-1 md:order-2" : "order-2"
               }`}
             >
-              <p className="text-gray-600">[{service.imageAlt}]</p>
+              <p className="text-gray-600">[{service.name}]</p>
             </div>
           </div>
         ))}
@@ -176,9 +180,9 @@ export default function ServicesPage() {
                 {/* Text Section */}
                 <div>
                   <p className="text-sm font-semibold text-gray-500">
-                    {service.subtitle}
+                    {service.description}
                   </p>
-                  <h3 className="text-2xl font-bold mt-2">{service.title}</h3>
+                  <h3 className="text-2xl font-bold mt-2">{service.name}</h3>
                   <p className="text-gray-600 mt-4">{service.description}</p>
                   <div className="mt-6 flex gap-4">
                     <button className="border px-4 py-2 rounded-md hover:bg-gray-100">
@@ -192,7 +196,7 @@ export default function ServicesPage() {
 
                 {/* Image Section */}
                 <div className="w-full h-56 bg-gray-200 flex items-center justify-center rounded-md">
-                  <p className="text-gray-600">[{service.imageAlt}]</p>
+                  <p className="text-gray-600">[{service.name}]</p>
                 </div>
               </div>
             </SwiperSlide>

@@ -124,7 +124,7 @@ export default function AboutPage() {
   <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
       {/* Top Section */}
       <div className="text-center max-w-2xl mx-auto mb-12 mt-20">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
           Discover the People & <br /> Purpose Behind KClub
         </h1>
         <p className="text-gray-600 text-sm md:text-base">
@@ -163,7 +163,7 @@ export default function AboutPage() {
         {/* Left Content */}
         <div>
           <h4 className="text-sm uppercase text-gray-500 mb-2">About us</h4>
-          <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
             Innovators in Technology, <br /> Empowering Your Digital Journey
           </h1>
           <p className="text-gray-700 mb-4">
@@ -229,7 +229,7 @@ export default function AboutPage() {
           <h4 className="text-sm uppercase text-gray-500 mb-2">
             Our Purpose and Aspirations
           </h4>
-          <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
             The Heart of KClub
           </h1>
           <p className="text-gray-700 mb-4">
@@ -260,7 +260,7 @@ export default function AboutPage() {
 
     <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
       {/* Heading */}
-      <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+      <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
         Trusted by businesses worldwide
       </h1>
       <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
@@ -334,7 +334,7 @@ export default function AboutPage() {
     <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <p className="uppercase tracking-wide text-gray-600">Our team</p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
           Meet the Minds Behind KClub
         </h1>
         <p className="text-gray-600 mt-4">
@@ -381,7 +381,7 @@ export default function AboutPage() {
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         {/* Left Content */}
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
             Let&apos;s Build the Future Together
           </h2>
           <p className="text-gray-300 mt-2 max-w-lg">
