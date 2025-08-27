@@ -9,7 +9,7 @@ export default function Home() {
         className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
         <div className="flex bg-gray-300 flex-col lg:flex-row items-center gap-8 lg:gap-12 rounded">
           <div className="w-full bg-white lg:w-1/2 text-center lg:text-left lg:py-24">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
               Pioneering the Future of <br />
               Tech Transformation, <br />
               Today
