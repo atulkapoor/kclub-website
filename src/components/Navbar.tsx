@@ -35,9 +35,6 @@ export default function Navbar() {
         <Link href="/mobile_app" className="text-gray-600 hover:text-gray-900">
           Mobile App 
         </Link>
-        <Link href="/oodo_services" className="text-gray-600 hover:text-gray-900">
-          OODO Services 
-        </Link>
         <Link href="/industry" className="text-gray-600 hover:text-gray-900">
           Industries
         </Link>
