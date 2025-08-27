@@ -1,12 +1,10 @@
 "use client";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 
 export default function Home() {
-    useScrollAnimation(); // activate hook
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
       <section
         className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
         <div className="flex bg-gray-300 flex-col lg:flex-row items-center gap-8 lg:gap-12 rounded">
@@ -73,6 +71,7 @@ export default function Home() {
       {/* Innovation Section */}
       <section
         className="container mx-auto px-4 md:px-6 lg:px-36 py-16"
+        data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200"
       >
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           <div className="w-full lg:w-1/2 text-center lg:text-left">
@@ -110,6 +109,7 @@ export default function Home() {
       {/* Solutions */}
       <section
         className="container mx-auto px-4 md:px-6 lg:px-36 py-16"
+         data-aos="fade-up" data-aos-easing="linear" data-aos-delay="400"
       >
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
           Our Solutions
@@ -133,7 +133,7 @@ export default function Home() {
       </section>
 
       {/* Products & Industries */}
-      <section className="bg-gray-100 py-16">
+      <section className="bg-gray-100 py-16"  data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
         <div className="container mx-auto px-4 md:px-6 lg:px-36">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
             Products & Industries
@@ -155,7 +155,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="container mx-auto px-4 md:px-6 lg:px-36 py-16">
+      <section className="container mx-auto px-4 md:px-6 lg:px-36 py-16"  data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
         <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
           What Our Clients Say
         </h2>
@@ -186,7 +186,7 @@ export default function Home() {
       </section>
 
       {/* Newsletter */}
-      <section className="container mx-auto px-4 md:px-6 lg:px-36 py-16">
+      <section className="container mx-auto px-4 md:px-6 lg:px-36 py-16"  data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
         <div className="bg-gray-100 rounded-lg p-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Subscribe to Our Newsletter

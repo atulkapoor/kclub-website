@@ -1,5 +1,6 @@
 // app/products/page.tsx  (if using Next.js App Router)
 "use client";
+import { products } from "../data/products";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -52,80 +53,80 @@ const services: Service[] = [
   },
 ];
 
-const products = [
-  {
-    name: "CrateKLUB",
-    category: "Warehouse Management:",
-    description:
-      "A smart warehouse management system optimizing inventory control, storage, and fulfillment for modern supply chains.",
-    image: "/placeholder.png",
-    link: "/warehousemanagement"
-  },
-  {
-    name: "MarineKLUB",
-    category: "Maritime Agency Management:",
-    description:
-      "A specialized platform that helps maritime agencies manage vessel schedules, cargo operations, and port logistics with ease and efficiency.",
-    image: "/placeholder.png",
-    link: "/warehousemanagement"
-  },
-  {
-    name: "PingKLUB",
-    category: "Communication Management:",
-    description:
-      "An integrated communication hub for organizations to manage internal messaging, alerts, and collaboration in one secure platform.",
-    image: "/placeholder.png",
-    link: "/warehousemanagement"
-  },
-  {
-    name: "TheraKLUB",
-    category: "Healthcare Management:",
-    description:
-      "A comprehensive healthcare management system for clinics and hospitals, covering patient records, appointments, telehealth, and billing.",
-    image: "/placeholder.png",
-    link: "/warehousemanagement"
-  },
-  {
-    name: "FinstaKLUB",
-    category: "Lending Management:",
-    description:
-      "An end-to-end digital lending platform for financial institutions to automate loan origination, KYC, underwriting, and disbursement.",
-    image: "/placeholder.png",
-    link: "/warehousemanagement"
-  },
-  {
-    name: "FreightKLUB",
-    category: "Transport Management:",
-    description:
-      "A logistics management solution for planning routes, tracking shipments, and optimizing fleet operations in real time.",
-    image: "/placeholder.png",
-    link: "/warehousemanagement"
-  },
-  {
-    name: "TheraKLUB",
-    category: "Healthcare Management:",
-    description:
-      "A comprehensive healthcare management system for clinics and hospitals, covering patient records, appointments, telehealth, and billing.",
-    image: "/placeholder.png",
-    link: "/warehousemanagement"
-  },
-  {
-    name: "FinstaKLUB",
-    category: "Lending Management:",
-    description:
-      "An end-to-end digital lending platform for financial institutions to automate loan origination, KYC, underwriting, and disbursement.",
-    image: "/placeholder.png",
-    link: "/warehousemanagement"
-  },
-  {
-    name: "FreightKLUB",
-    category: "Transport Management:",
-    description:
-      "A logistics management solution for planning routes, tracking shipments, and optimizing fleet operations in real time.",
-    image: "/placeholder.png",
-    link: "/warehousemanagement"
-  },
-];
+// const products = [
+//   {
+//     name: "CrateKLUB",
+//     category: "Warehouse Management:",
+//     description:
+//       "A smart warehouse management system optimizing inventory control, storage, and fulfillment for modern supply chains.",
+//     image: "/placeholder.png",
+//     link: "/warehousemanagement"
+//   },
+//   {
+//     name: "MarineKLUB",
+//     category: "Maritime Agency Management:",
+//     description:
+//       "A specialized platform that helps maritime agencies manage vessel schedules, cargo operations, and port logistics with ease and efficiency.",
+//     image: "/placeholder.png",
+//     link: "/maritime-agency-management"
+//   },
+//   {
+//     name: "PingKLUB",
+//     category: "Communication Management:",
+//     description:
+//       "An integrated communication hub for organizations to manage internal messaging, alerts, and collaboration in one secure platform.",
+//     image: "/placeholder.png",
+//     link: "/warehousemanagement"
+//   },
+//   {
+//     name: "TheraKLUB",
+//     category: "Healthcare Management:",
+//     description:
+//       "A comprehensive healthcare management system for clinics and hospitals, covering patient records, appointments, telehealth, and billing.",
+//     image: "/placeholder.png",
+//     link: "/warehousemanagement"
+//   },
+//   {
+//     name: "FinstaKLUB",
+//     category: "Lending Management:",
+//     description:
+//       "An end-to-end digital lending platform for financial institutions to automate loan origination, KYC, underwriting, and disbursement.",
+//     image: "/placeholder.png",
+//     link: "/warehousemanagement"
+//   },
+//   {
+//     name: "FreightKLUB",
+//     category: "Transport Management:",
+//     description:
+//       "A logistics management solution for planning routes, tracking shipments, and optimizing fleet operations in real time.",
+//     image: "/placeholder.png",
+//     link: "/warehousemanagement"
+//   },
+//   {
+//     name: "TheraKLUB",
+//     category: "Healthcare Management:",
+//     description:
+//       "A comprehensive healthcare management system for clinics and hospitals, covering patient records, appointments, telehealth, and billing.",
+//     image: "/placeholder.png",
+//     link: "/warehousemanagement"
+//   },
+//   {
+//     name: "FinstaKLUB",
+//     category: "Lending Management:",
+//     description:
+//       "An end-to-end digital lending platform for financial institutions to automate loan origination, KYC, underwriting, and disbursement.",
+//     image: "/placeholder.png",
+//     link: "/warehousemanagement"
+//   },
+//   {
+//     name: "FreightKLUB",
+//     category: "Transport Management:",
+//     description:
+//       "A logistics management solution for planning routes, tracking shipments, and optimizing fleet operations in real time.",
+//     image: "/placeholder.png",
+//     link: "/warehousemanagement"
+//   },
+// ];
 
 export default function Products() {
       const logos = [
@@ -145,7 +146,7 @@ export default function Products() {
           Smart, Scalable Products for <br /> Every Business Challenge
         </h2>
         <p className="mt-4 text-gray-600">
-          Our products are more than tools they’re catalysts for transformation. From logistics to healthcare, 
+          Our products are more than tools they&apos;re catalysts for transformation. From logistics to healthcare, 
           we design intelligent solutions that streamline processes and unlock growth.
         </p>
       </div>
@@ -180,7 +181,7 @@ export default function Products() {
           Industry-Focused Software Solutions for <br /> Digital Transformation
         </h2>
         <p className="mt-4 text-gray-600">
-          KClub's KLUB Suite comprises powerful software products tailored to key industries and
+          KClub&apos;s KLUB Suite comprises powerful software products tailored to key industries and
           business needs. From logistics to healthcare, each product is designed to streamline
           operations, boost productivity, and drive innovation in its domain. Explore our product
           lineup:
@@ -192,10 +193,10 @@ export default function Products() {
         {products.map((product, index) => (
           <div
             key={index}
-            className="border rounded-lg shadow-sm hover:shadow-md transition p-6 flex flex-col items-center text-center"
+            className="border shadow-sm hover:shadow-md transition flex flex-col items-center text-center"
           >
             {/* Placeholder image */}
-            <div className="w-full h-40 bg-gray-200 flex items-center justify-center rounded mb-6">
+            <div className="w-full h-60 bg-gray-200 flex items-center justify-center rounded mb-6">
               <Image
                 src={product.image}
                 alt={product.name}
@@ -204,9 +205,12 @@ export default function Products() {
                 className="opacity-60"
               />
             </div>
-
-            <h3 className="text-lg font-bold text-blue-800 mb-2">{product.name}</h3>
-            <h4 className="font-semibold text-gray-800">{product.category}</h4>
+            <div className="p-6">
+            <div className="mb-6">
+              <img src="/cklub-logo.png" alt="c-klogo" className="h-8 mx-auto" />
+            </div>
+            <h3 className="text-lg font-bold text-black-800 mb-2">{product.name}</h3>
+            {/* <h4 className="font-semibold text-gray-800">{product.category}</h4> */}
             <p className="text-gray-600 text-sm mt-2">{product.description}</p>
 
             <a
@@ -215,6 +219,7 @@ export default function Products() {
             >
               Know More →
             </a>
+            </div>
           </div>
         ))}
       </div>
@@ -225,7 +230,7 @@ export default function Products() {
       <div className="text-center max-w-3xl mx-auto">
         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight mt-6">Why Clients Choose KClub</h2>
         <p className="text-sm tracking-wide text-gray-500">
-          Because we don’t just build technology, we build transformation.
+          Because we don&apos;t just build technology, we build transformation.
         </p>
         {/* <p className="text-gray-600 mt-4">
           KClub’s service portfolio covers every stage of your digital
@@ -250,7 +255,7 @@ export default function Products() {
         >
           {services.map((service, index) => (
             <SwiperSlide key={service.id}>
-              <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div className="grid md:grid-cols-2 gap-10 items-center p-16">
                 {/* Text Section */}
                 <div>
                   <p className="text-sm font-semibold text-gray-500">
@@ -284,10 +289,10 @@ export default function Products() {
         {/* Left Content */}
         <div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-            Let’s Build the Future Together
+            Let&apos;s Build the Future Together
           </h2>
           <p className="text-gray-300 mt-2 max-w-lg">
-            Explore how we’ve helped businesses across industries transform
+            Explore how we&apos;ve helped businesses across industries transform
             through innovation and technology.
           </p>
         </div>

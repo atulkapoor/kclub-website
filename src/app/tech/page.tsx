@@ -34,11 +34,11 @@ export default function TechConsultingPage() {
     },
     {
       title: "Digital Transformation Roadmap",
-      desc: "Based on your business goals (be it scaling operations, improving customer experience, or cutting costs), we outline a strategic plan. This might include adopting new technologies like cloud services or AI, process automation, or system integrations. We prioritize initiatives by impact and feasibility, giving you a phased approach that delivers quick wins and long-term value. You’ll receive a clear roadmap with timelines and resource estimates to confidently move forward.",
+      desc: "Based on your business goals (be it scaling operations, improving customer experience, or cutting costs), we outline a strategic plan. This might include adopting new technologies like cloud services or AI, process automation, or system integrations. We prioritize initiatives by impact and feasibility, giving you a phased approach that delivers quick wins and long-term value. You&apos;ll receive a clear roadmap with timelines and resource estimates to confidently move forward.",
     },
     {
       title: "Process & Architecture Consulting",
-      desc: "Our experts can also help redesign business processes for greater efficiency and devise an system architecture. For example, if you’re considering moving to a microservices architecture or implementing DevOps practices, we guide you through the pros, cons, and implementation steps tailored to your organization. We ensure your technology choices align with your overall business strategy and that you’re set up to scale securely and reliably.",
+      desc: "Our experts can also help redesign business processes for greater efficiency and devise an system architecture. For example, if you&apos;re considering moving to a microservices architecture or implementing DevOps practices, we guide you through the pros, cons, and implementation steps tailored to your organization. We ensure your technology choices align with your overall business strategy and that you&apos;re set up to scale securely and reliably.",
     },
   ]; 
   const logos = [
@@ -74,7 +74,7 @@ export default function TechConsultingPage() {
             Expert IT Consulting to <br /> Shape Your Digital Future
           </h2>
           <p className="text-gray-600 mb-6">
-            Technology can be a game-changer when it’s the right fit. Our
+            Technology can be a game-changer when it&apos;s the right fit. Our
             consulting team helps you assess your current IT systems, identify
             gaps, and chart out a digital transformation strategy tailored to
             your goals. From infrastructure assessments and cybersecurity audits
@@ -100,11 +100,11 @@ export default function TechConsultingPage() {
           </h3>
           <p className="text-gray-600">
             Not sure where to begin on your digital transformation journey, or
-            looking to optimize your current IT setup? XClub’s Technology
+            looking to optimize your current IT setup? XClub&apos;s Technology
             Consulting & Assessments service provides you with clear, actionable
             insights and a roadmap for innovation. Our seasoned consultants
             combine industry best practices with deep technical knowledge to
-            evaluate your business’s technology landscape and identify
+            evaluate your business&apos;s technology landscape and identify
             opportunities for improvement.
           </p>
         </div>
@@ -162,7 +162,7 @@ export default function TechConsultingPage() {
 Ready to Elevate Your Digital Strategy?          
 </h2>
           <p className="text-gray-300 mt-2 max-w-lg">
-              Partner with KClub's experts to design, build, and implement technology solutions 
+              Partner with KClub&apos;s experts to design, build, and implement technology solutions 
               that accelerate growth and drive measurable impact.
           </p>
         </div>
