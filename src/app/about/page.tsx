@@ -326,9 +326,9 @@ export default function AboutPage() {
 
               {/* Testimonial Text */}
               <p className="text-gray-600 text-sm mb-6 leading-relaxed">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                `&quot;`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique. Duis cursus, 
-                mi quis viverra ornare."
+                mi quis viverra ornare.`&quot;`
               </p>
 
               {/* Name + Position */}
