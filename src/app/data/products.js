@@ -8,6 +8,7 @@ export const products = [
       "A smart warehouse management system optimizing inventory control, storage, and fulfillment for modern supply chains.",
     image: "/placeholder.png",
     link: "/products/warehouse-management",
+    icon: "Box",
         features : [
         {
             title: "Real-Time Inventory Tracking",
@@ -66,6 +67,7 @@ export const products = [
       "A specialized platform that helps maritime agencies manage vessel schedules, cargo operations, and port logistics with ease and efficiency.",
     image: "/placeholder.png",
     link: "/products/warehouse-management",
+    icon: "Box",
     features : [
     {
         title: "Real-Time Inventory Tracking",
@@ -124,6 +126,7 @@ export const products = [
       "An integrated communication hub for organizations to manage internal messaging, alerts, and collaboration in one secure platform.",
     image: "/placeholder.png",
     link: "/products/warehouse-management",
+    icon: "Box",
     features: [
     {
         title: "Real-Time Inventory Tracking",
@@ -183,6 +186,7 @@ export const products = [
       "A comprehensive healthcare management system for clinics and hospitals, covering patient records, appointments, telehealth, and billing.",
     image: "/placeholder.png",
     link: "/products/healthcare-management",
+    icon: "Box",
     features: [
       {
         title: "Patient Records Management",
@@ -225,6 +229,7 @@ export const products = [
       "An end-to-end digital lending platform for financial institutions to automate loan origination, KYC, underwriting, and disbursement.",
     image: "/placeholder.png",
     link: "/products/lending-management",
+    icon: "Box",
     features: [
       {
         title: "Automated Loan Origination",
@@ -267,6 +272,7 @@ export const products = [
       "A logistics management solution for planning routes, tracking shipments, and optimizing fleet operations in real time.",
     image: "/placeholder.png",
     link: "/products/transport-management",
+    icon: "Box",
     features: [
       {
         title: "Route Optimization",
@@ -309,6 +315,7 @@ export const products = [
       "An education management suite for schools and universities, facilitating online learning, student information management, and campus engagement.",
     image: "/placeholder.png",
     link: "/products/edtech-platform",
+    icon: "Box",
     features: [
       {
         title: "Learning Management System",
@@ -351,6 +358,7 @@ export const products = [
       "A unified ERP system that connects sales, inventory, and customer channels (online, in-store, mobile) to provide a seamless omnichannel retail experience.",
     image: "/placeholder.png",
     link: "/products/omnichannel-erp",
+    icon: "Box",
     features: [
       {
         title: "Centralized Sales Management",
@@ -393,6 +401,7 @@ export const products = [
       "A tailored ERP for real estate businesses, managing property listings, sales/lease workflows, client relationships, and project developments in one place.",
     image: "/placeholder.png",
     link: "/products/real-estate-erp",
+    icon: "Box",
     features: [
       {
         title: "Property Listings Management",

@@ -9,6 +9,7 @@ export const services = [
       "Harness artificial intelligence and machine learning to automate processes, uncover insights, and drive smarter decision-making for your business.",
     image: "/placeholder.png",
     link: "/services/ai-services",
+    icon: "Box",
         features : [
         {
             title: "Real-Time Inventory Tracking",
@@ -68,6 +69,7 @@ export const services = [
       "A specialized platform that helps maritime agencies manage vessel schedules, cargo operations, and port logistics with ease and efficiency.",
     image: "/placeholder.png",
     link: "/services/warehouse-management",
+    icon: "Box",
     features : [
     {
         title: "Real-Time Inventory Tracking",
@@ -127,6 +129,7 @@ export const services = [
       "An integrated communication hub for organizations to manage internal messaging, alerts, and collaboration in one secure platform.",
     image: "/placeholder.png",
     link: "/services/warehouse-management",
+    icon: "Box",
     features: [
     {
         title: "Real-Time Inventory Tracking",
@@ -187,6 +190,7 @@ export const services = [
       "A comprehensive healthcare management system for clinics and hospitals, covering patient records, appointments, telehealth, and billing.",
     image: "/placeholder.png",
     link: "/services/healthcare-management",
+    icon: "Box",
     features: [
       {
         title: "Patient Records Management",
@@ -230,6 +234,7 @@ export const services = [
       "An end-to-end digital lending platform for financial institutions to automate loan origination, KYC, underwriting, and disbursement.",
     image: "/placeholder.png",
     link: "/services/lending-management",
+    icon: "Box",
     features: [
       {
         title: "Automated Loan Origination",
@@ -273,6 +278,7 @@ export const services = [
       "A logistics management solution for planning routes, tracking shipments, and optimizing fleet operations in real time.",
     image: "/placeholder.png",
     link: "/services/transport-management",
+    icon: "Box",
     features: [
       {
         title: "Route Optimization",
