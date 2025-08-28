@@ -38,8 +38,8 @@ export default function Navbar() {
         <Link href="/industry" className="text-gray-600 hover:text-gray-900">
           Industries
         </Link>
-        <Link href="/careers" className="text-gray-600 hover:text-gray-900">
-          Careers
+        <Link href="/career" className="text-gray-600 hover:text-gray-900">
+          Career
         </Link>
         <Link href="/contact_us" className="text-gray-600 hover:text-gray-900">
           Contact Us
@@ -98,8 +98,8 @@ export default function Navbar() {
             <Link href="/industry" className="text-gray-600 hover:text-gray-900">
           Industries
         </Link>
-            <Link href="/careers" className="text-gray-600 hover:text-gray-900">
-              Careers
+            <Link href="/career" className="text-gray-600 hover:text-gray-900">
+              Career
             </Link>
             <Link href="/contact_us" className="text-gray-600 hover:text-gray-900">
               Contact Us
