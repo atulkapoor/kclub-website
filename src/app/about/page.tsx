@@ -303,9 +303,9 @@ export default function AboutPage() {
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-center">
         What our clients are saying
       </h1>
+      <div className="px-6 lg:px-20">
       <Swiper
-        modules={[Navigation, Pagination]}
-        navigation
+        modules={[Pagination]}
         pagination={{ clickable: true }}
         spaceBetween={30}
         slidesPerView={3}
@@ -314,20 +314,46 @@ export default function AboutPage() {
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
+        className="pb-12" // padding for dots
       >
         {[1, 2, 3, 4, 5].map((i) => (
           <SwiperSlide key={i}>
-            <div className="border p-6 rounded-lg shadow p-10">
-              <h3 className="font-semibold mb-2">Company {i}</h3>
-              <p className="text-gray-600 text-sm mb-4">
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Duis cursus, mi quis viverra ornare.”
+            <div className="border rounded-lg p-6 flex flex-col justify-between h-full mb-16">
+              {/* Logo / Title */}
+              <div className="mb-14">
+              <img src="/webflow-logo.png" alt="Webflow" className="h-6 w-30" />
+              </div>
+
+              {/* Testimonial Text */}
+              <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis cursus, 
+                mi quis viverra ornare."
               </p>
-              <p className="text-sm text-gray-500">Name, Position</p>
+
+              {/* Name + Position */}
+              <div className="flex items-center mb-4">
+                <div className="w-8 h-8 bg-gray-200 rounded-full mr-3"></div>
+                <div>
+                  <p className="font-semibold text-sm">Name Surname</p>
+                  <p className="text-xs text-gray-500">Position, Company name</p>
+                </div>
+              </div>
+
+              {/* Link */}
+              <a
+                href="#"
+                className="text-sm font-medium text-gray-900 hover:underline inline-flex items-center"
+              >
+                Read case study
+                <span className="ml-1">→</span>
+              </a>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+    </div>
+
     </div>
     </section>
 

@@ -146,66 +146,71 @@ export default function Services() {
       </div>
     </section>
 
-     <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
-        {/* Section Heading */}
-      <div className="text-center max-w-3xl mx-auto">
-        <p className="text-sm uppercase tracking-wide text-gray-500">
-          From Strategy to Deployment, We&apos;ve Got You Covered
-        </p>
-        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight mt-6">Our Key Services</h2>
-        <p className="text-gray-600 mt-4">
-          KClub&apos;s service portfolio covers every stage of your digital
-          transformation. Whether you&apos;re looking to harness AI for smarter
-          decisions, streamline workflows with ERP, or build cutting-edge
-          applications, we provide the expertise and execution to turn your
-          vision into reality.
-        </p>
-      </div>
+    <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+        <div className="py-16">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-center">
+       Why Clients Choose KClub
+      </h1>
+         <p className="text-sm tracking-wide text-black-500 text-center mb-8">
+          Because we don&apos;t just deliver services, we deliver outcomes.</p>
+       <div className="px-6 lg:px-20">
+      <Swiper
+        modules={[Pagination]}
+        pagination={{ clickable: true }}
+        spaceBetween={30}
+        slidesPerView={2}
+        breakpoints={{
+          0: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+        }}
+        className="pb-12"
+      >
+        {[1, 2, 3, 4].map((i) => (
+          <SwiperSlide key={i}>
+            <div className="border rounded-lg p-6 flex flex-col justify-between h-full mb-15">
+              {/* Stars */}
+              <div className="flex mb-4">
+                {Array(5)
+                  .fill(0)
+                  .map((_, idx) => (
+                    <span key={idx} className="text-black text-lg">★</span>
+                  ))}
+              </div>
 
-      {/* Carousel */}
-      <div className="mt-16">
-        <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={30}
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 4000 }}
-          loop={true}
-          className="w-full"
-        >
-          {services.map((service, index) => (
-            <SwiperSlide key={service.id}>
-              <div className="grid md:grid-cols-2 gap-10 items-center">
-                {/* Text Section */}
-                <div>
-                  <p className="text-sm font-semibold text-gray-500">
-                    {service.description}
-                  </p>
-                  <h3 className="text-2xl font-bold mt-2">{service.name}</h3>
-                  <p className="text-gray-600 mt-4">{service.description}</p>
-                  <div className="mt-6 flex gap-4">
-                    <button className="border px-4 py-2 rounded-md hover:bg-gray-100">
-                      Know More
-                    </button>
-                    <button className="flex items-center gap-2 border px-4 py-2 rounded-md hover:bg-gray-100">
-                      Schedule a Demo <span>→</span>
-                    </button>
+              {/* Testimonial */}
+              <p className="text-gray-700 text-sm mb-6 leading-relaxed">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique. Duis cursus,
+                mi quis viverra ornare, eros dolor interdum nulla, ut commodo
+                diam libero vitae erat."
+              </p>
+
+              {/* Footer: profile + company */}
+              <div className="flex justify-between items-center mt-auto pt-4 border-t">
+                {/* Profile */}
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-gray-200 rounded-full mr-3"></div>
+                  <div>
+                    <p className="font-semibold text-sm">Name Surname</p>
+                    <p className="text-xs text-gray-500">Position, Company</p>
                   </div>
                 </div>
 
-                {/* Image Section */}
-                <div className="w-full h-56 bg-gray-200 flex items-center justify-center rounded-md">
-                  <p className="text-gray-600">[{service.name}]</p>
+                {/* Company logo (placeholder box here) */}
+                <div className="flex items-center gap-2">
+                  <img src="/webflow-logo.png" alt="Webflow" className="h-6 w-30" />
                 </div>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+
+    </div>
     </section>
 
-      <section className="container bg-gray-800 text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-20 rounded-md">
+      <section className="container bg-gray-800 text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 rounded-md">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         {/* Left Content */}
         <div>

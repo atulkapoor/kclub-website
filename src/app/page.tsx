@@ -79,7 +79,7 @@ const [open, setOpen] = useState(false);
       >
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           <div className="w-full lg:w-1/2 text-center lg:text-left">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
               Innovation Backed by Experience
             </h2>
             <div className="mb-6">
@@ -115,7 +115,7 @@ const [open, setOpen] = useState(false);
         className="container mx-auto px-4 md:px-6 lg:px-36 py-16"
          data-aos="fade-up" data-aos-easing="linear" data-aos-delay="400"
       >
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black text-center">
           Our Solutions
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -139,7 +139,7 @@ const [open, setOpen] = useState(false);
       {/* Products & Industries */}
       <section className="bg-gray-100 py-16"  data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
         <div className="container mx-auto px-4 md:px-6 lg:px-36">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black text-center">
             Products & Industries
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -160,7 +160,7 @@ const [open, setOpen] = useState(false);
 
       {/* Testimonials */}
       <section className="container mx-auto px-4 md:px-6 lg:px-36 py-16"  data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black text-center">
           What Our Clients Say
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -181,7 +181,7 @@ const [open, setOpen] = useState(false);
 
       {/* Call to Action */}
       <section className="bg-black text-white py-16 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-white">
           Ready to Transform Your Business?
         </h2>
         <button className="bg-white text-black px-6 py-3 rounded font-medium hover:bg-gray-100 transition"  onClick={openModal}>
@@ -192,7 +192,7 @@ const [open, setOpen] = useState(false);
       {/* Newsletter */}
       <section className="container mx-auto px-4 md:px-6 lg:px-36 py-16"  data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
         <div className="bg-gray-100 rounded-lg p-8 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
             Subscribe to Our Newsletter
           </h2>
           <p className="text-gray-600 mb-6">
