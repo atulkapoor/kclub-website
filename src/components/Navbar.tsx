@@ -26,6 +26,10 @@ export default function Navbar() {
         <Link href="/services" className="text-gray-600 hover:text-gray-900">
           Services
         </Link>
+        {/* <Link href="/blog" className="text-gray-600 hover:text-gray-900">
+              Blog
+            </Link> */}
+        {/*
         <Link href="/tech" className="text-gray-600 hover:text-gray-900">
         Tech consult
         </Link>
@@ -33,13 +37,13 @@ export default function Navbar() {
         Custom SaaS
         </Link>
         <Link href="/mobile_app" className="text-gray-600 hover:text-gray-900">
-          Mobile App 
-        </Link>
+          Mobile App
+        </Link> */}
         <Link href="/industry" className="text-gray-600 hover:text-gray-900">
           Industries
         </Link>
-        <Link href="/career" className="text-gray-600 hover:text-gray-900">
-          Career
+        <Link href="/careers" className="text-gray-600 hover:text-gray-900">
+          Careers
         </Link>
         <Link href="/contact_us" className="text-gray-600 hover:text-gray-900">
           Contact Us
@@ -86,7 +90,10 @@ export default function Navbar() {
             <Link href="/services" className="text-gray-600 hover:text-gray-900">
               Services
             </Link>
-            <Link
+            {/* <Link href="/blog" className="text-gray-600 hover:text-gray-900">
+              Blog
+            </Link> */}
+            {/* <Link
               href="/tech"
               className="text-gray-600 hover:text-gray-900"
             >
@@ -94,12 +101,12 @@ export default function Navbar() {
             </Link> 
             <Link href="/mobile_app" className="text-gray-600 hover:text-gray-900">
           Mobile App & Dev 
-            </Link>
+            </Link> */}
             <Link href="/industry" className="text-gray-600 hover:text-gray-900">
           Industries
         </Link>
-            <Link href="/career" className="text-gray-600 hover:text-gray-900">
-              Career
+            <Link href="/careers" className="text-gray-600 hover:text-gray-900">
+              Careers
             </Link>
             <Link href="/contact_us" className="text-gray-600 hover:text-gray-900">
               Contact Us
