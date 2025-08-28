@@ -95,9 +95,9 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
     <div className="w-1/2 p-8 flex flex-col justify-center text-center">
       <div className="text-xl">★★★★★</div>
       <p className="mt-4 text-gray-700 font-medium">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        `&quot;`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-        ornare, eros dolor interdum nulla."
+        ornare, eros dolor interdum nulla.`&quot;`
       </p>
 
       <div className="mt-6 flex items-center justify-center gap-4">
