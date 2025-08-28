@@ -1,15 +1,26 @@
 import jobs from "../../data/jobs";
+import { notFound } from "next/navigation";
 
-interface JobProps {
-  params: { slug: string };
+type PageProps = {
+  params: Promise<{
+    slug: string;
+  }>;
+};
+
+// ✅ Static paths generate
+export async function generateStaticParams() {
+  return jobs.map((job) => ({
+    slug: job.id, // ya slugify(job.title) bhi kar sakte ho SEO ke liye
+  }));
 }
 
-export default function JobPage({ params }: JobProps) {
-  const job = jobs.find((job) => job.id === params.slug); 
+// ✅ Job detail page
+export default async function JobPage({ params }: PageProps) {
+  const { slug } = await params; // params ko await kiya
 
-  if (!job) {
-    return <div className="p-6 text-center text-red-500">Job not found</div>;
-  }
+  const job = jobs.find((job) => job.id === slug);
+
+  if (!job) return notFound();
 
   return (
     <div className="max-w-4xl mx-auto p-6">
