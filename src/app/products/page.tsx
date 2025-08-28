@@ -260,10 +260,10 @@ export default function Products() {
 
               {/* Testimonial */}
               <p className="text-gray-700 text-sm mb-6 leading-relaxed">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                `&quot;`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique. Duis cursus,
                 mi quis viverra ornare, eros dolor interdum nulla, ut commodo
-                diam libero vitae erat."
+                diam libero vitae erat.`&quot;`
               </p>
 
               {/* Footer: profile + company */}
