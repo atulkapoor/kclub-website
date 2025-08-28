@@ -5,6 +5,7 @@ import Link from "next/link";
 import { products } from "../../src/app/data/products";
 import { services } from "../../src/app/data/services";
 import * as Icons from "lucide-react";
+import { LucideIcon } from "lucide-react"; // <-- correct type for icon components
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // mobile menu
@@ -25,6 +26,11 @@ export default function Navbar() {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  // --- 🔑 Utility: get icon safely ---
+const getIcon = (iconName: string) => {
+  return (Icons as unknown as Record<string, React.FC<{ className?: string }>>)[iconName] || null;
+};
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white z-50 
@@ -58,17 +64,16 @@ export default function Navbar() {
                           bg-white shadow-xl border rounded-xl p-6 w-[700px] z-50"
             >
               {products.map((item, idx) => {
-                const Icon = (Icons as any)[item.icon];
+                const Icon = getIcon(item.icon);
                 return (
                   <Link
                     key={idx}
                     href={item.link}
                     className="flex items-start space-x-3 hover:bg-gray-50 p-2 rounded-lg transition"
                   >
-                    <Icon className="w-6 h-6 text-gray-700 mt-1" />
+                    {Icon && <Icon className="w-6 h-6 text-gray-700 mt-1" />}
                     <div>
                       <h4 className="font-semibold text-sm text-gray-900">{item.name}</h4>
-                      {/* <p className="text-xs text-gray-500">{item.description}</p> */}
                     </div>
                   </Link>
                 );
@@ -96,17 +101,16 @@ export default function Navbar() {
                           bg-white shadow-xl border rounded-xl p-6 w-[700px] z-50"
             >
               {services.map((item, idx) => {
-                const Icon = (Icons as any)[item.icon];
+                const Icon = getIcon(item.icon);
                 return (
                   <Link
                     key={idx}
                     href={item.link}
                     className="flex items-start space-x-3 hover:bg-gray-50 p-2 rounded-lg transition"
                   >
-                    <Icon className="w-6 h-6 text-gray-700 mt-1" />
+                    {Icon && <Icon className="w-6 h-6 text-gray-700 mt-1" />}
                     <div>
                       <h4 className="font-semibold text-sm text-gray-900">{item.name}</h4>
-                      {/* <p className="text-xs text-gray-500">{item.description}</p> */}
                     </div>
                   </Link>
                 );
@@ -114,11 +118,12 @@ export default function Navbar() {
             </div>
           )}
         </div>
-       <Link href="/tech" className="text-gray-600 hover:text-gray-900">
-        Tech consult
+
+        <Link href="/tech" className="text-gray-600 hover:text-gray-900">
+          Tech consult
         </Link>
         <Link href="/custom_saas" className="text-gray-600 hover:text-gray-900">
-        Custom SaaS
+          Custom SaaS
         </Link>
         <Link href="/mobile_app" className="text-gray-600 hover:text-gray-900">
           Mobile App 
@@ -179,19 +184,18 @@ export default function Navbar() {
               </summary>
               <div className="mt-2 flex flex-col space-y-3 pl-4 border-l border-gray-200">
                 {products.map((item, idx) => {
-                  const Icon = (Icons as any)[item.icon];
+                  const Icon = getIcon(item.icon);
                   return (
                     <Link
                       key={idx}
                       href={item.link}
                       className="flex items-start space-x-3 hover:bg-gray-50 p-2 rounded-lg transition"
                     >
-                      <Icon className="w-5 h-5 text-gray-700 mt-1" />
+                      {Icon && <Icon className="w-5 h-5 text-gray-700 mt-1" />}
                       <div>
                         <h4 className="font-semibold text-sm text-gray-900">
                           {item.name}
                         </h4>
-                        {/* <p className="text-xs text-gray-500">{item.description}</p> */}
                       </div>
                     </Link>
                   );
@@ -206,30 +210,30 @@ export default function Navbar() {
               </summary>
               <div className="mt-2 flex flex-col space-y-3 pl-4 border-l border-gray-200">
                 {services.map((item, idx) => {
-                  const Icon = (Icons as any)[item.icon];
+                  const Icon = getIcon(item.icon);
                   return (
                     <Link
                       key={idx}
                       href={item.link}
                       className="flex items-start space-x-3 hover:bg-gray-50 p-2 rounded-lg transition"
                     >
-                      <Icon className="w-5 h-5 text-gray-700 mt-1" />
+                      {Icon && <Icon className="w-5 h-5 text-gray-700 mt-1" />}
                       <div>
                         <h4 className="font-semibold text-sm text-gray-900">
                           {item.name}
                         </h4>
-                        {/* <p className="text-xs text-gray-500">{item.description}</p> */}
                       </div>
                     </Link>
                   );
                 })}
               </div>
             </details>
+
             <Link href="/tech" className="text-gray-600 hover:text-gray-900">
-            Tech consult
+              Tech consult
             </Link>
             <Link href="/custom_saas" className="text-gray-600 hover:text-gray-900">
-            Custom SaaS
+              Custom SaaS
             </Link>
             <Link href="/mobile_app" className="text-gray-600 hover:text-gray-900">
               Mobile App 
