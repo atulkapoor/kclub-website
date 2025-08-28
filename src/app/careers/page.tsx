@@ -3,7 +3,7 @@
       import jobs from "../data/jobs";
 export default function Careers() {
     return (
-      <main>
+      <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
     <section className="py-16 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Heading */}
@@ -65,7 +65,7 @@ export default function Careers() {
                     </p>
                   </div>
                   <Link
-                    href={`/career/${job.id}`}
+                    href={`/careers/${job.id}`}
                     className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
                   >
                     Apply Now

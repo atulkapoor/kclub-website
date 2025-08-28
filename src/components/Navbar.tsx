@@ -118,7 +118,7 @@ const getIcon = (iconName: string) => {
             </div>
           )}
         </div>
-
+{/* 
         <Link href="/tech" className="text-gray-600 hover:text-gray-900">
           Tech consult
         </Link>
@@ -127,9 +127,12 @@ const getIcon = (iconName: string) => {
         </Link>
         <Link href="/mobile_app" className="text-gray-600 hover:text-gray-900">
           Mobile App 
-        </Link>
+        </Link> */}
         <Link href="/industries" className="text-gray-600 hover:text-gray-900">
           Industries
+        </Link>
+        <Link href="/blog" className="text-gray-600 hover:text-gray-900">
+          Blog
         </Link>
         <Link href="/resources" className="text-gray-600 hover:text-gray-900">
           Resources
@@ -229,15 +232,15 @@ const getIcon = (iconName: string) => {
               </div>
             </details>
 
-            <Link href="/tech" className="text-gray-600 hover:text-gray-900">
+            {/* <Link href="/tech" className="text-gray-600 hover:text-gray-900">
               Tech consult
-            </Link>
+            </Link> */}
             <Link href="/services" className="text-gray-600 hover:text-gray-900">
               Services
             </Link>
-            {/* <Link href="/blog" className="text-gray-600 hover:text-gray-900">
+            <Link href="/blog" className="text-gray-600 hover:text-gray-900">
               Blog
-            </Link> */}
+            </Link>
             {/* <Link
               href="/tech"
               className="text-gray-600 hover:text-gray-900"
