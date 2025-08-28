@@ -1,7 +1,11 @@
 "use client";
-
+import { useState } from "react";
+import PopupForm from "@/components/PopupForm";
 
 export default function Home() {
+const [open, setOpen] = useState(false);
+  const openModal = () => setOpen(true);
+  const closeModal = () => setOpen(false);
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
@@ -180,7 +184,7 @@ export default function Home() {
         <h2 className="text-2xl md:text-3xl font-bold mb-6">
           Ready to Transform Your Business?
         </h2>
-        <button className="bg-white text-black px-6 py-3 rounded font-medium hover:bg-gray-100 transition">
+        <button className="bg-white text-black px-6 py-3 rounded font-medium hover:bg-gray-100 transition"  onClick={openModal}>
           Get in Touch
         </button>
       </section>
@@ -207,6 +211,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <PopupForm isOpen={open} onClose={closeModal} />
 
     </main>
   );
