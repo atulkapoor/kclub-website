@@ -41,9 +41,9 @@ export default function Navbar() {
         <Link href="/careers" className="text-gray-600 hover:text-gray-900">
           Careers
         </Link>
-        <Link href="/contact" className="text-gray-600 hover:text-gray-900">
+        <Link href="/contact_us" className="text-gray-600 hover:text-gray-900">
           Contact Us
-        </Link>
+        </Link> 
       </nav>
 
       {/* Desktop CTA */}
@@ -94,11 +94,14 @@ export default function Navbar() {
             </Link> 
             <Link href="/mobile_app" className="text-gray-600 hover:text-gray-900">
           Mobile App & Dev 
+            </Link>
+            <Link href="/industry" className="text-gray-600 hover:text-gray-900">
+          Industries
         </Link>
             <Link href="/careers" className="text-gray-600 hover:text-gray-900">
               Careers
             </Link>
-            <Link href="/contact" className="text-gray-600 hover:text-gray-900">
+            <Link href="/contact_us" className="text-gray-600 hover:text-gray-900">
               Contact Us
             </Link>
             <button className="bg-black text-white px-4 py-2 rounded text-sm w-fit">
