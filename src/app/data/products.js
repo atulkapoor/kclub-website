@@ -60,8 +60,8 @@ export const products = [
     },
   },
   {
-    slug: "maritime-agency-management:",
-    name: "Maritime Agency Management:",
+    slug: "maritime-agency-management",
+    name: "Maritime Agency Management",
     category: "Supply Chain",
     description:
       "A specialized platform that helps maritime agencies manage vessel schedules, cargo operations, and port logistics with ease and efficiency.",
@@ -119,8 +119,8 @@ export const products = [
     },
   },
   {
-    slug: "communication-management:",
-    name: "Communication Management:",
+    slug: "communication-management",
+    name: "Communication Management",
     category: "Supply Chain",
     description:
       "An integrated communication hub for organizations to manage internal messaging, alerts, and collaboration in one secure platform.",
@@ -180,7 +180,7 @@ export const products = [
 
     {
     slug: "healthcare-management",
-    name: "Healthcare Management:",
+    name: "Healthcare Management",
     category: "Healthcare",
     description:
       "A comprehensive healthcare management system for clinics and hospitals, covering patient records, appointments, telehealth, and billing.",
@@ -223,7 +223,7 @@ export const products = [
   },
   {
     slug: "lending-management",
-    name: "Lending Management:",
+    name: "Lending Management",
     category: "Finance",
     description:
       "An end-to-end digital lending platform for financial institutions to automate loan origination, KYC, underwriting, and disbursement.",
@@ -266,7 +266,7 @@ export const products = [
   },
   {
     slug: "transport-management",
-    name: "Transport Management:",
+    name: "Transport Management",
     category: "Logistics",
     description:
       "A logistics management solution for planning routes, tracking shipments, and optimizing fleet operations in real time.",
@@ -309,7 +309,7 @@ export const products = [
   },
   {
     slug: "edtech-platform",
-    name: "EdTech Platform:",
+    name: "EdTech Platform",
     category: "Education",
     description:
       "An education management suite for schools and universities, facilitating online learning, student information management, and campus engagement.",
@@ -352,7 +352,7 @@ export const products = [
   },
   {
     slug: "omnichannel-erp",
-    name: "Omnichannel ERP:",
+    name: "Omnichannel ERP",
     category: "Retail",
     description:
       "A unified ERP system that connects sales, inventory, and customer channels (online, in-store, mobile) to provide a seamless omnichannel retail experience.",
@@ -395,7 +395,7 @@ export const products = [
   },
   {
     slug: "real-estate-erp",
-    name: "Real Estate ERP:",
+    name: "Real Estate ERP",
     category: "Real Estate",
     description:
       "A tailored ERP for real estate businesses, managing property listings, sales/lease workflows, client relationships, and project developments in one place.",

@@ -88,7 +88,7 @@ export default function Navbar() {
                   >
                     {Icon && <Icon className="w-6 h-6 text-gray-700 mt-1" />}
                     <div>
-                      <h4 className="font-semibold text-sm text-gray-900">{item.name}</h4>
+                      <h4 className="font-semibold text-sm text-gray-900" onClick={handleLinkClick}>{item.name}</h4>
                     </div>
                   </Link>
                 );
@@ -133,7 +133,7 @@ export default function Navbar() {
                   >
                     {Icon && <Icon className="w-6 h-6 text-gray-700 mt-1" />}
                     <div>
-                      <h4 className="font-semibold text-sm text-gray-900">{item.name}</h4>
+                      <h4 className="font-semibold text-sm text-gray-900" onClick={handleLinkClick}>{item.name}</h4>
                     </div>
                   </Link>
                 );
@@ -209,7 +209,7 @@ export default function Navbar() {
                 onClick={handleLinkClick}
                 className="text-gray-600 hover:text-gray-900 flex-1"
               >
-                Services
+                Products
               </Link>
 
               {/* Chevron toggle for dropdown */}
@@ -239,7 +239,7 @@ export default function Navbar() {
                     >
                       {Icon && <Icon className="w-5 h-5 text-gray-700 mt-1" />}
                       <div>
-                        <h4 className="font-semibold text-sm text-gray-900">
+                        <h4 className="font-semibold text-sm text-gray-900"  onClick={handleLinkClick}>
                           {item.name}
                         </h4>
                       </div>
@@ -286,7 +286,7 @@ export default function Navbar() {
                       className="flex items-start space-x-3 hover:bg-gray-50 p-2 rounded-lg transition"
                     >
                       {Icon && <Icon className="w-5 h-5 text-gray-700 mt-1" />}
-                      <div>
+                      <div  onClick={handleLinkClick}>
                         <h4 className="font-semibold text-sm text-gray-900">
                           {item.name}
                         </h4>

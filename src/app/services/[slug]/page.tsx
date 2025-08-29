@@ -40,7 +40,7 @@ export default async function ServiceDetail({ params }: PageProps) {
           </svg>
         </div>
         <h1 className="text-2xl md:text-3xl font-semibold mt-6">
-          AI Services Page
+          {service.name}
         </h1>
       </section>
 

@@ -62,13 +62,13 @@ export const services = [
   },
   {
     id:2,
-    slug: "maritime-agency-management:",
-    name: "Maritime Agency Management:",
+    slug: "odoo-services-page",
+    name: "ODOO Services Page",
     category: "Supply Chain",
     description:
       "A specialized platform that helps maritime agencies manage vessel schedules, cargo operations, and port logistics with ease and efficiency.",
     image: "/placeholder.png",
-    link: "/services/warehouse-management",
+    link: "/services/odoo-services-page",
     icon: "Box",
     features : [
     {
@@ -122,13 +122,13 @@ export const services = [
   },
   {
     id:3,
-    slug: "communication-management:",
-    name: "Communication Management:",
+    slug: "custom-saas-app-development-page",
+    name: "Custom SaaS App Development Page",
     category: "Supply Chain",
     description:
       "An integrated communication hub for organizations to manage internal messaging, alerts, and collaboration in one secure platform.",
     image: "/placeholder.png",
-    link: "/services/warehouse-management",
+    link: "/services/custom-saas-app-development-page",
     icon: "Box",
     features: [
     {
@@ -183,13 +183,13 @@ export const services = [
 
     {
     id:4,
-    slug: "healthcare-management",
-    name: "Healthcare Management:",
+    slug: "mobile-app-development-page",
+    name: "Mobile App Development Page",
     category: "Healthcare",
     description:
       "A comprehensive healthcare management system for clinics and hospitals, covering patient records, appointments, telehealth, and billing.",
     image: "/placeholder.png",
-    link: "/services/healthcare-management",
+    link: "/services/mobile-app-development-page",
     icon: "Box",
     features: [
       {
@@ -227,13 +227,13 @@ export const services = [
   },
   {
     id:5,
-    slug: "lending-management",
-    name: "Lending Management:",
+    slug: "tech-consulting-and-assessments-page",
+    name: "Tech Consulting & Assessments Page",
     category: "Finance",
     description:
       "An end-to-end digital lending platform for financial institutions to automate loan origination, KYC, underwriting, and disbursement.",
     image: "/placeholder.png",
-    link: "/services/lending-management",
+    link: "/services/tech-consulting-and-assessments-page",
     icon: "Box",
     features: [
       {
@@ -266,50 +266,6 @@ export const services = [
         "Streamline approvals, reduce manual paperwork, and deliver quick loan services to clients. FinstaKLUB enhances customer satisfaction while ensuring regulatory compliance.",
       image: "/placeholder.png",
       link: "/services/lending-management",
-      cta: "Get in touch",
-    },
-  },
-  {
-    id:6,
-    slug: "transport-management",
-    name: "Transport Management:",
-    category: "Logistics",
-    description:
-      "A logistics management solution for planning routes, tracking shipments, and optimizing fleet operations in real time.",
-    image: "/placeholder.png",
-    link: "/services/transport-management",
-    icon: "Box",
-    features: [
-      {
-        title: "Route Optimization",
-        description: "Plan the fastest, most cost-efficient routes for deliveries.",
-        image: "/placeholder.png",
-      },
-      {
-        title: "Real-Time Fleet Tracking",
-        description: "Track vehicles and shipments with live GPS updates.",
-        image: "/placeholder.png",
-      },
-      {
-        title: "Performance Analytics",
-        description: "Monitor fuel usage, delays, and fleet efficiency.",
-        image: "/placeholder.png",
-      },
-    ],
-    hero: {
-      title: "Smarter Logistics with FreightKLUB",
-      subtitle:
-        "FreightKLUB optimizes transportation operations with real-time fleet tracking, automated route planning, and shipment visibility for maximum efficiency.",
-      cta: "Get in touch",
-      image: "/placeholder.png",
-      link: "/services/transport-management",
-    },
-    scheduledemo: {
-      title: "Fleet Management Made Easy",
-      subtitle:
-        "Gain complete visibility into your transport network. Reduce costs, improve delivery accuracy, and keep customers informed with FreightKLUB.",
-      image: "/placeholder.png",
-      link: "/services/transport-management",
       cta: "Get in touch",
     },
   }
