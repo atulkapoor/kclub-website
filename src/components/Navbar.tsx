@@ -151,15 +151,12 @@ export default function Navbar() {
         <Link href="/mobile_app" className="text-gray-600 hover:text-gray-900">
           Mobile App 
         </Link> */}
-        <Link href="/blog" className="text-gray-600 hover:text-gray-900">
+        {/* <Link href="/blog" className="text-gray-600 hover:text-gray-900">
           Blog
-        </Link>
+        </Link> */}
         <Link href="/industries" className="text-gray-600 hover:text-gray-900">
           Industries
-        </Link>
-        <Link href="/blog" className="text-gray-600 hover:text-gray-900">
-          Blog
-        </Link>
+        </Link> 
         <Link href="/resources" className="text-gray-600 hover:text-gray-900">
           Resources
         </Link>
@@ -312,9 +309,9 @@ export default function Navbar() {
             <Link href="/mobile_app" onClick={handleLinkClick} className="text-gray-600 hover:text-gray-900">
               Mobile App 
             </Link> */}
-               <Link href="/blog" className="text-gray-600 hover:text-gray-900">
+               {/* <Link href="/blog" className="text-gray-600 hover:text-gray-900">
                 Blog
-              </Link>
+              </Link> */}
             <Link href="/industries" onClick={handleLinkClick} className="text-gray-600 hover:text-gray-900">
               Industries
             </Link>

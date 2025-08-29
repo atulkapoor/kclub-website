@@ -42,6 +42,8 @@ export default function BlogPage() {
   const blogPosts = getAllPosts();
 
   return (
+    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="container mx-auto px-4">
         {/* Page Header */}
@@ -100,6 +102,7 @@ export default function BlogPage() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      </main>
   );
 }
