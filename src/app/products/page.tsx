@@ -139,10 +139,10 @@ export default function Products() {
   ];
   return (
      <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-    <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20 text-center">
+    <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-40 text-center">
       {/* Heading + Subheading */}
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
           Smart, Scalable Products for <br /> Every Business Challenge
         </h2>
         <p className="mt-4 text-gray-600">
@@ -175,10 +175,10 @@ export default function Products() {
 
      <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20 text-center">
       {/* Heading */}
-      <div className="text-center max-w-3xl mx-auto mb-12">
+      <div className="text-center max-w-4xl mx-auto mb-12">
         <p className="text-sm text-gray-500">Innovation tailored to your business</p>
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
-          Industry-Focused Software Solutions for <br /> Digital Transformation
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mt-2">
+          Industry-Focused Software Solutions for Digital Transformation
         </h2>
         <p className="mt-4 text-gray-600">
           KClub&apos;s KLUB Suite comprises powerful software products tailored to key industries and
@@ -229,7 +229,7 @@ export default function Products() {
 
     <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 ">
         <div className="py-16">
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-center">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 subpixel-antialiased text-black text-center">
        Why Clients Choose KClub
       </h1>
          <p className="text-sm tracking-wide text-black-500 text-center mb-8">
@@ -260,10 +260,10 @@ export default function Products() {
 
               {/* Testimonial */}
               <p className="text-gray-700 text-sm mb-6 leading-relaxed">
-                `&quot;`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique. Duis cursus,
                 mi quis viverra ornare, eros dolor interdum nulla, ut commodo
-                diam libero vitae erat.`&quot;`
+                diam libero vitae erat.&quot;
               </p>
 
               {/* Footer: profile + company */}
@@ -295,7 +295,7 @@ export default function Products() {
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         {/* Left Content */}
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-white">
             Let&apos;s Build the Future Together
           </h2>
           <p className="text-gray-300 mt-2 max-w-lg">

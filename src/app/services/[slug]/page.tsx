@@ -22,7 +22,7 @@ export default async function ServiceDetail({ params }: PageProps) {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       {/* Hero Section */}
-      <section className="bg-gray-200 flex flex-col items-center justify-center py-40">
+      <section className="bg-gray-200 flex flex-col items-center justify-center py-40 mt-20">
         <div className="w-32 h-32 bg-gray-300 flex items-center justify-center rounded-md">
           <svg
             className="w-12 h-12 text-gray-500"
@@ -48,7 +48,7 @@ export default async function ServiceDetail({ params }: PageProps) {
       <section className="container mx-auto px-6 py-16 grid md:grid-cols-2 gap-12">
         {/* Left Content */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold leading-tight text-gray-900">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold subpixel-antialiased text-black text-gray-900">
             Transform Your Business with the Power of AI
           </h2>
         </div>
@@ -186,7 +186,7 @@ export default async function ServiceDetail({ params }: PageProps) {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
                 {/* Left Content */}
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-white">
                     Explore Our Other Services, See Our Impact
                   </h2>
                   <p className="text-gray-300 mt-2 max-w-lg">

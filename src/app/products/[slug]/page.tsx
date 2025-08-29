@@ -33,7 +33,7 @@ export default async function ProductDetail({ params }: PageProps) {
               height={60}
               className="mr-2 h-10 w-auto"
             />
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight mt-5">
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black mt-5">
               {product.hero.title}
             </h3>
             <p className="mt-4 text-gray-600 leading-relaxed">
@@ -105,7 +105,7 @@ export default async function ProductDetail({ params }: PageProps) {
 
           {/* Left Content */}
           <div>
-            <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
               {product.scheduledemo.title}
             </h1>
             <p className="text-gray-700 mb-4">{product.scheduledemo.subtitle}</p>
@@ -122,7 +122,7 @@ export default async function ProductDetail({ params }: PageProps) {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           {/* Left Content */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-white">
               Explore Our Other Services, See Our Impact
             </h2>
             <p className="text-gray-300 mt-2 max-w-lg">

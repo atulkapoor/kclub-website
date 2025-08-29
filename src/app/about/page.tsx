@@ -121,7 +121,7 @@ export default function AboutPage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-  <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+  <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4">
       {/* Top Section */}
       <div className="text-center max-w-2xl mx-auto mb-12 mt-20">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
@@ -298,9 +298,9 @@ export default function AboutPage() {
       </div>
     </section>
 
-     <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+     <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4">
         <div className="py-16">
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-center">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black text-center">
         What our clients are saying
       </h1>
       <div className="px-6 lg:px-20">
@@ -335,7 +335,7 @@ export default function AboutPage() {
               <div className="flex items-center mb-4">
                 <div className="w-8 h-8 bg-gray-200 rounded-full mr-3"></div>
                 <div>
-                  <p className="font-semibold text-sm">Name Surname</p>
+                  <p className="font-semibold text-black text-sm">Name Surname</p>
                   <p className="text-xs text-gray-500">Position, Company name</p>
                 </div>
               </div>
@@ -357,7 +357,7 @@ export default function AboutPage() {
     </div>
     </section>
 
-    <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+    <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <p className="uppercase tracking-wide text-gray-600">Our team</p>
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
@@ -407,7 +407,7 @@ export default function AboutPage() {
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         {/* Left Content */}
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black subpixel-antialiased text-white">
             Let&apos;s Build the Future Together
           </h2>
           <p className="text-gray-300 mt-2 max-w-lg">

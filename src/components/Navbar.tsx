@@ -6,6 +6,7 @@ import { products } from "../../src/app/data/products";
 import { services } from "../../src/app/data/services";
 import * as Icons from "lucide-react";
 import { ChevronDown } from "lucide-react"; // 🔽 arrow
+import PopupForm from "@/components/PopupForm";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // mobile menu
@@ -37,6 +38,10 @@ export default function Navbar() {
     setIsOpen(false);
     setOpenDropdown(null);
   };
+
+  const [open, setOpen] = useState(false);
+  const openModal = () => setOpen(true);
+  const closeModal = () => setOpen(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white z-50 
@@ -169,7 +174,7 @@ export default function Navbar() {
       </nav>
 
       {/* Desktop CTA */}
-      <button className="hidden lg:block bg-black text-white px-4 py-2 rounded text-sm">
+      <button className="hidden lg:block bg-black text-white px-4 py-2 rounded text-sm" onClick={openModal}>
         Book a Demo
       </button>
 
@@ -322,12 +327,14 @@ export default function Navbar() {
               Contact Us
             </Link>
 
-            <button className="bg-black text-white px-4 py-2 rounded text-sm w-fit">
+            <button className="bg-black text-white px-4 py-2 rounded text-sm w-fit" onClick={openModal}>
               Book a Demo
             </button>
           </nav>
         </div>
       )}
+            <PopupForm isOpen={open} onClose={closeModal} />
+      
     </header>
   );
 }

@@ -62,10 +62,10 @@ export default function Services() {
   ];
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-        <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20 text-center">
+        <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-30 text-center">
       {/* Heading + Description */}
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
           Transforming Businesses with <br /> End-to-End Digital Services
         </h2>
         <p className="text-gray-600 mt-4">
@@ -92,7 +92,7 @@ export default function Services() {
         <p className="text-sm uppercase tracking-wide text-gray-500">
           From Strategy to Deployment, We&apos;ve Got You Covered
         </p>
-        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">Our Key Services</h2>
+        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">Our Key Services</h2>
         <p className="text-gray-600 mt-4">
           KClub&apos;s service portfolio covers every stage of your digital
           transformation. Whether you&apos;re looking to harness AI for smarter
@@ -148,7 +148,7 @@ export default function Services() {
 
     <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
         <div className="py-16">
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-center">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 subpixel-antialiased text-black text-center">
        Why Clients Choose KClub
       </h1>
          <p className="text-sm tracking-wide text-black-500 text-center mb-8">
@@ -179,10 +179,10 @@ export default function Services() {
 
               {/* Testimonial */}
               <p className="text-gray-700 text-sm mb-6 leading-relaxed">
-                `&quot;`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique. Duis cursus,
                 mi quis viverra ornare, eros dolor interdum nulla, ut commodo
-                diam libero vitae erat.`&quot;`
+                diam libero vitae erat.&quot;
               </p>
 
               {/* Footer: profile + company */}
@@ -214,7 +214,7 @@ export default function Services() {
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         {/* Left Content */}
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-white">
             Let&apos;s Build the Future Together
           </h2>
           <p className="text-gray-300 mt-2 max-w-lg">
