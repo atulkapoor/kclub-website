@@ -209,7 +209,7 @@ export default function Navbar() {
                 onClick={handleLinkClick}
                 className="text-gray-600 hover:text-gray-900 flex-1"
               >
-                Services
+                Products
               </Link>
 
               {/* Chevron toggle for dropdown */}
