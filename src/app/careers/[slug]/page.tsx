@@ -25,12 +25,13 @@ export default async function JobPage({ params }: PageProps) {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
     <div className="max-w-4xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-4">{job.title}</h1>
-      <p className="text-gray-600 mb-4">
+    <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
+    {job.title}</h1>
+      <p className="text-black mb-4">
         📍 {job.location} | {job.contractType}
       </p>
-      <p className="mb-6">{job.details}</p>
-      <p className="mb-6">{job.conclusion}</p>
+      <p className="mb-6 text-black">{job.details}</p>
+      <p className="mb-6 text-black">{job.conclusion}</p>
       <button className="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
         Apply Now
       </button>

@@ -85,9 +85,9 @@ export default function ContactUs() {
       <div className="w-full flex flex-col items-center py-12">
         {/* Title + Description */}
         <div className="max-w-2xl text-center mb-10">
-          <h2 className="text-2xl md:text-3xl font-bold leading-snug mb-3">
-            Connect With Us to Begin <br /> Your Digital Journey
-          </h2>
+        <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
+        Connect With Us to Begin <br /> Your Digital Journey
+          </h1>
           <p className="text-gray-600 text-sm">
             Have a project in mind or curious about how Kitcub can help your business grow? 
             Our team is here to answer your questions, explore your ideas, and guide you toward the right solutions.
@@ -95,23 +95,26 @@ export default function ContactUs() {
         </div>
   
         {/* Image Placeholder */}
-        <div className="w-full max-w-5xl bg-gray-200 flex flex-col items-center justify-center rounded-lg p-20">
-          {/* Placeholder Icon */}
-          <div className="w-20 h-20 bg-gray-300 flex items-center justify-center rounded mb-6">
+        <div className="bg-gray-200 w-full h-[400px] flex items-center justify-center rounded-md">
+        <div className="text-center">
+          <div className="w-14 h-14 mx-auto bg-gray-300 rounded-md mb-4 flex items-center justify-center">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-10 w-10 text-gray-500"
+              className="w-8 h-8 text-gray-500"
               fill="none"
-              viewBox="0 0 24 24"
               stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7l9 9 9-9" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
+              />
             </svg>
           </div>
-  
-          {/* Caption */}
-          <h3 className="text-lg font-semibold">Contact us Page</h3>
+          <h2 className="text-lg font-semibold">Contact Us Page</h2>
         </div>
+      </div>
             </div>  
 
          
@@ -119,9 +122,9 @@ export default function ContactUs() {
       <div className="w-full max-w-3xl">
         {/* Heading */}
         <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-3xl font-bold">
+        <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
             Let’s Start the Conversation
-          </h2>
+          </h1>
           <p className="text-gray-600 mt-2">
             The first steps towards transformation begin with a simple hello.
           </p>
@@ -300,7 +303,7 @@ export default function ContactUs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="mb-10 text-center md:text-left">
-          <p className="text-sm text-gray-500 uppercase tracking-wide">
+          <p className="text-sm text-black uppercase tracking-wide">
             Our offices
           </p>
           <h2 className="text-3xl font-bold text-gray-900 mt-2">Locations</h2>

@@ -54,25 +54,39 @@ export default function TechConsultingPage() {
  
 
   return (
+    <>
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
 
     <div className="bg-gray-50 min-h-screen">
       {/* Header Section */}
-      <header className="text-center py-8 bg-gray-200">
-        <div className="mx-auto w-20 h-20 bg-gray-300 rounded-md flex items-center justify-center">
-          <span className="text-gray-600 text-sm">Img</span>
+      <div className="bg-gray-200 w-full h-[400px] flex items-center justify-center rounded-md">
+        <div className="text-center">
+          <div className="w-14 h-14 mx-auto bg-gray-300 rounded-md mb-4 flex items-center justify-center">
+            <svg
+              className="w-8 h-8 text-gray-500"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
+              />
+            </svg>
+          </div>
+          <h2 className="text-lg font-semibold">          Tech Consulting & Assessments Page
+          </h2>
         </div>
-        <h1 className="text-2xl font-semibold mt-4">
-          Tech Consulting & Assessments Page
-        </h1>
-      </header>
+      </div>
 
       {/* First Section */}
       <section className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
         <div>
-          <h2 className="text-2xl font-bold mb-4">
-            Expert IT Consulting to <br /> Shape Your Digital Future
-          </h2>
+        <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
+        Expert IT Consulting to <br /> Shape Your Digital Future
+          </h1>
           <p className="text-gray-600 mb-6">
             Technology can be a game-changer when it&apos;s the right fit. Our
             consulting team helps you assess your current IT systems, identify
@@ -95,9 +109,10 @@ export default function TechConsultingPage() {
       {/* Second Section */}
       <section className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
         <div>
-          <h3 className="text-xl font-bold mb-4">
+        <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
+
             End-to-End Support: <br /> Integrations, Testing, and Deployment
-          </h3>
+          </h1>
           <p className="text-gray-600">
             Not sure where to begin on your digital transformation journey, or
             looking to optimize your current IT setup? XClub&apos;s Technology
@@ -124,7 +139,7 @@ export default function TechConsultingPage() {
             <div className="w-24 h-20 bg-gray-300 flex items-center justify-center rounded-md mb-4">
               <span className="text-gray-600 text-sm">Img</span>
             </div>
-            <h4 className="font-semibold text-lg mb-2">{service.title}</h4>
+            <h4 className="font-semibold text-black text-lg mb-2">{service.title}</h4>
             <p className="text-gray-600 text-sm">{service.desc}</p>
           </div>
         ))}
@@ -141,29 +156,45 @@ export default function TechConsultingPage() {
             }`}
           >
             {/* Image Placeholder */}
-            <div className="w-full h-52 bg-gray-300 rounded-md flex items-center justify-center">
-              <span className="text-gray-600 text-sm">Img</span>
-            </div>
+            <div className="bg-gray-200 w-full h-[350px] flex items-center justify-center rounded-md order-1 md:order-none">
+          <div className="w-14 h-14 bg-gray-300 flex items-center justify-center rounded-md">
+            <svg
+              className="w-8 h-8 text-gray-500"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
+              />
+            </svg>
+          </div>
+        </div>
 
             {/* Text */}
             <div>
-              <h3 className="text-xl font-bold mb-4">{service.title}</h3>
+            <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
+            {service.title}</h1>
               <p className="text-gray-600">{service.desc}</p>
             </div>
           </div>
         ))}
       </div>
-      </section> 
+      </section>  
+
       <section className="container bg-gray-800 text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-20 rounded-md">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         {/* Left Content */}
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
-Ready to Elevate Your Digital Strategy?          
-</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black subpixel-antialiased text-white">
+          Ready to Elevate Your Digital Strategy?          
+          </h2>
           <p className="text-gray-300 mt-2 max-w-lg">
-              Partner with KClub&apos;s experts to design, build, and implement technology solutions 
-              that accelerate growth and drive measurable impact.
+          Partner with KClub&apos;s experts to design, build, and implement technology solutions 
+          that accelerate growth and drive measurable impact.
           </p>
         </div>
 
@@ -208,8 +239,8 @@ Ready to Elevate Your Digital Strategy?
         ))}
       </div>
     </div>
-    </section>
-
-      </main>
+    </section> 
+      </main> 
+    </>
   );
 } 
