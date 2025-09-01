@@ -393,7 +393,7 @@ export default function Navbar() {
                       border-b shadow-sm">
       {/* Logo */}
       <div className="font-bold text-xl">
-        <Link href="/" className="text-gray-600 hover:text-gray-900">Logo</Link>
+        <Link href="/" className="text-gray-600 hover:text-gray-900" onClick={handleLinkClick}>Logo</Link>
       </div>
 
       {/* Desktop Navigation */}
