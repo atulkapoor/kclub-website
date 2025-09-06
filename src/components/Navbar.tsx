@@ -349,6 +349,7 @@ import { services } from "../../src/app/data/services";
 import * as Icons from "lucide-react";
 import { ChevronDown } from "lucide-react"; // 🔽 arrow
 import PopupForm from "@/components/PopupForm";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // mobile menu
@@ -393,7 +394,14 @@ export default function Navbar() {
                       border-b shadow-sm">
       {/* Logo */}
       <div className="font-bold text-xl">
-        <Link href="/" className="text-gray-600 hover:text-gray-900">Logo</Link>
+        <Link href="/" className="text-gray-600 hover:text-gray-900">
+          <Image
+            src="/logo.svg"
+            alt="Logo"
+          width={100}
+          height={40}
+          />
+        </Link>
       </div>
 
       {/* Desktop Navigation */}
