@@ -43,7 +43,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
             <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded-full">{study.category}</span>
           </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">{study.title}</h1>
-          <p className="text-gray-600 text-lg">{study.excerpt}</p>
+          <p className="text-black text-lg">{study.excerpt}</p>
         </div>
 
         {/* Featured Image */}
@@ -55,7 +55,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
 
         {/* Case Study Content */}
         <article 
-          className="prose max-w-none bg-white p-8 rounded-lg shadow-md"
+          className="prose max-w-none bg-white text-black  p-8 rounded-lg shadow-md"
           dangerouslySetInnerHTML={{ __html: study.content }}
         />
 

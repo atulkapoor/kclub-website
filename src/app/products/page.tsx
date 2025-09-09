@@ -209,7 +209,7 @@ export default function Products() {
             <div className="mb-6">
               <img src="/cklub-logo.png" alt="c-klogo" className="h-8 mx-auto" />
             </div>
-            <h3 className="text-lg font-bold text-black-800 mb-2">{product.name}</h3>
+            <h3 className="text-lg font-bold text-black mb-2">{product.name}</h3>
             {/* <h4 className="font-semibold text-gray-800">{product.category}</h4> */}
             <p className="text-gray-600 text-sm mt-2">{product.description}</p>
 
@@ -272,7 +272,7 @@ export default function Products() {
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-gray-200 rounded-full mr-3"></div>
                   <div>
-                    <p className="font-semibold text-sm">Name Surname</p>
+                    <p className="font-semibold text-black text-sm">Name Surname</p>
                     <p className="text-xs text-gray-500">Position, Company</p>
                   </div>
                 </div>

@@ -28,7 +28,7 @@ const [open, setOpen] = useState(false);
               <button className="btn-color-blue text-white px-6 py-3 rounded text-sm font-medium" onClick={openModal}>
                 REQUEST A QUOTE
               </button>
-              <button className="border text-black border-gray-300 px-6 py-3 rounded hover:bg-gray-50 text-sm font-medium">
+              <button className="border bg-white shadow-xl text-black border-gray-300 px-6 py-3 rounded hover:bg-gray-50 text-sm font-medium">
                 Explore Our Solutions
               </button>
             </div>

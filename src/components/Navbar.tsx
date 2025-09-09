@@ -417,6 +417,8 @@ export default function Navbar() {
         <div
           className="relative"
           onMouseEnter={() => setDesktopDropdown("products")}
+          onMouseLeave={() => setDesktopDropdown(null)}
+
         >
           <div className="flex items-center">
             <Link href="/products" className="text-gray-600 hover:text-gray-900">
@@ -460,6 +462,8 @@ export default function Navbar() {
         <div
           className="relative"
           onMouseEnter={() => setDesktopDropdown("services")}
+          onMouseLeave={() => setDesktopDropdown(null)}
+
         >
           <div className="flex items-center">
             <Link href="/services" className="text-gray-600 hover:text-gray-900">

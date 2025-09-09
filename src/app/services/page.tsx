@@ -118,7 +118,7 @@ export default function Services() {
               <p className="text-sm font-semibold text-gray-500">
                 {service.category}
               </p>
-              <h3 className="text-2xl font-bold mt-2">{service.name}</h3>
+              <h3 className="text-2xl text-black font-bold mt-2">{service.name}</h3>
               <p className="text-gray-600 mt-4">{service.description}</p>
               <div className="mt-6 flex gap-4">
                <a
@@ -127,7 +127,7 @@ export default function Services() {
               >
                 Know More
               </a>
-                <button className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-gray-100 shadow-md hover:shadow-lg">
+                <button className="flex text-black items-center gap-2 px-4 py-2 rounded-lg hover:bg-gray-100 shadow-md hover:shadow-lg">
                   Schedule a Demo <span>→</span>
                 </button>
               </div>
