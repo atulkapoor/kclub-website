@@ -121,7 +121,7 @@ export default function AboutPage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-  <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4">
+  <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4">
       {/* Top Section */}
       <div className="text-center max-w-2xl mx-auto mb-12 mt-20">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
@@ -157,7 +157,7 @@ export default function AboutPage() {
       </div>
     </section>
 
-    <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+    <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
       {/* Section 1 */}
       <div className="grid md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
@@ -258,7 +258,7 @@ export default function AboutPage() {
       </div>
     </section>
 
-    <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+    <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
       {/* Heading */}
       <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
         Trusted by businesses worldwide
@@ -272,25 +272,25 @@ export default function AboutPage() {
       {/* Stats Grid */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         <div>
-          <h3 className="text-2xl md:text-3xl font-bold">5yr+</h3>
+          <h2 className="text-2xl md:text-3xl font-bold">5yr+</h2>
           <p className="text-gray-600 mt-2 text-sm">
             Experience building <br /> innovative solutions
           </p>
         </div>
         <div>
-          <h3 className="text-2xl md:text-3xl font-bold">85+</h3>
+          <h2 className="text-2xl md:text-3xl font-bold">85+</h2>
           <p className="text-gray-600 mt-2 text-sm">
             Projects delivered <br /> across industries
           </p>
         </div>
         <div>
-          <h3 className="text-2xl md:text-3xl font-bold">50+</h3>
+          <h2 className="text-2xl md:text-3xl font-bold">50+</h2>
           <p className="text-gray-600 mt-2 text-sm">
             Certified team of <br /> tech experts
           </p>
         </div>
         <div>
-          <h3 className="text-2xl md:text-3xl font-bold">100%</h3>
+          <h2 className="text-2xl md:text-3xl font-bold">100%</h2>
           <p className="text-gray-600 mt-2 text-sm">
             Long-term <br /> client success
           </p>
@@ -298,12 +298,12 @@ export default function AboutPage() {
       </div>
     </section>
 
-     <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4">
+     <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4">
         <div className="py-16">
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black text-center">
         What our clients are saying
       </h1>
-      <div className="px-6 lg:px-20">
+      <div className="px-6">
       <Swiper
         modules={[Pagination]}
         pagination={{ clickable: true }}
@@ -357,7 +357,7 @@ export default function AboutPage() {
     </div>
     </section>
 
-    <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4">
+    <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <p className="uppercase tracking-wide text-gray-600">Our team</p>
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
@@ -403,7 +403,7 @@ export default function AboutPage() {
       </div>
     </section>
 
-     <section className="container bg-color-blue text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-20 rounded-md">
+     <section className="container bg-color-blue text-white mx-auto px-4 md:px-6 lg:px-26 py-12 lg:py-14 mt-20 rounded-xl">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         {/* Left Content */}
         <div>
