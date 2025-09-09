@@ -25,7 +25,7 @@ const [open, setOpen] = useState(false);
               custom technology services.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="bg-black text-white px-6 py-3 rounded text-sm font-medium" onClick={openModal}>
+              <button className="btn-color-blue text-white px-6 py-3 rounded text-sm font-medium" onClick={openModal}>
                 REQUEST A QUOTE
               </button>
               <button className="border border-gray-300 px-6 py-3 rounded hover:bg-gray-50 text-sm font-medium">
@@ -180,7 +180,7 @@ const [open, setOpen] = useState(false);
       </section>
 
       {/* Call to Action */}
-      <section className="bg-black text-white py-16 text-center">
+      <section className="bg-color-blue text-white py-16 text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black subpixel-antialiased text-white">
           Ready to Transform Your Business?
         </h2>
@@ -205,7 +205,7 @@ const [open, setOpen] = useState(false);
               placeholder="Enter your email"
               className="px-4 py-2 rounded border border-gray-300 w-full sm:w-80"
             />
-            <button className="bg-black text-white px-6 py-2 rounded hover:bg-gray-800 transition">
+            <button className="btn-color-blue text-white px-6 py-2 rounded hover:bg-gray-800 transition">
               Subscribe
             </button>
           </div>

@@ -123,11 +123,11 @@ export default function Services() {
               <div className="mt-6 flex gap-4">
                <a
                 href={service.link}
-                className="border px-4 py-2 rounded-md hover:bg-gray-100 inline-block"
+                className="border px-4 py-2 rounded-lg bg-color-blue text-white inline-block shadow-md hover:shadow-lg transition"
               >
                 Know More
               </a>
-                <button className="flex items-center gap-2 border px-4 py-2 rounded-md hover:bg-gray-100">
+                <button className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-gray-100 shadow-md hover:shadow-lg">
                   Schedule a Demo <span>→</span>
                 </button>
               </div>
@@ -173,7 +173,7 @@ export default function Services() {
                 {Array(5)
                   .fill(0)
                   .map((_, idx) => (
-                    <span key={idx} className="text-black text-lg">★</span>
+                    <span key={idx} className="text-color-blue text-lg">★</span>
                   ))}
               </div>
 
@@ -210,7 +210,7 @@ export default function Services() {
     </div>
     </section>
 
-      <section className="container bg-gray-800 text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 rounded-md">
+      <section className="container bg-color-blue text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 rounded-md">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         {/* Left Content */}
         <div>
@@ -223,17 +223,16 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Right Buttons */}
         <div className="flex gap-4">
           <a
             href="#case-studies"
-            className="px-5 py-2 bg-black text-white rounded hover:bg-gray-700 transition"
+            className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
           >
             See case studies
           </a>
           <a
             href="#contact"
-            className="px-5 py-2 bg-black text-white rounded hover:bg-gray-700 transition"
+            className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
           >
             Contact us
           </a>

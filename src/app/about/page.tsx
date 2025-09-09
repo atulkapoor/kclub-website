@@ -403,7 +403,7 @@ export default function AboutPage() {
       </div>
     </section>
 
-     <section className="container bg-gray-800 text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-20 rounded-md">
+     <section className="container bg-color-blue text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-20 rounded-md">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         {/* Left Content */}
         <div>
@@ -420,17 +420,18 @@ export default function AboutPage() {
         <div className="flex gap-4">
           <a
             href="#case-studies"
-            className="px-5 py-2 bg-black text-white rounded hover:bg-gray-700 transition"
+            className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
           >
             See case studies
           </a>
           <a
             href="#contact"
-            className="px-5 py-2 bg-black text-white rounded hover:bg-gray-700 transition"
+            className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
           >
             Contact us
           </a>
         </div>
+
       </div>
     </section>
 

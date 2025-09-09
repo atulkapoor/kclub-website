@@ -40,7 +40,7 @@ export default async function ProductDetail({ params }: PageProps) {
               {product.hero.subtitle}
             </p>
 
-            <button className="mt-6 bg-black text-white px-5 py-2 rounded hover:bg-gray-800 transition">
+            <button className="mt-6 bg-color-blue text-white px-14 py-2 rounded-lg hover:bg-gray-800 transition">
               Get in touch
             </button>
           </div>
@@ -110,7 +110,7 @@ export default async function ProductDetail({ params }: PageProps) {
             </h1>
             <p className="text-gray-700 mb-4">{product.scheduledemo.subtitle}</p>
             {/* Desktop CTA */}
-            <button className="hidden lg:block bg-black text-white px-4 py-2 rounded text-sm">
+            <button className="mt-4 bg-color-blue text-white px-14 py-2 rounded hover:bg-gray-800 transition">
               Schedule a Demo
             </button>
           </div>
@@ -118,7 +118,7 @@ export default async function ProductDetail({ params }: PageProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="container bg-gray-800 text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-20 rounded-md">
+      <section className="container bg-color-blue mb-10 text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-20 rounded-md">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           {/* Left Content */}
           <div>
@@ -134,19 +134,19 @@ export default async function ProductDetail({ params }: PageProps) {
 
           {/* Right Buttons */}
           <div className="flex gap-4">
-            <a
-              href="#case-studies"
-              className="px-5 py-2 bg-black text-white rounded hover:bg-gray-700 transition"
-            >
-              See case studies
-            </a>
-            <a
-              href="#contact"
-              className="px-5 py-2 bg-black text-white rounded hover:bg-gray-700 transition"
-            >
-              Contact us
-            </a>
-          </div>
+          <a
+            href="#case-studies"
+            className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
+          >
+            See case studies
+          </a>
+          <a
+            href="#contact"
+            className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
+          >
+            Contact us
+          </a>
+        </div>
         </div>
       </section>
     </main>
