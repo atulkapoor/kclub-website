@@ -511,7 +511,7 @@ export default function Navbar() {
       </nav>
 
       {/* Desktop CTA */}
-      <button className="hidden lg:block bg-black text-white px-4 py-2 rounded text-sm" onClick={openModal}>
+      <button className="hidden lg:block bg-[#050953] text-white px-4 py-2 rounded text-sm" onClick={openModal}>
         Book a Demo
       </button>
 
