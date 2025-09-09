@@ -28,7 +28,7 @@ const [open, setOpen] = useState(false);
               <button className="btn-color-blue text-white px-6 py-3 rounded text-sm font-medium" onClick={openModal}>
                 REQUEST A QUOTE
               </button>
-              <button className="border border-gray-300 px-6 py-3 rounded hover:bg-gray-50 text-sm font-medium">
+              <button className="border text-black border-gray-300 px-6 py-3 rounded hover:bg-gray-50 text-sm font-medium">
                 Explore Our Solutions
               </button>
             </div>
@@ -83,7 +83,7 @@ const [open, setOpen] = useState(false);
               Innovation Backed by Experience
             </h2>
             <div className="mb-6">
-              <div className="text-4xl md:text-5xl font-bold mb-2">85+</div>
+              <div className="text-4xl text-black md:text-5xl font-bold mb-2">85+</div>
               <div className="text-gray-600">Projects Delivered</div>
             </div>
             <p className="text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0">
@@ -125,7 +125,7 @@ const [open, setOpen] = useState(false);
                 key={i}
                 className="p-6 bg-white border border-gray-200 rounded-lg shadow hover:shadow-md transition"
               >
-                <h3 className="text-lg font-semibold mb-2">{solution}</h3>
+                <h3 className="text-lg text-black font-semibold mb-2">{solution}</h3>
                 <p className="text-sm text-gray-600">
                   High-quality {solution.toLowerCase()} tailored to your business
                   needs.
@@ -148,7 +148,7 @@ const [open, setOpen] = useState(false);
                 key={i}
                 className="p-6 bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition"
               >
-                <h3 className="text-lg font-semibold mb-2">{ind}</h3>
+                <h3 className="text-lg text-black font-semibold mb-2">{ind}</h3>
                 <p className="text-sm text-gray-600">
                   Innovative solutions for the {ind.toLowerCase()} sector.
                 </p>
@@ -173,7 +173,7 @@ const [open, setOpen] = useState(false);
                 “KClub completely transformed our business with their modern
                 tech solutions. Highly recommended!”
               </p>
-              <span className="font-semibold">Client {t}</span>
+              <span className="font-semibold text-black">Client {t}</span>
             </div>
           ))}
         </div>

@@ -406,8 +406,11 @@ export default function Navbar() {
 
       {/* Desktop Navigation */}
       <nav className="hidden lg:flex space-x-8 items-center" ref={dropdownRef}>
-        <Link href="/about" className="text-gray-600 hover:text-gray-900">
+        {/* <Link href="/about" className="text-gray-600 hover:text-gray-900">
           About
+        </Link> */}
+        <Link href="/company" className="text-gray-600 hover:text-gray-900">
+          Company
         </Link>
 
         {/* Products Dropdown (Desktop Hover + Click) */}
@@ -505,9 +508,9 @@ export default function Navbar() {
         <Link href="/careers" className="text-gray-600 hover:text-gray-900">
           Careers
         </Link>
-        <Link href="/contact" className="text-gray-600 hover:text-gray-900">
+        {/* <Link href="/contact" className="text-gray-600 hover:text-gray-900">
           Contact Us
-        </Link>
+        </Link> */}
       </nav>
 
       {/* Desktop CTA */}
@@ -541,8 +544,11 @@ export default function Navbar() {
       {isOpen && (
         <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-b shadow-lg z-50">
           <nav className="flex flex-col space-y-4 p-6">
-            <Link href="/about" onClick={handleLinkClick} className="text-gray-600 hover:text-gray-900">
+            {/* <Link href="/about" onClick={handleLinkClick} className="text-gray-600 hover:text-gray-900">
               About
+            </Link> */}
+            <Link href="/company" onClick={handleLinkClick} className="text-gray-600 hover:text-gray-900">
+              Company
             </Link>
 
             {/* Products Mobile Accordion */}
@@ -637,9 +643,9 @@ export default function Navbar() {
             <Link href="/careers" onClick={handleLinkClick} className="text-gray-600 hover:text-gray-900">
               Careers
             </Link>
-            <Link href="/contact" onClick={handleLinkClick} className="text-gray-600 hover:text-gray-900">
+            {/* <Link href="/contact" onClick={handleLinkClick} className="text-gray-600 hover:text-gray-900">
               Contact Us
-            </Link>
+            </Link> */}
 
             <button className="bg-black text-white px-4 py-2 rounded text-sm w-fit" onClick={openModal}>
               Book a Demo
