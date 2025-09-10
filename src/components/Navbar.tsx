@@ -409,7 +409,7 @@ export default function Navbar() {
         {/* <Link href="/about" className="text-gray-600 hover:text-gray-900">
           About
         </Link> */}
-        <Link href="/company" className="text-gray-600 hover:text-gray-900">
+        <Link href="/about" className="text-gray-600 hover:text-gray-900">
           Company
         </Link>
 
@@ -552,7 +552,7 @@ export default function Navbar() {
             {/* <Link href="/about" onClick={handleLinkClick} className="text-gray-600 hover:text-gray-900">
               About
             </Link> */}
-            <Link href="/company" onClick={handleLinkClick} className="text-gray-600 hover:text-gray-900">
+            <Link href="/about" onClick={handleLinkClick} className="text-gray-600 hover:text-gray-900">
               Company
             </Link>
 
