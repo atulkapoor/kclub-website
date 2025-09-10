@@ -435,8 +435,8 @@ export default function Navbar() {
           </div>
           {desktopDropdown === "products" && (
             <div
-              className="absolute left-0 mt-4 grid grid-cols-2 lg:grid-cols-3 gap-6 
-                          bg-white shadow-xl border rounded-xl p-6 w-[700px] z-50"
+              className="absolute left-0 grid grid-cols-2 lg:grid-cols-3 gap-6 
+                          bg-white shadow-xl border rounded-xl p-6 w-[700px] z-50" 
             >
               {products.map((item, idx) => {
                 const Icon = getIcon(item.icon);
@@ -463,7 +463,6 @@ export default function Navbar() {
           className="relative"
           onMouseEnter={() => setDesktopDropdown("services")}
           onMouseLeave={() => setDesktopDropdown(null)}
-
         >
           <div className="flex items-center">
             <Link href="/services" className="text-gray-600 hover:text-gray-900">
@@ -480,8 +479,10 @@ export default function Navbar() {
           </div>
           {desktopDropdown === "services" && (
             <div
-              className="absolute left-0 mt-4 grid grid-cols-2 lg:grid-cols-3 gap-6 
+              className="absolute left-0 grid grid-cols-2 lg:grid-cols-3 gap-6 
                           bg-white shadow-xl border rounded-xl p-6 w-[700px] z-50"
+                          onMouseEnter={() => setDesktopDropdown("services")}
+                          onMouseLeave={() => setDesktopDropdown(null)}
             >
               {services.map((item, idx) => {
                 const Icon = getIcon(item.icon);
