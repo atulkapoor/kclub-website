@@ -121,9 +121,9 @@ export default function AboutPage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-  <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4">
+  <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-30">
       {/* Top Section */}
-      <div className="text-center max-w-2xl mx-auto mb-12 mt-20">
+      <div className="text-center max-w-2xl mx-auto mb-12">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
           Discover the People & <br /> Purpose Behind KClub
         </h1>

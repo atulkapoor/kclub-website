@@ -22,7 +22,7 @@ export default async function ProductDetail({ params }: PageProps) {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+      <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-30">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
@@ -55,7 +55,7 @@ export default async function ProductDetail({ params }: PageProps) {
       </section>
 
       {/* Features Section */}
-      <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+      <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
           {product.features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center">
@@ -82,7 +82,7 @@ export default async function ProductDetail({ params }: PageProps) {
       </section>
 
       {/* Schedule Demo Section */}
-      <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+      <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Right Placeholder */}
           <div className="bg-gray-200 w-full h-[350px] flex items-center justify-center rounded-md">

@@ -62,7 +62,7 @@ export default function Services() {
   ];
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-        <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-30 text-center">
+        <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-30 text-center">
       {/* Heading + Description */}
       <div className="max-w-3xl mx-auto">
         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
@@ -86,7 +86,7 @@ export default function Services() {
       </div>
     </section>
 
-    <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+    <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
       {/* Section Heading */}
       <div className="text-center max-w-3xl mx-auto">
         <p className="text-sm uppercase tracking-wide text-gray-500">
@@ -146,14 +146,14 @@ export default function Services() {
       </div>
     </section>
 
-    <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+    <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
         <div className="py-16">
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 subpixel-antialiased text-black text-center">
        Why Clients Choose KClub
       </h1>
          <p className="text-sm tracking-wide text-black-500 text-center mb-8">
           Because we don&apos;t just deliver services, we deliver outcomes.</p>
-       <div className="px-6 lg:px-20">
+       <div className="cr">
       <Swiper
         modules={[Pagination]}
         pagination={{ clickable: true }}
@@ -167,7 +167,7 @@ export default function Services() {
       >
         {[1, 2, 3, 4].map((i) => (
           <SwiperSlide key={i}>
-            <div className="border rounded-lg p-6 flex flex-col justify-between h-full mb-15">
+            <div className="border rounded-lg p-10 flex flex-col justify-between h-full mb-15">
               {/* Stars */}
               <div className="flex mb-4">
                 {Array(5)
