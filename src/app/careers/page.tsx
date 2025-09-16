@@ -3,7 +3,7 @@
       import jobs from "../data/jobs";
 export default function Careers() {
     return (
-      <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+      <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
     <section className="py-16 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Heading */}

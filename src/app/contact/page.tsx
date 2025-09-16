@@ -77,16 +77,35 @@ export default function ContactUs() {
         { src: "/webflow-logo.png", alt: "Relume" },
         { src: "/relume-logo.png", alt: "Webflow" },
         { src: "/webflow-logo.png", alt: "Relume" },
-      ];
+    ];
+    const offices = [
+      {
+        country: "KSA",
+        address: "Al Sulaimania, Riyadh, Saudi Arabia",
+        mapLink: "#",
+      },
+      {
+        country: "UAE",
+        address: "Business Bay, Dubai, UAE",
+        mapLink: "#",
+      },
+      {
+        country: "India",
+        address: "Oberoi Springs, Andheri West, Mumbai, India",
+        mapLink: "#",
+      },
+    ];
+  
+  
     return (
         <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
 
 
       <div className="w-full flex flex-col items-center py-12">
         {/* Title + Description */}
-        <div className="max-w-2xl text-center mb-10">
+        <div className="max-w-4xl text-center mb-10">
         <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
-        Connect With Us to Begin <br /> Your Digital Journey
+        Connect With Us to Begin {/* <br /> */}Your Digital Journey
           </h1>
           <p className="text-gray-600 text-sm">
             Have a project in mind or curious about how Kitcub can help your business grow? 
@@ -119,7 +138,35 @@ export default function ContactUs() {
 
          
     <div className="w-full flex justify-center py-12 px-4">
-      <div className="w-full max-w-3xl">
+    <section className="bg-[#f2f5ff] py-12 mr-8">
+      <div className="max-w-4xl mx-auto px-6">
+        <h2 className="text-2xl font-bold mb-2 text-black">Our Offices</h2>
+        <p className="text-black mb-8">
+          Our global presence allows us to serve businesses across regions with local expertise.
+        </p>
+
+        <div className="space-y-8">
+          {offices.map((office, index) => (
+            <div
+              key={index}
+              className={`pl-4 ${index === 0 ? "border-l-2 border-gray-400" : ""}`}
+            >
+              <h3 className="font-bold text-lg text-black">{office.country}</h3>
+              <p className="text-black">{office.address}</p>
+              <a
+                href={office.mapLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-block font-semibold text-sm text-black hover:text-gray-700"
+              >
+                View Map
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+          <div className="w-full max-w-3xl">
         {/* Heading */}
         <div className="text-center mb-10">
         <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
@@ -292,16 +339,16 @@ export default function ContactUs() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-black text-white py-2 rounded-md hover:bg-gray-900 transition"
+            className="w-full bg-[#1a3eec] text-white py-2 rounded-md hover:bg-gray-900 transition"
           >
             Submit
           </button>
         </form>
       </div>
           </div>  
-    <section className="py-16 bg-white">
+    {/* <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
+        {/* Heading 
         <div className="mb-10 text-center md:text-left">
           <p className="text-sm text-black uppercase tracking-wide">
             Our offices
@@ -312,11 +359,11 @@ export default function ContactUs() {
           </p>
         </div>
 
-        {/* Locations + Map */}
+        {/* Locations + Map  
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-gray-50 rounded-xl overflow-hidden shadow">
-          {/* Left - Offices */}
+          {/* Left - Offices  
           <div className="p-6 space-y-6">
-            {/* Sydney */}
+            {/* Sydney  
             <div>
               <h3 className="text-lg font-semibold text-gray-900">Sydney</h3>
               <p className="text-gray-600 text-sm">
@@ -330,7 +377,7 @@ export default function ContactUs() {
               </a>
             </div>
 
-            {/* New York */}
+            {/* New York  
             <div>
               <h3 className="text-lg font-semibold text-gray-900">New York</h3>
               <p className="text-gray-600 text-sm">
@@ -344,7 +391,7 @@ export default function ContactUs() {
               </a>
             </div>
 
-            {/* London */}
+            {/* London  
             <div>
               <h3 className="text-lg font-semibold text-gray-900">London</h3>
               <p className="text-gray-600 text-sm">
@@ -359,7 +406,7 @@ export default function ContactUs() {
             </div>
           </div>
 
-          {/* Right - Map Placeholder */}
+          {/* Right - Map Placeholder 
           <div className="flex items-center justify-center bg-gray-200">
             <svg
               className="w-24 h-24 text-gray-400"
@@ -374,8 +421,11 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-          </section> 
-          <section className="text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-20 rounded-md">
+          </section>  */}
+        <section className="text-white flex justify-between mt-20 py-12 lg:py-14  rounded-md">
+          <div className="w-xl">
+            <p  className="font-bold text-black">Trusted by the world&apos;s best companies</p>
+          </div>
      <div className="overflow-hidden whitespace-nowrap w-full bg-white">
       <div className="flex animate-scroll">
         {logos.map((logo, i) => (
