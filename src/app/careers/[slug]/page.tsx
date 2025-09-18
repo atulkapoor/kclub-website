@@ -49,13 +49,13 @@ export default async function JobPage({ params }: PageProps) {
           <span>⏱ {job.type}</span>
         </div>
 
-        <Link
-          href={`/careers/${params.slug}/apply`}
+        {/* <Link
+          // href={`/careers/${params.slug}/apply`}
           // href={`/careers/${params.id}/apply`}
           className="mt-6 inline-block bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700"
         >
           Apply Now
-        </Link>
+        </Link> */}
       </div>
     </main>
   );
