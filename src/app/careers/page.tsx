@@ -59,7 +59,7 @@ export default function Careers() {
       </div>
       </div>
       </section>
-      <div className="max-w-6xl mx-auto p-6">
+      <div className="max-w-6xl mx-2 p-6">
       {/* Header */}
       <h1 className="text-3xl text-black font-bold mb-2">Open Positions</h1>
       <p className="mb-6 text-black">
@@ -125,7 +125,7 @@ export default function Careers() {
                 </div>
               </div>
               <Link
-                href={`/career/${job.slug}`}
+                href={`/careers/${job.slug}`}
                 className="text-indigo-600 font-semibold hover:underline"
               >
                 Apply Now →

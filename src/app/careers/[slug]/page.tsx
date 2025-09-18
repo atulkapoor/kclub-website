@@ -4,8 +4,8 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 
 type PageProps = {
-  // params: { slug: string };
-  params: { id: string };
+  params: { slug: string };
+  // params: { id: string };
 };
 
 // ✅ Static paths generate
@@ -17,13 +17,13 @@ export async function generateStaticParams() {
 }
 
 // ✅ Job detail page
-export default function JobPage({ params }: PageProps) {
-  // const { slug } = params;
-  const { id } = params;
-  const job = jobs.find((job) => job.id.toString() === id);
+export default async function JobPage({ params }: PageProps) {
+  const { slug } = await params;
+  // const { id } = params;
+  // const job = jobs.find((job) => job.id.toString() === id);
 
   // const job = jobs.find((job) => job.id === slug); // ya slugify(title)
-  // const job = jobs.find((job) => job.slug === slug); // 👈 match by slug
+  const job = jobs.find((job) => job.slug === slug); // 👈 match by slug
 
 
   if (!job) return notFound();
@@ -50,7 +50,8 @@ export default function JobPage({ params }: PageProps) {
         </div>
 
         <Link
-          href={`/career/${params.id}/apply`}
+          href={`/careers/${params.slug}/apply`}
+          // href={`/careers/${params.id}/apply`}
           className="mt-6 inline-block bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700"
         >
           Apply Now
