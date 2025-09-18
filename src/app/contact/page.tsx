@@ -137,7 +137,7 @@ export default function ContactUs() {
             </div>  
 
          
-    <div className="w-full flex justify-center py-12 px-4">
+    <div className="w-full flex justify-center py-12">
     <section className="bg-[#f2f5ff] py-12 mr-8">
       <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-2xl font-bold mb-2 text-black">Our Offices</h2>
@@ -168,7 +168,7 @@ export default function ContactUs() {
     </section>
           <div className="w-full max-w-3xl">
         {/* Heading */}
-        <div className="text-center mb-10">
+        <div className="mb-10">
         <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
             Let’s Start the Conversation
           </h1>
