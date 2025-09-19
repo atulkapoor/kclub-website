@@ -49,21 +49,14 @@ export default async function ServiceDetail({ params }: PageProps) {
         {/* Left Content */}
         <div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold subpixel-antialiased text-black text-gray-900">
-            Transform Your Business with the Power of AI
+            {service.hero.title}
           </h2>
         </div>
 
         {/* Right Content */}
         <div className="text-gray-700">
           <p className="mb-6 leading-relaxed">
-            Our AI and machine learning solutions go beyond automation they
-            enable predictive insights, process optimization, and intelligent
-            decision-making. Whether it&apos;s data-driven forecasting,
-            recommendation engines, chatbots, or computer vision applications,
-            we design AI systems tailored to your business challenges. By
-            integrating seamlessly into your operations, our AI solutions empower
-            you to unlock efficiency, reduce costs, and gain a competitive edge
-            in the digital-first era.
+             {service.hero.subtitle}
           </p>
           <button className="px-14 py-2 bg-black text-white rounded-lg bg-color-blue transition">
             Schedule a demo
@@ -93,17 +86,10 @@ export default async function ServiceDetail({ params }: PageProps) {
           {/* Left Text */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
-              Harness the Power of Artificial Intelligence for Your Business
+              {service.scheduledemo.title}
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Our AI services help you leverage artificial intelligence and
-              machine learning to solve complex business challenges and unlock
-              new opportunities. We bring cutting-edge AI capabilities to your
-              organization—from automating routine tasks with smart algorithms
-              to uncovering patterns in big data that drive strategic
-              decision-making. KREOS&apos;s AI-driven tools will work closely with
-              your industry&apos;s unique context and develop bespoke AI solutions
-              that give you a competitive edge.
+              {service.scheduledemo.subtitle}
             </p>
           </div>
 
@@ -119,19 +105,10 @@ export default async function ServiceDetail({ params }: PageProps) {
           {/* Right Text */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
-              Comprehensive AI Development and Integration
+              {service.comparedemo?.title}
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              We have experience building a variety of AI-driven applications.
-              Whether you need to implement a predictive analytics model to
-              forecast demand, deploy a natural language chatbot for customer
-              service, or use computer vision to improve services quality
-              control, our AI team can design and deliver solutions tailored to
-              your requirements. Our expertise spans industries, and we bring a
-              holistic approach that ensures successful integration with your
-              workflows. By working closely with your team, we develop AI
-              applications that provide value, scale with your business, and
-              transform the way you work.
+                {service.comparedemo?.subtitle}
             </p>
           </div>
 
