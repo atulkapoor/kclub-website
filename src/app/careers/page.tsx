@@ -24,7 +24,7 @@ export default function Careers() {
 
     return (
       <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
-    <section className="py-16 bg-white">
+    <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-30">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Heading */}
         <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
@@ -59,85 +59,86 @@ export default function Careers() {
       </div>
       </div>
       </section>
-      <div className="max-w-6xl mx-2 p-6">
-      {/* Header */}
-      <h1 className="text-3xl text-black font-bold mb-2">Open Positions</h1>
-      <p className="mb-6 text-black">
-        Explore opportunities across roles and join a team where every position contributes to shaping the future of digital transformation.
-      </p>
+   
+   <div className="max-w-6xl mx-auto p-6 text-center">
+  {/* Header */}
+  <h1 className="text-3xl text-black font-bold mb-2">Open Positions</h1>
+  <p className="mb-6 text-black">
+    Explore opportunities across roles and join a team where every position contributes to shaping the future of digital transformation.
+  </p>
 
-      {/* Categories + Search */}
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-        {/* Categories */}
-        <div className="flex gap-3 flex-wrap">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setSelectedCategory(cat)}
-              className={`px-4 py-2 rounded-md text-sm font-medium ${
-                selectedCategory === cat
-                  ? "bg-indigo-900 text-white"
-                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-
-        {/* Search */}
-        <div className="flex items-center gap-2">
-          <input
-            type="text"
-            placeholder="Search"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="border text-black rounded-md px-4 py-2 w-64"
-          />
-          <button
-            onClick={() => setSearch("")}
-            className="bg-indigo-900 text-white px-4 py-2 rounded-md"
-          >
-            Search
-          </button>
-        </div>
-      </div>
-
-      {/* Jobs List */}
-      <div className="space-y-4">
-        {filteredJobs.length > 0 ? (
-          filteredJobs.map((job) => (
-            <div
-              key={job.id}
-              className="border rounded-lg p-6 shadow-sm flex justify-between items-center"
-            >
-              <div>
-                <h2 className="text-xl font-semibold text-black">{job.title}</h2>
-                <span className="text-sm text-black bg-gray-200 px-2 py-1 rounded">
-                  {job.department}
-                </span>
-                <p className="text-gray-600 mt-2">
-                  {job.description.slice(0, 80)}...
-                </p>
-                <div className="flex gap-4 mt-3 text-sm text-gray-500">
-                  <span>📍 {job.location}</span>
-                  <span>⏱ {job.type}</span>
-                </div>
-              </div>
-              <Link
-                href={`/careers/${job.slug}`}
-                className="text-indigo-600 font-semibold hover:underline"
-              >
-                Apply Now →
-              </Link>
-            </div>
-          ))
-        ) : (
-          <div className="text-gray-600">No jobs found.</div>
-        )}
-      </div>
+  {/* Categories + Search */}
+  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+    {/* Categories */}
+    <div className="flex gap-3 flex-wrap justify-center md:justify-start">
+      {categories.map((cat) => (
+        <button
+          key={cat}
+          onClick={() => setSelectedCategory(cat)}
+          className={`px-4 py-2 rounded-md text-sm font-medium ${
+            selectedCategory === cat
+              ? "bg-indigo-900 text-white"
+              : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+          }`}
+        >
+          {cat}
+        </button>
+      ))}
     </div>
-       
+
+    {/* Search */}
+    <div className="flex items-center gap-2 justify-center md:justify-end">
+      <input
+        type="text"
+        placeholder="Search"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        className="border text-black rounded-md px-4 py-2 w-64"
+      />
+      <button
+        onClick={() => setSearch("")}
+        className="bg-indigo-900 text-white px-4 py-2 rounded-md"
+      >
+        Search
+      </button>
+    </div>
+  </div>
+
+  {/* Jobs List */}
+  <div className="space-y-4">
+    {filteredJobs.length > 0 ? (
+      filteredJobs.map((job) => (
+        <div
+          key={job.id}
+          className="border rounded-lg p-6 shadow-sm flex flex-col md:flex-row md:justify-between md:items-center text-left md:text-left"
+        >
+          <div>
+            <h2 className="text-xl font-semibold text-black">{job.title}</h2>
+            <span className="text-sm text-black bg-gray-200 px-2 py-1 rounded">
+              {job.department}
+            </span>
+            <p className="text-gray-600 mt-2">
+              {job.description.slice(0, 80)}...
+            </p>
+            <div className="flex gap-4 mt-3 text-sm text-gray-500">
+              <span>📍 {job.location}</span>
+              <span>⏱ {job.type}</span>
+            </div>
+          </div>
+          <Link
+            href={`/careers/${job.slug}`}
+            className="text-indigo-600 font-semibold hover:underline mt-4 md:mt-0"
+          >
+            Apply Now →
+          </Link>
+        </div>
+      ))
+    ) : (
+      <div className="text-gray-600">No jobs found.</div>
+    )}
+  </div>
+</div>
+
           {/* <div className="max-w-5xl mx-auto py-6">
           <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
           Open Positions</h1>
