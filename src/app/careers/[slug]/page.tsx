@@ -1,7 +1,7 @@
 import Link from "next/link";
 import jobs from "../../data/jobs";
 import { notFound } from "next/navigation";
-import Image from "next/image";
+// import Image from "next/image";
 
 type PageProps = {
   params: { slug: string };
@@ -31,13 +31,13 @@ export default async function JobPage({ params }: PageProps) {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
       <div className="max-w-4xl mx-auto p-6">
-        <Image
-          src={job.image}
+        {/* <Image
+          // src={job.image}
           alt={job.title}
           width={800}
           height={400}
           className="rounded-lg mb-6"
-        />
+        /> */}
         <h1 className="text-3xl font-bold">{job.title}</h1>
         <span className="inline-block bg-gray-200 text-sm px-2 py-1 rounded mt-2">
           {job.department}

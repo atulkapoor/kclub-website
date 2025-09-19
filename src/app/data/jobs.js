@@ -9,7 +9,7 @@ const jobs = [
     category: "Category one",
     description:
       "We are looking for a skilled frontend developer with React/Next.js experience.",
-    image: "/img.jpg",
+    // image: "/img.jpg",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const jobs = [
     category: "Category two",
     description:
       "Design engaging interfaces and work closely with developers to bring them to life.",
-    image: "/img.jpg",
+    // image: "/img.jpg",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const jobs = [
     category: "Category one",
     description:
       "Looking for backend developer with Node.js and SQL experience.",
-    image: "/img.jpg",
+    // image: "/img.jpg",
   },
 ];
 

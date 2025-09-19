@@ -3,7 +3,7 @@
 import jobs from "../data/jobs";
 import { useState } from "react";
       
-const categories = ["View all", "Category one", "Category two", "Category three",];
+const categories = ["View all", "Category one", "Category two", "Category three"];
 
 export default function Careers() {
 
