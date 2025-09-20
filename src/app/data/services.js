@@ -12,49 +12,57 @@ export const services = [
     icon: "Box",
         features : [
         {
-            title: "Real-Time Inventory Tracking",
+            title: "AI Integration & MLOps",
             description:
-            "Always know your stock levels across locations with live updates.",
+            "Seamless integration of AI models into your software or cloud, with ongoing monitoring, tuning, and support for model performance.",
             image: "/placeholder.png",
         },
         {
-            title: "Order Picking Optimization",
+            title: "AI Strategy & Roadmap",
             description:
-            "AI-powered prioritization for faster, accurate order fulfillment.",
+            "Consulting to prioritize AI use-cases and develop a roadmap aligned with your business objectives.",
             image: "/placeholder.png",
         },
         {
-            title: "Barcode & RFID Integration",
+            title: "Custom ML Model Development",
             description:
-            "Quick scanning for accurate inventory updates and error reduction.",
+            "Building and training machine learning models (predictive analytics, classification, and more) tailored to your data.",
             image: "/placeholder.png",
         },
         {
-            title: "Warehouse Analytics Dashboard",
+            title: "Natural Language & Chatbots",
             description:
-            "Visualize orders, stock movement, and KPIs to drive continuous improvement.",
+            "NLP solutions for virtual assistants, chatbots, and text analytics to automate support and glean insights from text data.",
             image: "/placeholder.png",
         },
         {
-            title: "Integration Ready",
+            title: "Computer Vision Applications",
             description:
-            "Seamlessly connect with ERP, e-commerce, and shipping systems for end-to-end automation.",
+            "Image and video analysis systems for use cases like object detection, quality inspection, or surveillance automation.",
             image: "/placeholder.png",
         },
         ],
 
     hero: {
-      title: "Intelligent Tools for the Modern Supply Chain",
+      title: "Transform Your Business with the Power of AI",
       subtitle:
-        "CrateKLUB is an advanced Warehouse Management System (WMS) that digitizes and optimizes your warehouse operations from end to end. It provides real-time visibility into inventory levels and automates key processes, ensuring stock is always accurate and orders are fulfilled faster. With CrateKLUB, you can streamline everything from receiving and put-away to picking, packing, and shipping – reducing errors and operational costs. Ready to modernize your warehouse?",
+        "Our AI solutions deliver predictive insights, process optimization, and smarter decisions. From forecasting and chatbots to recommendation engines and computer vision, we build tailored systems that boost efficiency, lower costs, and give your business a competitive edge.",
       cta: "Get in touch",
        image: "/placeholder.png",
       link: "/services/inventory-analytics",
     },
      scheduledemo: {
-      title: "Smart Warehouse Management, Simplified",
+      title: "Harness the Power of Artificial Intelligence for Your Business",
       subtitle:
-        "Designed for modern supply chains, CrateKLUB empowers your warehouse managers with intelligent tools like smart storage allocation and route-optimized picking. Barcode and RFID integration improve tracking accuracy, while analytics dashboards offer insights into inventory turnover and warehouse performance. Whether you run a single stockroom or multiple distribution centers, CrateKLUB scales to keep your inventory moving efficiently. Ready to see how it works?",
+        "Our AI services help you solve complex challenges and unlock new opportunities with intelligent automation, data insights, and machine learning. From streamlining tasks to uncovering patterns in big data, we design bespoke AI solutions that drive smarter decisions and give your business a competitive edge.",
+      image: "/placeholder.png",
+      link: "/services/inventory-analytics",
+      cta: "Get in touch",
+    },
+    comparedemo: {
+      title: "Comprehensive AI Development and Integration",
+      subtitle:
+        "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
       image: "/placeholder.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
@@ -119,6 +127,14 @@ export const services = [
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
+       comparedemo: {
+      title: "Comprehensive AI Development and Integration",
+      subtitle:
+        "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
+      image: "/placeholder.png",
+      link: "/services/inventory-analytics",
+      cta: "Get in touch",
+    },
   },
   {
     id:3,
@@ -179,6 +195,14 @@ export const services = [
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
+       comparedemo: {
+      title: "Comprehensive AI Development and Integration",
+      subtitle:
+        "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
+      image: "/placeholder.png",
+      link: "/services/inventory-analytics",
+      cta: "Get in touch",
+    },
   },
 
     {
@@ -224,6 +248,14 @@ export const services = [
       link: "/services/healthcare-management",
       cta: "Get in touch",
     },
+       comparedemo: {
+      title: "Comprehensive AI Development and Integration",
+      subtitle:
+        "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
+      image: "/placeholder.png",
+      link: "/services/inventory-analytics",
+      cta: "Get in touch",
+    },
   },
   {
     id:5,
@@ -266,6 +298,14 @@ export const services = [
         "Streamline approvals, reduce manual paperwork, and deliver quick loan services to clients. FinstaKLUB enhances customer satisfaction while ensuring regulatory compliance.",
       image: "/placeholder.png",
       link: "/services/lending-management",
+      cta: "Get in touch",
+    },
+       comparedemo: {
+      title: "Comprehensive AI Development and Integration",
+      subtitle:
+        "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
+      image: "/placeholder.png",
+      link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
   }
