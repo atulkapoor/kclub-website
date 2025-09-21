@@ -14,8 +14,8 @@ export async function generateStaticParams() {
 }
 
 // ✅ Job detail page (sync, no async needed)
-export default function JobPage({ params }: PageProps) {
-  const { slug } = params;
+export default async function JobPage({ params }: PageProps) {
+  const { slug } = await params;
 
   const job = jobs.find((job) => job.slug === slug);
 
