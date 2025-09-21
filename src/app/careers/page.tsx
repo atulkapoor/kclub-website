@@ -125,14 +125,14 @@ export default function Careers() {
               <span>⏱ {job.type}</span>
             </div>
           </div>
-          <Link
+          {/* <Link
             href={`/careers/${job.slug}`}
             className="text-indigo-600 font-semibold hover:underline mt-4 md:mt-0"
-          >
+          > */}
           <p>
             Apply Now →
           </p>
-          </Link>
+          {/* </Link> */}
         </div>
       ))
     ) : (
