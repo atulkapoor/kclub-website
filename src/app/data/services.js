@@ -7,7 +7,7 @@ export const services = [
     category: "Smarter decisions, powered by intelligence.",
     description:
       "Harness artificial intelligence and machine learning to automate processes, uncover insights, and drive smarter decision-making for your business.",
-    image: "/placeholder.png",
+    image: "/services-img/services1.png",
     link: "/services/ai-services",
     icon: "Box",
         features : [
@@ -75,7 +75,7 @@ export const services = [
     category: "Supply Chain",
     description:
       "A specialized platform that helps maritime agencies manage vessel schedules, cargo operations, and port logistics with ease and efficiency.",
-    image: "/placeholder.png",
+    image: "/services-img/services2.png",
     link: "/services/odoo-services-page",
     icon: "Box",
     features : [
@@ -143,7 +143,7 @@ export const services = [
     category: "Supply Chain",
     description:
       "An integrated communication hub for organizations to manage internal messaging, alerts, and collaboration in one secure platform.",
-    image: "/placeholder.png",
+    image: "/services-img/services3.png",
     link: "/services/custom-saas-app-development-page",
     icon: "Box",
     features: [
@@ -212,7 +212,7 @@ export const services = [
     category: "Healthcare",
     description:
       "A comprehensive healthcare management system for clinics and hospitals, covering patient records, appointments, telehealth, and billing.",
-    image: "/placeholder.png",
+    image: "/services-img/services4.png",
     link: "/services/mobile-app-development-page",
     icon: "Box",
     features: [
@@ -264,7 +264,7 @@ export const services = [
     category: "Finance",
     description:
       "An end-to-end digital lending platform for financial institutions to automate loan origination, KYC, underwriting, and disbursement.",
-    image: "/placeholder.png",
+    image: "/services-img/servies5.png",
     link: "/services/tech-consulting-and-assessments-page",
     icon: "Box",
     features: [
