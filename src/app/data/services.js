@@ -48,14 +48,14 @@ export const services = [
       subtitle:
         "Our AI solutions deliver predictive insights, process optimization, and smarter decisions. From forecasting and chatbots to recommendation engines and computer vision, we build tailored systems that boost efficiency, lower costs, and give your business a competitive edge.",
       cta: "Get in touch",
-       image: "/placeholder.png",
+       image: "/services-img/ai-services-banner.png",
       link: "/services/inventory-analytics",
     },
      scheduledemo: {
       title: "Harness the Power of Artificial Intelligence for Your Business",
       subtitle:
         "Our AI services help you solve complex challenges and unlock new opportunities with intelligent automation, data insights, and machine learning. From streamlining tasks to uncovering patterns in big data, we design bespoke AI solutions that drive smarter decisions and give your business a competitive edge.",
-      image: "/placeholder.png",
+       image: "/services-img/ai-services1.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
@@ -63,7 +63,7 @@ export const services = [
       title: "Comprehensive AI Development and Integration",
       subtitle:
         "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
-      image: "/placeholder.png",
+       image: "/services-img/ai-services2.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },

@@ -22,26 +22,17 @@ export default async function ServiceDetail({ params }: PageProps) {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       {/* Hero Section */}
-      <section className="bg-gray-200 flex flex-col items-center justify-center py-40 mt-20">
-        <div className="w-32 h-32 bg-gray-300 flex items-center justify-center rounded-md">
-          <svg
-            className="w-12 h-12 text-gray-500"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M3 7l6 6 4-4 8 8M21 21H3V3h18v18z"
-            />
-          </svg>
+      <section className="flex flex-col items-center justify-center">
+        <div>
+           <img
+        src={service.hero.image}
+        alt="Hero Banner"
+        className="w-full h-auto object-contain"
+      />
         </div>
-        <h1 className="text-2xl md:text-3xl font-semibold mt-6">
+        {/* <h1 className="text-2xl md:text-3xl font-semibold mt-6">
           {service.name}
-        </h1>
+        </h1> */}
       </section>
 
       {/* Content Section */}
@@ -67,22 +58,9 @@ export default async function ServiceDetail({ params }: PageProps) {
         <section className="container mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 gap-10 items-center">
            {/* Right Image Placeholder */}
-          <div className="w-full h-64 bg-gray-300 flex items-center justify-center rounded-md">
-            <svg
-              className="w-12 h-12 text-gray-500"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M3 7l6 6 4-4 8 8M21 21H3V3h18v18z"
-              />
-            </svg>
-          </div>
+           <div className="w-full max-w-sm md:max-w-md lg:max-w-xl flex flex-col items-center"> 
+      <img src={service.scheduledemo.image} alt="Hero Banner" className="w-full h-auto object-contain" /> 
+      </div> 
           {/* Left Text */}
           <div>
             <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
@@ -111,23 +89,9 @@ export default async function ServiceDetail({ params }: PageProps) {
                 {service.comparedemo?.subtitle}
             </p>
           </div>
-
-            <div className="w-full h-64 bg-gray-300 flex items-center justify-center rounded-md">
-            <svg
-              className="w-12 h-12 text-gray-500"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M3 7l6 6 4-4 8 8M21 21H3V3h18v18z"
-              />
-            </svg>
-          </div>
+ <div className="w-full max-w-sm md:max-w-md lg:max-w-xl flex flex-col items-center"> 
+      <img src={service.comparedemo.image} alt="Hero Banner" className="w-full h-auto object-contain" /> 
+      </div> 
         </div>
       </section>
 
