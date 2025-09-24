@@ -116,22 +116,30 @@ export const services = [
       subtitle:
         "MarineKLUB streamlines port and agency operations by centralizing all maritime logistics tasks in one platform. Built for maritime agencies and port service providers, MarineKLUB helps you efficiently schedule vessel visits, manage cargo handling, and handle all required documentation and compliance. No more juggling spreadsheets and paperwork – MarineKLUB digitizes the process, reducing delays and human error in port calls. Ready to modernize your maritime operations? ",
       cta: "Get in touch",
-       image: "/placeholder.png",
+       image: "/services-img/oddo-banner.png",
       link: "/services/inventory-analytics",
     },
      scheduledemo: {
       title: "Navigating Maritime Management with Ease",
       subtitle:
         "With MarineKLUB, you gain real-time oversight of vessel schedules and berthing slots, plus the ability to coordinate with port authorities, shippers, and agents through integrated communication tools. Automate customs documentation and freight paperwork, receive alerts on schedule changes, and monitor cargo movements all in one dashboard. MarineKLUB improves transparency and collaboration, leading to quicker turnarounds and satisfied clients in the maritime supply chain. Explore the difference today!",
-      image: "/placeholder.png",
+      image: "/services-img/oddo-services1.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
-       comparedemo: {
+    comparedemo: {
       title: "Comprehensive AI Development and Integration",
       subtitle:
         "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
-      image: "/placeholder.png",
+      image: "/services-img/oddo-services2.png",
+      link: "/services/inventory-analytics",
+      cta: "Get in touch",
+    },
+      support: {
+      title: "Comprehensive AI Development and Integration",
+      subtitle:
+        "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
+      image: "/services-img/oddo-services3.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
