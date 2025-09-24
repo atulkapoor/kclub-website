@@ -184,14 +184,14 @@ export const services = [
       subtitle:
         "PingKLUB is an all-in-one communication hub that keeps your organization connected and informed. It centralizes internal communications – from team chats and announcements to alerts and project updates – into a single, secure platform. With PingKLUB, you can ensure the right messages reach the right people instantly, breaking down silos and fostering a collaborative culture. Want to see how PingKLUB can transform your workplace communication?",
       cta: "Get in touch",
-       image: "/placeholder.png",
+       image: "/services-img/saas-banner.png",
       link: "/services/inventory-analytics",
     },
      scheduledemo: {
       title: "Your All-in-One Hub for Smarter Communication",
       subtitle:
         "Say goodbye to scattered emails and missed messages. PingKLUB offers organized channels for teams or departments, real-time messaging for quick discussions, and company-wide broadcast capabilities for important announcements. Integration with your other business systems means you can receive automated alerts (for example, task reminders or incident notifications) within PingKLUB. Robust search and tagging make it easy to find past conversations or files. By unifying communications, PingKLUB boosts transparency, alignment, and productivity across the board. Ready to transform how your teams connect?",
-      image: "/placeholder.png",
+      image: "/services-img/saas-services-Image.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
@@ -199,7 +199,7 @@ export const services = [
       title: "Comprehensive AI Development and Integration",
       subtitle:
         "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
-      image: "/placeholder.png",
+      image: "/services-img/saas-services-Image2.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },

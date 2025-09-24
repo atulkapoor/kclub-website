@@ -89,9 +89,9 @@ export default async function ServiceDetail({ params }: PageProps) {
                 {service.comparedemo?.subtitle}
             </p>
           </div>
- <div className="w-full max-w-sm md:max-w-md lg:max-w-xl flex flex-col items-center"> 
-      <img src={service.comparedemo.image} alt="Hero Banner" className="w-full h-auto object-contain" /> 
-      </div> 
+          <div className="w-full max-w-sm md:max-w-md lg:max-w-xl flex flex-col items-center"> 
+              <img src={service.comparedemo.image} alt="Hero Banner" className="w-full h-auto object-contain" /> 
+          </div> 
         </div>
       </section>
 
