@@ -373,7 +373,7 @@ import "swiper/css/pagination";
 const industries = [
   {
         name: "Retail & eCommerce",
-        image: "/team-placeholder.jpg",
+        image: "industry-img/retail.png",
     description:
       "Today’s retail landscape demands seamless integration between online and offline channels, personalized customer experiences, and agile supply chains. KClub helps retailers and eCommerce businesses meet these demands with technology solutions that bridge gaps and delight customers at every touchpoint.",
     solutions: [
@@ -569,8 +569,11 @@ export default function IndustriesPage() {
           technology, we help companies streamline operations, enhance customer
           experiences, and innovate faster.
               </p>
-              <div className="bg-gray-200 w-full h-[400px] flex items-center justify-center rounded-md">
-        <div className="text-center">
+              <div className="w-full mt-20 h-[400px] flex items-center justify-center rounded-md">
+          <img
+       src="industry-img/industry.svg"
+          />
+          {/* <div className="text-center">
           <div className="w-14 h-14 mx-auto bg-gray-300 rounded-md mb-4 flex items-center justify-center">
             <svg
               className="w-8 h-8 text-gray-500"
@@ -586,8 +589,8 @@ export default function IndustriesPage() {
               />
             </svg>
           </div>
-          <h2 className="text-lg font-semibold ">Industries Page</h2>
-        </div>
+          <h2 className="text-lg font-semibold text-black">Industries Page</h2>
+        </div> */}
       </div>
       </section>
 

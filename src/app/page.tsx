@@ -6,6 +6,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import HeroSection from "@/components/CTA";
 
 export default function Home() {
 const [open, setOpen] = useState(false);
@@ -302,11 +303,28 @@ const [open, setOpen] = useState(false);
     </div>
 
     </div>
-    </section>
+      </section>
+      {/* <section className="ml-36 mr-36"> */}
+      <section className="mx-4 sm:mx-6 md:mx-12 lg:mx-24 xl:mx-36 2xl:mx-48">
+        <HeroSection 
+          styles={{
+            description: { 
+              width:"100%"
+            },
+            container: {
+              backgroundImage: "url('/cta2.png')", 
+            },
+          }}
+          showPrimaryButton={false}
+          title="Ready to Transform Your Business"
+          description="Let’s create solutions that drive efficiency, growth, and innovation for your enterprise."
 
-      <section className="container bg-color-blue text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 rounded-md mb-20">
+        />
+      </section>
+
+      {/* <section className="container bg-color-blue text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 rounded-md mb-20">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-        {/* Left Content */}
+        {/* Left Content  
         <div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-white">
             Ready to Transform Your Business?
@@ -322,7 +340,7 @@ const [open, setOpen] = useState(false);
             className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
           >
             See case studies
-          </a> */}
+          </a>  
           <a
             href="#contact"
             className="px-14 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
@@ -331,7 +349,7 @@ const [open, setOpen] = useState(false);
           </a>
         </div>
       </div>
-    </section>
+    </section> */}
       <PopupForm isOpen={open} onClose={closeModal} />
 
     </main>
