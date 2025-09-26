@@ -7,7 +7,7 @@ export const services = [
     category: "Smarter decisions, powered by intelligence.",
     description:
       "Harness artificial intelligence and machine learning to automate processes, uncover insights, and drive smarter decision-making for your business.",
-    image: "/placeholder.png",
+    image: "/services-img/services1.png",
     link: "/services/ai-services",
     icon: "Box",
         features : [
@@ -48,14 +48,14 @@ export const services = [
       subtitle:
         "Our AI solutions deliver predictive insights, process optimization, and smarter decisions. From forecasting and chatbots to recommendation engines and computer vision, we build tailored systems that boost efficiency, lower costs, and give your business a competitive edge.",
       cta: "Get in touch",
-       image: "/placeholder.png",
+       image: "/services-img/ai-services-banner.png",
       link: "/services/inventory-analytics",
     },
      scheduledemo: {
       title: "Harness the Power of Artificial Intelligence for Your Business",
       subtitle:
         "Our AI services help you solve complex challenges and unlock new opportunities with intelligent automation, data insights, and machine learning. From streamlining tasks to uncovering patterns in big data, we design bespoke AI solutions that drive smarter decisions and give your business a competitive edge.",
-      image: "/placeholder.png",
+       image: "/services-img/ai-services1.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
@@ -63,7 +63,7 @@ export const services = [
       title: "Comprehensive AI Development and Integration",
       subtitle:
         "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
-      image: "/placeholder.png",
+       image: "/services-img/ai-services2.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
@@ -75,7 +75,7 @@ export const services = [
     category: "Supply Chain",
     description:
       "A specialized platform that helps maritime agencies manage vessel schedules, cargo operations, and port logistics with ease and efficiency.",
-    image: "/placeholder.png",
+    image: "/services-img/services2.png",
     link: "/services/odoo-services-page",
     icon: "Box",
     features : [
@@ -116,22 +116,30 @@ export const services = [
       subtitle:
         "MarineKLUB streamlines port and agency operations by centralizing all maritime logistics tasks in one platform. Built for maritime agencies and port service providers, MarineKLUB helps you efficiently schedule vessel visits, manage cargo handling, and handle all required documentation and compliance. No more juggling spreadsheets and paperwork – MarineKLUB digitizes the process, reducing delays and human error in port calls. Ready to modernize your maritime operations? ",
       cta: "Get in touch",
-       image: "/placeholder.png",
+       image: "/services-img/oddo-banner.png",
       link: "/services/inventory-analytics",
     },
      scheduledemo: {
       title: "Navigating Maritime Management with Ease",
       subtitle:
         "With MarineKLUB, you gain real-time oversight of vessel schedules and berthing slots, plus the ability to coordinate with port authorities, shippers, and agents through integrated communication tools. Automate customs documentation and freight paperwork, receive alerts on schedule changes, and monitor cargo movements all in one dashboard. MarineKLUB improves transparency and collaboration, leading to quicker turnarounds and satisfied clients in the maritime supply chain. Explore the difference today!",
-      image: "/placeholder.png",
+      image: "/services-img/oddo-services1.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
-       comparedemo: {
+    comparedemo: {
       title: "Comprehensive AI Development and Integration",
       subtitle:
         "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
-      image: "/placeholder.png",
+      image: "/services-img/oddo-services2.png",
+      link: "/services/inventory-analytics",
+      cta: "Get in touch",
+    },
+      support: {
+      title: "Comprehensive AI Development and Integration",
+      subtitle:
+        "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
+      image: "/services-img/oddo-services3.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
@@ -143,7 +151,7 @@ export const services = [
     category: "Supply Chain",
     description:
       "An integrated communication hub for organizations to manage internal messaging, alerts, and collaboration in one secure platform.",
-    image: "/placeholder.png",
+    image: "/services-img/services3.png",
     link: "/services/custom-saas-app-development-page",
     icon: "Box",
     features: [
@@ -184,14 +192,14 @@ export const services = [
       subtitle:
         "PingKLUB is an all-in-one communication hub that keeps your organization connected and informed. It centralizes internal communications – from team chats and announcements to alerts and project updates – into a single, secure platform. With PingKLUB, you can ensure the right messages reach the right people instantly, breaking down silos and fostering a collaborative culture. Want to see how PingKLUB can transform your workplace communication?",
       cta: "Get in touch",
-       image: "/placeholder.png",
+       image: "/services-img/saas-banner.png",
       link: "/services/inventory-analytics",
     },
      scheduledemo: {
       title: "Your All-in-One Hub for Smarter Communication",
       subtitle:
         "Say goodbye to scattered emails and missed messages. PingKLUB offers organized channels for teams or departments, real-time messaging for quick discussions, and company-wide broadcast capabilities for important announcements. Integration with your other business systems means you can receive automated alerts (for example, task reminders or incident notifications) within PingKLUB. Robust search and tagging make it easy to find past conversations or files. By unifying communications, PingKLUB boosts transparency, alignment, and productivity across the board. Ready to transform how your teams connect?",
-      image: "/placeholder.png",
+      image: "/services-img/saas-services-Image.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
@@ -199,7 +207,7 @@ export const services = [
       title: "Comprehensive AI Development and Integration",
       subtitle:
         "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
-      image: "/placeholder.png",
+      image: "/services-img/saas-services-Image2.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
@@ -212,7 +220,7 @@ export const services = [
     category: "Healthcare",
     description:
       "A comprehensive healthcare management system for clinics and hospitals, covering patient records, appointments, telehealth, and billing.",
-    image: "/placeholder.png",
+    image: "/services-img/services4.png",
     link: "/services/mobile-app-development-page",
     icon: "Box",
     features: [
@@ -264,7 +272,7 @@ export const services = [
     category: "Finance",
     description:
       "An end-to-end digital lending platform for financial institutions to automate loan origination, KYC, underwriting, and disbursement.",
-    image: "/placeholder.png",
+    image: "/services-img/servies5.png",
     link: "/services/tech-consulting-and-assessments-page",
     icon: "Box",
     features: [

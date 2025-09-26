@@ -122,55 +122,45 @@ export default function AboutPage() {
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
   <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-30">
       {/* Top Section */}
-      <div className="text-center max-w-2xl mx-auto mb-12">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
-          Discover the People & <br /> Purpose Behind KClub
+      <div className="text-center max-w-8xl mx-auto mb-12">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue">
+          Discover the People & Purpose Behind KClub
         </h1>
-        <p className="text-gray-600 text-sm md:text-base">
+        <p className="text-gray-600 max-w-4xl mx-auto text-sm md:text-base">
           At KClub, we believe every challenge holds an opportunity. Our team of 
           innovators, designers, and engineers build solutions that drive efficiency 
           today and unlock growth for tomorrow.
         </p>
+
       </div>
 
       {/* Image Placeholder Section */}
-      <div className="bg-gray-200 w-full h-[400px] flex items-center justify-center rounded-md">
-        <div className="text-center">
-          <div className="w-14 h-14 mx-auto bg-gray-300 rounded-md mb-4 flex items-center justify-center">
-            <svg
-              className="w-8 h-8 text-gray-500"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
-              />
-            </svg>
-          </div>
-          <h2 className="text-lg font-semibold">About Us Page</h2>
+      <div className="w-full h-[400px] flex items-center justify-center rounded-md mt-30">
+        <div>
+           <img
+        src="/about-img/about-banner.png"
+        alt="Hero Banner"
+        className="w-full h-auto object-contain"
+      />
         </div>
       </div>
     </section>
 
-    <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+    <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-30">
       {/* Section 1 */}
-      <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="grid md:grid-cols-2 gap-12">
         {/* Left Content */}
         <div>
           <h4 className="text-sm uppercase text-gray-500 mb-2">About us</h4>
-          <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
+          <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-blue mb-10">
             Innovators in Technology, <br /> Empowering Your Digital Journey
           </h1>
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-700 mb-4 max-w-3xl">
             We pride ourselves on crafting software that not only meets clients&apos; needs
             but blows away expectations, often redefining how organizations operate in
             the digital era.
           </p>
-          <p className="text-gray-700">
+          <p className="text-gray-700 max-w-3xl">
             Innovation is in our DNA. We are architects of innovation, sculpting
             solutions that drive efficiency and spark growth. Guided by a robust 4D
             execution methodology – Discuss, Design, Develop, Deliver – we ensure each
@@ -183,55 +173,37 @@ export default function AboutPage() {
         </div>
 
         {/* Right Placeholder */}
-        <div className="bg-gray-200 w-full h-[350px] flex items-center justify-center rounded-md">
-          <div className="w-14 h-14 bg-gray-300 flex items-center justify-center rounded-md">
-            <svg
-              className="w-8 h-8 text-gray-500"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
-              />
-            </svg>
-          </div>
-        </div>
+       <div className="flex items-center justify-center">
+        <img
+          src="/about-img/about1.png"
+          alt="Hero Banner"
+          className="w-full max-w-xl h-auto object-contain"
+        />
+      </div>
+
       </div>
 
       {/* Section 2 (reversed layout) */}
-      <div className="grid md:grid-cols-2 gap-12 items-center mt-20">
+      <div className="grid md:grid-cols-2 gap-2 items-center mt-20">
         {/* Left Placeholder */}
-        <div className="bg-gray-200 w-full h-[350px] flex items-center justify-center rounded-md order-1 md:order-none">
-          <div className="w-14 h-14 bg-gray-300 flex items-center justify-center rounded-md">
-            <svg
-              className="w-8 h-8 text-gray-500"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
-              />
-            </svg>
-          </div>
-        </div>
+         {/* Right Placeholder */}
+       <div className="flex items-center justify-start">
+        <img
+          src="/about-img/about2.png"
+          alt="Hero Banner"
+          className="w-full max-w-lg h-auto object-contain"
+        />
+      </div>
 
         {/* Right Content */}
         <div>
           <h4 className="text-sm uppercase text-gray-500 mb-2">
             Our Purpose and Aspirations
           </h4>
-          <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
+          <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-blue">
             The Heart of KClub
           </h1>
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-700 mb-4 max-w-3xl">
             Every project we undertake is guided by our mission and vision. We believe in
             innovation with impact, integrity in execution, and lasting value creation for
             our partners. Curious to see this in action? Explore our Case Studies to
@@ -239,7 +211,7 @@ export default function AboutPage() {
           </p>
 
           <h5 className="font-semibold mb-2">Our Mission</h5>
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-700 mb-4 max-w-3xl">
             To empower businesses through innovative technology solutions that solve
             real-world challenges and drive digital transformation. We exist to deliver
             high-quality, customized products and services that enable our clients to
@@ -247,7 +219,7 @@ export default function AboutPage() {
           </p>
 
           <h5 className="font-semibold mb-2">Our Vision</h5>
-          <p className="text-gray-700">
+          <p className="text-gray-700 max-w-3xl">
             To be a global leader in digital transformation, recognized for reshaping
             industries with game-changing tech innovation. We aspire to continuously push
             the boundaries of what&apos;s possible, transforming how organizations work,
@@ -257,9 +229,9 @@ export default function AboutPage() {
       </div>
     </section>
 
-    <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+    <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-20 mt-10 bg-[#D4E5FD]">
       {/* Heading */}
-      <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
+      <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue">
         Trusted by businesses worldwide
       </h1>
       <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
@@ -271,25 +243,25 @@ export default function AboutPage() {
       {/* Stats Grid */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold">5yr+</h2>
+          <h2 className="text-2xl md:text-6xl text-blue font-bold">5yr+</h2>
           <p className="text-gray-600 mt-2 text-sm">
             Experience building <br /> innovative solutions
           </p>
         </div>
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold">85+</h2>
+          <h2 className="text-2xl md:text-6xl text-blue font-bold">85+</h2>
           <p className="text-gray-600 mt-2 text-sm">
             Projects delivered <br /> across industries
           </p>
         </div>
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold">50+</h2>
+          <h2 className="text-2xl md:text-6xl text-blue font-bold">50+</h2>
           <p className="text-gray-600 mt-2 text-sm">
             Certified team of <br /> tech experts
           </p>
         </div>
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold">100%</h2>
+          <h2 className="text-2xl md:text-6xl text-blue font-bold">100%</h2>
           <p className="text-gray-600 mt-2 text-sm">
             Long-term <br /> client success
           </p>
@@ -299,7 +271,7 @@ export default function AboutPage() {
 
      <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4">
         <div className="py-16">
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black text-center">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue text-center">
         What our clients are saying
       </h1>
       <div className="px-6">
@@ -359,7 +331,7 @@ export default function AboutPage() {
     <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <p className="uppercase tracking-wide text-gray-600">Our team</p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue">
           Meet the Minds Behind KClub
         </h1>
         <p className="text-gray-600 mt-4">

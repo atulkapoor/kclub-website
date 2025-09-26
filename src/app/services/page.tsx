@@ -64,11 +64,11 @@ export default function Services() {
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
         <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-30 text-center">
       {/* Heading + Description */}
-      <div className="max-w-3xl mx-auto">
-        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
-          Transforming Businesses with <br /> End-to-End Digital Services
+      <div className="text-center max-w-5xl mx-auto mb-12">
+        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue">
+          Transforming Businesses with End-to-End Digital Services
         </h2>
-        <p className="text-gray-600 mt-4">
+        <p className="text-gray-600 max-w-4xl mx-auto text-sm md:text-base">
           At KClub, we deliver services that bridge innovation and impact. From
           AI-powered automation to enterprise-grade app development, we help
           businesses evolve faster, smarter, and stronger in the digital-first
@@ -76,12 +76,13 @@ export default function Services() {
         </p>
       </div>
 
-      {/* Image Placeholder */}
-      <div className="mt-10">
-        <div className="w-full h-64 md:h-80 bg-gray-200 flex items-center justify-center rounded-md">
-          <p className="text-lg font-semibold text-gray-700">
-            Our Services Page
-          </p>
+        <div className="w-full h-[400px] flex items-center justify-center rounded-md mt-30">
+        <div>
+           <img
+        src="/services-img/services-banner.png"
+        alt="Hero Banner"
+        className="w-full h-auto object-contain"
+      />
         </div>
       </div>
     </section>
@@ -92,7 +93,7 @@ export default function Services() {
         <p className="text-sm uppercase tracking-wide text-gray-500">
           From Strategy to Deployment, We&apos;ve Got You Covered
         </p>
-        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">Our Key Services</h2>
+        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue">Our Key Services</h2>
         <p className="text-gray-600 mt-4">
           KClub&apos;s service portfolio covers every stage of your digital
           transformation. Whether you&apos;re looking to harness AI for smarter
@@ -135,11 +136,15 @@ export default function Services() {
 
             {/* Image Section */}
             <div
-              className={`w-full h-56 bg-gray-200 flex items-center justify-center rounded-md ${
+              className={`w-full h-56 flex items-center justify-center rounded-md ${
                 index % 2 === 1 ? "order-1 md:order-2" : "order-2"
               }`}
             >
-              <p className="text-gray-600">[{service.name}]</p>
+              <img
+                src={service.image}
+                alt="Hero Banner"
+                className="w-full max-w-lg h-auto object-contain"
+              />
             </div>
           </div>
         ))}
@@ -148,7 +153,7 @@ export default function Services() {
 
     <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
         <div className="py-16">
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 subpixel-antialiased text-black text-center">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 subpixel-antialiased text-blue text-center">
        Why Clients Choose KClub
       </h1>
          <p className="text-sm tracking-wide text-black-500 text-center mb-8">
@@ -158,7 +163,7 @@ export default function Services() {
         modules={[Pagination]}
         pagination={{ clickable: true }}
         spaceBetween={30}
-        slidesPerView={2}
+        slidesPerView={3}
         breakpoints={{
           0: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
