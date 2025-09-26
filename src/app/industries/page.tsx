@@ -369,6 +369,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import HeroSection from "@/components/CTA";
 
 const industries = [
   {
@@ -401,7 +402,7 @@ const industries = [
   },
   {
       name: "Healthcare & Life Sciences",
-      image: "/team-placeholder.jpg",
+      image: "industry-img/healthcare.png",
       
     description:
       "Healthcare and life sciences organizations operate in a complex environment where patient outcomes, data security, and regulatory compliance are paramount. KClub provides technology solutions that help hospitals, clinics, pharmaceutical companies, and research institutions modernize their operations and improve care through digital innovation.",
@@ -430,7 +431,7 @@ const industries = [
   },
   {
       name: "BFSI & Fintech",
-      image: "/team-placeholder.jpg",
+      image: "industry-img/fintech.png",
       
     description:
       "Banks, financial services companies, and fintech startups are under constant pressure to innovate, improve customer experience, and maintain stringent security. KClub partners with the BFSI sector to build and implement fintech solutions that modernize legacy operations and launch new digital services, all while ensuring compliance and security.",
@@ -459,7 +460,7 @@ const industries = [
   },
   {
       name: "Education",
-      image: "/team-placeholder.jpg",
+      image: "industry-img/education.png",
       
     description:
       "Educational institutions are increasingly leveraging technology to enhance learning outcomes and streamline administration. KClub offers EdTech solutions that empower schools, colleges, universities, and EdTech companies to create engaging learning experiences and efficient educational operations.",
@@ -488,7 +489,7 @@ const industries = [
   },
   {
       name: "Real Estate",
-      image: "/team-placeholder.jpg",
+      image: "industry-img/estate.png",
       
     description:
       "The real estate industry thrives on relationships, timing, and data – whether it’s closing property sales, managing rental portfolios, or executing construction projects. KClub delivers specialized tech solutions for real estate developers, agencies, and property management firms.",
@@ -517,7 +518,7 @@ const industries = [
   },
   {
       name: "Telecom & Manufacturing",
-      image: "/team-placeholder.jpg",
+      image: "industry-img/telecom.png",
       
     description:
       "Telecommunications and manufacturing are two industries where precision and reliability are non-negotiable. KClub brings advanced solutions to these sectors, focusing on automation, IoT, and data analytics to enhance operational efficiency and innovation.",
@@ -571,7 +572,7 @@ export default function IndustriesPage() {
               </p>
               <div className="w-full mt-20 h-[400px] flex items-center justify-center rounded-md">
           <img
-       src="industry-img/industry.svg"
+       src="industry-img/industry.png"
           />
           {/* <div className="text-center">
           <div className="w-14 h-14 mx-auto bg-gray-300 rounded-md mb-4 flex items-center justify-center">
@@ -600,7 +601,7 @@ export default function IndustriesPage() {
     <div key={idx} className="mb-20">
       {/* Top Row: Image + Text */}
       <div
-        className={`flex flex-col md:flex-row items-center gap-10 mb-8 ${
+        className={`flex flex-col md:flex-row items-center gap-10 mb-8   ${
           idx % 2 === 0 ? "md:flex-row-reverse" : ""
         }`}
       >
@@ -609,7 +610,7 @@ export default function IndustriesPage() {
           <img
             src={industry.image} // 👈 industry object me "image" property honi chahiye
             // alt={industry.name}
-            className="rounded-xl shadow-md w-full h-64 object-cover"
+            className="w-full h-64 object-cover"
           />
         </div>
 
@@ -627,7 +628,9 @@ export default function IndustriesPage() {
         Key Solutions:
       </h3>
 
-      <div className="industry-swiper relative">
+      <div
+       
+        className="industry-swiper relative  ">
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={20}
@@ -641,6 +644,14 @@ export default function IndustriesPage() {
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
+          style={{
+            backgroundImage: `url('industry-img/sliderbg.png')`,
+            backgroundSize: 'contain', 
+            paddingInline: '40px',
+            backgroundRepeat:'no-repeat',
+            height:"200px"
+            // borderRadius: '12px'
+          }}
         >
           {industry.solutions.map((s, i) => (
             <SwiperSlide key={i}>
@@ -653,7 +664,7 @@ export default function IndustriesPage() {
         </Swiper>
 
         {/* Pagination + Arrows */}
-        <div className="flex justify-center items-center mt-6 gap-6">
+        <div className="flex justify-between items-center mt-6 gap-6">
           <div className={`swiper-pagination pagination-${idx}`}></div>
           <div className="flex gap-4">
             <button
@@ -714,7 +725,7 @@ export default function IndustriesPage() {
       </section> */}
 
       {/* CTA */}
-      <section className="max-w-6xl mx-auto px-4 py-12 text-center">
+      {/* <section className="max-w-6xl mx-auto px-4 py-12 text-center">
         <div className="bg-indigo-600 rounded-2xl p-8 shadow-sm">
           <h3 className="text-2xl text-white md:text-3xl font-bold mb-4">
             Ready to Transform Your Business?
@@ -729,10 +740,26 @@ export default function IndustriesPage() {
             </button>
             {/* <button className="px-6 py-3 border border-gray-300 rounded-lg">
               Book a Demo
-            </button> */}
+            </button>  
           </div>
         </div>
-      </section>
+      </section> */}
+      {/* <section className=" sm:mx-6 md:mx-12 lg:mx-16 xl:mx-36 2xl:mx-48"> */}
+              <HeroSection
+                styles={{
+                  description: { 
+                    width:"100%"
+                  },
+                  container: {
+                    backgroundImage: "url('/cta2.png')", 
+          }, 
+                }}
+                showPrimaryButton={false}
+                title="Ready to Transform Your Business"
+                description="Let’s create solutions that drive efficiency, growth, and innovation for your enterprise."
+      
+              />
+            {/* </section> */}
 
       {/* FINAL SECTION */}
       <section className="bg-gray-50 py-16 px-4 text-center">

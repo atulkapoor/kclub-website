@@ -175,7 +175,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   style={{
                     backgroundColor: primaryButton.backgroundColor,
                     color: primaryButton.color,
-                    padding: primaryButton.padding || '12px 32px',
+                    padding: primaryButton.padding || '8px 40px',
                     border: primaryButton.border,
                     fontSize: primaryButton.fontSize,
                     ...primaryButton.style
@@ -192,7 +192,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   style={{
                     backgroundColor: secondaryButton.backgroundColor,
                     color: secondaryButton.color,
-                    padding: secondaryButton.padding || '12px 32px',
+                    padding: secondaryButton.padding || '8px 40px',
                     border: secondaryButton.border,
                     fontSize: secondaryButton.fontSize,
                     ...secondaryButton.style
