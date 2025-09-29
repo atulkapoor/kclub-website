@@ -20,7 +20,7 @@ export default async function ServiceDetail({ params }: PageProps) {
   if (!service) return notFound();
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center h-screen w-screen">
         <div className="w-full h-full">
@@ -36,7 +36,7 @@ export default async function ServiceDetail({ params }: PageProps) {
       <section className="container mx-auto px-6 pb-16 grid md:grid-cols-2 gap-12">
         {/* Left Content */}
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold subpixel-antialiased text-black text-blue">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold subpixel-antialiased text-blue">
             {service.hero.title}
           </h2>
         </div>

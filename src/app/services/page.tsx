@@ -61,7 +61,7 @@ export default function Services() {
     { src: "/webflow-logo.png", alt: "Relume" },
   ];
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <main className="min-h-screen bg-white">
         <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-30 text-center">
       {/* Heading + Description */}
       <div className="text-center max-w-5xl mx-auto mb-12">

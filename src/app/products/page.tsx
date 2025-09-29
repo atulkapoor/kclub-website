@@ -138,11 +138,11 @@ export default function Products() {
     { src: "/webflow-logo.png", alt: "Relume" },
   ];
   return (
-     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+     <main className="min-h-screen bg-white">
     <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-30 text-center">
       {/* Heading + Subheading */}
       <div className="text-center max-w-3xl mx-auto mb-12">
-        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
+        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue">
           Smart, Scalable Products for <br /> Every Business Challenge
         </h2>
         <p className="mt-4 text-gray-600">
@@ -151,25 +151,14 @@ export default function Products() {
         </p>
       </div>
 
-      {/* Product Main Page Placeholder */}
-      <div className="w-full bg-gray-200 h-[400px] flex flex-col items-center justify-center rounded-lg">
-        <span className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-          Products Main Page
-        </span>
-        {/* Placeholder Image Icon */}
-        <svg
-          className="w-16 h-16 text-gray-500"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3 5h18M3 19h18M3 5v14M21 5v14M8 11l4 4 4-4m-4 4V7"
-          />
-        </svg>
+          <div className="w-full h-[400px] flex items-center justify-center rounded-md mt-30">
+        <div>
+           <img
+        src="/product-img/product-main-banner.png"
+        alt="Hero Banner"
+        className="w-full h-auto object-contain"
+      />
+        </div>
       </div>
     </section>
 
@@ -177,7 +166,7 @@ export default function Products() {
       {/* Heading */}
       <div className="text-center max-w-4xl mx-auto mb-12">
         <p className="text-sm text-gray-500">Innovation tailored to your business</p>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mt-2">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue mt-2">
           Industry-Focused Software Solutions for Digital Transformation
         </h2>
         <p className="mt-4 text-gray-600">
@@ -215,7 +204,7 @@ export default function Products() {
 
             <a
               href={product.link}
-              className="mt-4 inline-flex items-center text-blue-600 hover:underline text-sm font-medium"
+              className="mt-4 inline-flex items-center hover:underline text-sm font-medium text-black" style={{textDecoration: "none", color: "black"}}
             >
               Know More →
             </a>
@@ -229,7 +218,7 @@ export default function Products() {
 
     <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 ">
         <div className="py-16">
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 subpixel-antialiased text-black text-center">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 subpixel-antialiased text-blue text-center">
        Why Clients Choose KClub
       </h1>
          <p className="text-sm tracking-wide text-black-500 text-center mb-8">
