@@ -114,9 +114,9 @@ export default function ContactUs() {
         </div>
   
         {/* Image Placeholder */}
-        <div className="bg-gray-200 w-full h-[400px] flex items-center justify-center rounded-md">
+        <div className=" w-full h-[400px] flex items-center justify-center rounded-md">
         <div className="text-center">
-          <div className="w-14 h-14 mx-auto bg-gray-300 rounded-md mb-4 flex items-center justify-center">
+         {/*  <div className="w-14 h-14 mx-auto bg-gray-300 rounded-md mb-4 flex items-center justify-center">
             <svg
               className="w-8 h-8 text-gray-500"
               fill="none"
@@ -129,15 +129,19 @@ export default function ContactUs() {
                 strokeLinejoin="round"
                 d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
               />
-            </svg>
-          </div>
-          <h2 className="text-lg font-semibold">Contact Us Page</h2>
+            </svg> 
+          </div>*/}
+                <img
+            src="contact-img/hero.png"  
+            className="w-full h-[400px] object-cover"
+          />
+          {/* <h2 className="text-lg font-semibold">Contact Us Page</h2> */}
         </div>
       </div>
             </div>  
 
          
-    <div className="w-full flex justify-center py-12">
+    <div className="w-full flex justify-center py-8">
     <section className="bg-[#f2f5ff] py-12 mr-8">
       <div className="max-w-4xl mx-auto px-6">
         <h2 className="text-2xl font-bold mb-2 text-black">Our Offices</h2>
