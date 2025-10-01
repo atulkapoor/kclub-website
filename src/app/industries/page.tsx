@@ -557,7 +557,7 @@ export default function IndustriesPage() {
         { src: "/webflow-logo.png", alt: "Relume" },
       ];
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto    py-12 lg:py-4 mt-20">
       {/* HERO */}
       <section className="max-w-6xl mx-auto px-4 py-16 text-center">
         <h1 className="text-3xl md:text-5xl font-extrabold text-black mb-6">
@@ -649,7 +649,8 @@ export default function IndustriesPage() {
             backgroundSize: 'contain', 
             paddingInline: '40px',
             backgroundRepeat:'no-repeat',
-            height:"200px"
+            height: "200px",
+            paddingBlock: '10px',
             // borderRadius: '12px'
           }}
         >
@@ -664,7 +665,7 @@ export default function IndustriesPage() {
         </Swiper>
 
         {/* Pagination + Arrows */}
-        <div className="flex justify-between items-center mt-6 gap-6">
+        <div className="flex items-center justify-between mt-6">
           <div className={`swiper-pagination pagination-${idx}`}></div>
           <div className="flex gap-4">
             <button
@@ -688,10 +689,13 @@ export default function IndustriesPage() {
     .swiper-pagination {
       position: relative !important;
       bottom: 0 !important;
+      display: flex !important;
+      justify-content: flex-start !important;
     }
     .swiper-pagination-bullet {
       background: #cbd5e1;
       opacity: 1;
+      margin:0px 4px;
     }
     .swiper-pagination-bullet-active {
       background: #1e3a8a; /* Tailwind blue-900 */

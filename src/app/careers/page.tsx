@@ -33,13 +33,13 @@ export default function Careers() {
         </h1>
         <p className="mt-3 text-gray-600 text-sm md:text-base">
           At KClub, we believe careers grow when people do. 
-          Be part of a culture that values creativity, collaboration,<br /> and impact.
+          Be part of a culture that values creativity, <br />collaboration, and impact.
         </p>
 
         {/* Banner */}
-        <div className="bg-gray-200 w-full h-[400px] mt-10 flex items-center justify-center rounded-md">
+        <div className="w-full h-[400px] mt-10 flex items-center justify-center rounded-md">
         <div className="text-center">
-          <div className="w-14 h-14 mx-auto bg-gray-300 rounded-md mb-4 flex items-center justify-center">
+          {/* <div className="w-14 h-14 mx-auto bg-gray-300 rounded-md mb-4 flex items-center justify-center">
             <svg
               className="w-8 h-8 text-gray-500"
               fill="none"
@@ -53,8 +53,12 @@ export default function Careers() {
                 d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
               />
             </svg>
-          </div>
-          <h2 className="text-lg font-semibold">Careers Page</h2>
+          </div> */}
+                <img
+            src="careers-img/hero.png"  
+            className="w-full   object-contain"
+          />
+          {/* <h2 className="text-lg font-semibold">Careers Page</h2> */}
         </div>
       </div>
       </div>

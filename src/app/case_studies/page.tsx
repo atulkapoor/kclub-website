@@ -19,18 +19,48 @@ export default function CaseStudiesPage() {
   });
 
     return (
-        <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+        <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto px-4 md:px-6 lg:px-36 pb-12 lg:pb-4 mt-2">
 
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-gray-50 pb-8">
       <div className="container mx-auto px-4">
-        {/* Page Header */}
-        <div className="text-center mb-12">
+            {/* Page Header */}
+            <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 pb-12 lg:pb-4">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 "> 
+
+        {/* Banner */}
+        <div className="w-full h-[400px] flex items-center justify-center rounded-md">
+        <div className="">
+          {/* <div className="w-14 h-14 mx-auto bg-gray-300 rounded-md mb-4 flex items-center justify-center">
+            <svg
+              className="w-8 h-8 text-gray-500"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
+              />
+            </svg>
+          </div> */}
+                <img
+            src="case_studies-img/hero.png"  
+            className="w-full   object-contain"
+          />
+          {/* <h2 className="text-lg font-semibold">Careers Page</h2> */}
+        </div>
+                </div>
+                <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Case Studies Page</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Catchy Tagline - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius 
-            enim in eros elementum tristique.
+            Catchy Tagline - Turning Ideas into Impact – Real Stories, Real Results.
           </p>
         </div>
+      </div>
+      </section>
+        
 
         {/* Filters and Search */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
