@@ -7,6 +7,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import HeroSection from "@/components/CTA";
+import Link from "next/link";
+
 
 export default function Home() {
 const [open, setOpen] = useState(false);
@@ -78,9 +80,9 @@ const [open, setOpen] = useState(false);
         >
           Request a Demo
         </button>
-        <button className="px-6 py-3 rounded-lg bg-white border border-gray-300 text-gray-800 font-medium shadow-md hover:bg-gray-100 transition">
+         <Link href="/services"  className="px-6 py-3 rounded-lg bg-white border border-gray-300 text-gray-800 font-medium shadow-md hover:bg-gray-100 transition">
           Explore Our Solutions
-        </button>
+        </Link>
       </div>
     </div>
 

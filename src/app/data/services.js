@@ -72,73 +72,73 @@ export const services = [
     id:2,
     slug: "odoo-services-page",
     name: "ODOO Services Page",
-    category: "Supply Chain",
+    category: "Streamline. Simplify. Scale.",
     description:
-      "A specialized platform that helps maritime agencies manage vessel schedules, cargo operations, and port logistics with ease and efficiency.",
+      "Implement and customize ODOO ERP to simplify complex operations—from CRM and accounting to HR, inventory, and beyond.",
     image: "/services-img/services2.png",
     link: "/services/odoo-services-page",
     icon: "Box",
     features : [
     {
-        title: "Real-Time Inventory Tracking",
+        title: "Full ODOO Implementation",
         description:
-        "Always know your stock levels across locations with live updates.",
+        "From requirement analysis to go-live, complete setup of ODOO’s CRM, Sales, Inventory, Accounting, HR, and other modules.",
         image: "/placeholder.png",
     },
     {
-        title: "Order Picking Optimization",
+        title: "Customization & Development",
         description:
-        "AI-powered prioritization for faster, accurate order fulfillment.",
+        "Tailoring ODOO workflows, reports, and UI; building custom modules or apps to extend functionality where needed.",
         image: "/placeholder.png",
     },
     {
-        title: "Barcode & RFID Integration",
+        title: "Integration Services",
         description:
-        "Quick scanning for accurate inventory updates and error reduction.",
+        "Connecting ODOO with third-party systems (payment processors, eCommerce, logistics APIs, etc.) for seamless data flow.",
         image: "/placeholder.png",
     },
     {
-        title: "Warehouse Analytics Dashboard",
+        title: "Data Migration",
         description:
-        "Visualize orders, stock movement, and KPIs to drive continuous improvement.",
+        "Safe migration of data from legacy systems or older ODOO instances into your new ODOO environment, with verification.",
         image: "/placeholder.png",
     },
     {
-        title: "Integration Ready",
+        title: "Training & Ongoing Support",
         description:
-        "Seamlessly connect with ERP, e-commerce, and shipping systems for end-to-end automation.",
+        "Comprehensive user training sessions, documentation, and dedicated support plans to ensure long-term success with ODOO.",
         image: "/placeholder.png",
     },
     ],
 
     hero: {
-      title: "Centralized Platform for Maritime Operations",
+      title: "Simplify Complex Operations with Tailored ODOO ERP Solutions",
       subtitle:
-        "MarineKLUB streamlines port and agency operations by centralizing all maritime logistics tasks in one platform. Built for maritime agencies and port service providers, MarineKLUB helps you efficiently schedule vessel visits, manage cargo handling, and handle all required documentation and compliance. No more juggling spreadsheets and paperwork – MarineKLUB digitizes the process, reducing delays and human error in port calls. Ready to modernize your maritime operations? ",
+        "ODOO is a leading open-source ERP with apps for CRM, accounting, HR, inventory, and more. We implement and customize ODOO to fit your workflows - simplifying complex processes and integrating departments into one scalable system.",
       cta: "Get in touch",
        image: "/services-img/oddo-banner.png",
       link: "/services/inventory-analytics",
     },
      scheduledemo: {
-      title: "Navigating Maritime Management with Ease",
+      title: "Maximize the power of ODOO with solutions built around your business needs.",
       subtitle:
-        "With MarineKLUB, you gain real-time oversight of vessel schedules and berthing slots, plus the ability to coordinate with port authorities, shippers, and agents through integrated communication tools. Automate customs documentation and freight paperwork, receive alerts on schedule changes, and monitor cargo movements all in one dashboard. MarineKLUB improves transparency and collaboration, leading to quicker turnarounds and satisfied clients in the maritime supply chain. Explore the difference today!",
+        "KClub provides end-to-end ODOO ERP services to streamline operations on this powerful open-source platform. Our experts tailor the system to your processes, ensuring maximum value across CRM, HR, accounting, and more. From deployment to ongoing support, we handle the technical details so you can focus on growth.",
       image: "/services-img/oddo-services1.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
     comparedemo: {
-      title: "Comprehensive AI Development and Integration",
+      title: "Implementation & Customization",
       subtitle:
-        "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
+        "We begin by understanding your departmental needs - sales, inventory, finance, HR, and more - then configure ODOO modules to fit. Our team customizes or builds new modules for specialized workflows and integrates ODOO with your other systems, from e-commerce to payment gateways, creating a unified data ecosystem.",
       image: "/services-img/oddo-services2.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
       support: {
-      title: "Comprehensive AI Development and Integration",
+      title: "Migration & Support",
       subtitle:
-        "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
+        "Already using ODOO or another ERP? We provide secure, low-downtime migration to the latest ODOO version. Post-implementation, our team delivers staff training, responsive support, and performance optimization. We can also host ODOO on cloud or on-premise infrastructure to match your needs.",
       image: "/services-img/oddo-services3.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
@@ -146,13 +146,13 @@ export const services = [
   },
   {
     id:3,
-    slug: "custom-saas-app-development-page",
-    name: "Custom SaaS App Development Page",
-    category: "Supply Chain",
+    slug: "saas-app-development",
+    name: "SAAS App Development",
+    category: "Cloud-native apps, built to grow.",
     description:
-      "An integrated communication hub for organizations to manage internal messaging, alerts, and collaboration in one secure platform.",
+      "Design and build scalable, cloud-native SaaS applications for web and mobile that grow with your business.",
     image: "/services-img/services3.png",
-    link: "/services/custom-saas-app-development-page",
+    link: "/services/saas-app-development",
     icon: "Box",
     features: [
     {
@@ -188,131 +188,182 @@ export const services = [
     ],
 
     hero: {
-      title: "Instant, Organized, and Secure Communication System",
+      title: "Scalable SAAS Applications Built for Growth",
       subtitle:
-        "PingKLUB is an all-in-one communication hub that keeps your organization connected and informed. It centralizes internal communications – from team chats and announcements to alerts and project updates – into a single, secure platform. With PingKLUB, you can ensure the right messages reach the right people instantly, breaking down silos and fostering a collaborative culture. Want to see how PingKLUB can transform your workplace communication?",
+        "We build scalable SaaS applications powered by the cloud, covering everything from ideation to deployment. Our secure, high-performing web and mobile platforms combine user-centric design, robust backends, and seamless integrations—helping you launch or scale products that grow with your business.",
       cta: "Get in touch",
        image: "/services-img/saas-banner.png",
       link: "/services/inventory-analytics",
     },
      scheduledemo: {
-      title: "Your All-in-One Hub for Smarter Communication",
+      title: "Transforming Ideas Into High-Performance Cloud Applications",
       subtitle:
-        "Say goodbye to scattered emails and missed messages. PingKLUB offers organized channels for teams or departments, real-time messaging for quick discussions, and company-wide broadcast capabilities for important announcements. Integration with your other business systems means you can receive automated alerts (for example, task reminders or incident notifications) within PingKLUB. Robust search and tagging make it easy to find past conversations or files. By unifying communications, PingKLUB boosts transparency, alignment, and productivity across the board. Ready to transform how your teams connect?",
+        "Have a software idea or need to move to the cloud? KClub’s SaaS App Development service turns your vision into a robust, scalable product. We build high-performing, secure applications on modern frameworks—ensuring flexibility, global reach, and growth.",
       image: "/services-img/saas-services-Image.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
        comparedemo: {
-      title: "Comprehensive AI Development and Integration",
+      title: "End-to-End Development for Scalable, Future-Ready Products",
       subtitle:
-        "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
+        "From concept to deployment, we manage the full SaaS lifecycle. Our team defines requirements, designs intuitive experiences, and builds scalable architectures with microservices and APIs. Multi-tenant designs ensure efficiency, while DevOps and CI/CD pipelines enable rapid iteration. Post-launch, we handle monitoring, updates, and scaling to support growth.",
       image: "/services-img/saas-services-Image2.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
   },
-
-    {
+  {
     id:4,
-    slug: "mobile-app-development-page",
-    name: "Mobile App Development Page",
-    category: "Healthcare",
+    slug: "mobile-app-development",
+    name: "Mobile App Development",
+    category: "Apps that connect, engage, and perform.",
     description:
-      "A comprehensive healthcare management system for clinics and hospitals, covering patient records, appointments, telehealth, and billing.",
-    image: "/services-img/services4.png",
-    link: "/services/mobile-app-development-page",
+      "Deliver seamless, high-performing iOS and Android apps with intuitive UI/UX and smooth integration.",
+    image: "/services-img/services3.png",
+    link: "/services/mobile-app-development",
     icon: "Box",
     features: [
       {
-        title: "Patient Records Management",
-        description: "Securely manage and access electronic medical records in real time.",
+        title: "Native & Cross-Platform Development",
+        description: "Efficient coding practices for high performance on every device, or single codebase solutions for faster delivery across platforms.",
         image: "/placeholder.png",
       },
       {
-        title: "Telehealth Integration",
-        description: "Offer virtual consultations with secure video and messaging tools.",
+        title: "Rich Feature Implementation",
+        description: "Push notifications, offline support, GPS/location tracking, in-app purchases, and more – we have you covered on all modern app features.",
         image: "/placeholder.png",
       },
       {
-        title: "Automated Billing",
-        description: "Simplify invoicing, insurance claims, and payment tracking.",
+        title: "Secure & Scalable Backend",
+        description: "Development of secure APIs and databases to support your app, with scalability to handle user growth and data expansion.",
+        image: "/placeholder.png",
+      },
+       {
+        title: "Quality Assurance",
+        description: "Comprehensive QA including functional testing, performance optimization, and UX refinement based on beta user feedback.",
+        image: "/placeholder.png",
+      },
+       {
+        title: "Post-Launch Support",
+        description: "Monitoring app performance, releasing updates (new features, OS compatibility, security patches), and ongoing improvements.",
         image: "/placeholder.png",
       },
     ],
     hero: {
-      title: "Modern Healthcare, Made Simple",
+      title: "Custom Mobile Apps for Seamless Digital Experiences",
       subtitle:
-        "TheraKLUB helps hospitals and clinics digitize and centralize patient care. From appointments and telehealth to billing and prescriptions, everything is managed in one place. Deliver faster, safer, and smarter healthcare.",
+        "We build custom iOS and Android apps that blend intuitive design with powerful functionality. With smooth UI/UX, fast performance, offline access, and secure integrations, our apps drive engagement and measurable results across industries like e-commerce, fintech, healthcare, and logistics.",
       cta: "Get in touch",
-      image: "/placeholder.png",
+      image: "/services-img/mobile-app-banner.png",
       link: "/services/healthcare-management",
     },
     scheduledemo: {
-      title: "Empower Your Healthcare Team",
+      title: "Tailored iOS and Android Apps for Growth",
       subtitle:
-        "Enable doctors, nurses, and staff to collaborate seamlessly. TheraKLUB reduces paperwork, improves patient satisfaction, and ensures compliance with healthcare regulations.",
-      image: "/placeholder.png",
+        "In today’s mobile-first world, high-quality apps are essential for reaching and retaining customers. Our Mobile App Development services deliver custom iOS and Android applications tailored to your business, combining sleek design with robust engineering for intuitive, feature-rich, and high-performing results.",
+      image: "/services-img/mobile-app-services1.png",
       link: "/services/healthcare-management",
       cta: "Get in touch",
     },
        comparedemo: {
-      title: "Comprehensive AI Development and Integration",
+      title: "iOS, Android & Cross-Platform",
       subtitle:
-        "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
-      image: "/placeholder.png",
+        "Whether you need a native iOS app, an Android app, or both, our developers use the latest technologies like Swift, Kotlin, React Native, and Flutter. We recommend the best approach native or cross-platform based on your requirements, timeline, and budget to ensure optimal results.",
+      image: "/services-img/mobile-app-services2.png",
+      link: "/services/inventory-analytics",
+      cta: "Get in touch",
+    },
+      support: {
+      title: "User-Centric Design",
+      subtitle:
+        "Our design team creates engaging interfaces and smooth user experiences through a user-centric process with wireframes and prototypes. The result is a mobile app that’s beautiful, intuitive, and keeps users coming back.",
+      image: "/services-img/mobile-app-services3.png",
+      link: "/services/inventory-analytics",
+      cta: "Get in touch",
+    },
+      testing: {
+      title: "Integration & Testing",
+      subtitle:
+        "We integrate apps with backend systems and third-party APIs like payment gateways, location services, and social logins. Rigorous testing across devices ensures reliability, and we assist with App Store and Google Play submissions to meet all approval guidelines.",
+      image: "/services-img/mobile-app-services4.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
   },
   {
     id:5,
-    slug: "tech-consulting-and-assessments-page",
-    name: "Tech Consulting & Assessments Page",
-    category: "Finance",
+    slug: "tech-consulting-and-assessments",
+    name: "Tech Consulting & Assessments",
+    category: "Your roadmap to digital success.",
     description:
-      "An end-to-end digital lending platform for financial institutions to automate loan origination, KYC, underwriting, and disbursement.",
+      "Leverage expert IT consulting to evaluate your current systems, plan digital transformation roadmaps, and adopt the right strategies for future growth.",
     image: "/services-img/servies5.png",
-    link: "/services/tech-consulting-and-assessments-page",
+    link: "/services/tech-consulting-and-assessments",
     icon: "Box",
     features: [
       {
-        title: "Automated Loan Origination",
-        description: "Speed up loan applications with AI-based document checks.",
+        title: "IT Infrastructure Audit",
+        description: "Detailed assessment of hardware, software, and cloud infrastructure with a focus on performance, cost-efficiency, and scalability.",
         image: "/placeholder.png",
       },
       {
-        title: "KYC & Compliance",
-        description: "Integrated tools for seamless customer verification and compliance.",
+        title: "Business Process Analysis",
+        description: "Identification of manual or inefficient processes that can be improved with automation or better software solutions.",
         image: "/placeholder.png",
       },
       {
-        title: "Disbursement & Repayments",
-        description: "Automated workflows for loan approvals, payouts, and collections.",
+        title: "ROI-Focused Roadmaps",
+        description: "Step-by-step digital transformation plans that justify investments with expected ROI, so stakeholders have a clear value proposition.",
+        image: "/placeholder.png",
+      },
+       {
+        title: "Security & Compliance Review",
+        description: "Evaluating your cybersecurity measures and data compliance (GDPR, etc.) and providing mitigation strategies for any gaps.",
+        image: "/placeholder.png",
+      },
+       {
+        title: "Technology Stack Recommendations",
+        description: "Suggestions for modernizing your stack (e.g., migrating to cloud, leveraging modern frameworks or platforms like ODOO) to meet future demands.",
         image: "/placeholder.png",
       },
     ],
     hero: {
-      title: "Revolutionize Lending with FinstaKLUB",
+      title: "Expert IT Consulting to Shape Your Digital Future",
       subtitle:
-        "Digitize the entire lending process with FinstaKLUB. From loan application and KYC to disbursement and repayment tracking, financial institutions can operate faster and safer.",
+        "We design custom iOS and Android apps that combine intuitive design with powerful functionality. From consumer-facing apps to enterprise-grade solutions, our mobile apps feature smooth UI/UX, fast load times, offline access, and secure third-party integrations—driving engagement and measurable results.",
       cta: "Get in touch",
-      image: "/placeholder.png",
+      image: "/services-img/tech-services-banner.png",
       link: "/services/lending-management",
     },
     scheduledemo: {
-      title: "Smart Lending, Simplified",
+      title: "End-to-End Support: Integration’s, Testing, and Deployment",
       subtitle:
-        "Streamline approvals, reduce manual paperwork, and deliver quick loan services to clients. FinstaKLUB enhances customer satisfaction while ensuring regulatory compliance.",
-      image: "/placeholder.png",
+        "Not sure where to start with digital transformation or optimize your IT setup? KClub’s Technology Consulting & Assessments provide clear insights and a roadmap for innovation. Our consultants combine industry best practices with technical expertise to evaluate your landscape and uncover opportunities for improvement.",
+      image: "/services-img/tech-services1.png",
       link: "/services/lending-management",
       cta: "Get in touch",
     },
        comparedemo: {
-      title: "Comprehensive AI Development and Integration",
+      title: "IT Assessment & Audit",
       subtitle:
-        "We build a wide range of AI-driven applications, from predictive analytics and chatbots to computer vision for quality control. Our end-to-end approach covers strategy, data preparation, model development, and system integration - ensuring solutions align with your goals. Every AI we deliver is explainable, secure, and scalable, growing with your business while maintaining user trust",
-      image: "/placeholder.png",
+        "We conduct comprehensive audits of systems, software, and processes covering infrastructure, applications, data, and security. Our experts identify pain points such as bottlenecks, outdated tech, or vulnerabilities, delivering a clear snapshot of your current state and actionable recommendations.",
+      image: "/services-img/tech-services2.png",
+      link: "/services/inventory-analytics",
+      cta: "Get in touch",
+    },
+        support: {
+      title: "Digital Transformation Roadmap",
+      subtitle:
+        "We align strategy with your business goals—whether scaling, improving customer experience, or reducing costs. Our plans may include cloud, AI, automation, or system integrations, prioritized by impact and feasibility. You’ll receive a clear phased roadmap with timelines and resources to deliver quick wins and long-term value.",
+      image: "/services-img/tech-services3.png",
+      link: "/services/inventory-analytics",
+      cta: "Get in touch",
+    },
+      testing: {
+      title: "Process & Architecture Consulting",
+      subtitle:
+        "Our experts help redesign processes for efficiency and advise on system architecture. Whether moving to microservices or adopting DevOps, we guide you through pros, cons, and tailored implementation. We ensure your tech choices align with strategy and set you up to scale securely and reliably.",
+      image: "/services-img/tech-services4.png",
       link: "/services/inventory-analytics",
       cta: "Get in touch",
     },
