@@ -62,7 +62,7 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
 
           {/* Left Side - Form */}
           <div className="w-full md:w-1/2 p-6 sm:p-8 border-b md:border-b-0 md:border-r border-gray-200">
-            <img src="/logo.png" alt="Logo" className="h-6 mb-6" />
+            <img src="/logo.svg" alt="Logo" className="h-12 mb-6" />
 
             <form className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -92,7 +92,7 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
 
           {/* Right Side - Testimonial */}
           <div className="w-full md:w-1/2 p-6 sm:p-8 flex flex-col justify-center text-center">
-            <div className="text-xl">★★★★★</div>
+            <div className="text-xl text-blue">★★★★★</div>
             <p className="mt-4 text-gray-700 font-medium">
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
               varius enim in eros elementum tristique. Duis cursus, mi quis viverra

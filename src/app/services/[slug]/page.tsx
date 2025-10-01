@@ -22,8 +22,8 @@ export default async function ServiceDetail({ params }: PageProps) {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center h-screen w-screen">
-        <div className="w-full h-full">
+      <section className="flex flex-col items-center justify-center">
+        <div className="w-full h-auto">
           <img
             src={service.hero.image}
             alt="Hero Banner"
@@ -33,7 +33,7 @@ export default async function ServiceDetail({ params }: PageProps) {
       </section>
 
       {/* Content Section */}
-      <section className="container mx-auto px-6 pb-16 grid md:grid-cols-2 gap-12">
+      <section className="container mx-auto px-6 pb-16 grid md:grid-cols-2 gap-12 mt-20">
         {/* Left Content */}
         <div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold subpixel-antialiased text-blue">
@@ -108,6 +108,30 @@ export default async function ServiceDetail({ params }: PageProps) {
                 {service.support?.subtitle}
             </p>
           </div>
+         
+        </div>
+      </section>
+      : ""}
+
+            
+     {service.testing ? 
+      <section className="container mx-auto px-6 py-16">
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+
+          {/* Right Text */}
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-blue">
+              {service.testing?.title}
+            </h2>
+            <p className="text-gray-700 leading-relaxed">
+                {service.testing?.subtitle}
+            </p>
+          </div>
+
+                    {/* Left Image Placeholder */}
+ <div className="w-full max-w-sm md:max-w-md lg:max-w-xl flex flex-col items-center"> 
+              <img src={service.testing?.image} alt="Hero Banner" className="w-full h-auto object-contain" /> 
+          </div> 
          
         </div>
       </section>

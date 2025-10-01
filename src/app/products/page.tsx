@@ -151,14 +151,12 @@ export default function Products() {
         </p>
       </div>
 
-          <div className="w-full h-[400px] flex items-center justify-center rounded-md mt-30">
-        <div>
-           <img
-        src="/product-img/product-main-banner.png"
-        alt="Hero Banner"
-        className="w-full h-auto object-contain"
-      />
-        </div>
+        <div className="w-full h-[400px] flex items-center justify-center rounded-md mt-30">
+        <img
+          src="/product-img/product-main-banner.png"
+          alt="Hero Banner"
+          className="w-full max-w-12xl h-auto object-contain"
+        />
       </div>
     </section>
 
@@ -185,18 +183,19 @@ export default function Products() {
             className="border shadow-sm hover:shadow-md transition flex flex-col items-center text-center"
           >
             {/* Placeholder image */}
-            <div className="w-full h-60 bg-gray-200 flex items-center justify-center rounded mb-6">
+            <div className="w-full h-90 flex items-center justify-center rounded overflow-hidden mb-6">
               <Image
-                src={product.image}
+                src={product.imagemain}
                 alt={product.name}
-                width={60}
-                height={60}
-                className="opacity-60"
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
               />
             </div>
+
             <div className="p-6">
             <div className="mb-6">
-              <img src="/cklub-logo.png" alt="c-klogo" className="h-8 mx-auto" />
+              <img src={product.image} alt="c-klogo" className="h-8 mx-auto" />
             </div>
             <h3 className="text-lg font-bold text-black mb-2">{product.name}</h3>
             {/* <h4 className="font-semibold text-gray-800">{product.category}</h4> */}
@@ -228,7 +227,7 @@ export default function Products() {
         modules={[Pagination]}
         pagination={{ clickable: true }}
         spaceBetween={30}
-        slidesPerView={2}
+        slidesPerView={3}
         breakpoints={{
           0: { slidesPerView: 1 },
           768: { slidesPerView: 2 },

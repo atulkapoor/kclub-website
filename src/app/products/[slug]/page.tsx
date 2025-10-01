@@ -26,14 +26,8 @@ export default async function ProductDetail({ params }: PageProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
-            <Image
-              src="/cklub-logo.png"
-              alt="c-klogo"
-              width={120}
-              height={60}
-              className="mr-2 h-10 w-auto"
-            />
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black mt-5">
+          <img src={product.image} alt="c-klogo" className="h-8" />
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue mt-5">
               {product.hero.title}
             </h3>
             <p className="mt-4 text-gray-600 leading-relaxed">
@@ -46,66 +40,55 @@ export default async function ProductDetail({ params }: PageProps) {
           </div>
 
           {/* Right Side - Video Placeholder */}
-          <div className="relative bg-gray-300 h-160 flex items-center justify-center rounded-lg">
-            <button className="w-14 h-14 bg-gray-700 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-gray-900 transition">
-              ▶
-            </button>
-          </div>
+      <img src={product.hero.image} alt="Hero Banner" className="w-full h-auto object-contain" /> 
+
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
-          {product.features.map((feature, index) => (
-            <div key={index} className="flex flex-col items-center">
-              {/* Placeholder image */}
-              <div className="w-50 h-50 bg-gray-200 flex items-center justify-center rounded mb-4">
-                <Image
-                  src={feature.image}
-                  alt={feature.title}
-                  width={50}
-                  height={50}
-                  className="opacity-70"
-                />
-              </div>
-
-              <h3 className="text-2xl font-semibold text-gray-900">
-                {feature.title}
-              </h3>
-              <p className="text-gray-600 text-xs md:text-sm mt-2">
-                {feature.description}
-              </p>
-            </div>
-          ))}
+    <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+    {product.features.map((feature, index) => (
+      <div
+        key={index}
+        className="transition p-6 flex flex-col items-center text-center"
+      >
+        {/* Icon */}
+        <div className="w-60 h-60 flex items-center justify-center bg-white rounded-xl shadow-lg mb-6">
+          <Image
+            src={feature.image}
+            alt={feature.title}
+            width={80}
+            height={80}
+            className="object-contain"
+          />
         </div>
-      </section>
+
+        {/* Title */}
+        <h3 className="text-base md:text-lg font-semibold text-gray-900 mb-2">
+          {feature.title}
+        </h3>
+
+        {/* Description */}
+        <p className="text-gray-600 text-sm leading-relaxed">
+          {feature.description}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
+
 
       {/* Schedule Demo Section */}
       <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Right Placeholder */}
-          <div className="bg-gray-200 w-full h-[350px] flex items-center justify-center rounded-md">
-            <div className="w-14 h-14 bg-gray-300 flex items-center justify-center rounded-md">
-              <svg
-                className="w-8 h-8 text-gray-500"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
-                />
-              </svg>
-            </div>
-          </div>
+               <img src={product.hero.image} alt="Hero Banner" className="w-full h-auto object-contain" /> 
+
 
           {/* Left Content */}
           <div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue">
               {product.scheduledemo.title}
             </h1>
             <p className="text-gray-700 mb-4">{product.scheduledemo.subtitle}</p>

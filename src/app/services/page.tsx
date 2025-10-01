@@ -77,13 +77,13 @@ export default function Services() {
       </div>
 
         <div className="w-full h-[400px] flex items-center justify-center rounded-md mt-30">
-        <div>
+        {/* <div> */}
            <img
         src="/services-img/services-banner.png"
         alt="Hero Banner"
-        className="w-full h-auto object-contain"
+        className="w-full max-w-12xl h-auto object-contain"
       />
-        </div>
+        {/* </div> */}
       </div>
     </section>
 
@@ -215,7 +215,7 @@ export default function Services() {
     </div>
     </section>
 
-      <section className="container bg-color-blue text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 rounded-md">
+      <section className="container bg-color-blue text-white mx-auto px-2 md:px-6 lg:px-36 py-12 lg:py-14 rounded-md">
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         {/* Left Content */}
         <div>
