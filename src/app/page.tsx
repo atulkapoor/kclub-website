@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import HeroSection from "@/components/CTA";
 import Link from "next/link";
+import Testimonial from "@/components/Testimonials";
 
 
 export default function Home() {
@@ -250,64 +251,12 @@ const [open, setOpen] = useState(false);
       </h1>
          {/* <p className="text-sm tracking-wide text-black-500 text-center mb-8">
           Because we don&apos;t just deliver services, we deliver outcomes.</p> */}
-       <div className="cr">
-      <Swiper
-        modules={[Pagination]}
-        pagination={{ clickable: true }}
-        spaceBetween={30}
-        slidesPerView={3}
-        breakpoints={{
-          0: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-        }}
-        className="pb-12"
-      >
-        {[1, 2, 3, 4].map((i) => (
-          <SwiperSlide key={i}>
-            <div className="border rounded-lg p-10 flex flex-col justify-between h-full mb-15">
-              {/* Stars */}
-              <div className="flex mb-4">
-                {Array(5)
-                  .fill(0)
-                  .map((_, idx) => (
-                    <span key={idx} className="text-color-blue text-lg">★</span>
-                  ))}
-              </div>
-
-              {/* Testimonial */}
-              <p className="text-gray-700 text-sm mb-6 leading-relaxed">
-                &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis cursus,
-                mi quis viverra ornare, eros dolor interdum nulla, ut commodo
-                diam libero vitae erat.&quot;
-              </p>
-
-              {/* Footer: profile + company */}
-              <div className="flex justify-between items-center mt-auto pt-4 border-t">
-                {/* Profile */}
-                <div className="flex items-center">
-                  <div className="w-10 h-10 bg-gray-200 rounded-full mr-3"></div>
-                  <div>
-                    <p className="font-semibold text-sm">Name Surname</p>
-                    <p className="text-xs text-gray-500">Position, Company</p>
-                  </div>
-                </div>
-
-                {/* Company logo (placeholder box here) */}
-                <div className="flex items-center gap-2">
-                  <img src="/webflow-logo.png" alt="Webflow" className="h-6 w-30" />
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+    <Testimonial/>
 
     </div>
       </section>
       {/* <section className="ml-36 mr-36"> */}
-      <section className="mx-4 sm:mx-6 md:mx-12 lg:mx-24 xl:mx-36 2xl:mx-48">
+      <section className="mx-2 sm:mx-6 md:mx-2 lg:mx-14 xl:mx-16 2xl:mx-34">
         <HeroSection 
           styles={{
             description: { 

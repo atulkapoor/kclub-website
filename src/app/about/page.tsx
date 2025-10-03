@@ -9,11 +9,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { Linkedin, Twitter, Dribbble } from "lucide-react";
+import Testimonial from "@/components/Testimonials";
 
 const testimonials = [
   {
     company: "Webflow",
-    logo: "/logos/relume-logo.png", // replace with your logo path
+    logo: "/services-img/ai-services1.png", // replace with your logo path
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
     name: "Name Surname",
     position: "Position, Company name",
@@ -21,7 +22,7 @@ const testimonials = [
   },
   {
     company: "Relume",
-    logo: "/logos/webflow-logo.png",
+    logo: "/services-img/ai-services1.png",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
     name: "Name Surname",
     position: "Position, Company name",
@@ -29,7 +30,7 @@ const testimonials = [
   },
   {
     company: "Webflow",
-    logo: "/logos/relume-logo.png",
+    logo: "/services-img/ai-services1.png",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
     name: "Name Surname",
     position: "Position, Company name",
@@ -41,7 +42,7 @@ const team = [
   {
     name: "Full name",
     title: "Job title",
-    image: "/team-placeholder.jpg",
+    image: "/services-img/ai-services1.png",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
     socials: {
       linkedin: "#",
@@ -52,7 +53,7 @@ const team = [
   {
     name: "Full name",
     title: "Job title",
-    image: "/team-placeholder.jpg",
+    image: "/services-img/ai-services1.png",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
     socials: {
       linkedin: "#",
@@ -63,7 +64,7 @@ const team = [
   {
     name: "Full name",
     title: "Job title",
-    image: "/team-placeholder.jpg",
+    image: "/services-img/ai-services1.png",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
     socials: {
       linkedin: "#",
@@ -74,7 +75,7 @@ const team = [
   {
     name: "Full name",
     title: "Job title",
-    image: "/team-placeholder.jpg",
+    image: "/services-img/ai-services1.png",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
     socials: {
       linkedin: "#",
@@ -85,7 +86,7 @@ const team = [
   {
     name: "Full name",
     title: "Job title",
-    image: "/team-placeholder.jpg",
+    image: "/services-img/ai-services1.png",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
     socials: {
       linkedin: "#",
@@ -96,7 +97,7 @@ const team = [
   {
     name: "Full name",
     title: "Job title",
-    image: "/team-placeholder.jpg",
+    image: "/services-img/ai-services1.png",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
     socials: {
       linkedin: "#",
@@ -274,56 +275,7 @@ export default function AboutPage() {
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue text-center">
         What our clients are saying
       </h1>
-      <div className="px-6">
-      <Swiper
-        modules={[Pagination]}
-        pagination={{ clickable: true }}
-        spaceBetween={30}
-        slidesPerView={3}
-        breakpoints={{
-          0: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
-        className="pb-12" // padding for dots
-      >
-        {[1, 2, 3, 4, 5].map((i) => (
-          <SwiperSlide key={i}>
-            <div className="border rounded-lg p-6 flex flex-col justify-between h-full mb-16">
-              {/* Logo / Title */}
-              <div className="mb-14">
-              <img src="/webflow-logo.png" alt="Webflow" className="h-6 w-30" />
-              </div>
-
-              {/* Testimonial Text */}
-              <p className="text-gray-600 text-sm mb-6 leading-relaxed">
-                `&quot;`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis cursus, 
-                mi quis viverra ornare.`&quot;`
-              </p>
-
-              {/* Name + Position */}
-              <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-gray-200 rounded-full mr-3"></div>
-                <div>
-                  <p className="font-semibold text-black text-sm">Name Surname</p>
-                  <p className="text-xs text-gray-500">Position, Company name</p>
-                </div>
-              </div>
-
-              {/* Link */}
-              <a
-                href="#"
-                className="text-sm font-medium text-gray-900 hover:underline inline-flex items-center"
-              >
-                Read case study
-                <span className="ml-1">→</span>
-              </a>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+     <Testimonial/>
 
     </div>
     </section>

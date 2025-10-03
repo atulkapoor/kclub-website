@@ -138,8 +138,8 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#dfecff] text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-12">
+    <footer className="bg-[#dfecff] text-white container-fluid mx-auto px-4 md:px-6 lg:px-36 py-10 lg:pt-10">
+      <div className="max-w-12xl py-12">
         {/* Main Footer Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-6 gap-8">
           

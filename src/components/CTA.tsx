@@ -98,7 +98,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
   return (
     <section 
-      className="bg-blue-700 text-black"
+      className="bg-blue-700 text-black container-fluid mb-10 rounded-lg"
       style={{
         backgroundColor: container.backgroundColor,
         backgroundImage: container.backgroundImage,
