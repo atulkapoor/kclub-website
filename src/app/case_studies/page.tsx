@@ -19,47 +19,28 @@ export default function CaseStudiesPage() {
   });
 
     return (
-        <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto px-4 md:px-6 lg:px-36 pb-12 lg:pb-4 mt-2">
+        <main className="min-h-screen bg-white">
+ {/* Page Header */}
+ <section className="flex flex-col items-center justify-center h-screen w-screen">
+ <div className="w-full h-full">
 
-    <div className="min-h-screen bg-gray-50 pb-8">
-      <div className="container mx-auto px-4">
-            {/* Page Header */}
-            <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 pb-12 lg:pb-4">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 "> 
-
-        {/* Banner */}
-        <div className="w-full h-[400px] flex items-center justify-center rounded-md">
-        <div className="">
-          {/* <div className="w-14 h-14 mx-auto bg-gray-300 rounded-md mb-4 flex items-center justify-center">
-            <svg
-              className="w-8 h-8 text-gray-500"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
-              />
-            </svg>
-          </div> */}
                 <img
             src="case_studies-img/hero.png"  
             className="w-full   object-contain"
-          />
-          {/* <h2 className="text-lg font-semibold">Careers Page</h2> */}
-        </div>
-                </div>
-                <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Case Studies Page</h1>
+          />  
+                <div className="flex justify-between text-center mb-12 mt-8"> 
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Catchy Tagline  
+              </p>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Catchy Tagline - Turning Ideas into Impact – Real Stories, Real Results.
           </p>
         </div>
       </div>
       </section>
+    <div className="min-h-screen bg-gray-50 pb-8 mt-12">
+      <div className="container mx-auto px-4">
+           
         
 
         {/* Filters and Search */}
@@ -139,7 +120,7 @@ export default function CaseStudiesPage() {
         )}
 
         {/* Newsletter Signup */}
-        <div className="bg-gray-100 rounded-lg p-8 max-w-3xl mx-auto">
+        {/* <div className="bg-gray-100 rounded-lg p-8 max-w-3xl mx-auto">
           <div className="text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Sign up for our newsletter</h3>
             <p className="text-gray-600 mb-6">
@@ -159,8 +140,9 @@ export default function CaseStudiesPage() {
               By clicking Sign Up you&apos;re confirming that you agree with our Terms and Conditions.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
-    </div></main>
+        </div>
+      </main>
   );
 }
