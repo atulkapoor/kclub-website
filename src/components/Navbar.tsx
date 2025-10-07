@@ -402,49 +402,49 @@ export default function Navbar() {
           // name: "Warehouse Management",
           link: "/products/warehouse-management",
           desc: "Warehouse Management",
-          img: "/nav-img/warehouse.png",
+          img: "/nav-img/warehouse1.png",
         },
         {
           // name: "Maritime Agency",
           link: "/products/maritime-agency-management",
           desc: "Maritime Agency",
-          img: "/nav-img/maritime.png",
+          img: "/nav-img/maritime1.png",
         },
         {
           // name: "Communication Management",
           link: "/products/communication-management",
           desc: "Communication Management",
-          img: "/nav-img/communication.png",
+          img: "/nav-img/communication1.png",
         },
         {
           // name: "Healthcare Management",
           link: "/products/healthcare-management",
           desc: "Healthcare Management",
-          img: "/nav-img/healthcare.png",
+          img: "/nav-img/healthcare1.png",
         },
         {
           // name: "Lending Management",
           link: "/products/lending-management",
           desc: "Lending Management",
-          img: "/nav-img/warehouse.png",
+          img: "/nav-img/warehouse1.png",
         },
         {
           // name: "Transport Management",
           link: "/products/transport-management",
           desc: "Transport Management",
-          img: "/nav-img/transport.png",
+          img: "/nav-img/transport1.png",
         },
         {
           // name: "Edutech",
           link: "/products/edtech-platform",
           desc: "Edutech",
-          img: "/nav-img/edutech.png",
+          img: "/nav-img/edutech1.png",
         },
         {
           // name: "Omnichannel ERP",
           link: "/products/omnichannel-erp",
           desc: "Omnichannel ERP1",
-          img: "/nav-img/omichannel.png",
+          img: "/nav-img/omichannel1.png",
         },
         {
           // name: "Omnichannel ERP",
@@ -560,7 +560,7 @@ export default function Navbar() {
                           <img
                             src={item.img}
                             alt={item.name}
-                            className="w-24 h-8 object-contain"
+                            className="w-20 h-8 object-contain"
                           />
                         )}
                         <div>
