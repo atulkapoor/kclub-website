@@ -44,8 +44,8 @@
 //   const closeModal = () => setOpen(false);
 
 //   return (
-//     <header className="fixed top-0 left-0 right-0 bg-white z-50 
-//                       flex justify-between items-center px-6 lg:px-36 py-4 
+//     <header className="fixed top-0 left-0 right-0 bg-white z-50
+//                       flex justify-between items-center px-6 lg:px-36 py-4
 //                       border-b shadow-sm">
 //       {/* Logo */}
 //       <div className="font-bold text-xl">
@@ -80,7 +80,7 @@
 //           </div>
 //           {openDropdown === "products" && (
 //             <div
-//               className="absolute left-0 mt-4 grid grid-cols-2 lg:grid-cols-3 gap-6 
+//               className="absolute left-0 mt-4 grid grid-cols-2 lg:grid-cols-3 gap-6
 //                           bg-white shadow-xl border rounded-xl p-6 w-[700px] z-50"
 //             >
 //               {products.map((item, idx) => {
@@ -125,7 +125,7 @@
 //           </div>
 //           {openDropdown === "services" && (
 //             <div
-//               className="absolute left-0 mt-4 grid grid-cols-2 lg:grid-cols-3 gap-6 
+//               className="absolute left-0 mt-4 grid grid-cols-2 lg:grid-cols-3 gap-6
 //                           bg-white shadow-xl border rounded-xl p-6 w-[700px] z-50"
 //             >
 //               {services.map((item, idx) => {
@@ -146,7 +146,7 @@
 //             </div>
 //           )}
 //         </div>
-// {/* 
+// {/*
 //         <Link href="/tech" className="text-gray-600 hover:text-gray-900">
 //           Tech consult
 //         </Link>
@@ -154,14 +154,14 @@
 //           Custom SaaS
 //         </Link>
 //         <Link href="/mobile_app" className="text-gray-600 hover:text-gray-900">
-//           Mobile App 
+//           Mobile App
 //         </Link> */}
 //         {/* <Link href="/blog" className="text-gray-600 hover:text-gray-900">
 //           Blog
 //         </Link> */}
 //         <Link href="/industries" className="text-gray-600 hover:text-gray-900">
 //           Industries
-//         </Link> 
+//         </Link>
 //         <Link href="/resources" className="text-gray-600 hover:text-gray-900">
 //           Resources
 //         </Link>
@@ -304,7 +304,7 @@
 
 //             {/* <Link href="/tech" onClick={handleLinkClick} className="text-gray-600 hover:text-gray-900">
 //               Tech consult
-//             </Link> 
+//             </Link>
 //             <Link href="/services" className="text-gray-600 hover:text-gray-900">
 //               Services
 //             </Link>
@@ -312,7 +312,7 @@
 //               Custom SaaS
 //             </Link>
 //             <Link href="/mobile_app" onClick={handleLinkClick} className="text-gray-600 hover:text-gray-900">
-//               Mobile App 
+//               Mobile App
 //             </Link> */}
 //                {/* <Link href="/blog" className="text-gray-600 hover:text-gray-900">
 //                 Blog
@@ -334,7 +334,7 @@
 //         </div>
 //       )}
 //             <PopupForm isOpen={open} onClose={closeModal} />
-      
+
 //     </header>
 //   );
 // }
@@ -342,12 +342,22 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X, ArrowRight } from "lucide-react";
+import Image from "next/image";
+
+interface SubItem {
+  name?: string;
+  link: string;
+  desc?: string;
+  img?: string; // optional image/icon
+}
 
 interface MenuItem {
   name: string;
   link: string;
-  items?: { name: string; link: string }[]; // optional
+  items?: SubItem[];
+  width?: string; // e.g. w-72, w-96, w-[28rem]
+  cols?: string; // e.g. grid-cols-1, grid-cols-2, grid-cols-3
 }
 
 export default function Navbar() {
@@ -366,51 +376,147 @@ export default function Navbar() {
   const menus: MenuItem[] = [
     {
       name: "Company",
-      link: "/company", // optional dropdown items
+      link: "/company",
+      width: "w-64",
+      cols: "grid-cols-1",
       items: [
-        { name: "About Us", link: "/company/about" },
-        { name: "Careers", link: "/company/careers" },
-        { name: "Contact", link: "/company/contact" },
+        {
+          name: "About Us",
+          link: "/about",
+          desc: "Your digital transformation partner",
+        },
+        {
+          name: "Contact Us",
+          link: "/contact",
+          desc: "Get in touch with our team today",
+        },
       ],
     },
     {
       name: "Products",
       link: "/products",
+      width: "w-[28rem]",
+      cols: "grid-cols-3",
       items: [
-        { name: "Product A", link: "/products/a" },
-        { name: "Product B", link: "/products/b" },
-        { name: "Product C", link: "/products/c" },
-        { name: "Product D", link: "/products/d" },
-        { name: "Product E", link: "/products/e" },
+        {
+          // name: "Warehouse Management",
+          link: "/products/warehouse-management",
+          desc: "Warehouse Management",
+          img: "/nav-img/warehouse.png",
+        },
+        {
+          // name: "Maritime Agency",
+          link: "/products/maritime-agency-management",
+          desc: "Maritime Agency",
+          img: "/nav-img/maritime.png",
+        },
+        {
+          // name: "Communication Management",
+          link: "/products/communication-management",
+          desc: "Communication Management",
+          img: "/nav-img/communication.png",
+        },
+        {
+          // name: "Healthcare Management",
+          link: "/products/healthcare-management",
+          desc: "Healthcare Management",
+          img: "/nav-img/healthcare.png",
+        },
+        {
+          // name: "Lending Management",
+          link: "/products/lending-management",
+          desc: "Lending Management",
+          img: "/nav-img/warehouse.png",
+        },
+        {
+          // name: "Transport Management",
+          link: "/products/transport-management",
+          desc: "Transport Management",
+          img: "/nav-img/transport.png",
+        },
+        {
+          // name: "Edutech",
+          link: "/products/edtech-platform",
+          desc: "Edutech",
+          img: "/nav-img/edutech.png",
+        },
+        {
+          // name: "Omnichannel ERP",
+          link: "/products/omnichannel-erp",
+          desc: "Omnichannel ERP1",
+          img: "/nav-img/omichannel.png",
+        },
+        {
+          // name: "Omnichannel ERP",
+          link: "/products/real-estate-erp",
+          desc: "Omnichannel ERP2",
+          img: "/nav-img/Group.png",
+        },
       ],
     },
     {
       name: "Services",
       link: "/services",
+      width: "w-[22rem]",
+      cols: "grid-cols-1",
       items: [
-        { name: "About Us", link: "/company/about" },
-        { name: "Careers", link: "/company/careers" },
-        { name: "Contact", link: "/company/contact" },
+        {
+          name: "AI Services",
+          link: "/services/ai-services",
+          // desc: "Leverage AI to grow faster",
+        },
+        {
+          name: "ODOO Services",
+          link: "/services/odoo-services-page",
+          // desc: "ODOO setup & customization",
+        },
+        {
+          name: "SaaS Development",
+          link: "/services/saas-app-development",
+          // desc: "Build scalable SaaS platforms",
+        },
+        {
+          name: "Mobile App Development",
+          link: "/services/mobile-app-development",
+          // desc: "Native & cross-platform apps",
+        },
+        {
+          name: "Tech Consulting",
+          link: "/services/tech-consulting-and-assessments",
+          // desc: "Optimize your tech stack",
+        },
       ],
     },
     {
       name: "Industries",
       link: "/industries",
+      width: "w-48",
+      cols: "grid-cols-1",
     },
     {
       name: "Resources",
       link: "/resources",
+      width: "w-72",
+      cols: "grid-cols-1",
       items: [
-        { name: "Docs", link: "/resources/docs" },
-        { name: "Guides", link: "/resources/guides" },
-        { name: "API", link: "/resources/api" },
+        {
+          name: "Blog",
+          link: "/blog",
+          desc: "Insights and updates from the KClub team",
+        },
+        {
+          name: "Case Studies",
+          link: "/case-studies",
+          desc: "Explore the success stories behind our solutions",
+        },
       ],
     },
     {
       name: "Careers",
       link: "/careers",
-    }
-
+      width: "w-48",
+      cols: "grid-cols-1",
+    },
   ];
 
   return (
@@ -418,7 +524,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-black">
-          MyLogo
+          <Image src="/logo.svg" alt="Logo" width={100} height={40} />
         </Link>
 
         {/* Desktop Menu */}
@@ -429,26 +535,57 @@ export default function Navbar() {
                 href={menu.link}
                 className="flex items-center gap-1 hover:text-gray-700"
               >
-                {menu.name} 
-                {menu.items && menu.items.length > 0 && (
-                  <ChevronDown size={18}
-                  className="opacity-0 group-hover:opacity-100 transition-opacity duration-200"
-
+                {menu.name}
+                {menu.items && (
+                  <ChevronDown
+                    size={18}
+                    className="opacity-0 group-hover:opacity-100 transition-opacity duration-200"
                   />
-        )}
+                )}
               </Link>
 
-              {menu.items && menu.items.length > 0 && (
-                <div className="absolute left-0 mt-3 bg-white shadow-lg rounded-lg p-4 grid grid-cols-2 gap-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all w-80 duration-200">
+              {/* Dropdown */}
+              {menu.items && (
+                <div
+                  className={`absolute left-0 mt-3 bg-white shadow-lg rounded-lg p-4 grid ${menu.cols} gap-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ${menu.width}`}
+                >
                   {menu.items.map((item) => (
                     <Link
-                      key={item.name}
+                      key={item.link}
                       href={item.link}
-                      className="hover:text-gray-600 block"
+                      className="hover:bg-gray-50 rounded-lg p-2 block transition-colors"
                     >
-                      {item.name}
+                      <div className="items-start gap-3">
+                        {item.img && (
+                          <img
+                            src={item.img}
+                            alt={item.name}
+                            className="w-24 h-8 object-contain"
+                          />
+                        )}
+                        <div>
+                          {item.name && (
+                            <p className="font-semibold text-gray-800">
+                              {item.name}
+                            </p>
+                          )}
+                          {item.desc && (
+                            <p className="text-sm text-gray-500">{item.desc}</p>
+                          )}
+                        </div>
+                      </div>
                     </Link>
                   ))}
+
+                  {/* "See all services" for Services menu */}
+                  {menu.name === "Services" && (
+                    <Link
+                      href="/services"
+                      className="flex items-center justify-end gap-1 text-sm font-medium text-blue-600 hover:underline mt-2"
+                    >
+                      See all services <ArrowRight size={16} />
+                    </Link>
+                  )}
                 </div>
               )}
             </div>
@@ -458,45 +595,71 @@ export default function Navbar() {
         {/* Book a Demo Button */}
         <Link
           href="/demo"
-          className="hidden md:block bg-black text-white px-5 py-2 rounded-full hover:bg-gray-800"
+          className="hidden md:block bg-[#050953] text-white px-5 py-2 rounded-xl hover:bg-gray-800"
         >
           Book a Demo
         </Link>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Toggle */}
         <button onClick={toggleMobile} className="md:hidden text-black">
           {mobileMenu ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile Dropdowns */}
+      {/* Mobile Menu */}
       {mobileMenu && (
         <div className="md:hidden bg-white border-t text-black font-medium">
           {menus.map((menu) => (
             <div key={menu.name} className="border-b">
-              <Link
-                href={menu.link}
+              <button
                 onClick={() => toggleDropdown(menu.name)}
                 className="w-full flex justify-between items-center px-6 py-3 hover:bg-gray-50"
               >
-                {menu.name} <ChevronDown size={18} />
-              </Link>
+                {menu.name}
+                {menu.items && <ChevronDown size={18} />}
+              </button>
 
               {menu.items && openMenu === menu.name && (
                 <div className="pl-10 pb-3 space-y-2">
                   {menu.items.map((item) => (
                     <Link
-                      key={item.name}
+                      key={item.link}
                       href={item.link}
                       className="block hover:text-gray-600"
                     >
-                      {item.name}
+                      <div className="flex items-start gap-3">
+                        {item.img && (
+                          <img
+                            src={item.img}
+                            alt={item.name}
+                            className="w-6 h-6 object-contain"
+                          />
+                        )}
+                        <div>
+                          {item.name && (
+                            <p className="font-semibold">{item.name}</p>
+                          )}
+                          {item.desc && (
+                            <p className="text-sm text-gray-500">{item.desc}</p>
+                          )}
+                        </div>
+                      </div>
                     </Link>
                   ))}
+
+                  {menu.name === "Services" && (
+                    <Link
+                      href="/services"
+                      className="flex items-center gap-1 text-blue-600 text-sm pl-2 mt-2"
+                    >
+                      See all services <ArrowRight size={16} />
+                    </Link>
+                  )}
                 </div>
               )}
             </div>
           ))}
+
           <div className="p-4">
             <Link
               href="/demo"
@@ -510,13 +673,6 @@ export default function Navbar() {
     </nav>
   );
 }
-
-
-
-
-
-
-
 
 // "use client";
 
@@ -567,8 +723,8 @@ export default function Navbar() {
 //   const closeModal = () => setOpen(false);
 
 //   return (
-//     <header className="fixed top-0 left-0 right-0 bg-white z-50 
-//                       flex justify-between items-center px-6 lg:px-36 py-4 
+//     <header className="fixed top-0 left-0 right-0 bg-white z-50
+//                       flex justify-between items-center px-6 lg:px-36 py-4
 //                       border-b shadow-sm">
 //       {/* Logo */}
 //       <div className="font-bold text-xl">
@@ -613,8 +769,8 @@ export default function Navbar() {
 //           </div>
 //           {desktopDropdown === "products" && (
 //             <div
-//               className="absolute left-0 grid grid-cols-2 lg:grid-cols-3 gap-6 
-//                           bg-white shadow-xl border rounded-xl p-6 w-[700px] z-50" 
+//               className="absolute left-0 grid grid-cols-2 lg:grid-cols-3 gap-6
+//                           bg-white shadow-xl border rounded-xl p-6 w-[700px] z-50"
 //             >
 //               {products.map((item, idx) => {
 //                 const Icon = getIcon(item.icon);
@@ -657,7 +813,7 @@ export default function Navbar() {
 //           </div>
 //           {desktopDropdown === "services" && (
 //             <div
-//               className="absolute left-0 grid grid-cols-2 lg:grid-cols-3 gap-6 
+//               className="absolute left-0 grid grid-cols-2 lg:grid-cols-3 gap-6
 //                           bg-white shadow-xl border rounded-xl p-6 w-[700px] z-50"
 //                           onMouseEnter={() => setDesktopDropdown("services")}
 //                           onMouseLeave={() => setDesktopDropdown(null)}
