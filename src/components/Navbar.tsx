@@ -506,7 +506,7 @@ export default function Navbar() {
         },
         {
           name: "Case Studies",
-          link: "/case-studies",
+          link: "/case_studies",
           desc: "Explore the success stories behind our solutions",
         },
       ],
