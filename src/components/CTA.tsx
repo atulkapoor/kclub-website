@@ -40,6 +40,8 @@
 
 // HeroSection.jsx
 import React from 'react'; 
+import Link from "next/link";
+
 
 interface ComponentStyles {
   backgroundColor?: string;
@@ -187,7 +189,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               
               {/* Secondary button with customizable styles */}
               {showSecondaryButton && (
-                <button 
+                <Link href="/contact"  
                   className="py-3 px-6 sm:py-4 sm:px-8 lg:py-8 lg:px-3 rounded-3xl bg-white text-black w-full sm:w-auto text-base sm:text-lg lg:text-base font-medium transition-transform hover:scale-105"
                   style={{
                     backgroundColor: secondaryButton.backgroundColor,
@@ -199,7 +201,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   }}
                 >
                   {secondaryButtonText}
-                </button>
+                </Link>
               )}
             </div>
           </div>

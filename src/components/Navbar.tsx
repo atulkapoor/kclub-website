@@ -376,7 +376,7 @@ export default function Navbar() {
   const menus: MenuItem[] = [
     {
       name: "Company",
-      link: "/company",
+      link: "#",
       width: "w-64",
       cols: "grid-cols-1",
       items: [

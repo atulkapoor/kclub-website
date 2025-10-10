@@ -557,10 +557,12 @@ export default function IndustriesPage() {
         { src: "/webflow-logo.png", alt: "Relume" },
       ];
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto    py-12 lg:py-4 mt-20">
+    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto    py-12 lg:py-4">
       {/* HERO */}
-      <section className="max-w-6xl mx-auto px-4 py-16 text-center">
-        <h1 className="text-3xl md:text-5xl font-extrabold text-black mb-6">
+      <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 my-30 text-center">
+
+        <div className="text-center max-w-5xl mx-auto mb-12">
+        <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue">
           Technology Solutions Across Industries
         </h1>
         <p className="text-md md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -569,34 +571,20 @@ export default function IndustriesPage() {
           opportunities. By combining domain knowledge with the right
           technology, we help companies streamline operations, enhance customer
           experiences, and innovate faster.
-              </p>
-              <div className="w-full mt-20 h-[400px] flex items-center justify-center rounded-md">
+        </p>
+        </div>
+
+        <div className="w-full h-[400px] flex items-center justify-center rounded-md mt-30">
           <img
-       src="industry-img/industry.png"
+           src="industry-img/industry.png"
+           alt="Hero Banner"
+        className="w-full max-w-12xl h-auto object-contain"
           />
-          {/* <div className="text-center">
-          <div className="w-14 h-14 mx-auto bg-gray-300 rounded-md mb-4 flex items-center justify-center">
-            <svg
-              className="w-8 h-8 text-gray-500"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
-              />
-            </svg>
-          </div>
-          <h2 className="text-lg font-semibold text-black">Industries Page</h2>
-        </div> */}
       </div>
       </section>
 
       {/* INDUSTRIES + CAROUSELS */}
-      <section className="max-w-6xl mx-auto px-4 pb-12">
+        <section className="container mx-auto px-6 pt-16 pb-8">
   {industries.map((industry, idx) => (
     <div key={idx} className="mb-20">
       {/* Top Row: Image + Text */}
@@ -616,10 +604,10 @@ export default function IndustriesPage() {
 
         {/* Heading + Description */}
         <div className="w-full md:w-1/2">
-          <h2 className="text-2xl text-black md:text-3xl font-semibold mb-2">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-blue">
             {industry.name}:
           </h2>
-          <p className="text-gray-600">{industry.description}</p>
+          <p className="text-gray-700 leading-relaxed">{industry.description}</p>
         </div>
       </div>
 
@@ -749,7 +737,7 @@ export default function IndustriesPage() {
         </div>
       </section> */}
       {/* <section className=" sm:mx-6 md:mx-12 lg:mx-16 xl:mx-36 2xl:mx-48"> */}
-              <HeroSection
+              {/* <HeroSection
                 styles={{
                   description: { 
                     width:"100%"
@@ -762,12 +750,29 @@ export default function IndustriesPage() {
                 title="Ready to Transform Your Business"
                 description="Let’s create solutions that drive efficiency, growth, and innovation for your enterprise."
       
-              />
+              /> */}
             {/* </section> */}
+
+           <section className="mx-2 sm:mx-6 md:mx-2 lg:mx-14 xl:mx-16 2xl:mx-34">
+        <HeroSection 
+          styles={{
+            description: { 
+              width:"100%"
+            },
+            container: {
+              backgroundImage: "url('/cta2.png')", 
+            },
+          }}
+          showPrimaryButton={false}
+          title="Ready to Transform Your Business"
+          description="Let’s create solutions that drive efficiency, growth, and innovation for your enterprise."
+
+        />
+      </section>
 
       {/* FINAL SECTION */}
       <section className="bg-gray-50 py-16 px-4 text-center">
-        <h2 className="text-3xl text-black md:text-4xl font-bold mb-4">
+        <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold text-blue">
           Used by the world&apos;s most average companies
         </h2>
         <section className="text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-20 rounded-md">

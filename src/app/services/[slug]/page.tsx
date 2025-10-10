@@ -1,6 +1,7 @@
 import { services } from "../../data/services";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 type PageProps = {
   params: Promise<{
@@ -43,12 +44,12 @@ export default async function ServiceDetail({ params }: PageProps) {
 
         {/* Right Content */}
         <div className="text-gray-700">
-          <p className="mb-6 leading-relaxed">
+          <p className="mb-8 leading-relaxed">
              {service.hero.subtitle}
           </p>
-          <button className="px-14 py-2 bg-black text-white rounded-lg bg-color-blue transition">
+          <Link href="/contact" className="px-14 py-4 bg-black text-white rounded-lg bg-color-blue transition">
             Schedule a demo
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -187,13 +188,13 @@ export default async function ServiceDetail({ params }: PageProps) {
           {/* Right Buttons */}
           <div className="flex gap-4">
           <a
-            href="#case-studies"
+           href="/contact" 
             className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
           >
             See case studies
           </a>
           <a
-            href="#contact"
+            href="/contact" 
             className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
           >
             Contact us

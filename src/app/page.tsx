@@ -114,7 +114,7 @@ const [open, setOpen] = useState(false);
               className="flex items-center mx-8 shrink-0"
             >
               <img src={logo.src} alt={logo.alt} className="h-8 mr-2" />
-              {/* <span className="text-black font-medium">{logo.alt}</span> */}
+              {/* <span className="text-blue font-medium">{logo.alt}</span> */}
             </div>
           ))}
           {/* Duplicate for infinite scroll effect */}
@@ -124,7 +124,7 @@ const [open, setOpen] = useState(false);
               className="flex items-center mx-8 shrink-0"
             >
               <img src={logo.src} alt={logo.alt} className="h-8 mr-2" />
-              {/* <span className="text-black font-medium">{logo.alt}</span> */}
+              {/* <span className="text-blue font-medium">{logo.alt}</span> */}
             </div>
           ))}
         </div>
@@ -141,12 +141,12 @@ const [open, setOpen] = useState(false);
   <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
     {/* LEFT SIDE - TEXT */}
     <div className="w-full lg:w-1/2 mt-16">
-      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-black">
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-blue">
         Innovation Backed by Experience
       </h2>
 
       <div className="flex items-start gap-10 mb-10">
-        <div className="font-bold text-black leading-none">
+        <div className="font-bold text-blue leading-none">
           <span className="text-5xl md:text-8xl ">85+</span><br/><br/>
           <span>Projects Delivered</span>
         </div>
@@ -177,7 +177,7 @@ const [open, setOpen] = useState(false);
     >
       {/* Title */}
       <div className="text-center mb-12">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue">
           Our Solutions That Drive Digital Transformation
         </h2>
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -193,7 +193,7 @@ const [open, setOpen] = useState(false);
             className="flex flex-col justify-between p-8 bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition"
           >
             <div>
-              <h3 className="text-lg text-black font-semibold mb-3">
+              <h3 className="text-lg text-blue font-semibold mb-3">
                 {solution.title}
               </h3>
               <p className="text-sm text-gray-600">{solution.desc}</p>
@@ -226,7 +226,7 @@ const [open, setOpen] = useState(false);
       <section className="container mx-auto px-4 md:px-6 lg:px-20 py-16">
       {/* Title */}
       <div className="text-center mb-12">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue">
           Products & Industries We Empower
         </h2>
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -246,10 +246,10 @@ const [open, setOpen] = useState(false);
 
       <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-10">
         <div className="py-16">
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-10 subpixel-antialiased text-black text-center">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-10 subpixel-antialiased text-blue text-center">
         The Impact in Our Clients&apos; Words
       </h1>
-         {/* <p className="text-sm tracking-wide text-black-500 text-center mb-8">
+         {/* <p className="text-sm tracking-wide text-blue-500 text-center mb-8">
           Because we don&apos;t just deliver services, we deliver outcomes.</p> */}
     <Testimonial/>
 
@@ -288,13 +288,13 @@ const [open, setOpen] = useState(false);
         <div className="flex gap-4">
           {/* <a
             href="#case-studies"
-            className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
+            className="px-10 py-2 bg-white text-blue rounded-full border border-black hover:bg-gray-100 transition"
           >
             See case studies
           </a>  
           <a
             href="#contact"
-            className="px-14 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
+            className="px-14 py-2 bg-white text-blue rounded-full border border-black hover:bg-gray-100 transition"
           >
             Contact us
           </a>

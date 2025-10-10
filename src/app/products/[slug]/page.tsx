@@ -1,6 +1,8 @@
 import { products } from "../../data/products";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import Link from "next/link";
+
 
 type PageProps = {
   params: Promise<{
@@ -30,13 +32,13 @@ export default async function ProductDetail({ params }: PageProps) {
             <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue mt-5">
               {product.hero.title}
             </h3>
-            <p className="mt-4 text-gray-600 leading-relaxed">
+            <p className="mt-4 mb-8 text-gray-600 leading-relaxed">
               {product.hero.subtitle}
             </p>
 
-            <button className="mt-6 bg-color-blue text-white px-14 py-2 rounded-lg hover:bg-gray-800 transition">
+            <Link href="/contact" className="mt-6 bg-color-blue text-white px-14 py-4 rounded-lg hover:bg-gray-800 transition">
               Get in touch
-            </button>
+            </Link>
           </div>
 
           {/* Right Side - Video Placeholder */}
@@ -91,11 +93,11 @@ export default async function ProductDetail({ params }: PageProps) {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue">
               {product.scheduledemo.title}
             </h1>
-            <p className="text-gray-700 mb-4">{product.scheduledemo.subtitle}</p>
+            <p className="text-gray-700 mb-10">{product.scheduledemo.subtitle}</p>
             {/* Desktop CTA */}
-            <button className="mt-4 bg-color-blue text-white px-14 py-2 rounded hover:bg-gray-800 transition">
+            <Link href="/contact" className="mt-4 bg-color-blue text-white px-14 py-4 rounded hover:bg-gray-800 transition">
               Schedule a Demo
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -118,13 +120,15 @@ export default async function ProductDetail({ params }: PageProps) {
           {/* Right Buttons */}
           <div className="flex gap-4">
           <a
-            href="#case-studies"
+                        href="/contact"
+
             className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
           >
             See case studies
           </a>
           <a
-            href="#contact"
+                     href="/contact"
+
             className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
           >
             Contact us

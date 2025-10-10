@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Testimonial from "@/components/Testimonials";
+import Link from "next/link";
 
 
 type Service = {
@@ -129,9 +130,9 @@ export default function Services() {
               >
                 Know More
               </a>
-                <button className="flex text-black items-center gap-2 px-4 py-2 rounded-lg hover:bg-gray-100 shadow-md hover:shadow-lg">
+                <Link href="/contact" className="flex text-black items-center gap-2 px-4 py-2 rounded-lg hover:bg-gray-100 shadow-md hover:shadow-lg">
                   Schedule a Demo <span>→</span>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -179,13 +180,13 @@ export default function Services() {
 
         <div className="flex gap-4">
           <a
-            href="#case-studies"
+            href="/contact"
             className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
           >
             See case studies
           </a>
           <a
-            href="#contact"
+            href="/contact"
             className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
           >
             Contact us
