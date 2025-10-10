@@ -113,10 +113,13 @@ export default function AboutPage() {
    const logos = [
     { src: "/relume-logo.png", alt: "Webflow" },
     { src: "/webflow-logo.png", alt: "Relume" },
+    { src: "/swipe.png", alt: "swipe" },
     { src: "/relume-logo.png", alt: "Webflow" },
     { src: "/webflow-logo.png", alt: "Relume" },
+    { src: "/swipe.png", alt: "swipe" },
     { src: "/relume-logo.png", alt: "Webflow" },
     { src: "/webflow-logo.png", alt: "Relume" },
+    { src: "/swipe.png", alt: "swipe" },
   ];
 
   return (

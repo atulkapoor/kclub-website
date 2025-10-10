@@ -551,13 +551,16 @@ export default function IndustriesPage() {
     const logos = [
         { src: "/relume-logo.png", alt: "Webflow" },
         { src: "/webflow-logo.png", alt: "Relume" },
+    { src: "/swipe.png", alt: "swipe" },
         { src: "/relume-logo.png", alt: "Webflow" },
         { src: "/webflow-logo.png", alt: "Relume" },
+    { src: "/swipe.png", alt: "swipe" },
         { src: "/relume-logo.png", alt: "Webflow" },
         { src: "/webflow-logo.png", alt: "Relume" },
+    { src: "/swipe.png", alt: "swipe" },
       ];
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto    py-12 lg:py-4">
+    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 mx-auto    py-12 lg:py-4">
       {/* HERO */}
       <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 my-30 text-center">
 
@@ -775,7 +778,7 @@ export default function IndustriesPage() {
         <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold text-blue">
           Used by the world&apos;s most average companies
         </h2>
-        <section className="text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-20 rounded-md">
+  <section className="text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-5 rounded-md">
      <div className="overflow-hidden whitespace-nowrap w-full bg-white">
       <div className="flex animate-scroll">
         {logos.map((logo, i) => (

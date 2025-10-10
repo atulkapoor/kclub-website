@@ -133,10 +133,13 @@ export default function Products() {
       const logos = [
     { src: "/relume-logo.png", alt: "Webflow" },
     { src: "/webflow-logo.png", alt: "Relume" },
+    { src: "/swipe.png", alt: "swipe" },
     { src: "/relume-logo.png", alt: "Webflow" },
     { src: "/webflow-logo.png", alt: "Relume" },
+    { src: "/swipe.png", alt: "swipe" },
     { src: "/relume-logo.png", alt: "Webflow" },
     { src: "/webflow-logo.png", alt: "Relume" },
+    { src: "/swipe.png", alt: "swipe" },
   ];
   return (
      <main className="min-h-screen bg-white">

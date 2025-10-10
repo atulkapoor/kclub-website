@@ -594,7 +594,7 @@ export default function Navbar() {
 
         {/* Book a Demo Button */}
         <Link
-          href="/demo"
+          href="/contact"
           className="hidden md:block bg-[#050953] text-white px-5 py-2 rounded-xl hover:bg-gray-800"
         >
           Book a Demo
@@ -662,7 +662,7 @@ export default function Navbar() {
 
           <div className="p-4">
             <Link
-              href="/demo"
+              href="/contact"
               className="bg-black text-white w-full py-2 rounded-full hover:bg-gray-800"
             >
               Book a Demo
