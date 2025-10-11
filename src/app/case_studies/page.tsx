@@ -20,30 +20,23 @@ export default function CaseStudiesPage() {
 
     return (
         <main className="min-h-screen bg-white">
- {/* Page Header */}
- <section className="flex flex-col items-center justify-center h-screen w-screen">
- <div className="w-full h-full">
 
-                <img
-            src="case_studies-img/hero.png"  
-            className="w-full   object-contain"
-          />  
-                <div className="flex justify-between text-center mb-12 mt-8"> 
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Catchy Tagline  
-              </p>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Catchy Tagline - Turning Ideas into Impact – Real Stories, Real Results.
-          </p>
+      <section className="flex flex-col items-center justify-center">
+        <div className="w-full h-auto">
+          <img
+            src="case_studies-img/hero.png"           
+            alt="Hero Banner"
+            className="w-full h-auto object-cover"
+          />
         </div>
-      </div>
       </section>
+
+{/* 
     <div className="min-h-screen bg-gray-50 pb-8 mt-12">
       <div className="container mx-auto px-4">
            
         
 
-        {/* Filters and Search */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
           <div className="flex flex-wrap gap-2">
             <button
@@ -90,12 +83,11 @@ export default function CaseStudiesPage() {
           </div>
         </div>
 
-        {/* Case Studies Grid */}
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {filteredCaseStudies.map((study) => (
             <div key={study.slug} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-              {/* <img src={study.imageUrl} alt={study.title} className="w-full h-48 object-cover" /> */}
-              <div className="p-6">
+                          <div className="p-6">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-blue-600 text-sm font-medium">{study.tagline}</span>
                   <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded-full">{study.category}</span>
@@ -118,31 +110,70 @@ export default function CaseStudiesPage() {
             <p className="text-gray-500 text-lg">No case studies found matching your criteria.</p>
           </div>
         )}
-
-        {/* Newsletter Signup */}
-        {/* <div className="bg-gray-100 rounded-lg p-8 max-w-3xl mx-auto">
-          <div className="text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Sign up for our newsletter</h3>
-            <p className="text-gray-600 mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 flex-grow max-w-md"
-              />
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">
-                Sign Up
-              </button>
-            </div>
-            <p className="text-xs text-gray-500 mt-4">
-              By clicking Sign Up you&apos;re confirming that you agree with our Terms and Conditions.
-            </p>
-          </div>
-        </div> */}
       </div>
-        </div>
+        </div> */}
+
+        <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-10">
+  {/* Header */}
+  <div className="mb-8">
+    <h2 className="text-3xl md:text-4xl font-bold mb-2">Our CaseStudies</h2>
+    <p className="text-gray-600 max-w-3xl">
+      At KClub, we believe in real impact backed by real work. Our case studies
+      highlight how we’ve partnered with businesses across industries to scale
+      operations, improve efficiency, and build technology that transforms
+      outcomes. Explore our featured stories below.
+    </p>
+  </div>
+
+  {/* Filter + Search */}
+  <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
+    <button className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
+      Show all
+    </button>
+
+    <div className="flex items-center w-full md:w-1/3 bg-gray-100 rounded-md overflow-hidden">
+      <input
+        type="text"
+        placeholder="Search"
+        className="flex-1 px-4 py-2 outline-none bg-gray-100 text-gray-700"
+      />
+      <button className="px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 transition">
+        Search
+      </button>
+    </div>
+  </div>
+
+  {/* Case Studies Grid */}
+  <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    {/* Card 1 */}
+    <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+        <img
+        src="/case_studies-img/case-studies1.png"
+        alt="Mswipe"
+        className="object-cover w-full h-auto"
+      />
+    </div>
+
+    {/* Card 2 */}
+    <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+      <img
+        src="/case_studies-img/case-studies2.png"
+        alt="Mswipe"
+        className="object-cover w-full h-auto"
+      />
+    </div>
+
+    {/* Card 3 */}
+    <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+      <img
+        src="/case_studies-img/case-studies3.png"
+        alt="Mswipe"
+        className="object-cover w-full h-auto"
+      />
+    </div>
+  </div>
+</section>
+
       </main>
   );
 }

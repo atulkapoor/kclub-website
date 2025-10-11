@@ -1,117 +1,158 @@
-// export default function BlogSection() {
-//     return (
-//         <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
-
-//       <section className="w-full">
-//         {/* Hero Banner */}
-//         <div className="bg-gray-200 flex flex-col items-center justify-center py-16">
-//           <div className="w-24 h-24 bg-gray-300 rounded flex items-center justify-center">
-//             <span className="text-gray-500">🖼️</span>
-//           </div>
-//           <h1 className="mt-6 text-2xl md:text-3xl font-bold text-gray-800">
-//             Blog Main Page
-//           </h1>
-//         </div>
-  
-//         {/* Tagline + Text Section */}
-//         <div className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-//           {/* Left: Tagline */}
-//           <h2 className="text-2xl font-bold text-gray-900">
-//             Catchy Tagline
-//           </h2>
-  
-//           {/* Right: Paragraph */}
-//           <p className="text-gray-600 leading-relaxed">
-//             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-//             Suspendisse varius enim in eros elementum tristique. Duis cursus,
-//             mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-//             libero vitae erat.
-//           </p>
-//         </div>
-//             </section>
-//         </main>
-        
-//     );
-//   }
-  
-// app/blog/page.tsx
-import Link from 'next/link';
-import { getAllPosts } from '../data/blog';
+import Link from "next/link";
+import { getAllPosts } from "../data/blog";
 
 export default function BlogPage() {
   const blogPosts = getAllPosts();
+  const popularPosts = blogPosts.slice(0, 5); // Example: top 5 as popular
 
   return (
-    // <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
-    <main className="min-h-screen bg-white">
-<section className="flex flex-col items-center justify-center h-screen w-screen">
-        <div className="w-full h-full">
+    <main className="min-h-screen bg-white text-gray-900">
+
+          <section className="flex flex-col items-center justify-center">
+        <div className="w-full h-auto">
           <img
-            src="/blog-img/hero.png"
+            src="/blog-img/hero.png"           
             alt="Hero Banner"
             className="w-full h-auto object-cover"
           />
         </div>
       </section>
-    <div className="min-h-screen bg-gray-50 py-8">
-      <div className="container mx-auto px-4">
-        {/* Page Header */}
-        <div className="mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">All Posts</h1>
-          {/* Category filter would go here */}
+
+      {/* Header Section */}
+      <header className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div>
+          <h1 className="text-3xl md:text-4xl font-bold">The Digital Journal</h1>
+          <div>
+     <p className="text-sm md:text-base text-gray-600 mt-2 max-w-lg">
+            Stay updated with the latest insights, strategies, and success stories
+            in digital transformation, technology, and business innovation.
+          </p>
+          </div>
+        </div>
+      </header>
+
+      {/* Category and Search Bar */}
+      <div className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="flex flex-wrap gap-4 text-sm font-medium">
+          <button className="bg-blue-900 text-white px-4 py-2 rounded-md">
+            View all
+          </button>
+          <button className="text-gray-700 hover:text-blue-900">
+            Category one
+          </button>
+          <button className="text-gray-700 hover:text-blue-900">
+            Category two
+          </button>
+          <button className="text-gray-700 hover:text-blue-900">
+            Category three
+          </button>
+          <button className="text-gray-700 hover:text-blue-900">
+            Category four
+          </button>
         </div>
 
-        {/* Blog Posts Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogPosts.map((post) => (
-            <article key={post.slug} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="p-6">
-                <div className="flex items-center text-sm text-gray-500 mb-2">
-                  <span className="text-blue-600 font-medium">{post.category}</span>
+        <div className="flex items-center border border-gray-300 rounded-md overflow-hidden w-full md:w-80">
+          <input
+            type="text"
+            placeholder="Search"
+            className="flex-grow px-3 py-2 text-sm focus:outline-none"
+          />
+          <button className="bg-blue-900 text-white px-4 py-2 text-sm hover:bg-blue-800">
+            Search
+          </button>
+        </div>
+      </div>
+
+      {/* Main Content Section */}
+      <div className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mb-20 grid grid-cols-1 lg:grid-cols-3 gap-10">
+        {/* Blog Grid */}
+        <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {blogPosts.slice(0, 4).map((post) => (
+            <article
+              key={post.slug}
+              className="bg-white rounded-lg shadow hover:shadow-md transition-shadow"
+            >
+              {/* Placeholder Image Box */}
+              <div className="aspect-[16/9] bg-gray-200 flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-12 w-12 text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M3 5h18M3 19h18M3 5l9 7 9-7"
+                  />
+                </svg>
+              </div>
+
+              <div className="p-4">
+                <p className="text-sm text-gray-500 mb-1">{post.category}</p>
+                <h2 className="text-lg font-semibold mb-2 hover:text-blue-900 transition-colors">
+                  {post.title}
+                </h2>
+                <p className="text-sm text-gray-600 mb-4 line-clamp-2">
+                  {post.introduction?.substring(0, 120)}...
+                </p>
+                <div className="flex items-center text-xs text-gray-500">
+                  <span className="font-medium">{post.author}</span>
+                  <span className="mx-2">•</span>
+                  <span>{post.publishDate}</span>
                   <span className="mx-2">•</span>
                   <span>{post.readTime}</span>
                 </div>
-                <h2 className="text-xl font-bold text-gray-900 mb-2">{post.title}</h2>
-                <p className="text-gray-600 mb-4 line-clamp-3">{post.introduction?.substring(0, 150)}...</p>
-                <div className="flex justify-between items-center text-sm text-gray-500">
-                  <span>Written by {post.author}</span>
-                  <span>{post.publishDate}</span>
-                </div>
-                <Link 
-                  href={`/blog/${post.slug}`} 
-                  className="mt-4 inline-block text-blue-600 font-medium hover:text-blue-800"
-                >
-                  Read more →
-                </Link>
               </div>
             </article>
           ))}
         </div>
 
-        {/* Newsletter Signup */}
-        <div className="bg-gray-100 rounded-lg p-8 mt-16 max-w-3xl mx-auto">
-          <div className="text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Subscribe to newsletter</h3>
-            <p className="text-gray-600 mb-6">
-              Subscribe to receive the latest blog posts to your inbox every week.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 flex-grow max-w-md"
-              />
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">
-                Subscribe
-              </button>
-            </div>
-            <p className="text-xs text-gray-500 mt-4">
-              By subscribing you agree to with our Privacy Policy.
-            </p>
+        {/* Sidebar - Popular Blogs */}
+        <aside className="bg-gray-50 rounded-xl p-6">
+          <h3 className="text-xl font-semibold mb-6">Popular blogs</h3>
+          <div className="flex flex-col gap-6">
+            {popularPosts.map((post) => (
+              <div key={post.slug}>
+                <div className="flex items-start gap-3">
+                  {/* Placeholder Image for Sidebar */}
+                  <div className="w-16 h-16 bg-gray-200 flex items-center justify-center rounded-md">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6 text-gray-400"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M3 5h18M3 19h18M3 5l9 7 9-7"
+                      />
+                    </svg>
+                  </div>
+
+                  <div>
+                    <p className="text-xs text-gray-500 mb-1">{post.category}</p>
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="text-sm font-semibold hover:text-blue-900"
+                    >
+                      {post.title}
+                    </Link>
+                    <p className="text-xs text-gray-600 mt-1 line-clamp-2">
+                      {post.introduction?.substring(0, 80)}...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-        </div>
+        </aside>
       </div>
-      </div>
-      </main>
+    </main>
   );
 }
