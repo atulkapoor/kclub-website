@@ -73,10 +73,13 @@ export default function ContactUs() {
     const logos = [
         { src: "/relume-logo.png", alt: "Webflow" },
         { src: "/webflow-logo.png", alt: "Relume" },
+        { src: "/swipe.png", alt: "swipe" },
         { src: "/relume-logo.png", alt: "Webflow" },
         { src: "/webflow-logo.png", alt: "Relume" },
+        { src: "/swipe.png", alt: "swipe" },
         { src: "/relume-logo.png", alt: "Webflow" },
         { src: "/webflow-logo.png", alt: "Relume" },
+        { src: "/swipe.png", alt: "swipe" },
       ];
     return (
         <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">

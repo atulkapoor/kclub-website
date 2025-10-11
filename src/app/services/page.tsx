@@ -182,8 +182,8 @@ export default function Services() {
         </div>
 
         <div className="flex gap-4">
-          <a
-            href="/contact"
+           <a
+            href="/case_studies"
             className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
           >
             See case studies
