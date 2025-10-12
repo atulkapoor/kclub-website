@@ -184,10 +184,10 @@ export default function Products() {
         {products.map((product, index) => (
           <div
             key={index}
-            className="border shadow-sm hover:shadow-md transition flex flex-col items-center text-center"
+            className="border rounded-lg shadow hover:shadow-md transition-shadow flex flex-col items-center text-center"
           >
             {/* Placeholder image */}
-            <div className="w-full h-90 flex items-center justify-center rounded overflow-hidden mb-6">
+            {/* <div className="w-full h-90 flex items-center justify-center rounded overflow-hidden mb-6">
               <Image
                 src={product.imagemain}
                 alt={product.name}
@@ -195,19 +195,19 @@ export default function Products() {
                 height={400}
                 className="w-full h-full object-cover"
               />
-            </div>
+            </div> */}
 
             <div className="p-6">
-            <div className="mb-6">
-              <img src={product.image} alt="c-klogo" className="h-8 mx-auto" />
+            <div className="my-6">
+              <img src={product.image} alt="c-klogo" className="h-10 mx-auto" />
             </div>
-            <h3 className="text-lg font-bold text-black mb-2">{product.name}</h3>
+            <h3 className="text-lg font-bold text-blue mt-20 mb-2">{product.name}</h3>
             {/* <h4 className="font-semibold text-gray-800">{product.category}</h4> */}
-            <p className="text-gray-600 text-sm mt-2">{product.description}</p>
+            <p className="text-gray-600 text-sm mb-8">{product.description}</p>
 
             <a
               href={product.link}
-              className="mt-4 inline-flex items-center hover:underline text-sm font-medium text-black" style={{textDecoration: "none", color: "black"}}
+              className="mt-10 inline-flex items-center hover:underline text-sm font-medium text-black" style={{textDecoration: "none", color: "black"}}
             >
               Know More →
             </a>
