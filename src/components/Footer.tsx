@@ -1,6 +1,8 @@
 import React from 'react';
 import { Mail } from 'lucide-react';
 import Image from 'next/image';
+ import Link from "next/link";
+
 
 const Footer = () => {
   return (
@@ -13,11 +15,11 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <h3 className="text-lg font-bold mb-4 text-black">About KClub</h3>
             <ul className="space-y-2">
-              <li><a href="/about" className="text-black transition-colors">About Us</a></li>
-              <li><a href="/contact" className="text-black transition-colors">Contact Us</a></li>
+              <li><Link href="/about" className="text-black transition-colors">About Us</Link></li>
+              <li><Link href="/contact" className="text-black transition-colors">Contact Us</Link></li>
               <li className="mt-4 font-semibold text-black">Resources</li>
-              <li><a href="/blog" className="text-black transition-colors">Blog</a></li>
-              <li><a href="/case_studies" className="text-black transition-colors">Case Studies</a></li>
+              <li><Link href="/blog" className="text-black transition-colors">Blog</Link></li>
+              <li><Link href="/case_studies" className="text-black transition-colors">Case Studies</Link></li>
             </ul>
           </div>
 
@@ -25,15 +27,15 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <h3 className="text-lg font-bold mb-4 text-black">Products</h3>
             <div className="grid grid-cols-1 gap-2 text-sm">
-              <a href="/products/warehouse-management" className="text-black block">Warehouse Management</a>
-              <a href="/products/maritime-agency-management" className="text-black block">Maritime Agency</a>
-              <a href="/products/communication-management" className="text-black block">Communication Management</a>
-              <a href="/products/healthcare-management" className="text-black block">Healthcare Management</a>
-              <a href="/products/lending-management" className="text-black block">Lending Management</a>
-              <a href="/products/transport-management" className="text-black block">Transport Management</a>
-              <a href="/products/edtech-platform" className="text-black block">Edutech</a>
-              <a href="/products/omnichannel-erp" className="text-black block">Omnichannel ERP</a>
-              <a href="/products/real-estate-erp" className="text-black block">Real Estate ERP</a>
+              <Link href="/products/warehouse-management" className="text-black block">Warehouse Management</Link>
+              <Link href="/products/maritime-agency-management" className="text-black block">Maritime Agency</Link>
+              <Link href="/products/communication-management" className="text-black block">Communication Management</Link>
+              <Link href="/products/healthcare-management" className="text-black block">Healthcare Management</Link>
+              <Link href="/products/lending-management" className="text-black block">Lending Management</Link>
+              <Link href="/products/transport-management" className="text-black block">Transport Management</Link>
+              <Link href="/products/edtech-platform" className="text-black block">Edutech</Link>
+              <Link href="/products/omnichannel-erp" className="text-black block">Omnichannel ERP</Link>
+              <Link href="/products/real-estate-erp" className="text-black block">Real Estate ERP</Link>
             </div>
           </div>
 
@@ -41,11 +43,11 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <h3 className="text-lg font-bold mb-4 text-black">Services</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="/services/ai-services" className="text-black">AI Services</a></li>
-              <li><a href="/services/odoo-services-page" className="text-black">ODOO Services</a></li>
-              <li><a href="/services/saas-app-development" className="text-black">SaaS Development</a></li>
-              <li><a href="/services/mobile-app-development" className="text-black">Mobile App Development</a></li>
-              <li><a href="/services/tech-consulting-and-assessments" className="text-black">Tech Consulting</a></li>
+              <li><Link href="/services/ai-services" className="text-black">AI Services</Link></li>
+              <li><Link href="/services/odoo-services-page" className="text-black">ODOO Services</Link></li>
+              <li><Link href="/services/saas-app-development" className="text-black">SaaS Development</Link></li>
+              <li><Link href="/services/mobile-app-development" className="text-black">Mobile App Development</Link></li>
+              <li><Link href="/services/tech-consulting-and-assessments" className="text-black">Tech Consulting</Link></li>
             </ul>
           </div>
 
@@ -53,7 +55,7 @@ const Footer = () => {
           {/* <div className="lg:col-span-1">
             <h3 className="text-lg font-bold mb-4 text-black">Industries</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="/industries" className="text-black">Industries Overview</a></li>
+              <li><Link href="/industries" className="text-black">Industries Overview</Link></li>
             </ul>
           </div> */}
 
@@ -61,9 +63,9 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <h3 className="text-lg font-bold mb-4 text-black">Careers</h3>
              <ul className="space-y-2">
-              <li><a href="/careers" className="text-black transition-colors">Join Our Team</a></li>
+              <li><Link href="/careers" className="text-black transition-colors">Join Our Team</Link></li>
               <li className="mt-4 font-semibold text-black">Industries</li>
-              <li><a href="/industries" className="text-black transition-colors">Industries Overview</a></li>
+              <li><Link href="/industries" className="text-black transition-colors">Industries Overview</Link></li>
             </ul>
           </div>
 
@@ -85,9 +87,9 @@ const Footer = () => {
             </div>
             <p className="text-black text-xs mt-3">
               By subscribing you agree to our{' '}
-              <a href="/privacy-policy" className="text-black hover:text-blue-300 underline">
+              <Link href="/privacy-policy" className="text-black hover:text-blue-300 underline">
                 Privacy Policy
-              </a>.
+              </Link>.
             </p>
           </div>
         </div>
