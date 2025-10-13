@@ -49,7 +49,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50  mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="container mx-auto px-4 max-w-4xl">
         {/* Back Button */}
@@ -68,7 +68,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <span>{post.readTime}</span>
           </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">{post.title}</h1>
-          <div className="flex flex-col sm:flex-row sm:items-center text-sm text-gray-600 gap-2">
+             <div className="aspect-[16/9] bg-gray-200 flex items-center justify-center">
+                <img
+                  src={post.imageUrl}
+                  alt={post.title}
+                  className="object-cover w-full h-full rounded-t-lg"
+                />
+              </div>
+          <div className="flex flex-col sm:flex-row sm:items-center text-sm text-gray-600 gap-2 mt-10">
             <div>
               <span className="font-medium">Written by</span> {post.author}
             </div>

@@ -24,7 +24,7 @@ export default function Careers() {
 
     return (
       <main className="min-h-screen bg-white">
-    <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-30">
+    <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-30 text-center">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Heading */}
         <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
@@ -37,8 +37,7 @@ export default function Careers() {
         </p>
 
         {/* Banner */}
-        <div className="w-full h-[400px] mt-10 flex items-center justify-center rounded-md">
-        <div className="text-center">
+ <div className="w-full h-[400px] flex items-center justify-center rounded-md mt-10">        <div className="text-center">
           {/* <div className="w-14 h-14 mx-auto bg-gray-300 rounded-md mb-4 flex items-center justify-center">
             <svg
               className="w-8 h-8 text-gray-500"
@@ -56,7 +55,7 @@ export default function Careers() {
           </div> */}
                 <img
             src="careers-img/hero.png"  
-            className="w-full   object-contain"
+          className="w-full max-w-12xl h-auto object-contain"
           />
           {/* <h2 className="text-lg font-semibold">Careers Page</h2> */}
         </div>
