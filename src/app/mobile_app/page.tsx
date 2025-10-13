@@ -29,15 +29,15 @@ export default function TechConsultingPage() {
   ]; 
   const services1 = [
     {
-      title: "IT Assessment & Audit",
+      title: "iOS, Android & Cross Platform",
       desc: "We conduct comprehensive audits of your existing systems, software, and processes. This involves reviewing infrastructure (servers, cloud usage, networking), application portfolios, data management, and security protocols. We then pinpoint pain points such as bottlenecks, outdated technologies, or security vulnerabilities. The result is an objective snapshot of 'where you are now' and recommendations on what needs attention.",
     },
     {
-      title: "Digital Transformation Roadmap",
+      title: "User-Centric Design",
       desc: "Based on your business goals (be it scaling operations, improving customer experience, or cutting costs), we outline a strategic plan. This might include adopting new technologies like cloud services or AI, process automation, or system integrations. We prioritize initiatives by impact and feasibility, giving you a phased approach that delivers quick wins and long-term value. You&apos;ll receive a clear roadmap with timelines and resource estimates to confidently move forward.",
     },
     {
-      title: "Process & Architecture Consulting",
+      title: "Integration & Testing",
       desc: "Our experts can also help redesign business processes for greater efficiency and devise an system architecture. For example, if you&apos;re considering moving to a microservices architecture or implementing DevOps practices, we guide you through the pros, cons, and implementation steps tailored to your organization. We ensure your technology choices align with your overall business strategy and that you&apos;re set up to scale securely and reliably.",
     },
   ]; 
@@ -58,21 +58,33 @@ export default function TechConsultingPage() {
 
     <div className="bg-gray-50 min-h-screen">
       {/* Header Section */}
-      <header className="text-center py-8 bg-gray-200">
-        <div className="mx-auto w-20 h-20 bg-gray-300 rounded-md flex items-center justify-center">
-          <span className="text-gray-600 text-sm">Img</span>
+      <div className="bg-gray-200 w-full h-[400px] flex items-center justify-center rounded-md">
+        <div className="text-center">
+          <div className="w-14 h-14 mx-auto bg-gray-300 rounded-md mb-4 flex items-center justify-center">
+            <svg
+              className="w-8 h-8 text-gray-500"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
+              />
+            </svg>
+          </div>
+          <h2 className="text-lg font-semibold">Mobile App Development Page</h2>
         </div>
-        <h1 className="text-2xl font-semibold mt-4">
-          Custom SaaS App Development Page 
-        </h1>
-      </header>
+      </div>
 
       {/* First Section */}
       <section className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
         <div>
-          <h2 className="text-2xl font-bold mb-4">
-            Scalable SAAS <br /> Applications Built for Growth
-          </h2>
+        <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
+        Custom Mobile Apps for<br /> seamless Digital Experiences
+          </h1>
           <p className="text-gray-600 mb-6">
             Technology can be a game-changer when it&apos;s the right fit. Our
             consulting team helps you assess your current IT systems, identify
@@ -87,17 +99,32 @@ export default function TechConsultingPage() {
             Schedule a Demo
           </button>
         </div>
-        <div className="mx-auto w-72 h-48 bg-gray-300 rounded-md flex items-center justify-center">
-          <span className="text-gray-600 text-sm">Img</span>
+        <div className="bg-gray-200 w-full h-[350px] flex items-center justify-center rounded-md">
+          <div className="w-14 h-14 bg-gray-300 flex items-center justify-center rounded-md">
+            <svg
+              className="w-8 h-8 text-gray-500"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
+              />
+            </svg>
+          </div>
         </div>
       </section>
 
       {/* Second Section */}
       <section className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
         <div>
-          <h3 className="text-xl font-bold mb-4">
-            End-to-End Support: <br /> Integrations, Testing, and Deployment
-          </h3>
+        <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
+
+            Tailored IOS and Android Apps for Growth
+          </h1>
           <p className="text-gray-600">
             Not sure where to begin on your digital transformation journey, or
             looking to optimize your current IT setup? XClub&apos;s Technology
@@ -108,8 +135,22 @@ export default function TechConsultingPage() {
             opportunities for improvement.
           </p>
         </div>
-        <div className="mx-auto w-72 h-48 bg-gray-300 rounded-md flex items-center justify-center">
-          <span className="text-gray-600 text-sm">Img</span>
+        <div className="bg-gray-200 w-full h-[350px] flex items-center justify-center rounded-md">
+          <div className="w-14 h-14 bg-gray-300 flex items-center justify-center rounded-md">
+            <svg
+              className="w-8 h-8 text-gray-500"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
+              />
+            </svg>
+          </div>
         </div>
       </section>
     </div>
@@ -124,7 +165,7 @@ export default function TechConsultingPage() {
             <div className="w-24 h-20 bg-gray-300 flex items-center justify-center rounded-md mb-4">
               <span className="text-gray-600 text-sm">Img</span>
             </div>
-            <h4 className="font-semibold text-lg mb-2">{service.title}</h4>
+            <h4 className="font-semibold text-lg mb-2 text-black">{service.title}</h4>
             <p className="text-gray-600 text-sm">{service.desc}</p>
           </div>
         ))}
@@ -141,13 +182,28 @@ export default function TechConsultingPage() {
             }`}
           >
             {/* Image Placeholder */}
-            <div className="w-full h-52 bg-gray-300 rounded-md flex items-center justify-center">
-              <span className="text-gray-600 text-sm">Img</span>
-            </div>
+            <div className="bg-gray-200 w-full h-[350px] flex items-center justify-center rounded-md">
+          <div className="w-14 h-14 bg-gray-300 flex items-center justify-center rounded-md">
+            <svg
+              className="w-8 h-8 text-gray-500"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
+              />
+            </svg>
+          </div>
+        </div>
 
             {/* Text */}
             <div>
-              <h3 className="text-xl font-bold mb-4">{service.title}</h3>
+            <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
+            {service.title}</h1>
               <p className="text-gray-600">{service.desc}</p>
             </div>
           </div>
@@ -158,12 +214,12 @@ export default function TechConsultingPage() {
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         {/* Left Content */}
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-            Let&apos;s Build the Future Together
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-white">
+          Ready to Elevate Your Digital Strategy?
+
           </h2>
           <p className="text-gray-300 mt-2 max-w-lg">
-            Explore how we&apos;ve helped businesses across industries transform
-            through innovation and technology.
+          Partner with KClub&apos;s experts to design, build, and implement technology solutions that accelerate growth and drive measurable impact.
           </p>
         </div>
 

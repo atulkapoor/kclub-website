@@ -1,6 +1,8 @@
 import { products } from "../../data/products";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import Link from "next/link";
+
 
 type PageProps = {
   params: Promise<{
@@ -22,107 +24,90 @@ export default async function ProductDetail({ params }: PageProps) {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+      <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-30">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
-            <Image
-              src="/cklub-logo.png"
-              alt="c-klogo"
-              width={120}
-              height={60}
-              className="mr-2 h-10 w-auto"
-            />
-            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight mt-5">
+          <img src={product.image} alt="c-klogo" className="h-8" />
+            <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue mt-5">
               {product.hero.title}
             </h3>
-            <p className="mt-4 text-gray-600 leading-relaxed">
+            <p className="mt-4 mb-8 text-gray-600 leading-relaxed">
               {product.hero.subtitle}
             </p>
 
-            <button className="mt-6 bg-black text-white px-5 py-2 rounded hover:bg-gray-800 transition">
+            <Link href="/contact" className="mt-6 bg-color-blue text-white px-14 py-4 rounded-lg hover:bg-gray-800 transition">
               Get in touch
-            </button>
+            </Link>
           </div>
 
           {/* Right Side - Video Placeholder */}
-          <div className="relative bg-gray-300 h-160 flex items-center justify-center rounded-lg">
-            <button className="w-14 h-14 bg-gray-700 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-gray-900 transition">
-              ▶
-            </button>
-          </div>
+      <img src={product.hero.image} alt="Hero Banner" className="w-full h-auto object-contain" /> 
+
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
-          {product.features.map((feature, index) => (
-            <div key={index} className="flex flex-col items-center">
-              {/* Placeholder image */}
-              <div className="w-50 h-50 bg-gray-200 flex items-center justify-center rounded mb-4">
-                <Image
-                  src={feature.image}
-                  alt={feature.title}
-                  width={50}
-                  height={50}
-                  className="opacity-70"
-                />
-              </div>
-
-              <h3 className="text-2xl font-semibold text-gray-900">
-                {feature.title}
-              </h3>
-              <p className="text-gray-600 text-xs md:text-sm mt-2">
-                {feature.description}
-              </p>
-            </div>
-          ))}
+    <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+    {product.features.map((feature, index) => (
+      <div
+        key={index}
+        className="transition p-6 flex flex-col items-center text-center"
+      >
+        {/* Icon */}
+        <div className="w-60 h-60 flex items-center justify-center bg-white rounded-xl shadow-lg mb-6">
+          <Image
+            src={feature.image}
+            alt={feature.title}
+            width={80}
+            height={80}
+            className="object-contain"
+          />
         </div>
-      </section>
+
+        {/* Title */}
+        <h3 className="text-base md:text-lg font-semibold text-gray-900 mb-2">
+          {feature.title}
+        </h3>
+
+        {/* Description */}
+        <p className="text-gray-600 text-sm leading-relaxed">
+          {feature.description}
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
+
 
       {/* Schedule Demo Section */}
-      <section className="container mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
+      <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Right Placeholder */}
-          <div className="bg-gray-200 w-full h-[350px] flex items-center justify-center rounded-md">
-            <div className="w-14 h-14 bg-gray-300 flex items-center justify-center rounded-md">
-              <svg
-                className="w-8 h-8 text-gray-500"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
-                />
-              </svg>
-            </div>
-          </div>
+               <img src={product.hero.image} alt="Hero Banner" className="w-full h-auto object-contain" /> 
+
 
           {/* Left Content */}
           <div>
-            <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue">
               {product.scheduledemo.title}
             </h1>
-            <p className="text-gray-700 mb-4">{product.scheduledemo.subtitle}</p>
+            <p className="text-gray-700 mb-10">{product.scheduledemo.subtitle}</p>
             {/* Desktop CTA */}
-            <button className="hidden lg:block bg-black text-white px-4 py-2 rounded text-sm">
+            <Link href="/contact" className="mt-4 bg-color-blue text-white px-14 py-4 rounded hover:bg-gray-800 transition">
               Schedule a Demo
-            </button>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="container bg-gray-800 text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-20 rounded-md">
+      <section className="container bg-color-blue mb-10 text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-20 rounded-md">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           {/* Left Content */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-white">
               Explore Our Other Services, See Our Impact
             </h2>
             <p className="text-gray-300 mt-2 max-w-lg">
@@ -134,19 +119,21 @@ export default async function ProductDetail({ params }: PageProps) {
 
           {/* Right Buttons */}
           <div className="flex gap-4">
-            <a
-              href="#case-studies"
-              className="px-5 py-2 bg-black text-white rounded hover:bg-gray-700 transition"
-            >
-              See case studies
-            </a>
-            <a
-              href="#contact"
-              className="px-5 py-2 bg-black text-white rounded hover:bg-gray-700 transition"
-            >
-              Contact us
-            </a>
-          </div>
+          <a
+                        href="/contact"
+
+            className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
+          >
+            See case studies
+          </a>
+          <a
+                     href="/contact"
+
+            className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
+          >
+            Contact us
+          </a>
+        </div>
         </div>
       </section>
     </main>

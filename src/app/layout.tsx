@@ -6,7 +6,7 @@ import AOSProvider from "@/components/AOSProvider";
 
 export const metadata: Metadata = {
   title: "KClub",
-  description: "KClub website built with Next.js + Tailwind CSS",
+  description: "At KClub, we believe every challenge holds an opportunity.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

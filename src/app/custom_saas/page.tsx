@@ -38,35 +38,36 @@ export default function Custom_Saas() {
           
         <section className="w-full bg-white py-16">
           {/* Top Heading with Image Placeholder */}
-          <div className="flex flex-col items-center text-center px-4">
-            <div className="w-24 h-24 bg-gray-200 flex items-center justify-center rounded-md">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-10 text-gray-500"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 7l9-4 9 4-9 4-9-4zm0 8l9 4 9-4m-9-4v8"
-                />
-              </svg>
-            </div>
-            <h2 className="mt-6 text-2xl md:text-3xl font-bold text-gray-800">
-              Custom SaaS App Development Page
-            </h2>
+          <div className="bg-gray-200 w-full h-[400px] flex items-center justify-center rounded-md">
+        <div className="text-center">
+          <div className="w-14 h-14 mx-auto bg-gray-300 rounded-md mb-4 flex items-center justify-center">
+            <svg
+              className="w-8 h-8 text-gray-500"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
+              />
+            </svg>
           </div>
+          <h2 className="text-lg font-semibold">              Custom SaaS App Development Page
+          </h2>
+        </div>
+      </div>
     
           {/* Content Section */}
           <div className="mt-12 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-6">
             {/* Left Heading */}
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+            <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
+
                 Scalable SAAS <br /> Applications Built for Growth
-              </h3>
+              </h1>
             </div>
     
             {/* Right Description */}
@@ -98,13 +99,28 @@ export default function Custom_Saas() {
             }`}
           >
             {/* Image Placeholder */}
-            <div className="w-full h-52 bg-gray-300 rounded-md flex items-center justify-center">
-              <span className="text-gray-600 text-sm">Img</span>
-            </div>
+            <div className="bg-gray-200 w-full h-[350px] flex items-center justify-center rounded-md">
+          <div className="w-14 h-14 bg-gray-300 flex items-center justify-center rounded-md">
+            <svg
+              className="w-8 h-8 text-gray-500"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 16l4-4 4 4m4-4l4 4M4 8h16"
+              />
+            </svg>
+          </div>
+        </div>
 
             {/* Text */}
             <div>
-              <h3 className="text-xl font-bold mb-4">{service.title}</h3>
+            <h1 className="text-3xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight subpixel-antialiased text-black">
+            {service.title}</h1>
               <p className="text-gray-600">{service.desc}</p>
             </div>
           </div>
@@ -153,7 +169,7 @@ export default function Custom_Saas() {
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
         {/* Left Content */}
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-white">
 Ready to Elevate Your Digital Strategy?          
 </h2>
           <p className="text-gray-300 mt-2 max-w-lg">

@@ -1,26 +1,39 @@
-const jobs = [
+export const jobs = [
   {
-    id: "frontend-developer",
+    id: 1,
     title: "Frontend Developer",
+    slug: "frontend-developer", // 👈 SEO-friendly
+    department: "Engineering",
     location: "Remote",
-    contractType: "Full-time",
+    type: "Full Time",
+    category: "Category one",
     description:
-      "We are looking for a skilled Frontend Developer with experience in React and Tailwind.",
-    details:
-      "You will work closely with our design team to build modern and responsive web apps.",
-    conclusion:
-      "If you are passionate about UI and frontend development, apply now!",
+      "We are looking for a skilled frontend developer with React/Next.js experience.",
+    // image: "/img.jpg",
   },
   {
-    id: "backend-developer",
-    title: "Backend Developer",
-    location: "New York, USA",
-    contractType: "Contract",
+    id: 2,
+    title: "UI/UX Designer",
+    slug: "ui-ux-designer",
+    department: "Design",
+    location: "Mumbai, India",
+    type: "Contract",
+    category: "Category two",
     description:
-      "Seeking a Backend Developer with experience in Node.js and SQL databases.",
-    details:
-      "You will manage APIs, database queries, and ensure system scalability.",
-    conclusion: "If backend systems excite you, we’d love to have you.",
+      "Design engaging interfaces and work closely with developers to bring them to life.",
+    // image: "/img.jpg",
+  },
+  {
+    id: 3,
+    title: "Backend Developer",
+    slug: "backend-developer",
+    department: "Engineering",
+    location: "Bangalore, India",
+    type: "Full Time",
+    category: "Category one",
+    description:
+      "Looking for backend developer with Node.js and SQL experience.",
+    // image: "/img.jpg",
   },
 ];
 

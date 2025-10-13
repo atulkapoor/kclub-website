@@ -6,7 +6,8 @@ export const products = [
     category: "Supply Chain",
     description:
       "A smart warehouse management system optimizing inventory control, storage, and fulfillment for modern supply chains.",
-    image: "/placeholder.png",
+    image: "/product-img/product1-logo.png",
+    imagemain: "/services-img/ai-services1.png",
     link: "/products/warehouse-management",
     icon: "Box",
         features : [
@@ -14,31 +15,31 @@ export const products = [
             title: "Real-Time Inventory Tracking",
             description:
             "Always know your stock levels across locations with live updates.",
-            image: "/placeholder.png",
+            image: "/product-img/p1-icon1.png",
         },
         {
             title: "Order Picking Optimization",
             description:
             "AI-powered prioritization for faster, accurate order fulfillment.",
-            image: "/placeholder.png",
+            image: "/product-img/p1-icon2.png",
         },
         {
             title: "Barcode & RFID Integration",
             description:
             "Quick scanning for accurate inventory updates and error reduction.",
-            image: "/placeholder.png",
+            image: "/product-img/p1-icon3.png",
         },
         {
             title: "Warehouse Analytics Dashboard",
             description:
             "Visualize orders, stock movement, and KPIs to drive continuous improvement.",
-            image: "/placeholder.png",
+            image: "/product-img/p1-icon4.png",
         },
         {
             title: "Integration Ready",
             description:
             "Seamlessly connect with ERP, e-commerce, and shipping systems for end-to-end automation.",
-            image: "/placeholder.png",
+            image: "/product-img/p1-icon5.png",
         },
         ],
 
@@ -47,15 +48,15 @@ export const products = [
       subtitle:
         "CrateKLUB is an advanced Warehouse Management System (WMS) that digitizes and optimizes your warehouse operations from end to end. It provides real-time visibility into inventory levels and automates key processes, ensuring stock is always accurate and orders are fulfilled faster. With CrateKLUB, you can streamline everything from receiving and put-away to picking, packing, and shipping – reducing errors and operational costs. Ready to modernize your warehouse?",
       cta: "Get in touch",
-       image: "/placeholder.png",
+       image: "/product-img/CrateKLUB-Product-Page/create-pp1.png",
       link: "/products/inventory-analytics",
     },
      scheduledemo: {
       title: "Smart Warehouse Management, Simplified",
       subtitle:
         "Designed for modern supply chains, CrateKLUB empowers your warehouse managers with intelligent tools like smart storage allocation and route-optimized picking. Barcode and RFID integration improve tracking accuracy, while analytics dashboards offer insights into inventory turnover and warehouse performance. Whether you run a single stockroom or multiple distribution centers, CrateKLUB scales to keep your inventory moving efficiently. Ready to see how it works?",
-      image: "/placeholder.png",
-      link: "/products/inventory-analytics",
+      image: "/services-img/ai-services1.png",
+      link: "/product-img/CrateKLUB-Product-Page/create-pp2.png",
       cta: "Get in touch",
     },
   },
@@ -65,55 +66,56 @@ export const products = [
     category: "Supply Chain",
     description:
       "A specialized platform that helps maritime agencies manage vessel schedules, cargo operations, and port logistics with ease and efficiency.",
-    image: "/placeholder.png",
-    link: "/products/warehouse-management",
+    image: "/product-img/product2-logo.png",
+    imagemain: "/services-img/ai-services1.png",
+    link: "/products/maritime-agency-management",
     icon: "Box",
-    features : [
-    {
-        title: "Real-Time Inventory Tracking",
-        description:
-        "Always know your stock levels across locations with live updates.",
-        image: "/placeholder.png",
-    },
-    {
-        title: "Order Picking Optimization",
-        description:
-        "AI-powered prioritization for faster, accurate order fulfillment.",
-        image: "/placeholder.png",
-    },
-    {
-        title: "Barcode & RFID Integration",
-        description:
-        "Quick scanning for accurate inventory updates and error reduction.",
-        image: "/placeholder.png",
-    },
-    {
-        title: "Warehouse Analytics Dashboard",
-        description:
-        "Visualize orders, stock movement, and KPIs to drive continuous improvement.",
-        image: "/placeholder.png",
-    },
-    {
-        title: "Integration Ready",
-        description:
-        "Seamlessly connect with ERP, e-commerce, and shipping systems for end-to-end automation.",
-        image: "/placeholder.png",
-    },
-    ],
+        features : [
+        {
+            title: "Vessel Scheduling & Tracking",
+            description:
+            "Always know your stock levels across locations with live updates.",
+            image: "/product-img/p1-icon1.png",
+        },
+        {
+            title: "Cargo & Container Management",
+            description:
+            "Oversee cargo loads, container assignments, and transfers with ease.",
+            image: "/product-img/p1-icon2.png",
+        },
+        {
+            title: "Real-Time Notifications",
+            description:
+            "Automatic alerts for stakeholders on schedule updates, approvals, or delays.",
+            image: "/product-img/p1-icon3.png",
+        },
+        {
+            title: "Analytics & Reporting",
+            description:
+            "Insights on port turnaround times, cargo throughput, and performance metrics to optimize operations.",
+            image: "/product-img/p1-icon4.png",
+        },
+        {
+            title: "Digital Documentation",
+            description:
+            "Consulting to prioritize AI use-cases and develop a roadmap aligned with your business objectives.",
+            image: "/product-img/p1-icon5.png",
+        },
+        ],
 
     hero: {
       title: "Centralized Platform for Maritime Operations",
       subtitle:
-        "MarineKLUB streamlines port and agency operations by centralizing all maritime logistics tasks in one platform. Built for maritime agencies and port service providers, MarineKLUB helps you efficiently schedule vessel visits, manage cargo handling, and handle all required documentation and compliance. No more juggling spreadsheets and paperwork – MarineKLUB digitizes the process, reducing delays and human error in port calls. Ready to modernize your maritime operations? ",
+        "MarineKLUB streamlines port and agency operations by centralizing vessel scheduling, cargo handling, documentation, and compliance in one platform. By digitizing workflows, it eliminates spreadsheets and paperwork - reducing delays, errors, and inefficiencies. Ready to modernize your maritime operations?",
       cta: "Get in touch",
-       image: "/placeholder.png",
+       image: "/product-img/Maritime-Agency-Management/maitime1.png",
       link: "/products/inventory-analytics",
     },
      scheduledemo: {
       title: "Navigating Maritime Management with Ease",
       subtitle:
-        "With MarineKLUB, you gain real-time oversight of vessel schedules and berthing slots, plus the ability to coordinate with port authorities, shippers, and agents through integrated communication tools. Automate customs documentation and freight paperwork, receive alerts on schedule changes, and monitor cargo movements all in one dashboard. MarineKLUB improves transparency and collaboration, leading to quicker turnarounds and satisfied clients in the maritime supply chain. Explore the difference today!",
-      image: "/placeholder.png",
+        "With MarineKLUB, you gain real-time visibility of vessel schedules, berthing slots, and cargo movements, while coordinating seamlessly with port authorities, shippers, and agents. Customs and freight paperwork are automated, and alerts keep you updated on changes. The result - greater transparency, faster turnarounds, and satisfied clients across the supply chain. Explore the difference today!",
+      image: "/product-img/Maritime-Agency-Management/maitime2.png",
       link: "/products/inventory-analytics",
       cta: "Get in touch",
     },
@@ -124,317 +126,418 @@ export const products = [
     category: "Supply Chain",
     description:
       "An integrated communication hub for organizations to manage internal messaging, alerts, and collaboration in one secure platform.",
-    image: "/placeholder.png",
-    link: "/products/warehouse-management",
+    image: "/product-img/product3-logo.png",
+    imagemain: "/services-img/ai-services1.png",
+    link: "/products/communication-management",
     icon: "Box",
-    features: [
-    {
-        title: "Real-Time Inventory Tracking",
-        description:
-        "Always know your stock levels across locations with live updates.",
-        image: "/placeholder.png",
-    },
-    {
-        title: "Order Picking Optimization",
-        description:
-        "AI-powered prioritization for faster, accurate order fulfillment.",
-        image: "/placeholder.png",
-    },
-    {
-        title: "Barcode & RFID Integration",
-        description:
-        "Quick scanning for accurate inventory updates and error reduction.",
-        image: "/placeholder.png",
-    },
-    {
-        title: "Warehouse Analytics Dashboard",
-        description:
-        "Visualize orders, stock movement, and KPIs to drive continuous improvement.",
-        image: "/placeholder.png",
-    },
-    {
-        title: "Integration Ready",
-        description:
-        "Seamlessly connect with ERP, e-commerce, and shipping systems for end-to-end automation.",
-        image: "/placeholder.png",
-    },
-    ],
+        features : [
+        {
+            title: "Unified Messaging",
+            description:
+            "Team chat channels and direct messaging replace cluttered email threads.",
+            image: "/product-img/p2-icon1.png",
+        },
+        {
+            title: "Announcements & Alerts",
+            description:
+            "Broadcast important updates or emergency alerts to all employees instantly.",
+            image: "/product-img/p2-icon2.png",
+        },
+        {
+            title: "File Sharing & Search",
+            description:
+            "Securely share documents and quickly search conversation history and files by keyword.",
+            image: "/product-img/p2-icon3.png",
+        },
+        {
+            title: "Integration Hooks",
+            description:
+            "Connect with CRM, ERP, or support systems to funnel notifications (e.g., ticket updates, sales wins) into the feed.",
+            image: "/product-img/p2-icon4.png",
+        },
+        {
+            title: "Enterprise-Grade Security",
+            description:
+            "End-to-end encryption and access controls to keep your internal communications private and safe.",
+            image: "/product-img/p2-icon5.png",
+        },
+        ],
 
     hero: {
       title: "Instant, Organized, and Secure Communication System",
       subtitle:
-        "PingKLUB is an all-in-one communication hub that keeps your organization connected and informed. It centralizes internal communications – from team chats and announcements to alerts and project updates – into a single, secure platform. With PingKLUB, you can ensure the right messages reach the right people instantly, breaking down silos and fostering a collaborative culture. Want to see how PingKLUB can transform your workplace communication?",
+        "PingKLUB is an all-in-one communication hub that centralizes chats, announcements, alerts, and updates into one secure platform. It ensures the right messages reach the right people instantly, breaking down silos and fostering collaboration. See how PingKLUB can transform workplace communication.",
       cta: "Get in touch",
-       image: "/placeholder.png",
+       image: "/product-img/Communication-Management/Communication1.png",
       link: "/products/inventory-analytics",
     },
      scheduledemo: {
       title: "Your All-in-One Hub for Smarter Communication",
       subtitle:
-        "Say goodbye to scattered emails and missed messages. PingKLUB offers organized channels for teams or departments, real-time messaging for quick discussions, and company-wide broadcast capabilities for important announcements. Integration with your other business systems means you can receive automated alerts (for example, task reminders or incident notifications) within PingKLUB. Robust search and tagging make it easy to find past conversations or files. By unifying communications, PingKLUB boosts transparency, alignment, and productivity across the board. Ready to transform how your teams connect?",
-      image: "/placeholder.png",
+        "Say goodbye to scattered emails and missed messages. PingKLUB brings chats, announcements, alerts, and broadcasts into one secure platform. With integrations for task reminders and notifications, plus powerful search and tagging, it keeps teams aligned and productive. Ready to transform how your teams connect?",
+      image: "/product-img/Communication-Management/Communication1.png",
       link: "/products/inventory-analytics",
       cta: "Get in touch",
     },
   },
-
-    {
+  {
     slug: "healthcare-management",
     name: "Healthcare Management",
-    category: "Healthcare",
+    category: "Supply Chain",
     description:
       "A comprehensive healthcare management system for clinics and hospitals, covering patient records, appointments, telehealth, and billing.",
-    image: "/placeholder.png",
+    image: "/product-img/product4-logo.png",
+    imagemain: "/services-img/ai-services1.png",
     link: "/products/healthcare-management",
     icon: "Box",
-    features: [
-      {
-        title: "Patient Records Management",
-        description: "Securely manage and access electronic medical records in real time.",
-        image: "/placeholder.png",
-      },
-      {
-        title: "Telehealth Integration",
-        description: "Offer virtual consultations with secure video and messaging tools.",
-        image: "/placeholder.png",
-      },
-      {
-        title: "Automated Billing",
-        description: "Simplify invoicing, insurance claims, and payment tracking.",
-        image: "/placeholder.png",
-      },
-    ],
+        features : [
+        {
+            title: "Electronic Health Records",
+            description:
+            "A unified patient record system accessible across departments, with role-based security.",
+            image: "/product-img/p2-icon1.png",
+        },
+        {
+            title: "Appointment & Schedule Management:",
+            description:
+            "Online scheduling, doctor calendars, and automated reminders to cut no-shows.",
+            image: "/product-img/p2-icon2.png",
+        },
+        {
+            title: "Telehealth Integration",
+            description:
+            "Video consultation and remote care modules to extend services beyond the clinic walls.",
+            image: "/product-img/p2-icon3.png",
+        },
+        {
+            title: "Billing & Insurance Processing",
+            description:
+            "Streamlined billing workflows, insurance verification, and claims management built into the platform.",
+            image: "/product-img/p2-icon4.png",
+        },
+        {
+            title: "Healthcare Analytics",
+            description:
+            "Reports on outcomes, operations, and resources to drive data-informed care.",
+            image: "/product-img/p2-icon5.png",
+        },
+        ],
+
     hero: {
-      title: "Modern Healthcare, Made Simple",
+      title: "Comprehensive Healthcare Management System",
       subtitle:
-        "TheraKLUB helps hospitals and clinics digitize and centralize patient care. From appointments and telehealth to billing and prescriptions, everything is managed in one place. Deliver faster, safer, and smarter healthcare.",
+        "TheraKLUB is a complete healthcare management system for hospitals, clinics, and networks. It centralizes patient records, appointments, treatment plans, and billing helping medical professionals spend less time on paperwork and more time on patient care. Curious to see it in action?",
       cta: "Get in touch",
-      image: "/placeholder.png",
-      link: "/products/healthcare-management",
+       image: "/product-img/Healthcare-Management/Healthcare1.png",
+      link: "/products/inventory-analytics",
     },
-    scheduledemo: {
-      title: "Empower Your Healthcare Team",
+     scheduledemo: {
+      title: "Smarter Healthcare Management for Better Patient Outcomes",
       subtitle:
-        "Enable doctors, nurses, and staff to collaborate seamlessly. TheraKLUB reduces paperwork, improves patient satisfaction, and ensures compliance with healthcare regulations.",
-      image: "/placeholder.png",
-      link: "/products/healthcare-management",
+        "TheraKLUB manages electronic health records (EHR) across the full patient journey from scheduling and diagnosis to treatment and follow-ups. Doctors and nurses can securely access histories, labs, and imaging, while telemedicine supports virtual care. Integrated insurance, invoicing, and pharmacy modules reduce errors, improve efficiency, and enhance patient experiences. Ready to experience the difference?",
+      image: "/product-img/Healthcare-Management/Healthcare2.png",
+      link: "/products/inventory-analytics",
       cta: "Get in touch",
     },
   },
   {
     slug: "lending-management",
     name: "Lending Management",
-    category: "Finance",
+    category: "Supply Chain",
     description:
       "An end-to-end digital lending platform for financial institutions to automate loan origination, KYC, underwriting, and disbursement.",
-    image: "/placeholder.png",
+    image: "/product-img/product5-logo.png",
+    imagemain: "/services-img/ai-services1.png",
     link: "/products/lending-management",
     icon: "Box",
-    features: [
-      {
-        title: "Automated Loan Origination",
-        description: "Speed up loan applications with AI-based document checks.",
-        image: "/placeholder.png",
-      },
-      {
-        title: "KYC & Compliance",
-        description: "Integrated tools for seamless customer verification and compliance.",
-        image: "/placeholder.png",
-      },
-      {
-        title: "Disbursement & Repayments",
-        description: "Automated workflows for loan approvals, payouts, and collections.",
-        image: "/placeholder.png",
-      },
-    ],
+        features : [
+        {
+            title: "Digital Loan Origination",
+            description:
+            "Online loan applications and e-KYC streamline customer onboarding and verification.",
+            image: "/product-img/p2-icon1.png",
+        },
+        {
+            title: "Configurable Workflows",
+            description:
+            "Flexible rule engine to set credit policies, approval hierarchies, and product-specific criteria.",
+            image: "/product-img/p2-icon2.png",
+        },
+        {
+            title: "Credit Bureau Integration",
+            description:
+            "Seamless pull of credit reports and scores to speed up creditworthiness assessment.",
+            image: "/product-img/p2-icon3.png",
+        },
+        {
+            title: "Automated Disbursement & Collection",
+            description:
+            "Automated loan disbursal with EMI management and payment gateway integration.",
+            image: "/product-img/p2-icon4.png",
+        },
+        {
+            title: "Analytics & Risk Management",
+            description:
+            "Portfolio dashboards, delinquency tracking, and AI-driven risk analysis for proactive management.",
+            image: "/product-img/p2-icon5.png",
+        },
+        ],
+
     hero: {
-      title: "Revolutionize Lending with FinstaKLUB",
+      title: "End-to-End Platform for Digital Lending",
       subtitle:
-        "Digitize the entire lending process with FinstaKLUB. From loan application and KYC to disbursement and repayment tracking, financial institutions can operate faster and safer.",
+        "FinstaKLUB is a lending management platform that digitizes the loan lifecycle, helping banks, NBFCs, and fintechs process loans faster and more efficiently. From applications and KYC to credit checks, approvals, and disbursements, it automates every step - cutting manual work, reducing turnaround time, and ensuring compliance. Discover how FinstaKLUB can simplify lending.",
       cta: "Get in touch",
-      image: "/placeholder.png",
-      link: "/products/lending-management",
+       image: "/product-img/Lending-Management/Lending1.png",
+      link: "/products/inventory-analytics",
     },
-    scheduledemo: {
-      title: "Smart Lending, Simplified",
+     scheduledemo: {
+      title: "Powering Next-Gen Fintech Innovation",
       subtitle:
-        "Streamline approvals, reduce manual paperwork, and deliver quick loan services to clients. FinstaKLUB enhances customer satisfaction while ensuring regulatory compliance.",
-      image: "/placeholder.png",
-      link: "/products/lending-management",
+        "FinstaKLUB supports multiple loan products with customizable workflows and smooth digital onboarding through paperless uploads and e-KYC. Integrated with credit bureaus, it enables real-time scoring and risk checks. Once approved, the platform manages agreements, automates disbursals and repayments, and provides AI-driven analytics to guide smarter underwriting decisions. See how FinstaKLUB can transform your lending operations.",
+      image: "/product-img/Lending-Management/Lending2.png",
+      link: "/products/inventory-analytics",
       cta: "Get in touch",
     },
   },
   {
     slug: "transport-management",
     name: "Transport Management",
-    category: "Logistics",
+    category: "Supply Chain",
     description:
       "A logistics management solution for planning routes, tracking shipments, and optimizing fleet operations in real time.",
-    image: "/placeholder.png",
+    image: "/product-img/product6-logo.png",
+    imagemain: "/services-img/ai-services1.png",
     link: "/products/transport-management",
     icon: "Box",
-    features: [
-      {
-        title: "Route Optimization",
-        description: "Plan the fastest, most cost-efficient routes for deliveries.",
-        image: "/placeholder.png",
-      },
-      {
-        title: "Real-Time Fleet Tracking",
-        description: "Track vehicles and shipments with live GPS updates.",
-        image: "/placeholder.png",
-      },
-      {
-        title: "Performance Analytics",
-        description: "Monitor fuel usage, delays, and fleet efficiency.",
-        image: "/placeholder.png",
-      },
-    ],
+        features : [
+        {
+            title: "Route Optimization",
+            description:
+            "Intelligent route planning for multiple stops, minimizing distance and transit time for cost savings.",
+            image: "/product-img/p2-icon1.png",
+        },
+        {
+            title: "Live Shipment Tracking",
+            description:
+            "Real-time map tracking of trucks and shipments with status updates and delivery confirmations.",
+            image: "/product-img/p2-icon2.png",
+        },
+        {
+            title: "Dispatch & Fleet Management",
+            description:
+            "Centralized dispatch board to assign loads to drivers, manage fleet availability, and monitor driver performance.",
+            image: "/product-img/p2-icon3.png",
+        },
+        {
+            title: "Electronic Documentation",
+            description:
+            "Digital manifests, proof of delivery, and automated reporting to eliminate paperwork and manual errors.",
+            image: "/product-img/p2-icon4.png",
+        },
+        {
+            title: "Logistics Analytics",
+            description:
+            "Custom reports on delivery KPIs, freight costs, and performance trends to identify bottlenecks and optimize operations.",
+            image: "/product-img/p2-icon5.png",
+        },
+        ],
+
     hero: {
-      title: "Smarter Logistics with FreightKLUB",
+      title: "Streamlining Fleet, Freight, and Delivery Operations",
       subtitle:
-        "FreightKLUB optimizes transportation operations with real-time fleet tracking, automated route planning, and shipment visibility for maximum efficiency.",
+        "FreightKLUB is an end-to-end TMS that unifies logistics for shippers, carriers, and 3PLs. From route planning and dispatch to delivery tracking and fleet management, it synchronizes operations to cut costs, boost visibility, and ensure on-time performance. Streamline your logistics today!",
       cta: "Get in touch",
-      image: "/placeholder.png",
-      link: "/products/transport-management",
+       image: "/product-img/Transport-Management/Transport1.png",
+      link: "/products/inventory-analytics",
     },
-    scheduledemo: {
-      title: "Fleet Management Made Easy",
+     scheduledemo: {
+      title: "Seamless Deliveries Powered by Real-Time Tracking & Optimization",
       subtitle:
-        "Gain complete visibility into your transport network. Reduce costs, improve delivery accuracy, and keep customers informed with FreightKLUB.",
-      image: "/placeholder.png",
-      link: "/products/transport-management",
+        "FreightKLUB helps logistics teams plan optimal routes, cut travel time, and save fuel. With real-time GPS tracking and dynamic re-routing, you always know where deliveries stand. It also streamlines driver assignments, load planning, and ePOD capture. Analytics provide insights on delivery rates, transit times, and fleet use driving continuous improvement. See how FreightKLUB keeps you on time, every time.",
+      image: "/product-img/Transport-Management/Transport2.png",
+      link: "/products/inventory-analytics",
       cta: "Get in touch",
     },
   },
   {
     slug: "edtech-platform",
     name: "EdTech Platform",
-    category: "Education",
+    category: "Supply Chain",
     description:
-      "An education management suite for schools and universities, facilitating online learning, student information management, and campus engagement.",
-    image: "/placeholder.png",
+      "A logistics management solution for planning routes, tracking shipments, and optimizing fleet operations in real time.",
+    image: "/product-img/product7-logo.png",
+    imagemain: "/services-img/ai-services1.png",
     link: "/products/edtech-platform",
     icon: "Box",
-    features: [
-      {
-        title: "Learning Management System",
-        description: "Deliver online classes, assignments, and assessments in one platform.",
-        image: "/placeholder.png",
-      },
-      {
-        title: "Student Information Management",
-        description: "Manage student records, attendance, and academic history easily.",
-        image: "/placeholder.png",
-      },
-      {
-        title: "Campus Engagement Tools",
-        description: "Boost teacher-student-parent collaboration with smart communication.",
-        image: "/placeholder.png",
-      },
-    ],
+        features : [
+        {
+            title: "Online Admissions & Enrollment",
+            description:
+            "Digital application forms, automated eligibility checks, and enrollment tracking to simplify intake seasons.",
+            image: "/product-img/p2-icon1.png",
+        },
+        {
+            title: "Learning Management System",
+            description:
+            "A robust LMS for course content, virtual classes, assignment submission, and grading, supporting both in-person and remote learning.",
+            image: "/product-img/p2-icon2.png",
+        },
+        {
+            title: "Student Information System",
+            description:
+            "Unified student profiles with academic records, attendance, and performance analytics accessible to authorized staff and students.",
+            image: "/product-img/p2-icon3.png",
+        },
+        {
+            title: "Collaboration & Communication",
+            description:
+            "In-app messaging, discussion forums, and notification systems connecting students, teachers, and parents.",
+            image: "/product-img/p2-icon4.png",
+        },
+        {
+            title: "Administrative Tools",
+            description:
+            "Fee collection & receipts, library management, hostel/transport assignments, and more – all integrated for a seamless campus management experience.",
+            image: "/product-img/p2-icon5.png",
+        },
+        ],
+
     hero: {
-      title: "Transform Learning with EduKLUB",
+      title: "Streamlined Academic and Campus Management",
       subtitle:
-        "EduKLUB helps schools and universities deliver seamless digital education experiences. From online classes to student records, everything is integrated.",
+        "EduKLUB is a complete edutech platform for schools, universities, and training institutes to manage and enhance learning. From admissions to alumni, it unifies administrators, teachers, and students on one user-friendly system—streamlining academics and boosting engagement.",
       cta: "Get in touch",
-      image: "/placeholder.png",
-      link: "/products/edtech-platform",
+       image: "/product-img/Edutech/Edutech1.png",
+      link: "/products/inventory-analytics",
     },
-    scheduledemo: {
-      title: "Next-Gen Learning Solutions",
+     scheduledemo: {
+      title: "Unified Platform for Smarter Academic Management",
       subtitle:
-        "Enable blended learning, automate administrative tasks, and engage students in a modern learning environment with EduKLUB.",
-      image: "/placeholder.png",
-      link: "/products/edtech-platform",
+        "EduKLUB simplifies academics with online admissions, enrollment tracking, and scheduling. Its LMS lets educators deliver courses, assign work, and track progress. Students use personalized portals for learning and collaboration, while parents stay updated through reports and communication tools. EduKLUB also manages fees, libraries, and campus services by centralizing data—boosting efficiency and cutting manual work.",
+      image: "/product-img/Edutech/Edutech2.png",
+      link: "/products/inventory-analytics",
       cta: "Get in touch",
     },
   },
   {
     slug: "omnichannel-erp",
     name: "Omnichannel ERP",
-    category: "Retail",
+    category: "Supply Chain",
     description:
       "A unified ERP system that connects sales, inventory, and customer channels (online, in-store, mobile) to provide a seamless omnichannel retail experience.",
-    image: "/placeholder.png",
+    image: "/product-img/product8-logo.png",
+    imagemain: "/services-img/ai-services1.png",
     link: "/products/omnichannel-erp",
     icon: "Box",
-    features: [
-      {
-        title: "Centralized Sales Management",
-        description: "Unify sales across online, in-store, and mobile platforms.",
-        image: "/placeholder.png",
-      },
-      {
-        title: "Inventory Synchronization",
-        description: "Track and update stock in real time across all channels.",
-        image: "/placeholder.png",
-      },
-      {
-        title: "Customer Engagement",
-        description: "Personalize customer journeys with integrated CRM features.",
-        image: "/placeholder.png",
-      },
-    ],
+        features : [
+        {
+            title: "Unified Inventory Management",
+            description:
+            "Global inventory visibility and control to prevent stockouts and overselling across channels.",
+            image: "/product-img/p2-icon1.png",
+        },
+        {
+            title: "Integrated Sales Channels",
+            description:
+            "Synchronize your physical POS, online store, and third-party marketplaces for consistent pricing and product info.",
+            image: "/product-img/p2-icon2.png",
+        },
+        {
+            title: "Customer Loyalty & CRM",
+            description:
+            "Centralize customer profiles and purchase history; run loyalty rewards and personalized marketing that span all channels.",
+            image: "/product-img/p2-icon3.png",
+        },
+        {
+            title: "Order Orchestration",
+            description:
+            "Smooth order fulfillment processes including buy-online-pickup-in-store (BOPIS) and ship-from-store capabilities.",
+            image: "/product-img/p2-icon4.png",
+        },
+        {
+            title: "Analytics & Reporting",
+            description:
+            "Comprehensive analytics combining all channels – track omni-channel sales performance, customer lifetime value, and supply chain efficiency.",
+            image: "/product-img/p2-icon5.png",
+        },
+        ],
+
     hero: {
-      title: "Unified Retail with OmniKLUB",
+      title: "One Platform for All Your Sales Channels",
       subtitle:
-        "OmniKLUB empowers retailers with one ERP for all channels. Keep stock synced, manage orders easily, and deliver great customer experiences.",
+        "OmniKLUB is a powerful omnichannel ERP platform that consolidates all your business channels – retail stores, e-commerce, mobile sales, and more – into one cohesive system. Ideal for retailers and multi-channel businesses, OmniKLUB ensures that your inventory, sales, and customer data stay in sync in real time, providing a 360° view of operations and enabling seamless customer experiences across all touchpoints. See how OmniKLUB can unify your retail and digital channels.",
       cta: "Get in touch",
-      image: "/placeholder.png",
-      link: "/products/omnichannel-erp",
+       image: "/product-img/Omnichannel-ERP/OmniKLUB1.png",
+      link: "/products/inventory-analytics",
     },
-    scheduledemo: {
-      title: "Seamless Omnichannel Retail",
+     scheduledemo: {
+      title: "Your 360° View of Retail Operations",
       subtitle:
-        "Deliver consistent shopping experiences, optimize supply chains, and scale retail operations efficiently with OmniKLUB.",
-      image: "/placeholder.png",
-      link: "/products/omnichannel-erp",
+        "With OmniKLUB, you can break down data silos. For example, it enables Endless Aisle capabilities: if a product is out of stock in one store, staff can instantly find and order it from another location or the warehouse for the customer. The platform integrates in-store POS systems with your online storefront and marketplaces, unifying order management and inventory tracking. Customer loyalty programs and CRM features are built in, so you can recognize and reward shoppers whether they buy online or offline. OmniKLUB’s dashboards provide insights into sales trends, stock levels, and customer behavior across channels, allowing you to adapt quickly to demand and optimize your supply chain and marketing efforts. Find out how OmniKLUB unifies sales, inventory, and customers.",
+      image: "/product-img/Omnichannel-ERP/OmniKLUB2.png",
+      link: "/products/inventory-analytics",
       cta: "Get in touch",
     },
   },
   {
     slug: "real-estate-erp",
     name: "Real Estate ERP",
-    category: "Real Estate",
+    category: "Supply Chain",
     description:
       "A tailored ERP for real estate businesses, managing property listings, sales/lease workflows, client relationships, and project developments in one place.",
-    image: "/placeholder.png",
+    image: "/product-img/product9-logo.png",
+    imagemain: "/services-img/ai-services1.png",
     link: "/products/real-estate-erp",
     icon: "Box",
-    features: [
-      {
-        title: "Property Listings Management",
-        description: "Centralize and manage property inventory with ease.",
-        image: "/placeholder.png",
-      },
-      {
-        title: "Sales & Lease Workflows",
-        description: "Automate property sales and leasing processes.",
-        image: "/placeholder.png",
-      },
-      {
-        title: "Client Relationship Management",
-        description: "Track leads, clients, and interactions with built-in CRM tools.",
-        image: "/placeholder.png",
-      },
-    ],
+        features : [
+        {
+            title: "Property & Inventory Management",
+            description:
+            "Maintain a centralized catalogue of properties (units, plots, projects) with details, availability status, and pricing.",
+            image: "/product-img/p2-icon1.png",
+        },
+        {
+            title: "Sales & CRM Pipeline",
+            description:
+            "Track prospects from initial interest to deal closure with reminders, follow-ups, and status dashboards for your sales team.",
+            image: "/product-img/p2-icon2.png",
+        },
+        {
+            title: "Contract & Lease Management",
+            description:
+            "Auto-generate sales agreements, lease contracts, and documentation, and manage renewal dates and compliance all in-app.",
+            image: "/product-img/p2-icon3.png",
+        },
+        {
+            title: "Financials & Payments",
+            description:
+            "Handle booking payments, rent schedules, invoices, and integrate with accounting systems for seamless revenue tracking.",
+            image: "/product-img/p2-icon4.png",
+        },
+        {
+            title: "Project and Facility Management",
+            description:
+            "Monitor construction project progress or facility maintenance tasks through integrated modules, keeping all stakeholders informed.",
+            image: "/product-img/p2-icon5.png",
+        },
+        ],
+
     hero: {
-      title: "Streamline Real Estate with Webflow",
+      title: "Smart Property & Asset Management Made Simple",
       subtitle:
-        "Webflow simplifies property sales, leasing, and project management for real estate businesses. Track clients, listings, and workflows from one place.",
+        "EstateKLUB is a specialized ERP solution built for the real estate industry, catering to property developers, realtors, and asset management companies. It consolidates all your critical processes – from property inventory and sales pipeline to lease administration and facility management – into a single, streamlined system. EstateKLUB helps you manage more deals with less hassle by automating routine tasks and providing real-time insights into your portfolio. See EstateKLUB in Action.",
       cta: "Get in touch",
-      image: "/placeholder.png",
-      link: "/products/real-estate-erp",
+       image: "/product-img/EstateKLUB/EstateKLUB1.png",
+      link: "/products/inventory-analytics",
     },
-    scheduledemo: {
-      title: "The Future of Real Estate ERP",
+     scheduledemo: {
+      title: "Your Complete Real Estate Command Center",
       subtitle:
-        "Webflow helps real estate businesses scale with smarter client management, automated workflows, and full visibility of project progress.",
-      image: "/placeholder.png",
-      link: "/products/real-estate-erp",
+        "Manage your property listings and availability in one place and publish updates to your website or portals instantly. Track every lead and customer interaction with an integrated CRM tailored for real estate sales, ensuring no inquiry falls through the cracks. EstateKLUB simplifies the sales and leasing workflow: generate quotations, contracts, and agreements with pre-approved templates and collect digital signatures to speed up closing. For property management, the platform handles tenant onboarding, rent payments, maintenance requests, and more, giving property managers a clear overview of operations. Built-in analytics show sales performance, occupancy rates, revenue forecasts, and project timelines, empowering data-driven decisions.",
+      image: "/product-img/EstateKLUB/EstateKLUB1.png",
+      link: "/products/inventory-analytics",
       cta: "Get in touch",
     },
-  }
-  
+  },
 ];
