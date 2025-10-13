@@ -1,37 +1,38 @@
 // app/case-studies/page.tsx
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { getAllCaseStudies, getAllCategories } from '../data/studies';
+import { useState } from "react";
+import Link from "next/link";
+import { getAllCaseStudies, getAllCategories } from "../data/studies";
 
 export default function CaseStudiesPage() {
   const caseStudies = getAllCaseStudies();
   const categories = getAllCategories();
-  const [selectedCategory, setSelectedCategory] = useState('All');
-  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [searchQuery, setSearchQuery] = useState("");
 
   const filteredCaseStudies = caseStudies.filter((study) => {
-    const matchesCategory = selectedCategory === 'All' || study.category === selectedCategory;
-    const matchesSearch = study.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                         study.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesCategory =
+      selectedCategory === "All" || study.category === selectedCategory;
+    const matchesSearch =
+      study.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      study.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
   });
 
-    return (
-        <main className="min-h-screen bg-white">
-
+  return (
+    <main className="min-h-screen bg-white mt-18">
       <section className="flex flex-col items-center justify-center">
         <div className="w-full h-auto">
           <img
-            src="case_studies-img/hero.png"           
+            src="case_studies-img/hero.png"
             alt="Hero Banner"
             className="w-full h-auto object-cover"
           />
         </div>
       </section>
 
-{/* 
+      {/* 
     <div className="min-h-screen bg-gray-50 pb-8 mt-12">
       <div className="container mx-auto px-4">
            
@@ -113,67 +114,69 @@ export default function CaseStudiesPage() {
       </div>
         </div> */}
 
-        <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-10">
-  {/* Header */}
-  <div className="mb-8">
-    <h2 className="text-3xl md:text-4xl font-bold mb-2">Our CaseStudies</h2>
-    <p className="text-gray-600 max-w-3xl">
-      At KClub, we believe in real impact backed by real work. Our case studies
-      highlight how we’ve partnered with businesses across industries to scale
-      operations, improve efficiency, and build technology that transforms
-      outcomes. Explore our featured stories below.
-    </p>
-  </div>
+      <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-10">
+        {/* Header */}
+        <div className="mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-black">
+            Our CaseStudies
+          </h2>
+          <p className="text-gray-600 max-w-3xl">
+            At KClub, we believe in real impact backed by real work. Our case
+            studies highlight how we’ve partnered with businesses across
+            industries to scale operations, improve efficiency, and build
+            technology that transforms outcomes. Explore our featured stories
+            below.
+          </p>
+        </div>
 
-  {/* Filter + Search */}
-  <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
-    <button className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
-      Show all
-    </button>
+        {/* Filter + Search */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
+          <button className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
+            Show all
+          </button>
 
-    <div className="flex items-center w-full md:w-1/3 bg-gray-100 rounded-md overflow-hidden">
-      <input
-        type="text"
-        placeholder="Search"
-        className="flex-1 px-4 py-2 outline-none bg-gray-100 text-gray-700"
-      />
-      <button className="px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 transition">
-        Search
-      </button>
-    </div>
-  </div>
+          <div className="flex items-center w-full md:w-1/3 bg-gray-100 rounded-md overflow-hidden">
+            <input
+              type="text"
+              placeholder="Search"
+              className="flex-1 px-4 py-2 outline-none bg-gray-100 text-gray-700"
+            />
+            <button className="px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 transition">
+              Search
+            </button>
+          </div>
+        </div>
 
-  {/* Case Studies Grid */}
-  <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-    {/* Card 1 */}
-    <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
-        <img
-        src="/case_studies-img/case-studies1.png"
-        alt="Mswipe"
-        className="object-cover w-full h-auto"
-      />
-    </div>
+        {/* Case Studies Grid */}
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Card 1 */}
+          <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+            <img
+              src="/case_studies-img/case-studies1.png"
+              alt="Mswipe"
+              className="object-cover w-full h-auto"
+            />
+          </div>
 
-    {/* Card 2 */}
-    <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
-      <img
-        src="/case_studies-img/case-studies2.png"
-        alt="Mswipe"
-        className="object-cover w-full h-auto"
-      />
-    </div>
+          {/* Card 2 */}
+          <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+            <img
+              src="/case_studies-img/case-studies2.png"
+              alt="Mswipe"
+              className="object-cover w-full h-auto"
+            />
+          </div>
 
-    {/* Card 3 */}
-    <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
-      <img
-        src="/case_studies-img/case-studies3.png"
-        alt="Mswipe"
-        className="object-cover w-full h-auto"
-      />
-    </div>
-  </div>
-</section>
-
-      </main>
+          {/* Card 3 */}
+          <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+            <img
+              src="/case_studies-img/case-studies3.png"
+              alt="Mswipe"
+              className="object-cover w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

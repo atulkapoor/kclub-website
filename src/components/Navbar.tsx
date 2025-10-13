@@ -266,7 +266,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      {mobileMenu && (
+      {/* {mobileMenu && (
         <div className="md:hidden bg-white border-t text-black font-medium">
           {menus.map((menu) => (
             <div key={menu.name} className="border-b">
@@ -284,6 +284,7 @@ export default function Navbar() {
                     <Link
                       key={item.link}
                       href={item.link}
+                      onClick={() => setMobileMenu(false)}
                       className="block hover:text-gray-600"
                     >
                       <div className="flex items-start gap-3">
@@ -291,7 +292,7 @@ export default function Navbar() {
                           <img
                             src={item.img}
                             alt={item.name}
-                            className="w-6 h-6 object-contain"
+                            className="w-16 h-6 object-contain"
                           />
                         )}
                         <div>
@@ -309,6 +310,7 @@ export default function Navbar() {
                   {menu.name === "Services" && (
                     <Link
                       href="/services"
+                      onClick={() => setMobileMenu(false)}
                       className="flex items-center gap-1 text-blue-600 text-sm pl-2 mt-2"
                     >
                       See all services <ArrowRight size={16} />
@@ -322,7 +324,91 @@ export default function Navbar() {
           <div className="p-4">
             <Link
               href="/contact"
+              onClick={() => setMobileMenu(false)}
               className="bg-black text-white w-full py-2 rounded-full hover:bg-gray-800"
+            >
+              Book a Demo
+            </Link>
+          </div>
+        </div>
+      )} */}
+      {mobileMenu && (
+        <div className="md:hidden bg-white border-t text-black font-medium">
+          {menus.map((menu) => (
+            <div key={menu.name} className="border-b">
+              {menu.items ? (
+                // 🔹 Dropdown Menu
+                <>
+                  <button
+                    onClick={() => toggleDropdown(menu.name)}
+                    className="w-full flex justify-between items-center px-6 py-3 hover:bg-gray-50"
+                  >
+                    {menu.name}
+                    <ChevronDown size={18} />
+                  </button>
+
+                  {openMenu === menu.name && (
+                    <div className="pl-10 pb-3 space-y-2">
+                      {menu.items.map((item) => (
+                        <Link
+                          key={item.link}
+                          href={item.link}
+                          onClick={() => setMobileMenu(false)} // ✅ close menu on click
+                          className="block hover:text-gray-600"
+                        >
+                          <div className="flex items-start gap-3">
+                            {item.img && (
+                              <img
+                                src={item.img}
+                                alt={item.name}
+                                className="w-16 h-6 object-contain"
+                              />
+                            )}
+                            <div>
+                              {item.name && (
+                                <p className="font-semibold">{item.name}</p>
+                              )}
+                              {item.desc && (
+                                <p className="text-sm text-gray-500">
+                                  {item.desc}
+                                </p>
+                              )}
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+
+                      {menu.name === "Services" && (
+                        <Link
+                          href="/services"
+                          onClick={() => setMobileMenu(false)} // ✅ close menu on click
+                          className="flex items-center gap-1 text-blue-600 text-sm pl-2 mt-2"
+                        >
+                          See all services <ArrowRight size={16} />
+                        </Link>
+                      )}
+                    </div>
+                  )}
+                </>
+              ) : (
+                // 🔹 Simple Link (like Industries, Careers)
+                <Link
+                  href={menu.link}
+                  onClick={() => setMobileMenu(false)} // ✅ close menu
+                  className="block px-6 py-3 hover:bg-gray-50"
+                >
+                  {menu.name}
+                </Link>
+              )}
+            </div>
+          ))}
+
+          <div className="p-4">
+            <Link
+              href="/contact"
+              onClick={() => setMobileMenu(false)} // ✅ close menu
+              // className="bg-black text-white w-full py-2 rounded-full hover:bg-gray-800"
+              className="md:block bg-[#050953] text-white px-5 py-2 rounded-xl hover:bg-gray-800"
             >
               Book a Demo
             </Link>
@@ -332,4 +418,3 @@ export default function Navbar() {
     </nav>
   );
 }
-
