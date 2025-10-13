@@ -7,6 +7,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Link from 'next/link';
 
 import Image from "next/image";
 import Testimonial from "@/components/Testimonials";
@@ -246,18 +247,18 @@ export default function Products() {
 
         {/* Right Buttons */}
         <div className="flex gap-4">
-           <a
+           <Link
             href="/case_studies"
             className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
           >
             See case studies
-          </a>
-          <a
+          </Link>
+          <Link
             href="/contact"
             className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
           >
             Contact us
-          </a>
+          </Link>
         </div>
       </div>
     </section>
