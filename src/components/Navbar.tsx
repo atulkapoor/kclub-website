@@ -55,7 +55,7 @@ export default function Navbar() {
       name: "Products",
       link: "/products",
       width: "w-[28rem]",
-      cols: "grid-cols-3",
+      cols: "grid-cols-2",
       items: [
         {
           // name: "Warehouse Management",
@@ -306,9 +306,17 @@ export default function Navbar() {
                   {menu.name === "Services" && (
                     <Link
                       href="/services"
-                      className="flex items-center justify-end gap-1 text-sm font-medium text-blue-600 hover:underline mt-2"
+                      className="flex items-center justify-end gap-1 text-sm font-medium text-black hover:underline mt-2"
                     >
-                      See all services <ArrowRight size={16} />
+                      See all Our services <ArrowRight size={16} />
+                    </Link>
+                  )}
+                  {menu.name === "Products" && (
+                    <Link
+                      href="/products"
+                      className="flex items-center  gap-1 text-sm font-medium text-black hover:underline mt-2"
+                    >
+                      See all Our Products <ArrowRight size={16} />
                     </Link>
                   )}
                 </div>
