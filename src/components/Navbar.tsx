@@ -273,7 +273,7 @@ export default function Navbar() {
               {/* Dropdown */}
               {menu.items && (
                 <div
-                  className={`absolute left-0 top-full bg-white shadow-lg rounded-lg p-4 grid ${menu.cols} gap-4 hidden group-hover:grid group-hover:visible transition-all duration-200 ${menu.width} z-50`}
+                  className={`absolute mt-8 left-0 top-full bg-white shadow-lg rounded-lg p-4 grid ${menu.cols} gap-4 hidden group-hover:grid group-hover:visible transition-all duration-200 ${menu.width} z-50`}
                 >
                   {menu.items.map((item) => (
                     <Link
