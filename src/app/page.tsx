@@ -57,6 +57,11 @@ export default function Home() {
       desc: "Identify opportunities, optimize systems, and future-proof your business with expert consulting.",
       icon: "/home-img/home-s4.png",
     },
+       {
+      title: "Apps for a Mobile-First World",
+      desc: "Deliver seamless, user-friendly mobile experiences that keep your customers connected.",
+      icon: "/home-img/home-s5.png",
+    },
   ];
 
   return (
@@ -66,7 +71,7 @@ export default function Home() {
       data-aos-easing="linear"
       data-aos-duration="1500"
     >
-      <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:pt-20 bg-[#EDF5FF]">
+      <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 pt-12 lg:pt-20 bg-[#EDF5FF]">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Left Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
@@ -195,11 +200,23 @@ export default function Home() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {solutions.map((solution, i) => (
+        <div className="cr">
+              <Swiper
+                      modules={[Pagination]}
+                             pagination={{ clickable: true }}
+                             spaceBetween={30}
+                             slidesPerView={4}
+                             breakpoints={{
+                               0: { slidesPerView: 1 },
+                               768: { slidesPerView: 2 },
+                             }}
+                             className="pb-12"
+                  >
+            {solutions.map((solution, i) => (
+            <SwiperSlide key={i}>
             <div
               key={i}
-              className="flex flex-col justify-between p-8 bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition"
+              className="flex flex-col justify-between p-8 bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition mb-10"
             >
               <div>
                 <h3 className="text-lg text-blue font-semibold mb-3">
@@ -217,7 +234,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </SwiperSlide>
           ))}
+          </Swiper>
         </div>
 
         {/* Navigation Arrows */}
