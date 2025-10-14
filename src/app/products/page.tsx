@@ -146,7 +146,7 @@ export default function Products() {
      <main className="min-h-screen bg-white">
     <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-30 text-center">
       {/* Heading + Subheading */}
-      <div className="text-center max-w-3xl mx-auto mb-12">
+      <div className="text-center max-w-3xl mx-auto mb-30">
         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue">
           Smart, Scalable Products for <br /> Every Business Challenge
         </h2>
@@ -156,7 +156,7 @@ export default function Products() {
         </p>
       </div>
 
-        <div className="w-full h-[400px] flex items-center justify-center rounded-md mt-30">
+        <div className="w-full h-[400px] flex items-center justify-center rounded-md my-30">
         <img
           src="/product-img/product-main-banner.png"
           alt="Hero Banner"

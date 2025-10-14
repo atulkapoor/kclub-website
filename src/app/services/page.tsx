@@ -81,7 +81,7 @@ export default function Services() {
         </p>
       </div>
 
-        <div className="w-full h-[400px] flex items-center justify-center rounded-md mt-30">
+        <div className="w-full h-[400px] flex items-center justify-center rounded-md my-30">
         {/* <div> */}
            <img
         src="/services-img/services-banner.png"
