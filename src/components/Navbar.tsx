@@ -180,7 +180,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div className="container-fluid mx-auto px-4 md:px-6 lg:px-36 flex items-center justify-between py-4">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-black">
           <Image src="/logo.svg" alt="Logo" width={100} height={40} />
@@ -219,7 +219,7 @@ export default function Navbar() {
                           <img
                             src={item.img}
                             alt={item.name}
-                            className="w-20 h-8 object-contain"
+                            className="w-22 h-10 object-contain"
                           />
                         )}
                         <div>
