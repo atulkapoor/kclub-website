@@ -31,15 +31,27 @@ export default function Home() {
     "Real Estate",
   ];
   const logos = [
+  { src: "/relume-logo.png", alt: "Webflow" },
+    { src: "/webflow-logo.png", alt: "Relume" },
+    { src: "/swipe.png", alt: "swipe" },
+    { src: "/Client-logos3.png", alt: "c1" },
+    { src: "/Client-logos4.png", alt: "c4" },
+    { src: "/Client-logos5.png", alt: "c5" },
+    { src: "/Client-logos6.png", alt: "c6" },
     { src: "/relume-logo.png", alt: "Webflow" },
     { src: "/webflow-logo.png", alt: "Relume" },
     { src: "/swipe.png", alt: "swipe" },
+    { src: "/Client-logos3.png", alt: "c1" },
+    { src: "/Client-logos4.png", alt: "c4" },
+    { src: "/Client-logos5.png", alt: "c5" },
+    { src: "/Client-logos6.png", alt: "c6" },
     { src: "/relume-logo.png", alt: "Webflow" },
     { src: "/webflow-logo.png", alt: "Relume" },
     { src: "/swipe.png", alt: "swipe" },
-    { src: "/relume-logo.png", alt: "Webflow" },
-    { src: "/webflow-logo.png", alt: "Relume" },
-    { src: "/swipe.png", alt: "swipe" },
+    { src: "/Client-logos3.png", alt: "c1" },
+    { src: "/Client-logos4.png", alt: "c4" },
+    { src: "/Client-logos5.png", alt: "c5" },
+    { src: "/Client-logos6.png", alt: "c6" },
   ];
 
   const solutions = [
