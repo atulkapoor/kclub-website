@@ -34,7 +34,7 @@ export default async function ServiceDetail({ params }: PageProps) {
       </section>
 
       {/* Content Section */}
-      <section className="container mx-auto px-6 pb-16 grid md:grid-cols-2 gap-12 mt-20">
+      <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 pb-16 grid md:grid-cols-2 gap-12 mt-20">
         {/* Left Content */}
         <div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold subpixel-antialiased text-blue">
@@ -53,48 +53,62 @@ export default async function ServiceDetail({ params }: PageProps) {
         </div>
       </section>
 
-        <section className="container mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-           {/* Right Image Placeholder */}
-           <div className="w-full max-w-sm md:max-w-md lg:max-w-xl flex flex-col items-center"> 
-      <img src={service.scheduledemo.image} alt="Hero Banner" className="w-full h-auto object-contain" /> 
-      </div> 
-          {/* Left Text */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-blue">
-              {service.scheduledemo.title}
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              {service.scheduledemo.subtitle}
-            </p>
-          </div>
+      <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-16">
+  <div className="grid md:grid-cols-2 gap-10 items-center">
 
-         
-        </div>
-      </section>
+      <div className="w-full max-w-sm md:max-w-md lg:max-w-xl flex justify-center">
+      <img
+        src={service.scheduledemo.image}
+        alt="Hero Banner"
+        className="w-full h-auto object-contain"
+      />
+    </div>
+    {/* Left Content */}
+    <div>
+      <h2 className="text-2xl md:text-3xl font-bold mb-4 text-blue">
+        {service.scheduledemo.title}
+      </h2>
+      <p className="text-gray-700 leading-relaxed">
+        {service.scheduledemo.subtitle}
+      </p>
+    </div>
+
+    {/* Right Image */}
+  
+  </div>
+</section>
 
       {/* Section 2 */}
-      <section className="container mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          {/* Left Image Placeholder */}
+ <section
+  className="relative container-fluid mx-auto px-4 md:px-6 lg:px-36 py-16 bg-center bg-cover bg-no-repeat"
+  style={{
+    backgroundImage: `url('/services-img/Vector.png')`,
+  }}
+>
+  <div className="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
+  <div className="relative grid md:grid-cols-2 gap-10 items-center z-10">
+    <div>
+      <h2 className="text-2xl md:text-3xl font-bold mb-4 text-blue">
+        {service.comparedemo?.title}
+      </h2>
+      <p className="text-gray-700 leading-relaxed">
+        {service.comparedemo?.subtitle}
+      </p>
+    </div>
+    <div className="w-full max-w-sm md:max-w-md lg:max-w-xl flex flex-col items-center">
+      <img
+        src={service.comparedemo?.image}
+        alt="Hero Banner"
+        className="w-full h-auto object-contain"
+      />
+    </div>
+  </div>
+</section>
 
-          {/* Right Text */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-blue">
-              {service.comparedemo?.title}
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-                {service.comparedemo?.subtitle}
-            </p>
-          </div>
-          <div className="w-full max-w-sm md:max-w-md lg:max-w-xl flex flex-col items-center"> 
-              <img src={service.comparedemo?.image} alt="Hero Banner" className="w-full h-auto object-contain" /> 
-          </div> 
-        </div>
-      </section>
+
         
      {service.support ? 
-      <section className="container mx-auto px-6 py-16">
+      <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-16">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           {/* Left Image Placeholder */}
  <div className="w-full max-w-sm md:max-w-md lg:max-w-xl flex flex-col items-center"> 
@@ -116,7 +130,7 @@ export default async function ServiceDetail({ params }: PageProps) {
 
             
      {service.testing ? 
-      <section className="container mx-auto px-6 py-16">
+      <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-16">
         <div className="grid md:grid-cols-2 gap-10 items-center">
 
           {/* Right Text */}
@@ -139,7 +153,7 @@ export default async function ServiceDetail({ params }: PageProps) {
       : ""}
 
       {/* Features Section */}
-     <section className="container mx-auto px-4 md:px-6 py-12 lg:py-4 mt-20">
+     <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {service.features.map((feature, index) => (
             <div
