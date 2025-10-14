@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "KClub",
     images: [
       {
-        url: "/logo.svg", // Make sure logo.png is in /public
+        url: "https://kclub-website.netlify.app/logo.svg", // Make sure logo.png is in /public
         width: 1200,
         height: 630,
         alt: "KClub Logo",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "KClub",
     description: "At KClub, we believe every challenge holds an opportunity.",
-    images: ["/logo.svg"], // Same image for Twitter
+    images: ["https://kclub-website.netlify.app/logo.svg"], // Same image for Twitter
   },
 };
 
