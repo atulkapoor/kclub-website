@@ -19,14 +19,14 @@
 //             </p>
 //           </div>
 //         </section>
-  
+
 //         {/* Logo Slider Section */}
 //         <section className="py-12 bg-gray-50">
 //           <div className="max-w-6xl mx-auto px-4">
 //             <h2 className="text-2xl font-bold text-center text-gray-700 mb-10">
 //               Used by the world's most average companies
 //             </h2>
-            
+
 //             {/* Slider Container */}
 //             <div className="relative overflow-hidden">
 //               {/* Slider Track */}
@@ -39,7 +39,7 @@
 //                     </div>
 //                   </div>
 //                 ))}
-                
+
 //                 {/* Duplicate for seamless loop */}
 //                 {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
 //                   <div key={`dup-${item}`} className="mx-8 flex items-center">
@@ -51,7 +51,7 @@
 //               </div>
 //             </div>
 //           </div>
-          
+
 //           <style jsx>{`
 //             @keyframes marquee {
 //               0% { transform: translateX(0); }
@@ -62,7 +62,7 @@
 //             }
 //           `}</style>
 //         </section>
-  
+
 //         {/* Retail & eCommerce Section */}
 //         <section className="py-16 px-4">
 //           <div className="max-w-6xl mx-auto">
@@ -75,7 +75,7 @@
 //                 that bridge gaps and delight customers at every touchpoint.
 //               </p>
 //             </div>
-            
+
 //             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 //               <div className="bg-gray-50 p-6 rounded-lg">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Customer Engagement & Loyalty</h3>
@@ -84,7 +84,7 @@
 //                   shopping experiences to increase customer retention and lifetime value.
 //                 </p>
 //               </div>
-              
+
 //               <div className="bg-gray-50 p-6 rounded-lg">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Smart Inventory & Order Management</h3>
 //                 <p className="text-gray-600">
@@ -92,7 +92,7 @@
 //                   routing to the best fulfillment center or store.
 //                 </p>
 //               </div>
-              
+
 //               <div className="bg-gray-50 p-6 rounded-lg">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">In-Store Technology</h3>
 //                 <p className="text-gray-600">
@@ -103,7 +103,7 @@
 //             </div>
 //           </div>
 //         </section>
-  
+
 //         {/* Healthcare & Life Sciences Section */}
 //         <section className="py-16 px-4 bg-gray-50">
 //           <div className="max-w-6xl mx-auto">
@@ -117,7 +117,7 @@
 //                 through digital innovation.
 //               </p>
 //             </div>
-            
+
 //             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 //               <div className="bg-white p-6 rounded-lg shadow-sm">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Electronic Health Records (EHR)</h3>
@@ -126,7 +126,7 @@
 //                   ensure continuity of care and reduce duplicate tests.
 //                 </p>
 //               </div>
-              
+
 //               <div className="bg-white p-6 rounded-lg shadow-sm">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Telehealth & Remote Monitoring</h3>
 //                 <p className="text-gray-600">
@@ -134,7 +134,7 @@
 //                   to monitor patients remotely, enabling virtual care and timely interventions.
 //                 </p>
 //               </div>
-              
+
 //               <div className="bg-white p-6 rounded-lg shadow-sm">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Healthcare Process Automation</h3>
 //                 <p className="text-gray-600">
@@ -145,7 +145,7 @@
 //             </div>
 //           </div>
 //         </section>
-  
+
 //         {/* BFSI & Fintech Section */}
 //         <section className="py-16 px-4">
 //           <div className="max-w-6xl mx-auto">
@@ -159,7 +159,7 @@
 //                 while ensuring compliance and security.
 //               </p>
 //             </div>
-            
+
 //             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 //               <div className="bg-gray-50 p-6 rounded-lg">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Digital Lending & Onboarding</h3>
@@ -168,7 +168,7 @@
 //                   decisioning tools that make borrowing fast and user-friendly.
 //                 </p>
 //               </div>
-              
+
 //               <div className="bg-gray-50 p-6 rounded-lg">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Payment & Wallet Systems</h3>
 //                 <p className="text-gray-600">
@@ -176,7 +176,7 @@
 //                   payment solutions to enable smooth digital transactions.
 //                 </p>
 //               </div>
-              
+
 //               <div className="bg-gray-50 p-6 rounded-lg">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Banking CRM & Omni-Channel Services</h3>
 //                 <p className="text-gray-600">
@@ -187,7 +187,7 @@
 //             </div>
 //           </div>
 //         </section>
-  
+
 //         {/* Education Section */}
 //         <section className="py-16 px-4 bg-gray-50">
 //           <div className="max-w-6xl mx-auto">
@@ -202,7 +202,7 @@
 //                 educators, and administrators alike.
 //               </p>
 //             </div>
-            
+
 //             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 //               <div className="bg-white p-6 rounded-lg shadow-sm">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Digital Admissions & Enrollment</h3>
@@ -211,7 +211,7 @@
 //                   checks, and admission fee payments.
 //                 </p>
 //               </div>
-              
+
 //               <div className="bg-white p-6 rounded-lg shadow-sm">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Learning Management & Collaboration</h3>
 //                 <p className="text-gray-600">
@@ -219,7 +219,7 @@
 //                   collaborative projects, accessible to students on web or mobile.
 //                 </p>
 //               </div>
-              
+
 //               <div className="bg-white p-6 rounded-lg shadow-sm">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Student Lifecycle Management</h3>
 //                 <p className="text-gray-600">
@@ -230,7 +230,7 @@
 //             </div>
 //           </div>
 //         </section>
-  
+
 //         {/* Real Estate Section */}
 //         <section className="py-16 px-4">
 //           <div className="max-w-6xl mx-auto">
@@ -244,7 +244,7 @@
 //                 client experiences, and streamline operations from the ground up.
 //               </p>
 //             </div>
-            
+
 //             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 //               <div className="bg-gray-50 p-6 rounded-lg">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Real Estate CRM</h3>
@@ -254,7 +254,7 @@
 //                   and team performance.
 //                 </p>
 //               </div>
-              
+
 //               <div className="bg-gray-50 p-6 rounded-lg">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Virtual Showcasing</h3>
 //                 <p className="text-gray-600">
@@ -262,7 +262,7 @@
 //                   explore properties remotely and thereby widening your reach.
 //                 </p>
 //               </div>
-              
+
 //               <div className="bg-gray-50 p-6 rounded-lg">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Integrated Property Listings</h3>
 //                 <p className="text-gray-600">
@@ -273,7 +273,7 @@
 //             </div>
 //           </div>
 //         </section>
-  
+
 //         {/* Telecom & Manufacturing Section */}
 //         <section className="py-16 px-4 bg-gray-50">
 //           <div className="max-w-6xl mx-auto">
@@ -286,7 +286,7 @@
 //                 and innovation.
 //               </p>
 //             </div>
-            
+
 //             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 //               <div className="bg-white p-6 rounded-lg shadow-sm">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">IoT-Enabled Monitoring</h3>
@@ -296,7 +296,7 @@
 //                   dashboard.
 //                 </p>
 //               </div>
-              
+
 //               <div className="bg-white p-6 rounded-lg shadow-sm">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Predictive Maintenance</h3>
 //                 <p className="text-gray-600">
@@ -305,7 +305,7 @@
 //                   maintenance optimally.
 //                 </p>
 //               </div>
-              
+
 //               <div className="bg-white p-6 rounded-lg shadow-sm">
 //                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Workflow Automation</h3>
 //                 <p className="text-gray-600">
@@ -317,7 +317,7 @@
 //             </div>
 //           </div>
 //         </section>
-  
+
 //         {/* Newsletter Section */}
 //         <section className="py-16 px-4 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
 //           <div className="max-w-4xl mx-auto text-center">
@@ -325,7 +325,7 @@
 //             <p className="text-lg mb-8 max-w-2xl mx-auto">
 //               Get the latest updates on our products, services, and industry insights delivered straight to your inbox.
 //             </p>
-            
+
 //             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto sm:max-w-xl">
 //               <input
 //                 type="email"
@@ -336,13 +336,13 @@
 //                 Subscribe
 //               </button>
 //             </div>
-            
+
 //             <p className="text-sm mt-4 text-blue-100">
 //               By subscribing you agree with our Privacy Policy
 //             </p>
 //           </div>
 //         </section>
-  
+
 //         {/* CTA Section */}
 //         <section className="py-16 px-4 bg-gray-100">
 //           <div className="max-w-4xl mx-auto text-center">
@@ -358,9 +358,9 @@
 //       </div>
 //     );
 //   };
-  
+
 // export default IndustriesPage;
-  
+
 "use client";
 
 import React from "react";
@@ -373,8 +373,8 @@ import HeroSection from "@/components/CTA";
 
 const industries = [
   {
-        name: "Retail & eCommerce",
-        image: "industry-img/retail.png",
+    name: "Retail & eCommerce",
+    image: "industry-img/retail.png",
     description:
       "Today’s retail landscape demands seamless integration between online and offline channels, personalized customer experiences, and agile supply chains. KClub helps retailers and eCommerce businesses meet these demands with technology solutions that bridge gaps and delight customers at every touchpoint.",
     solutions: [
@@ -401,9 +401,9 @@ const industries = [
     ],
   },
   {
-      name: "Healthcare & Life Sciences",
-      image: "industry-img/healthcare.png",
-      
+    name: "Healthcare & Life Sciences",
+    image: "industry-img/healthcare.png",
+
     description:
       "Healthcare and life sciences organizations operate in a complex environment where patient outcomes, data security, and regulatory compliance are paramount. KClub provides technology solutions that help hospitals, clinics, pharmaceutical companies, and research institutions modernize their operations and improve care through digital innovation.",
     solutions: [
@@ -430,9 +430,9 @@ const industries = [
     ],
   },
   {
-      name: "BFSI & Fintech",
-      image: "industry-img/fintech.png",
-      
+    name: "BFSI & Fintech",
+    image: "industry-img/fintech.png",
+
     description:
       "Banks, financial services companies, and fintech startups are under constant pressure to innovate, improve customer experience, and maintain stringent security. KClub partners with the BFSI sector to build and implement fintech solutions that modernize legacy operations and launch new digital services, all while ensuring compliance and security.",
     solutions: [
@@ -459,9 +459,9 @@ const industries = [
     ],
   },
   {
-      name: "Education",
-      image: "industry-img/education.png",
-      
+    name: "Education",
+    image: "industry-img/education.png",
+
     description:
       "Educational institutions are increasingly leveraging technology to enhance learning outcomes and streamline administration. KClub offers EdTech solutions that empower schools, colleges, universities, and EdTech companies to create engaging learning experiences and efficient educational operations.",
     solutions: [
@@ -488,9 +488,9 @@ const industries = [
     ],
   },
   {
-      name: "Real Estate",
-      image: "industry-img/estate.png",
-      
+    name: "Real Estate",
+    image: "industry-img/estate.png",
+
     description:
       "The real estate industry thrives on relationships, timing, and data – whether it’s closing property sales, managing rental portfolios, or executing construction projects. KClub delivers specialized tech solutions for real estate developers, agencies, and property management firms.",
     solutions: [
@@ -517,9 +517,9 @@ const industries = [
     ],
   },
   {
-      name: "Telecom & Manufacturing",
-      image: "industry-img/telecom.png",
-      
+    name: "Telecom & Manufacturing",
+    image: "industry-img/telecom.png",
+
     description:
       "Telecommunications and manufacturing are two industries where precision and reliability are non-negotiable. KClub brings advanced solutions to these sectors, focusing on automation, IoT, and data analytics to enhance operational efficiency and innovation.",
     solutions: [
@@ -548,151 +548,152 @@ const industries = [
 ];
 
 export default function IndustriesPage() {
-    const logos = [
-        { src: "/relume-logo.png", alt: "Webflow" },
-        { src: "/webflow-logo.png", alt: "Relume" },
+  const logos = [
+    { src: "/relume-logo.png", alt: "Webflow" },
+    { src: "/webflow-logo.png", alt: "Relume" },
     { src: "/swipe.png", alt: "swipe" },
-        { src: "/relume-logo.png", alt: "Webflow" },
-        { src: "/webflow-logo.png", alt: "Relume" },
+    { src: "/relume-logo.png", alt: "Webflow" },
+    { src: "/webflow-logo.png", alt: "Relume" },
     { src: "/swipe.png", alt: "swipe" },
-        { src: "/relume-logo.png", alt: "Webflow" },
-        { src: "/webflow-logo.png", alt: "Relume" },
+    { src: "/relume-logo.png", alt: "Webflow" },
+    { src: "/webflow-logo.png", alt: "Relume" },
     { src: "/swipe.png", alt: "swipe" },
-      ];
+  ];
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 mx-auto    py-12 lg:py-4">
       {/* HERO */}
       <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 my-30 text-center">
-
         <div className="text-center max-w-5xl mx-auto mb-12">
-        <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue">
-          Technology Solutions Across Industries
-        </h1>
-        <p className="text-md md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-          KClub has rich expertise in delivering solutions to businesses in a
-          variety of industries. We know each sector has unique challenges and
-          opportunities. By combining domain knowledge with the right
-          technology, we help companies streamline operations, enhance customer
-          experiences, and innovate faster.
-        </p>
+          <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue">
+            Technology Solutions Across Industries
+          </h1>
+          <p className="text-md md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            KClub has rich expertise in delivering solutions to businesses in a
+            variety of industries. We know each sector has unique challenges and
+            opportunities. By combining domain knowledge with the right
+            technology, we help companies streamline operations, enhance
+            customer experiences, and innovate faster.
+          </p>
         </div>
 
         <div className="w-full h-[400px] flex items-center justify-center rounded-md mt-30">
           <img
-           src="industry-img/industry.png"
-           alt="Hero Banner"
-        className="w-full max-w-12xl h-auto object-contain"
+            src="industry-img/industry.png"
+            alt="Hero Banner"
+            className="w-full max-w-12xl h-auto object-contain"
           />
-      </div>
+        </div>
       </section>
 
       {/* INDUSTRIES + CAROUSELS */}
-        <section className="container mx-auto px-6 pt-16 pb-8">
-  {industries.map((industry, idx) => (
-    <div key={idx} className="mb-20">
-      {/* Top Row: Image + Text */}
-      <div
-        className={`flex flex-col md:flex-row items-center gap-10 mb-8   ${
-          idx % 2 === 0 ? "md:flex-row-reverse" : ""
-        }`}
-      >
-        {/* Image */}
-        <div className="w-full md:w-1/2">
-          <img
-            src={industry.image} // 👈 industry object me "image" property honi chahiye
-            // alt={industry.name}
-            className="w-full h-64 object-cover"
-          />
-        </div>
-
-        {/* Heading + Description */}
-        <div className="w-full md:w-1/2">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-blue">
-            {industry.name}:
-          </h2>
-          <p className="text-gray-700 leading-relaxed">{industry.description}</p>
-        </div>
-      </div>
-
-      {/* Key Solutions below */}
-      <h3 className="text-lg font-semibold text-blue-600 mb-6">
-        Key Solutions:
-      </h3>
-
-      <div
-       
-        className="industry-swiper relative  ">
-        <Swiper
-          modules={[Navigation, Pagination]}
-          spaceBetween={20}
-          slidesPerView={1}
-          pagination={{ clickable: true, el: `.pagination-${idx}` }}
-          navigation={{
-            nextEl: `.next-${idx}`,
-            prevEl: `.prev-${idx}`,
-          }}
-          breakpoints={{
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-          style={{
-            backgroundImage: `url('industry-img/sliderbg.png')`,
-            backgroundSize: 'contain', 
-            paddingInline: '40px',
-            backgroundRepeat:'no-repeat',
-            height: "200px",
-            paddingBlock: '10px',
-            // borderRadius: '12px'
-          }}
-        >
-          {industry.solutions.map((s, i) => (
-            <SwiperSlide key={i}>
-              <div className="bg-white rounded-xl p-6 shadow-md h-full flex flex-col text-center">
-                <h4 className="font-semibold text-gray-900 mb-2">{s.title}</h4>
-                <p className="text-sm text-gray-600">{s.text}</p>
+      <section className="container mx-auto px-6 pt-16 pb-8">
+        {industries.map((industry, idx) => (
+          <div key={idx} className="mb-20">
+            {/* Top Row: Image + Text */}
+            <div
+              className={`flex flex-col md:flex-row items-center gap-10 mb-8   ${
+                idx % 2 === 0 ? "md:flex-row-reverse" : ""
+              }`}
+            >
+              {/* Image */}
+              <div className="w-full md:w-1/2">
+                <img
+                  src={industry.image} // 👈 industry object me "image" property honi chahiye
+                  // alt={industry.name}
+                  className="w-full h-64 object-cover"
+                />
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
 
-        {/* Pagination + Arrows */}
-        <div className="flex items-center justify-between mt-6">
-          <div className={`swiper-pagination pagination-${idx}`}></div>
-          <div className="flex gap-4">
-            <button
-              className={`prev-${idx} w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-700 hover:bg-gray-100`}
-            >
-              ←
-            </button>
-            <button
-              className={`next-${idx} w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-700 hover:bg-gray-100`}
-            >
-              →
-            </button>
+              {/* Heading + Description */}
+              <div className="w-full md:w-1/2">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-blue">
+                  {industry.name}:
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  {industry.description}
+                </p>
+              </div>
+            </div>
+
+            {/* Key Solutions below */}
+            <h3 className="text-lg font-semibold text-blue-600 mb-6">
+              Key Solutions:
+            </h3>
+
+            <div className="industry-swiper relative  ">
+              <Swiper
+                modules={[Navigation, Pagination]}
+                spaceBetween={20}
+                slidesPerView={1}
+                pagination={{ clickable: true, el: `.pagination-${idx}` }}
+                navigation={{
+                  nextEl: `.next-${idx}`,
+                  prevEl: `.prev-${idx}`,
+                }}
+                breakpoints={{
+                  640: { slidesPerView: 2 },
+                  1024: { slidesPerView: 3 },
+                }}
+                style={{
+                  // backgroundImage: `url('industry-img/sliderbg.png')`,
+                  // backgroundSize: 'contain',
+                  paddingInline: "40px",
+                  // backgroundRepeat:'no-repeat',
+                  height: "200px",
+                  paddingBlock: "10px",
+                  // borderRadius: '12px'
+                }}
+              >
+                {industry.solutions.map((s, i) => (
+                  <SwiperSlide key={i}>
+                    <div className="bg-white rounded-xl p-6 shadow-md h-full flex flex-col text-center">
+                      <h4 className="font-semibold text-gray-900 mb-2">
+                        {s.title}
+                      </h4>
+                      <p className="text-sm text-gray-600">{s.text}</p>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+
+              {/* Pagination + Arrows */}
+              <div className="flex items-center justify-between mt-6">
+                <div className={`swiper-pagination pagination-${idx}`}></div>
+                <div className="flex gap-4">
+                  <button
+                    className={`prev-${idx} w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-700 hover:bg-gray-100`}
+                  >
+                    ←
+                  </button>
+                  <button
+                    className={`next-${idx} w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-700 hover:bg-gray-100`}
+                  >
+                    →
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  ))}
+        ))}
 
-  {/* Global swiper overrides */}
-  <style jsx global>{`
-    .swiper-pagination {
-      position: relative !important;
-      bottom: 0 !important;
-      display: flex !important;
-      justify-content: flex-start !important;
-    }
-    .swiper-pagination-bullet {
-      background: #cbd5e1;
-      opacity: 1;
-      margin:0px 4px;
-    }
-    .swiper-pagination-bullet-active {
-      background: #1e3a8a; /* Tailwind blue-900 */
-    }
-  `}</style>
-</section>
+        {/* Global swiper overrides */}
+        <style jsx global>{`
+          .swiper-pagination {
+            position: relative !important;
+            bottom: 0 !important;
+            display: flex !important;
+            justify-content: flex-start !important;
+          }
+          .swiper-pagination-bullet {
+            background: #cbd5e1;
+            opacity: 1;
+            margin: 0px 4px;
+          }
+          .swiper-pagination-bullet-active {
+            background: #1e3a8a; /* Tailwind blue-900 */
+          }
+        `}</style>
+      </section>
       {/* NEWSLETTER */}
       {/* <section className="max-w-6xl mx-auto px-4 py-10">
         <div className="bg-gray-50 rounded-2xl p-8 md:flex md:items-center md:justify-between">
@@ -740,7 +741,7 @@ export default function IndustriesPage() {
         </div>
       </section> */}
       {/* <section className=" sm:mx-6 md:mx-12 lg:mx-16 xl:mx-36 2xl:mx-48"> */}
-              {/* <HeroSection
+      {/* <HeroSection
                 styles={{
                   description: { 
                     width:"100%"
@@ -754,22 +755,21 @@ export default function IndustriesPage() {
                 description="Let’s create solutions that drive efficiency, growth, and innovation for your enterprise."
       
               /> */}
-            {/* </section> */}
+      {/* </section> */}
 
-           <section className="mx-2 sm:mx-6 md:mx-2 lg:mx-14 xl:mx-16 2xl:mx-34">
-        <HeroSection 
+      <section className="mx-2 sm:mx-6 md:mx-2 lg:mx-14 xl:mx-16 2xl:mx-34">
+        <HeroSection
           styles={{
-            description: { 
-              width:"100%"
+            description: {
+              width: "100%",
             },
             container: {
-              backgroundImage: "url('/cta2.png')", 
+              backgroundImage: "url('/cta2.png')",
             },
           }}
           showPrimaryButton={false}
           title="Ready to Transform Your Business"
           description="Let’s create solutions that drive efficiency, growth, and innovation for your enterprise."
-
         />
       </section>
 
@@ -778,31 +778,28 @@ export default function IndustriesPage() {
         <h2 className="text-2xl md:text-3xl lg:text-3xl font-bold text-blue">
           Used by the world&apos;s most average companies
         </h2>
-  <section className="text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-5 rounded-md">
-     <div className="overflow-hidden whitespace-nowrap w-full bg-white">
-      <div className="flex animate-scroll">
-        {logos.map((logo, i) => (
-          <div
-            key={i}
-            className="flex items-center mx-8 shrink-0"
-          >
-            <img src={logo.src} alt={logo.alt} className="h-8 mr-2" />
-            {/* <span className="text-black font-medium">{logo.alt}</span> */}
+        <section className="text-white mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-14 mt-5 rounded-md">
+          <div className="overflow-hidden whitespace-nowrap w-full bg-white">
+            <div className="flex animate-scroll">
+              {logos.map((logo, i) => (
+                <div key={i} className="flex items-center mx-8 shrink-0">
+                  <img src={logo.src} alt={logo.alt} className="h-8 mr-2" />
+                  {/* <span className="text-black font-medium">{logo.alt}</span> */}
+                </div>
+              ))}
+              {/* Duplicate for infinite scroll effect */}
+              {logos.map((logo, i) => (
+                <div
+                  key={`dup-${i}`}
+                  className="flex items-center mx-8 shrink-0"
+                >
+                  <img src={logo.src} alt={logo.alt} className="h-8 mr-2" />
+                  {/* <span className="text-black font-medium">{logo.alt}</span> */}
+                </div>
+              ))}
+            </div>
           </div>
-        ))}
-        {/* Duplicate for infinite scroll effect */}
-        {logos.map((logo, i) => (
-          <div
-            key={`dup-${i}`}
-            className="flex items-center mx-8 shrink-0"
-          >
-            <img src={logo.src} alt={logo.alt} className="h-8 mr-2" />
-            {/* <span className="text-black font-medium">{logo.alt}</span> */}
-          </div>
-        ))}
-      </div>
-    </div>
-    </section>
+        </section>
       </section>
 
       {/* Inline CSS for Swiper overrides */}
