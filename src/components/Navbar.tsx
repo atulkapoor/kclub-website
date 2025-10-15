@@ -55,7 +55,7 @@ export default function Navbar() {
       name: "Products",
       link: "/products",
       width: "w-[28rem]",
-      cols: "grid-cols-3",
+      cols: "grid-cols-2",
       items: [
         {
           // name: "Warehouse Management",
@@ -109,7 +109,7 @@ export default function Navbar() {
           // name: "Omnichannel ERP",
           link: "/products/real-estate-erp",
           desc: "Omnichannel ERP2",
-          img: "/nav-img/Group.png",
+          img: "/nav-img/Group1.png",
         },
       ],
     },
@@ -180,14 +180,14 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div className="container-fluid mx-auto px-4 md:px-6 lg:px-36 flex items-center justify-between py-4">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-black">
           <Image src="/logo.svg" alt="Logo" width={100} height={40} />
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8 text-black font-medium">
+        {/* <div className="hidden md:flex items-center space-x-8 text-black font-medium">
           {menus.map((menu) => (
             <div key={menu.name} className="relative group">
               <Link
@@ -203,7 +203,7 @@ export default function Navbar() {
                 )}
               </Link>
 
-              {/* Dropdown */}
+              {/* Dropdown * 
               {menu.items && (
                 <div
                   className={`absolute left-0 mt-3 bg-white shadow-lg rounded-lg p-4 grid ${menu.cols} gap-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ${menu.width}`}
@@ -219,7 +219,7 @@ export default function Navbar() {
                           <img
                             src={item.img}
                             alt={item.name}
-                            className="w-20 h-8 object-contain"
+                            className="w-22 h-10 object-contain"
                           />
                         )}
                         <div>
@@ -236,13 +236,87 @@ export default function Navbar() {
                     </Link>
                   ))}
 
-                  {/* "See all services" for Services menu */}
+                  {/* "See all services" for Services menu 
                   {menu.name === "Services" && (
                     <Link
                       href="/services"
                       className="flex items-center justify-end gap-1 text-sm font-medium text-blue-600 hover:underline mt-2"
                     >
                       See all services <ArrowRight size={16} />
+                    </Link>
+                  )}
+                </div>
+              )}
+            </div>
+          ))}
+        </div> */}
+        {/* Desktop Menu */}
+        <div className="hidden md:flex items-center text-black font-medium space-x-6">
+          {menus.map((menu) => (
+            <div key={menu.name} className="relative group">
+              <Link
+                href={menu.link}
+                className="flex items-center gap-[6px] text-[15px] font-medium hover:text-gray-700 transition-colors"
+              >
+                {menu.name}
+                {/* Chevron always present but invisible by default */}
+                <ChevronDown
+                  size={16}
+                  className={`relative top-[2px] transition-opacity duration-200 ${
+                    menu.items
+                      ? "opacity-0 group-hover:opacity-100"
+                      : "opacity-0 pointer-events-none"
+                  }`}
+                />
+              </Link>
+
+              {/* Dropdown */}
+              {menu.items && (
+                <div
+                  className={`absolute left-0 top-full bg-white shadow-lg rounded-lg p-4 grid ${menu.cols} gap-4 hidden group-hover:grid group-hover:visible transition-all duration-200 ${menu.width} z-50`}
+                >
+                  {menu.items.map((item) => (
+                    <Link
+                      key={item.link}
+                      href={item.link}
+                      className="hover:bg-gray-50 rounded-lg p-2 block transition-colors"
+                    >
+                      <div className="items-start gap-3">
+                        {item.img && (
+                          <img
+                            src={item.img}
+                            alt={item.name}
+                            className="w-22 h-10 object-contain"
+                          />
+                        )}
+                        <div>
+                          {item.name && (
+                            <p className="font-semibold text-gray-800">
+                              {item.name}
+                            </p>
+                          )}
+                          {item.desc && (
+                            <p className="text-sm text-gray-500">{item.desc}</p>
+                          )}
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
+
+                  {menu.name === "Services" && (
+                    <Link
+                      href="/services"
+                      className="flex items-center justify-end gap-1 text-sm font-medium text-black hover:underline mt-2"
+                    >
+                      See all Our services <ArrowRight size={16} />
+                    </Link>
+                  )}
+                  {menu.name === "Products" && (
+                    <Link
+                      href="/products"
+                      className="flex items-center  gap-1 text-sm font-medium text-black hover:underline mt-2"
+                    >
+                      See all Our Products <ArrowRight size={16} />
                     </Link>
                   )}
                 </div>

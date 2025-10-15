@@ -135,18 +135,30 @@ export default function Products() {
     { src: "/relume-logo.png", alt: "Webflow" },
     { src: "/webflow-logo.png", alt: "Relume" },
     { src: "/swipe.png", alt: "swipe" },
+    { src: "/Client-logos3.png", alt: "c1" },
+    { src: "/Client-logos4.png", alt: "c4" },
+    { src: "/Client-logos5.png", alt: "c5" },
+    { src: "/Client-logos6.png", alt: "c6" },
     { src: "/relume-logo.png", alt: "Webflow" },
     { src: "/webflow-logo.png", alt: "Relume" },
     { src: "/swipe.png", alt: "swipe" },
+    { src: "/Client-logos3.png", alt: "c1" },
+    { src: "/Client-logos4.png", alt: "c4" },
+    { src: "/Client-logos5.png", alt: "c5" },
+    { src: "/Client-logos6.png", alt: "c6" },
     { src: "/relume-logo.png", alt: "Webflow" },
     { src: "/webflow-logo.png", alt: "Relume" },
     { src: "/swipe.png", alt: "swipe" },
+    { src: "/Client-logos3.png", alt: "c1" },
+    { src: "/Client-logos4.png", alt: "c4" },
+    { src: "/Client-logos5.png", alt: "c5" },
+    { src: "/Client-logos6.png", alt: "c6" },
   ];
   return (
      <main className="min-h-screen bg-white">
     <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-30 text-center">
       {/* Heading + Subheading */}
-      <div className="text-center max-w-3xl mx-auto mb-12">
+      <div className="text-center max-w-3xl mx-auto mb-30">
         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight subpixel-antialiased text-blue">
           Smart, Scalable Products for <br /> Every Business Challenge
         </h2>
@@ -156,7 +168,7 @@ export default function Products() {
         </p>
       </div>
 
-        <div className="w-full h-[400px] flex items-center justify-center rounded-md mt-30">
+        <div className="w-full h-[400px] flex items-center justify-center rounded-md my-30">
         <img
           src="/product-img/product-main-banner.png"
           alt="Hero Banner"

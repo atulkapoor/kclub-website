@@ -85,7 +85,7 @@ export default async function ProductDetail({ params }: PageProps) {
       <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:py-4 mt-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Right Placeholder */}
-               <img src={product.hero.image} alt="Hero Banner" className="w-full h-auto object-contain" /> 
+               <img src={product.scheduledemo.image} alt="Hero Banner" className="w-full h-auto object-contain" /> 
 
 
           {/* Left Content */}

@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PopupForm from "@/components/PopupForm";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -9,11 +9,17 @@ import "swiper/css/pagination";
 import HeroSection from "@/components/CTA";
 import Link from "next/link";
 import Testimonial from "@/components/Testimonials";
+import React, { useRef } from "react";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
   const openModal = () => setOpen(true);
   const closeModal = () => setOpen(false);
+
+  const [swiperReady, setSwiperReady] = useState(false);
+
+  const prevRef = useRef<HTMLButtonElement>(null);
+  const nextRef = useRef<HTMLButtonElement>(null);
 
   const industries = [
     "Retail & eCommerce",
@@ -25,15 +31,27 @@ export default function Home() {
     "Real Estate",
   ];
   const logos = [
+  { src: "/relume-logo.png", alt: "Webflow" },
+    { src: "/webflow-logo.png", alt: "Relume" },
+    { src: "/swipe.png", alt: "swipe" },
+    { src: "/Client-logos3.png", alt: "c1" },
+    { src: "/Client-logos4.png", alt: "c4" },
+    { src: "/Client-logos5.png", alt: "c5" },
+    { src: "/Client-logos6.png", alt: "c6" },
     { src: "/relume-logo.png", alt: "Webflow" },
     { src: "/webflow-logo.png", alt: "Relume" },
     { src: "/swipe.png", alt: "swipe" },
+    { src: "/Client-logos3.png", alt: "c1" },
+    { src: "/Client-logos4.png", alt: "c4" },
+    { src: "/Client-logos5.png", alt: "c5" },
+    { src: "/Client-logos6.png", alt: "c6" },
     { src: "/relume-logo.png", alt: "Webflow" },
     { src: "/webflow-logo.png", alt: "Relume" },
     { src: "/swipe.png", alt: "swipe" },
-    { src: "/relume-logo.png", alt: "Webflow" },
-    { src: "/webflow-logo.png", alt: "Relume" },
-    { src: "/swipe.png", alt: "swipe" },
+    { src: "/Client-logos3.png", alt: "c1" },
+    { src: "/Client-logos4.png", alt: "c4" },
+    { src: "/Client-logos5.png", alt: "c5" },
+    { src: "/Client-logos6.png", alt: "c6" },
   ];
 
   const solutions = [
@@ -57,7 +75,17 @@ export default function Home() {
       desc: "Identify opportunities, optimize systems, and future-proof your business with expert consulting.",
       icon: "/home-img/home-s4.png",
     },
+    {
+      title: "Apps for a Mobile-First World",
+      desc: "Deliver seamless, user-friendly mobile experiences that keep your customers connected.",
+      icon: "/home-img/home-s5.png",
+    },
   ];
+
+  useEffect(() => {
+    // after refs are rendered, enable swiper
+    setSwiperReady(true);
+  }, []);
 
   return (
     <main
@@ -66,7 +94,7 @@ export default function Home() {
       data-aos-easing="linear"
       data-aos-duration="1500"
     >
-      <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 py-12 lg:pt-20 bg-[#EDF5FF]">
+      <section className="container-fluid mx-auto px-4 md:px-6 lg:px-36 pt-12 lg:pt-20 bg-[#EDF5FF]">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Left Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
@@ -195,40 +223,134 @@ export default function Home() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {solutions.map((solution, i) => (
-            <div
-              key={i}
-              className="flex flex-col justify-between p-8 bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition"
-            >
-              <div>
-                <h3 className="text-lg text-blue font-semibold mb-3">
-                  {solution.title}
-                </h3>
-                <p className="text-sm text-gray-600">{solution.desc}</p>
-              </div>
-              <div className="mt-6">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <img
-                    src={solution.icon}
-                    alt={`${solution.title} icon`}
-                    className="w-6 h-6 object-contain"
-                  />
+        {/* <div className="cr">
+          <Swiper
+            modules={[Pagination]}
+            pagination={{ clickable: true }}
+            spaceBetween={30}
+            slidesPerView={4}
+            breakpoints={{
+              0: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+            }}
+            className="pb-12"
+          >
+            {solutions.map((solution, i) => (
+              <SwiperSlide key={i}>
+                <div
+                  key={i}
+                  className="flex flex-col justify-between p-8 bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition mb-10"
+                >
+                  <div>
+                    <h3 className="text-lg text-blue font-semibold mb-3">
+                      {solution.title}
+                    </h3>
+                    <p className="text-sm text-gray-600">{solution.desc}</p>
+                  </div>
+                  <div className="mt-6">
+                    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                      <img
+                        src={solution.icon}
+                        alt={`${solution.title} icon`}
+                        className="w-6 h-6 object-contain"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          ))}
-        </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div> */}
 
         {/* Navigation Arrows */}
-        <div className="flex justify-center gap-6 mt-10">
+        {/* <div className="flex justify-center gap-6 mt-10">
           <button className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition">
             ←
           </button>
           <button className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition">
             →
           </button>
-        </div>
+        </div> */}
+
+        <section className="cr w-full relative overflow-hidden py-10">
+          {swiperReady && (
+            <Swiper
+              modules={[Navigation]}
+              spaceBetween={30}
+              slidesPerView={4}
+              navigation={{
+                prevEl: prevRef.current,
+                nextEl: nextRef.current,
+              }}
+              breakpoints={{
+                0: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+                1280: { slidesPerView: 4 },
+              }}
+              className="pb-12"
+            >
+              {solutions.map((solution, i) => (
+                <SwiperSlide key={i}>
+                  {/* <div className="flex flex-col justify-between p-8 bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition duration-300 mb-6">
+                    <div>
+                      <h3 className="text-lg text-blue-600 font-semibold mb-3">
+                        {solution.title}
+                      </h3>
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        {solution.desc}
+                      </p>
+                    </div>
+                    <div className="mt-6">
+                      <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <img
+                          src={solution.icon}
+                          alt={`${solution.title} icon`}
+                          className="w-6 h-6 object-contain"
+                        />
+                      </div>
+                    </div>
+                  </div> */}
+                  <div className="flex flex-col justify-between p-8 bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition duration-300 mb-6 h-72">
+                    <div>
+                      <h3 className="text-lg text-blue-600 font-semibold mb-3">
+                        {solution.title}
+                      </h3>
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        {solution.desc}
+                      </p>
+                    </div>
+                    <div className="mt-6">
+                      <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <img
+                          src={solution.icon}
+                          alt={`${solution.title} icon`}
+                          className="w-6 h-6 object-contain"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          )}
+
+          {/* Arrows */}
+          <div className="flex justify-center items-center gap-6 mt-6">
+            <button
+              ref={prevRef}
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-300 text-blue-600 hover:bg-blue-600 hover:text-white shadow transition"
+            >
+              ←
+            </button>
+            <button
+              ref={nextRef}
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-300 text-blue-600 hover:bg-blue-600 hover:text-white shadow transition"
+            >
+              →
+            </button>
+          </div>
+        </section>
       </section>
 
       <section className="container mx-auto px-4 md:px-6 lg:px-20 py-16">

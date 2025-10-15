@@ -58,12 +58,24 @@ export default function Services() {
     { src: "/relume-logo.png", alt: "Webflow" },
     { src: "/webflow-logo.png", alt: "Relume" },
     { src: "/swipe.png", alt: "swipe" },
+    { src: "/Client-logos3.png", alt: "c1" },
+    { src: "/Client-logos4.png", alt: "c4" },
+    { src: "/Client-logos5.png", alt: "c5" },
+    { src: "/Client-logos6.png", alt: "c6" },
     { src: "/relume-logo.png", alt: "Webflow" },
     { src: "/webflow-logo.png", alt: "Relume" },
     { src: "/swipe.png", alt: "swipe" },
+    { src: "/Client-logos3.png", alt: "c1" },
+    { src: "/Client-logos4.png", alt: "c4" },
+    { src: "/Client-logos5.png", alt: "c5" },
+    { src: "/Client-logos6.png", alt: "c6" },
     { src: "/relume-logo.png", alt: "Webflow" },
     { src: "/webflow-logo.png", alt: "Relume" },
     { src: "/swipe.png", alt: "swipe" },
+    { src: "/Client-logos3.png", alt: "c1" },
+    { src: "/Client-logos4.png", alt: "c4" },
+    { src: "/Client-logos5.png", alt: "c5" },
+    { src: "/Client-logos6.png", alt: "c6" },
   ];
   return (
     <main className="min-h-screen bg-white">
@@ -81,7 +93,7 @@ export default function Services() {
         </p>
       </div>
 
-        <div className="w-full h-[400px] flex items-center justify-center rounded-md mt-30">
+        <div className="w-full h-[400px] flex items-center justify-center rounded-md my-30">
         {/* <div> */}
            <img
         src="/services-img/services-banner.png"
