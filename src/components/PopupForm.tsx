@@ -37,6 +37,38 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
   // Prevent overlay-click from closing when clicking inside the card
   const stop = (e: React.MouseEvent) => e.stopPropagation();
 
+   const testimonials = [
+    {
+      text: "Partnering with KClub truly transformed how we operate. Their 4D methodology made the entire process smooth — from initial discussion to delivery — and the solution exceeded expectations.",
+      name: "Anita Rao",
+      position: "Head of Digital Strategy",
+      company: "FinEdge Solutions",
+      logo: "/webflow-logo.png",
+    },
+    {
+      text: "KClub’s team embodies innovation. They didn’t just build software; they reimagined our systems to drive efficiency. Their people-first approach made collaboration seamless.",
+      name: "Rahul Desai",
+      position: "COO",
+      company: "HealthSync India",
+      logo: "/relume-logo.png",
+    },
+    {
+      text: "From the very first discussion to deployment, KClub delivered with integrity and precision. Their global team supported us across time zones and always kept us ahead in the digital race.",
+      name: "Sophie Lee",
+      position: "Product Lead",
+      company: "EduWave Global",
+      logo: "/webflow-logo.png",
+    },
+    {
+      text: "Working with KClub was a game-changer. Their innovative thinking, streamlined processes, and commitment to lasting impact helped us accelerate our growth trajectory.",
+      name: "Karan Mehta",
+      position: "Founder & CEO",
+      company: "TechNova Labs",
+      logo: "/relume-logo.png",
+    },
+  ];
+
+
   return (
     <ModalPortal>
       {/* Overlay */}
@@ -94,18 +126,16 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
           <div className="w-full md:w-1/2 p-6 sm:p-8 flex flex-col justify-center text-center">
             <div className="text-xl text-blue">★★★★★</div>
             <p className="mt-4 text-gray-700 font-medium">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-              ornare, eros dolor interdum nulla.”
+              “Partnering with KClub truly transformed how we operate. Their 4D methodology made the entire process smooth — from initial discussion to delivery — and the solution exceeded expectations.”
             </p>
 
             <div className="mt-6 flex items-center justify-center gap-4">
               <div className="flex items-center gap-2 text-gray-600 text-sm">
                 <div className="w-8 h-8 bg-gray-200 rounded-full"></div>
                 <span>
-                  <strong>Name Surname</strong>
+                  <strong>Anita Rao</strong>
                   <br />
-                  Position, Company
+                 Head of Digital Strategy
                 </span>
               </div>
               <img src="/webflow-logo.png" alt="Webflow" className="h-6" />
