@@ -85,7 +85,7 @@ export default function Navbar() {
           // name: "Lending Management",
           link: "/products/lending-management",
           desc: "Lending Management",
-          img: "/nav-img/warehouse1.png",
+          img: "/nav-img/lending1.png",
         },
         {
           // name: "Transport Management",
