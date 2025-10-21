@@ -11,6 +11,7 @@ const Testimonial = () => {
     {
       text: "Partnering with KClub truly transformed how we operate. Their 4D methodology made the entire process smooth — from initial discussion to delivery — and the solution exceeded expectations.",
       name: "Anita Rao",
+      image: "/testimonial-img/img1.jpg",
       position: "Head of Digital Strategy",
       company: "FinEdge Solutions",
       logo: "/webflow-logo.png",
@@ -18,6 +19,7 @@ const Testimonial = () => {
     {
       text: "KClub’s team embodies innovation. They didn’t just build software; they reimagined our systems to drive efficiency. Their people-first approach made collaboration seamless.",
       name: "Rahul Desai",
+      image: "/testimonial-img/img4.jpg",
       position: "COO",
       company: "HealthSync India",
       logo: "/relume-logo.png",
@@ -25,6 +27,7 @@ const Testimonial = () => {
     {
       text: "From the very first discussion to deployment, KClub delivered with integrity and precision. Their global team supported us across time zones and always kept us ahead in the digital race.",
       name: "Sophie Lee",
+      image: "/testimonial-img/img3.jpg",
       position: "Product Lead",
       company: "EduWave Global",
       logo: "/webflow-logo.png",
@@ -32,6 +35,7 @@ const Testimonial = () => {
     {
       text: "Working with KClub was a game-changer. Their innovative thinking, streamlined processes, and commitment to lasting impact helped us accelerate our growth trajectory.",
       name: "Karan Mehta",
+      image: "/testimonial-img/img2.jpg",
       position: "Founder & CEO",
       company: "TechNova Labs",
       logo: "/relume-logo.png",
@@ -75,7 +79,13 @@ const Testimonial = () => {
                 <div className="flex justify-between items-center mt-auto pt-4 border-t">
                   {/* Profile */}
                   <div className="flex items-center">
-                    <div className="w-10 h-10 bg-gray-200 rounded-full mr-3"></div>
+                    <div className="w-10 h-10 bg-gray-200 rounded-full mr-3">
+                      <img
+                        src={t.image}
+                        // alt={t.company}
+                        className="w-full h-full object-cover rounded-full"
+                      />
+                    </div>
                     <div>
                       <p className="font-semibold text-sm text-black">
                         {t.name}
