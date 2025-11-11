@@ -67,7 +67,24 @@ export default function ContactUs() {
 
     // If no errors → console log values
     if (Object.keys(newErrors).length === 0) {
-      console.log("Form Submitted ✅:", formData);
+      // console.log("Form Submitted ✅:", formData);
+      fetch("https://kclub-api.themanagemate.com/send-email/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+        .then(async (res) => {
+          const data = await res.json();
+          if (res.ok) {
+            alert("✅ " + data.message);
+          } else {
+            alert("❌ " + data.detail);
+          }
+        })
+        .catch((err) => {
+          console.error("Error:", err);
+          alert("⚠️ Failed to send form");
+        });
     }
   };
   const logos = [
@@ -470,7 +487,7 @@ export default function ContactUs() {
                 name="topic"
                 value={formData.topic}
                 onChange={handleChange}
-                className="w-full border border-gray-300 rounded-md p-2 mt-1 text-sm"
+                className="w-full border border-gray-300 text-black rounded-md p-2 mt-1 text-sm"
               >
                 <option value="">Select one…</option>
                 <option>Support</option>
@@ -525,7 +542,7 @@ export default function ContactUs() {
                 value={formData.message}
                 onChange={handleChange}
                 rows={4}
-                className="w-full border border-gray-300 rounded-md p-2 mt-1 text-sm"
+                className="w-full border border-gray-300 text-black rounded-md p-2 mt-1 text-sm"
                 placeholder="Type your message..."
               />
               {errors.message && (
