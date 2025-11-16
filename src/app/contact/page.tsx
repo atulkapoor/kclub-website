@@ -68,7 +68,7 @@ export default function ContactUs() {
     // If no errors → console log values
     if (Object.keys(newErrors).length === 0) {
       // console.log("Form Submitted ✅:", formData);
-      fetch("https://kclub-api.themanagemate.com/send-email/", {
+      fetch("https://api-website.kclub.me/send-email/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
