@@ -6,7 +6,7 @@ export const jobs = [
     department: "Engineering",
     location: "Remote",
     type: "Full Time",
-    category: "Category one",
+    category: "Software",
     description:
       "We are looking for a skilled frontend developer with React/Next.js experience.",
     // image: "/img.jpg",
@@ -18,7 +18,7 @@ export const jobs = [
     department: "Design",
     location: "Mumbai, India",
     type: "Contract",
-    category: "Category two",
+    category: "Design",
     description:
       "Design engaging interfaces and work closely with developers to bring them to life.",
     // image: "/img.jpg",
@@ -30,7 +30,7 @@ export const jobs = [
     department: "Engineering",
     location: "Bangalore, India",
     type: "Full Time",
-    category: "Category one",
+    category: "Software",
     description:
       "Looking for backend developer with Node.js and SQL experience.",
     // image: "/img.jpg",

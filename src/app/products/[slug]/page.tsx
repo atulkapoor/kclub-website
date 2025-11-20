@@ -120,7 +120,7 @@ export default async function ProductDetail({ params }: PageProps) {
           {/* Right Buttons */}
           <div className="flex gap-4">
           <a
-                        href="/contact"
+                        href="/case_studies"
 
             className="px-10 py-2 bg-white text-black rounded-full border border-black hover:bg-gray-100 transition"
           >

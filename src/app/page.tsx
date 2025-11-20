@@ -109,12 +109,12 @@ export default function Home() {
               custom technology services.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button
+               <Link
+                href="/contact"
                 className="px-6 py-3 rounded-lg bg-[#2563EB] text-white font-medium shadow-md hover:bg-[#1E4FDB] transition"
-                onClick={openModal}
               >
                 Request a Demo
-              </button>
+              </Link>
               <Link
                 href="/services"
                 className="px-6 py-3 rounded-lg bg-white border border-gray-300 text-gray-800 font-medium shadow-md hover:bg-gray-100 transition"
